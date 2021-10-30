@@ -17,7 +17,7 @@ See the Mulan PSL v2 for more details. */
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <vector>
-
+#include <unordered_map>
 #include "common/log/log.h"
 #include "common/os/path.h"
 #include "common/lang/string.h"
@@ -69,6 +69,37 @@ RC Db::create_table(const char *table_name, int attribute_count, const AttrInfo 
   opened_tables_[table_name] = table;
   LOG_INFO("Create table success. table name=%s", table_name);
   return RC::SUCCESS;
+}
+
+RC Db::drop_table(const char *table_name)
+{
+    RC rc = RC::SUCCESS;
+    if (opened_tables_.count(table_name) == 0)
+    {
+      return RC::SCHEMA_TABLE_NOT_EXIST;
+    }
+    std::string meta_path = table_meta_file(path_.c_str(), table_name);
+    std::string data_path = table_data_file(path_.c_str(), table_name);
+    Table *table = find_table(table_name);
+    rc = table->drop(meta_path.c_str(), data_path.c_str(), table_name, path_.c_str());
+    std::unordered_map<std::string, Table *>::iterator it = opened_tables_.find(table_name);
+    opened_tables_.erase(it);
+    delete table;
+    return rc;
+}
+
+RC Db::drop_index(const char *table_name, const char *index_name)
+{
+    RC rc = RC::SUCCESS;
+    if (opened_tables_.count(table_name) == 0)
+    {
+      return RC::SCHEMA_TABLE_NOT_EXIST;
+    }
+    std::string index_path = index_data_file(path_.c_str(), table_name, index_name);
+    Table *table = find_table(table_name);
+    rc = table->drop_index(index_path.c_str(), index_name);
+    return rc;
+
 }
 
 Table *Db::find_table(const char *table_name) const {

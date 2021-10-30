@@ -42,7 +42,8 @@ public:
    * @param attributes 字段
    */
   RC create(const char *path, const char *name, const char *base_dir, int attribute_count, const AttrInfo attributes[]);
-
+  RC drop(const char *meta_path, const char *data_path, const char *name, const char *base_dir);
+  RC drop_index(const char *index_path, const char *name);
   /**
    * 打开一个表
    * @param meta_file 保存表元数据的文件完整路径

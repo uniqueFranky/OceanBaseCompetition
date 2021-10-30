@@ -57,10 +57,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/franky/documents/GitHub/wyy
+CMAKE_SOURCE_DIR = /Users/franky/documents/github/wyy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/franky/documents/GitHub/wyy/build
+CMAKE_BINARY_DIR = /Users/franky/documents/github/wyy/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/franky/documents/GitHub/wyy/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/franky/documents/GitHub/wyy/build/CMakeFiles /Users/franky/documents/GitHub/wyy/build/unitest//CMakeFiles/progress.marks
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/franky/documents/GitHub/wyy/build/CMakeFiles 0
+	cd /Users/franky/documents/github/wyy/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/franky/documents/github/wyy/build/CMakeFiles /Users/franky/documents/github/wyy/build/unitest//CMakeFiles/progress.marks
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/franky/documents/github/wyy/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/clean
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/preinstall
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/preinstall
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/franky/documents/GitHub/wyy/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/franky/documents/github/wyy/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 unitest/CMakeFiles/bitmap_test.dir/rule:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/CMakeFiles/bitmap_test.dir/rule
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/CMakeFiles/bitmap_test.dir/rule
 .PHONY : unitest/CMakeFiles/bitmap_test.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ bitmap_test: unitest/CMakeFiles/bitmap_test.dir/rule
 
 # fast build rule for target.
 bitmap_test/fast:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bitmap_test.dir/build.make unitest/CMakeFiles/bitmap_test.dir/build
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bitmap_test.dir/build.make unitest/CMakeFiles/bitmap_test.dir/build
 .PHONY : bitmap_test/fast
 
 # Convenience name for target.
 unitest/CMakeFiles/bp_manager_test.dir/rule:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/CMakeFiles/bp_manager_test.dir/rule
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/CMakeFiles/bp_manager_test.dir/rule
 .PHONY : unitest/CMakeFiles/bp_manager_test.dir/rule
 
 # Convenience name for target.
@@ -186,12 +186,12 @@ bp_manager_test: unitest/CMakeFiles/bp_manager_test.dir/rule
 
 # fast build rule for target.
 bp_manager_test/fast:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bp_manager_test.dir/build.make unitest/CMakeFiles/bp_manager_test.dir/build
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bp_manager_test.dir/build.make unitest/CMakeFiles/bp_manager_test.dir/build
 .PHONY : bp_manager_test/fast
 
 # Convenience name for target.
 unitest/CMakeFiles/log_test.dir/rule:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/CMakeFiles/log_test.dir/rule
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/CMakeFiles/log_test.dir/rule
 .PHONY : unitest/CMakeFiles/log_test.dir/rule
 
 # Convenience name for target.
@@ -200,12 +200,12 @@ log_test: unitest/CMakeFiles/log_test.dir/rule
 
 # fast build rule for target.
 log_test/fast:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/log_test.dir/build.make unitest/CMakeFiles/log_test.dir/build
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/log_test.dir/build.make unitest/CMakeFiles/log_test.dir/build
 .PHONY : log_test/fast
 
 # Convenience name for target.
 unitest/CMakeFiles/md5_test.dir/rule:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/CMakeFiles/md5_test.dir/rule
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/CMakeFiles/md5_test.dir/rule
 .PHONY : unitest/CMakeFiles/md5_test.dir/rule
 
 # Convenience name for target.
@@ -214,12 +214,12 @@ md5_test: unitest/CMakeFiles/md5_test.dir/rule
 
 # fast build rule for target.
 md5_test/fast:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/md5_test.dir/build.make unitest/CMakeFiles/md5_test.dir/build
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/md5_test.dir/build.make unitest/CMakeFiles/md5_test.dir/build
 .PHONY : md5_test/fast
 
 # Convenience name for target.
 unitest/CMakeFiles/path_test.dir/rule:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/CMakeFiles/path_test.dir/rule
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/CMakeFiles/path_test.dir/rule
 .PHONY : unitest/CMakeFiles/path_test.dir/rule
 
 # Convenience name for target.
@@ -228,12 +228,12 @@ path_test: unitest/CMakeFiles/path_test.dir/rule
 
 # fast build rule for target.
 path_test/fast:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/path_test.dir/build.make unitest/CMakeFiles/path_test.dir/build
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/path_test.dir/build.make unitest/CMakeFiles/path_test.dir/build
 .PHONY : path_test/fast
 
 # Convenience name for target.
 unitest/CMakeFiles/pidfile_test.dir/rule:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/CMakeFiles/pidfile_test.dir/rule
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/CMakeFiles/pidfile_test.dir/rule
 .PHONY : unitest/CMakeFiles/pidfile_test.dir/rule
 
 # Convenience name for target.
@@ -242,12 +242,12 @@ pidfile_test: unitest/CMakeFiles/pidfile_test.dir/rule
 
 # fast build rule for target.
 pidfile_test/fast:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/pidfile_test.dir/build.make unitest/CMakeFiles/pidfile_test.dir/build
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/pidfile_test.dir/build.make unitest/CMakeFiles/pidfile_test.dir/build
 .PHONY : pidfile_test/fast
 
 # Convenience name for target.
 unitest/CMakeFiles/rc_test.dir/rule:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/CMakeFiles/rc_test.dir/rule
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unitest/CMakeFiles/rc_test.dir/rule
 .PHONY : unitest/CMakeFiles/rc_test.dir/rule
 
 # Convenience name for target.
@@ -256,7 +256,7 @@ rc_test: unitest/CMakeFiles/rc_test.dir/rule
 
 # fast build rule for target.
 rc_test/fast:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/rc_test.dir/build.make unitest/CMakeFiles/rc_test.dir/build
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/rc_test.dir/build.make unitest/CMakeFiles/rc_test.dir/build
 .PHONY : rc_test/fast
 
 bitmap_test.o: bitmap_test.cpp.o
@@ -264,7 +264,7 @@ bitmap_test.o: bitmap_test.cpp.o
 
 # target to build an object file
 bitmap_test.cpp.o:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bitmap_test.dir/build.make unitest/CMakeFiles/bitmap_test.dir/bitmap_test.cpp.o
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bitmap_test.dir/build.make unitest/CMakeFiles/bitmap_test.dir/bitmap_test.cpp.o
 .PHONY : bitmap_test.cpp.o
 
 bitmap_test.i: bitmap_test.cpp.i
@@ -272,7 +272,7 @@ bitmap_test.i: bitmap_test.cpp.i
 
 # target to preprocess a source file
 bitmap_test.cpp.i:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bitmap_test.dir/build.make unitest/CMakeFiles/bitmap_test.dir/bitmap_test.cpp.i
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bitmap_test.dir/build.make unitest/CMakeFiles/bitmap_test.dir/bitmap_test.cpp.i
 .PHONY : bitmap_test.cpp.i
 
 bitmap_test.s: bitmap_test.cpp.s
@@ -280,7 +280,7 @@ bitmap_test.s: bitmap_test.cpp.s
 
 # target to generate assembly for a file
 bitmap_test.cpp.s:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bitmap_test.dir/build.make unitest/CMakeFiles/bitmap_test.dir/bitmap_test.cpp.s
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bitmap_test.dir/build.make unitest/CMakeFiles/bitmap_test.dir/bitmap_test.cpp.s
 .PHONY : bitmap_test.cpp.s
 
 bp_manager_test.o: bp_manager_test.cpp.o
@@ -288,7 +288,7 @@ bp_manager_test.o: bp_manager_test.cpp.o
 
 # target to build an object file
 bp_manager_test.cpp.o:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bp_manager_test.dir/build.make unitest/CMakeFiles/bp_manager_test.dir/bp_manager_test.cpp.o
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bp_manager_test.dir/build.make unitest/CMakeFiles/bp_manager_test.dir/bp_manager_test.cpp.o
 .PHONY : bp_manager_test.cpp.o
 
 bp_manager_test.i: bp_manager_test.cpp.i
@@ -296,7 +296,7 @@ bp_manager_test.i: bp_manager_test.cpp.i
 
 # target to preprocess a source file
 bp_manager_test.cpp.i:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bp_manager_test.dir/build.make unitest/CMakeFiles/bp_manager_test.dir/bp_manager_test.cpp.i
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bp_manager_test.dir/build.make unitest/CMakeFiles/bp_manager_test.dir/bp_manager_test.cpp.i
 .PHONY : bp_manager_test.cpp.i
 
 bp_manager_test.s: bp_manager_test.cpp.s
@@ -304,7 +304,7 @@ bp_manager_test.s: bp_manager_test.cpp.s
 
 # target to generate assembly for a file
 bp_manager_test.cpp.s:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bp_manager_test.dir/build.make unitest/CMakeFiles/bp_manager_test.dir/bp_manager_test.cpp.s
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/bp_manager_test.dir/build.make unitest/CMakeFiles/bp_manager_test.dir/bp_manager_test.cpp.s
 .PHONY : bp_manager_test.cpp.s
 
 log_test.o: log_test.cpp.o
@@ -312,7 +312,7 @@ log_test.o: log_test.cpp.o
 
 # target to build an object file
 log_test.cpp.o:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/log_test.dir/build.make unitest/CMakeFiles/log_test.dir/log_test.cpp.o
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/log_test.dir/build.make unitest/CMakeFiles/log_test.dir/log_test.cpp.o
 .PHONY : log_test.cpp.o
 
 log_test.i: log_test.cpp.i
@@ -320,7 +320,7 @@ log_test.i: log_test.cpp.i
 
 # target to preprocess a source file
 log_test.cpp.i:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/log_test.dir/build.make unitest/CMakeFiles/log_test.dir/log_test.cpp.i
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/log_test.dir/build.make unitest/CMakeFiles/log_test.dir/log_test.cpp.i
 .PHONY : log_test.cpp.i
 
 log_test.s: log_test.cpp.s
@@ -328,7 +328,7 @@ log_test.s: log_test.cpp.s
 
 # target to generate assembly for a file
 log_test.cpp.s:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/log_test.dir/build.make unitest/CMakeFiles/log_test.dir/log_test.cpp.s
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/log_test.dir/build.make unitest/CMakeFiles/log_test.dir/log_test.cpp.s
 .PHONY : log_test.cpp.s
 
 md5_test.o: md5_test.cpp.o
@@ -336,7 +336,7 @@ md5_test.o: md5_test.cpp.o
 
 # target to build an object file
 md5_test.cpp.o:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/md5_test.dir/build.make unitest/CMakeFiles/md5_test.dir/md5_test.cpp.o
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/md5_test.dir/build.make unitest/CMakeFiles/md5_test.dir/md5_test.cpp.o
 .PHONY : md5_test.cpp.o
 
 md5_test.i: md5_test.cpp.i
@@ -344,7 +344,7 @@ md5_test.i: md5_test.cpp.i
 
 # target to preprocess a source file
 md5_test.cpp.i:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/md5_test.dir/build.make unitest/CMakeFiles/md5_test.dir/md5_test.cpp.i
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/md5_test.dir/build.make unitest/CMakeFiles/md5_test.dir/md5_test.cpp.i
 .PHONY : md5_test.cpp.i
 
 md5_test.s: md5_test.cpp.s
@@ -352,7 +352,7 @@ md5_test.s: md5_test.cpp.s
 
 # target to generate assembly for a file
 md5_test.cpp.s:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/md5_test.dir/build.make unitest/CMakeFiles/md5_test.dir/md5_test.cpp.s
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/md5_test.dir/build.make unitest/CMakeFiles/md5_test.dir/md5_test.cpp.s
 .PHONY : md5_test.cpp.s
 
 path_test.o: path_test.cpp.o
@@ -360,7 +360,7 @@ path_test.o: path_test.cpp.o
 
 # target to build an object file
 path_test.cpp.o:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/path_test.dir/build.make unitest/CMakeFiles/path_test.dir/path_test.cpp.o
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/path_test.dir/build.make unitest/CMakeFiles/path_test.dir/path_test.cpp.o
 .PHONY : path_test.cpp.o
 
 path_test.i: path_test.cpp.i
@@ -368,7 +368,7 @@ path_test.i: path_test.cpp.i
 
 # target to preprocess a source file
 path_test.cpp.i:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/path_test.dir/build.make unitest/CMakeFiles/path_test.dir/path_test.cpp.i
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/path_test.dir/build.make unitest/CMakeFiles/path_test.dir/path_test.cpp.i
 .PHONY : path_test.cpp.i
 
 path_test.s: path_test.cpp.s
@@ -376,7 +376,7 @@ path_test.s: path_test.cpp.s
 
 # target to generate assembly for a file
 path_test.cpp.s:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/path_test.dir/build.make unitest/CMakeFiles/path_test.dir/path_test.cpp.s
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/path_test.dir/build.make unitest/CMakeFiles/path_test.dir/path_test.cpp.s
 .PHONY : path_test.cpp.s
 
 pidfile_test.o: pidfile_test.cpp.o
@@ -384,7 +384,7 @@ pidfile_test.o: pidfile_test.cpp.o
 
 # target to build an object file
 pidfile_test.cpp.o:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/pidfile_test.dir/build.make unitest/CMakeFiles/pidfile_test.dir/pidfile_test.cpp.o
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/pidfile_test.dir/build.make unitest/CMakeFiles/pidfile_test.dir/pidfile_test.cpp.o
 .PHONY : pidfile_test.cpp.o
 
 pidfile_test.i: pidfile_test.cpp.i
@@ -392,7 +392,7 @@ pidfile_test.i: pidfile_test.cpp.i
 
 # target to preprocess a source file
 pidfile_test.cpp.i:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/pidfile_test.dir/build.make unitest/CMakeFiles/pidfile_test.dir/pidfile_test.cpp.i
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/pidfile_test.dir/build.make unitest/CMakeFiles/pidfile_test.dir/pidfile_test.cpp.i
 .PHONY : pidfile_test.cpp.i
 
 pidfile_test.s: pidfile_test.cpp.s
@@ -400,7 +400,7 @@ pidfile_test.s: pidfile_test.cpp.s
 
 # target to generate assembly for a file
 pidfile_test.cpp.s:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/pidfile_test.dir/build.make unitest/CMakeFiles/pidfile_test.dir/pidfile_test.cpp.s
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/pidfile_test.dir/build.make unitest/CMakeFiles/pidfile_test.dir/pidfile_test.cpp.s
 .PHONY : pidfile_test.cpp.s
 
 rc_test.o: rc_test.cpp.o
@@ -408,7 +408,7 @@ rc_test.o: rc_test.cpp.o
 
 # target to build an object file
 rc_test.cpp.o:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/rc_test.dir/build.make unitest/CMakeFiles/rc_test.dir/rc_test.cpp.o
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/rc_test.dir/build.make unitest/CMakeFiles/rc_test.dir/rc_test.cpp.o
 .PHONY : rc_test.cpp.o
 
 rc_test.i: rc_test.cpp.i
@@ -416,7 +416,7 @@ rc_test.i: rc_test.cpp.i
 
 # target to preprocess a source file
 rc_test.cpp.i:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/rc_test.dir/build.make unitest/CMakeFiles/rc_test.dir/rc_test.cpp.i
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/rc_test.dir/build.make unitest/CMakeFiles/rc_test.dir/rc_test.cpp.i
 .PHONY : rc_test.cpp.i
 
 rc_test.s: rc_test.cpp.s
@@ -424,7 +424,7 @@ rc_test.s: rc_test.cpp.s
 
 # target to generate assembly for a file
 rc_test.cpp.s:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/rc_test.dir/build.make unitest/CMakeFiles/rc_test.dir/rc_test.cpp.s
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f unitest/CMakeFiles/rc_test.dir/build.make unitest/CMakeFiles/rc_test.dir/rc_test.cpp.s
 .PHONY : rc_test.cpp.s
 
 # Help Target
@@ -478,6 +478,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/franky/documents/GitHub/wyy/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/franky/documents/github/wyy/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

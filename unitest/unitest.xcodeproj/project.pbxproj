@@ -1,0 +1,2306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		45C75EAE0768494F842A21DA /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 971B1B7E8F09437FB02EC803 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				D0CE44BDDA5CA3E5D441918E /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		744B6BC962CD43C694CE0682 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DAB79B41F2AA4AC783646551 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				07023D4C670EC40663A3F0D9 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				FC6399DFA81E4E53B3A0D56F /* PBXTargetDependency */,
+				36AB402733CD43FBBA8019AE /* PBXTargetDependency */,
+				D48CF29E3C3D4C15AF5CC849 /* PBXTargetDependency */,
+				40F16D0F556C4DA4B5D99767 /* PBXTargetDependency */,
+				7FB6E6E8FC734C65A94E3726 /* PBXTargetDependency */,
+				3304D7746ADE4D9A9F5F5030 /* PBXTargetDependency */,
+				70B6BCB151334A6CBDD08852 /* PBXTargetDependency */,
+				93B4181844F44132BE8F49C7 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		87CAD5BEA2094FA1AEC2F95F /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 10DBCE625ABA46FAAC03FE5B /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				6E1C4FD16E5346F0AD338116 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		41D62102FABD4099AD370187 /* /Users/franky/documents/github/wyy/unitest/pidfile_test.cpp */ = {isa = PBXBuildFile; fileRef = 3F1E8F27459A40B5B2052F3E /* /Users/franky/documents/github/wyy/unitest/pidfile_test.cpp */; };
+		41D81E8CB5AB45BD90D73D2B /* /Users/franky/documents/github/wyy/unitest/log_test.cpp */ = {isa = PBXBuildFile; fileRef = B0B676E46CF7491086F228E8 /* /Users/franky/documents/github/wyy/unitest/log_test.cpp */; };
+		4B3A5D53512F4C32940A22A9 /* /Users/franky/documents/github/wyy/unitest/bitmap_test.cpp */ = {isa = PBXBuildFile; fileRef = 96EC87EBAA5C4F91B782B866 /* /Users/franky/documents/github/wyy/unitest/bitmap_test.cpp */; };
+		4FE543A01B10426FBB207F72 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7E5D4B514BEF441F81A898DB /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */; };
+		6C5F1A3A98DA4FB4BEBC9BFD /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 49F16678BDB844E78294BBCE /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */; };
+		940034D8229149D08AC6A603 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8C58DF0FFE744AC98AD11F1F /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */; };
+		9DED030F35904CFF95044EFE /* /Users/franky/documents/github/wyy/unitest/bp_manager_test.cpp */ = {isa = PBXBuildFile; fileRef = FB4DE88A787F4F1D9DC8554E /* /Users/franky/documents/github/wyy/unitest/bp_manager_test.cpp */; };
+		9EBA19A6791A4957A99A258F /* /Users/franky/documents/github/wyy/unitest/path_test.cpp */ = {isa = PBXBuildFile; fileRef = 452ADF82ED1648C2866A7A7E /* /Users/franky/documents/github/wyy/unitest/path_test.cpp */; };
+		A9C87697A419495C9BFBD3DE /* /Users/franky/documents/github/wyy/unitest/rc_test.cpp */ = {isa = PBXBuildFile; fileRef = 4773F3B0328540B0B25F84B3 /* /Users/franky/documents/github/wyy/unitest/rc_test.cpp */; };
+		BEE730890F734C6A8C0583D9 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = D99D56CC4DED484A87E61855 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */; };
+		CFDF24EC37CE42B7AD8E794E /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 3D6393DA58964D55873258D0 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */; };
+		D239ED3E99F74434BD01269C /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8F6A9C436FAF4B448F141695 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */; };
+		E8F0E45D7FAB4352B07AFA8D /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 50BA7B7496F84CF0A79995D2 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */; };
+		EFFB16FB195F470493B80465 /* /Users/franky/documents/github/wyy/unitest/md5_test.cpp */ = {isa = PBXBuildFile; fileRef = D43CBA0B9CE94481A8957121 /* /Users/franky/documents/github/wyy/unitest/md5_test.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		1EB3969F68B349FE9794CFED /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		6D8085E554414541A3EF73C8 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		824C46442E6B42068BBD5CF4 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		E1FFD0FF0F744D22A6570789 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		16A20D9DB89D4FEDB23C8C44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F318ACB4CD494A1CB44F65AA;
+			remoteInfo = bp_manager_test;
+		};
+		49C403A24A2E41F09F37B91B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		5210EC8BC17B46E8918D27EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B80C7C9B418436B9D73E7FE;
+			remoteInfo = pidfile_test;
+		};
+		53AA877F01D948CFBD6B2EBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		5608B181883C44DC88A3B92B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9B134E6641E450F952F2112;
+			remoteInfo = log_test;
+		};
+		5F258F535C2942CA8358B09E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		76F360DD092D455FA8F15D87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		866F06ED51FF481598C80A34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		91845BEEFA4D419AB406849B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 127FFEF2689F4D1F84114DA3;
+			remoteInfo = path_test;
+		};
+		A4829218761C498886643B58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 219DBCD8BB0A4F9C9033BA8A;
+			remoteInfo = bitmap_test;
+		};
+		D0EC3C208073485C8D878187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 744B6BC962CD43C694CE0682;
+			remoteInfo = ALL_BUILD;
+		};
+		D2D76E8F5D8543AB947D44B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		D81719F443844788B4AF0E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		DE77C86EA430491DAA45E5EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		E4DD80A7F9B044F9974DF182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2674C3373F1433DA0D3994B;
+			remoteInfo = md5_test;
+		};
+		F1EF258F90A94724AAAC3CE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D320F78ADC6942BFB9E488FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0314F5ADE2845D6B07DC451;
+			remoteInfo = rc_test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B75E8899FA24F75A8504DE4 /* bitmap_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = bitmap_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		35BAA51A7311448185E964E1 /* pidfile_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = pidfile_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6393DA58964D55873258D0 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3F1E8F27459A40B5B2052F3E /* /Users/franky/documents/github/wyy/unitest/pidfile_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pidfile_test.cpp; path = pidfile_test.cpp; sourceTree = SOURCE_ROOT; };
+		419462ABE68C4FBDB34C1A60 /* path_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = path_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		452ADF82ED1648C2866A7A7E /* /Users/franky/documents/github/wyy/unitest/path_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = path_test.cpp; path = path_test.cpp; sourceTree = SOURCE_ROOT; };
+		4773F3B0328540B0B25F84B3 /* /Users/franky/documents/github/wyy/unitest/rc_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = rc_test.cpp; path = rc_test.cpp; sourceTree = SOURCE_ROOT; };
+		49F16678BDB844E78294BBCE /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		50BA7B7496F84CF0A79995D2 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		60B69ABAA2AD49D5A5BEEF33 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		77D0B199C1C84740ADAE1180 /* log_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = log_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		7936F0BEB10A4E9C8E6BE290 /* rc_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = rc_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5D4B514BEF441F81A898DB /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8C58DF0FFE744AC98AD11F1F /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8F6A9C436FAF4B448F141695 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		96EC87EBAA5C4F91B782B866 /* /Users/franky/documents/github/wyy/unitest/bitmap_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bitmap_test.cpp; path = bitmap_test.cpp; sourceTree = SOURCE_ROOT; };
+		B0B676E46CF7491086F228E8 /* /Users/franky/documents/github/wyy/unitest/log_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = log_test.cpp; path = log_test.cpp; sourceTree = SOURCE_ROOT; };
+		B44D02A905D74E73BEDEAB37 /* md5_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = md5_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		D43CBA0B9CE94481A8957121 /* /Users/franky/documents/github/wyy/unitest/md5_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = md5_test.cpp; path = md5_test.cpp; sourceTree = SOURCE_ROOT; };
+		D99D56CC4DED484A87E61855 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		EAF8EC4BCA844273AA6AE27A /* bp_manager_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = bp_manager_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4DE88A787F4F1D9DC8554E /* /Users/franky/documents/github/wyy/unitest/bp_manager_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bp_manager_test.cpp; path = bp_manager_test.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0340B34204B74A5AAC662A08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15A46B2D1BFC47F7A01A7FE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30124E513FEC46618F665D29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F2D24EE47554F9E86742556 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5087A9CBBC4948B88FBD38A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86B28BEBF3C42B3848F3097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA29A3F0434E4046A13F9240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04369A6F80C04699AAE811AD /* path_test */ = {
+			isa = PBXGroup;
+			children = (
+				74B8AA50351F45FEB37BFB8C /* Source Files */,
+				8F6A9C436FAF4B448F141695 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */,
+			);
+			name = path_test;
+			sourceTree = "<group>";
+		};
+		12B48A03722C40E7BCE58197 = {
+			isa = PBXGroup;
+			children = (
+				E65626968E5A407A8E429C64 /* bitmap_test */,
+				98322FB91B2B4CC6B96BA0FA /* bp_manager_test */,
+				F5DD0023A114409C907BFA7F /* log_test */,
+				6E7A8614D54A4CF4863AAEB0 /* md5_test */,
+				04369A6F80C04699AAE811AD /* path_test */,
+				94360CAE6EB74D5792327B25 /* pidfile_test */,
+				76A6CFE1F2C6439CBCCBD2F7 /* rc_test */,
+				DE075F853D6B4FE0AF556410 /* ALL_BUILD */,
+				C26B055FBB8A4D2DBB4D9000 /* Products */,
+				409C054E86E34F46AE2B2BDD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		409C054E86E34F46AE2B2BDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E7A8614D54A4CF4863AAEB0 /* md5_test */ = {
+			isa = PBXGroup;
+			children = (
+				DFFF05ACBD504BC49D8E7724 /* Source Files */,
+				50BA7B7496F84CF0A79995D2 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */,
+			);
+			name = md5_test;
+			sourceTree = "<group>";
+		};
+		74B8AA50351F45FEB37BFB8C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				452ADF82ED1648C2866A7A7E /* /Users/franky/documents/github/wyy/unitest/path_test.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		76A6CFE1F2C6439CBCCBD2F7 /* rc_test */ = {
+			isa = PBXGroup;
+			children = (
+				E243A4FCEC4640A8AC795E13 /* Source Files */,
+				8C58DF0FFE744AC98AD11F1F /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */,
+			);
+			name = rc_test;
+			sourceTree = "<group>";
+		};
+		86F313B35D0D44979BFF8E2B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F1E8F27459A40B5B2052F3E /* /Users/franky/documents/github/wyy/unitest/pidfile_test.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		8729C39D70E243E58CB9D05E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0B676E46CF7491086F228E8 /* /Users/franky/documents/github/wyy/unitest/log_test.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		94360CAE6EB74D5792327B25 /* pidfile_test */ = {
+			isa = PBXGroup;
+			children = (
+				86F313B35D0D44979BFF8E2B /* Source Files */,
+				7E5D4B514BEF441F81A898DB /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */,
+			);
+			name = pidfile_test;
+			sourceTree = "<group>";
+		};
+		967DE3883FE44AA6A0DD82FB /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				96EC87EBAA5C4F91B782B866 /* /Users/franky/documents/github/wyy/unitest/bitmap_test.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		98322FB91B2B4CC6B96BA0FA /* bp_manager_test */ = {
+			isa = PBXGroup;
+			children = (
+				AC929E3F6F9942869840C044 /* Source Files */,
+				D99D56CC4DED484A87E61855 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */,
+			);
+			name = bp_manager_test;
+			sourceTree = "<group>";
+		};
+		AC929E3F6F9942869840C044 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB4DE88A787F4F1D9DC8554E /* /Users/franky/documents/github/wyy/unitest/bp_manager_test.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C0E4ADF70A634AA0AA2FD79D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C26B055FBB8A4D2DBB4D9000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B75E8899FA24F75A8504DE4 /* bitmap_test */,
+				EAF8EC4BCA844273AA6AE27A /* bp_manager_test */,
+				77D0B199C1C84740ADAE1180 /* log_test */,
+				B44D02A905D74E73BEDEAB37 /* md5_test */,
+				419462ABE68C4FBDB34C1A60 /* path_test */,
+				35BAA51A7311448185E964E1 /* pidfile_test */,
+				7936F0BEB10A4E9C8E6BE290 /* rc_test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE075F853D6B4FE0AF556410 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				C0E4ADF70A634AA0AA2FD79D /* CMake Rules */,
+				60B69ABAA2AD49D5A5BEEF33 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		DFFF05ACBD504BC49D8E7724 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D43CBA0B9CE94481A8957121 /* /Users/franky/documents/github/wyy/unitest/md5_test.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E243A4FCEC4640A8AC795E13 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				4773F3B0328540B0B25F84B3 /* /Users/franky/documents/github/wyy/unitest/rc_test.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E65626968E5A407A8E429C64 /* bitmap_test */ = {
+			isa = PBXGroup;
+			children = (
+				967DE3883FE44AA6A0DD82FB /* Source Files */,
+				3D6393DA58964D55873258D0 /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */,
+			);
+			name = bitmap_test;
+			sourceTree = "<group>";
+		};
+		F5DD0023A114409C907BFA7F /* log_test */ = {
+			isa = PBXGroup;
+			children = (
+				8729C39D70E243E58CB9D05E /* Source Files */,
+				49F16678BDB844E78294BBCE /* /Users/franky/documents/github/wyy/unitest/CMakeLists.txt */,
+			);
+			name = log_test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		127FFEF2689F4D1F84114DA3 /* path_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BCAF8832B874ED0AF533E36 /* Build configuration list for PBXNativeTarget "path_test" */;
+			buildPhases = (
+				DF1FFC8A7CB54C61A7BB599B /* Sources */,
+				0340B34204B74A5AAC662A08 /* Frameworks */,
+				98E5DCDB3B47379050242473 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57E75136FE924E9CB73343AE /* PBXTargetDependency */,
+			);
+			name = path_test;
+			productName = path_test;
+			productReference = 419462ABE68C4FBDB34C1A60 /* path_test */;
+			productType = "com.apple.product-type.tool";
+		};
+		219DBCD8BB0A4F9C9033BA8A /* bitmap_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B79C069F395F4630B6A9DB7B /* Build configuration list for PBXNativeTarget "bitmap_test" */;
+			buildPhases = (
+				810ABF0A8A2D49A3BAEF9D79 /* Sources */,
+				5087A9CBBC4948B88FBD38A6 /* Frameworks */,
+				63948779EB1F6E4BFCE12A91 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EC8B1C6C2FD4B0D98AC5597 /* PBXTargetDependency */,
+			);
+			name = bitmap_test;
+			productName = bitmap_test;
+			productReference = 2B75E8899FA24F75A8504DE4 /* bitmap_test */;
+			productType = "com.apple.product-type.tool";
+		};
+		5B80C7C9B418436B9D73E7FE /* pidfile_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1E205A2F35E4B98A6F0DD79 /* Build configuration list for PBXNativeTarget "pidfile_test" */;
+			buildPhases = (
+				5AFA4E9B0B0F47A0B45BA5FB /* Sources */,
+				15A46B2D1BFC47F7A01A7FE4 /* Frameworks */,
+				4B51AD57BE9717DE5E115947 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E9D8CE8F48B4940AB76C55F /* PBXTargetDependency */,
+			);
+			name = pidfile_test;
+			productName = pidfile_test;
+			productReference = 35BAA51A7311448185E964E1 /* pidfile_test */;
+			productType = "com.apple.product-type.tool";
+		};
+		A9B134E6641E450F952F2112 /* log_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B39734916E341B2989BD746 /* Build configuration list for PBXNativeTarget "log_test" */;
+			buildPhases = (
+				AFC521A7A66845389D7FAEBF /* Sources */,
+				C86B28BEBF3C42B3848F3097 /* Frameworks */,
+				9FFD4D1BEE9723DA61A49BFB /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0B15EDDC157495BAD1BDD83 /* PBXTargetDependency */,
+			);
+			name = log_test;
+			productName = log_test;
+			productReference = 77D0B199C1C84740ADAE1180 /* log_test */;
+			productType = "com.apple.product-type.tool";
+		};
+		B2674C3373F1433DA0D3994B /* md5_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E67301F67B5C47D6B729E55C /* Build configuration list for PBXNativeTarget "md5_test" */;
+			buildPhases = (
+				97663C15EAF94D05B443FED2 /* Sources */,
+				4F2D24EE47554F9E86742556 /* Frameworks */,
+				27F9F4364BB842463F805457 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E90470A63BAF44E9A200610C /* PBXTargetDependency */,
+			);
+			name = md5_test;
+			productName = md5_test;
+			productReference = B44D02A905D74E73BEDEAB37 /* md5_test */;
+			productType = "com.apple.product-type.tool";
+		};
+		F0314F5ADE2845D6B07DC451 /* rc_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C908BD7C369143FDA065D658 /* Build configuration list for PBXNativeTarget "rc_test" */;
+			buildPhases = (
+				805B1D1D42D64772892E06D9 /* Sources */,
+				CA29A3F0434E4046A13F9240 /* Frameworks */,
+				EA6E388DB66D0196FC12B0DA /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AD0FE7E5F364FE08E806FF4 /* PBXTargetDependency */,
+			);
+			name = rc_test;
+			productName = rc_test;
+			productReference = 7936F0BEB10A4E9C8E6BE290 /* rc_test */;
+			productType = "com.apple.product-type.tool";
+		};
+		F318ACB4CD494A1CB44F65AA /* bp_manager_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 907FF5E30F664AA3ACE46382 /* Build configuration list for PBXNativeTarget "bp_manager_test" */;
+			buildPhases = (
+				E052FEDF89164FB297E43484 /* Sources */,
+				30124E513FEC46618F665D29 /* Frameworks */,
+				801E7F35712864111F0EA24A /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70740C3A172248EFAB1CEA18 /* PBXTargetDependency */,
+			);
+			name = bp_manager_test;
+			productName = bp_manager_test;
+			productReference = EAF8EC4BCA844273AA6AE27A /* bp_manager_test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D320F78ADC6942BFB9E488FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1310;
+			};
+			buildConfigurationList = 254EEAFAA96F47A69AB68B84 /* Build configuration list for PBXProject "unitest" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				824C46442E6B42068BBD5CF4 /* Debug */,
+				1EB3969F68B349FE9794CFED /* Release */,
+				6D8085E554414541A3EF73C8 /* MinSizeRel */,
+				E1FFD0FF0F744D22A6570789 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 12B48A03722C40E7BCE58197;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				744B6BC962CD43C694CE0682 /* ALL_BUILD */,
+				45C75EAE0768494F842A21DA /* ZERO_CHECK */,
+				219DBCD8BB0A4F9C9033BA8A /* bitmap_test */,
+				F318ACB4CD494A1CB44F65AA /* bp_manager_test */,
+				87CAD5BEA2094FA1AEC2F95F /* install */,
+				A9B134E6641E450F952F2112 /* log_test */,
+				B2674C3373F1433DA0D3994B /* md5_test */,
+				127FFEF2689F4D1F84114DA3 /* path_test */,
+				5B80C7C9B418436B9D73E7FE /* pidfile_test */,
+				F0314F5ADE2845D6B07DC451 /* rc_test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07023D4C670EC40663A3F0D9 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/franky/documents/github/wyy/unitest/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		27F9F4364BB842463F805457 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+"/Users/franky/documents/github/wyy/unitest/md5_test[1]_tests.cmake"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=md5_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/Debug/md5_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=md5_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/md5_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=md5_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/Release/md5_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=md5_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/md5_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=md5_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/MinSizeRel/md5_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=md5_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/md5_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=md5_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/RelWithDebInfo/md5_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=md5_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/md5_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4B51AD57BE9717DE5E115947 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+"/Users/franky/documents/github/wyy/unitest/pidfile_test[1]_tests.cmake"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=pidfile_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/Debug/pidfile_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=pidfile_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/pidfile_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=pidfile_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/Release/pidfile_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=pidfile_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/pidfile_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=pidfile_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/MinSizeRel/pidfile_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=pidfile_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/pidfile_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=pidfile_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/RelWithDebInfo/pidfile_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=pidfile_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/pidfile_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		63948779EB1F6E4BFCE12A91 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+"/Users/franky/documents/github/wyy/unitest/bitmap_test[1]_tests.cmake"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=bitmap_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/Debug/bitmap_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=bitmap_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/bitmap_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=bitmap_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/Release/bitmap_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=bitmap_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/bitmap_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=bitmap_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/MinSizeRel/bitmap_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=bitmap_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/bitmap_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=bitmap_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/RelWithDebInfo/bitmap_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=bitmap_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/bitmap_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		801E7F35712864111F0EA24A /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+"/Users/franky/documents/github/wyy/unitest/bp_manager_test[1]_tests.cmake"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=bp_manager_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/Debug/bp_manager_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=bp_manager_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/bp_manager_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=bp_manager_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/Release/bp_manager_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=bp_manager_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/bp_manager_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=bp_manager_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/MinSizeRel/bp_manager_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=bp_manager_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/bp_manager_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=bp_manager_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/RelWithDebInfo/bp_manager_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=bp_manager_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/bp_manager_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		98E5DCDB3B47379050242473 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+"/Users/franky/documents/github/wyy/unitest/path_test[1]_tests.cmake"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=path_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/Debug/path_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=path_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/path_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=path_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/Release/path_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=path_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/path_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=path_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/MinSizeRel/path_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=path_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/path_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=path_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/RelWithDebInfo/path_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=path_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/path_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9FFD4D1BEE9723DA61A49BFB /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+"/Users/franky/documents/github/wyy/unitest/log_test[1]_tests.cmake"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=log_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/Debug/log_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=log_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/log_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=log_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/Release/log_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=log_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/log_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=log_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/MinSizeRel/log_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=log_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/log_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=log_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/RelWithDebInfo/log_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=log_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/log_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		D0CE44BDDA5CA3E5D441918E /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/franky/documents/github/wyy/unitest/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  make -f /Users/franky/documents/github/wyy/unitest/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  make -f /Users/franky/documents/github/wyy/unitest/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  make -f /Users/franky/documents/github/wyy/unitest/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  make -f /Users/franky/documents/github/wyy/unitest/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		EA6E388DB66D0196FC12B0DA /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+"/Users/franky/documents/github/wyy/unitest/rc_test[1]_tests.cmake"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=rc_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/Debug/rc_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=rc_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/rc_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=rc_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/Release/rc_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=rc_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/rc_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=rc_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/MinSizeRel/rc_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=rc_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/rc_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/franky/documents/github/wyy/unitest
+  /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=rc_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/bin/RelWithDebInfo/rc_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=rc_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/unitest/rc_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AFA4E9B0B0F47A0B45BA5FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D62102FABD4099AD370187 /* /Users/franky/documents/github/wyy/unitest/pidfile_test.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		805B1D1D42D64772892E06D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C87697A419495C9BFBD3DE /* /Users/franky/documents/github/wyy/unitest/rc_test.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		810ABF0A8A2D49A3BAEF9D79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3A5D53512F4C32940A22A9 /* /Users/franky/documents/github/wyy/unitest/bitmap_test.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97663C15EAF94D05B443FED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFB16FB195F470493B80465 /* /Users/franky/documents/github/wyy/unitest/md5_test.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFC521A7A66845389D7FAEBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D81E8CB5AB45BD90D73D2B /* /Users/franky/documents/github/wyy/unitest/log_test.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1FFC8A7CB54C61A7BB599B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EBA19A6791A4957A99A258F /* /Users/franky/documents/github/wyy/unitest/path_test.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E052FEDF89164FB297E43484 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DED030F35904CFF95044EFE /* /Users/franky/documents/github/wyy/unitest/bp_manager_test.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3304D7746ADE4D9A9F5F5030 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B80C7C9B418436B9D73E7FE /* pidfile_test */;
+			targetProxy = 5210EC8BC17B46E8918D27EE /* PBXContainerItemProxy */;
+		};
+		36AB402733CD43FBBA8019AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F318ACB4CD494A1CB44F65AA /* bp_manager_test */;
+			targetProxy = 16A20D9DB89D4FEDB23C8C44 /* PBXContainerItemProxy */;
+		};
+		3E9D8CE8F48B4940AB76C55F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
+			targetProxy = D2D76E8F5D8543AB947D44B5 /* PBXContainerItemProxy */;
+		};
+		40F16D0F556C4DA4B5D99767 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2674C3373F1433DA0D3994B /* md5_test */;
+			targetProxy = E4DD80A7F9B044F9974DF182 /* PBXContainerItemProxy */;
+		};
+		57E75136FE924E9CB73343AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
+			targetProxy = 5F258F535C2942CA8358B09E /* PBXContainerItemProxy */;
+		};
+		6AD0FE7E5F364FE08E806FF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
+			targetProxy = 49C403A24A2E41F09F37B91B /* PBXContainerItemProxy */;
+		};
+		6E1C4FD16E5346F0AD338116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 744B6BC962CD43C694CE0682 /* ALL_BUILD */;
+			targetProxy = D0EC3C208073485C8D878187 /* PBXContainerItemProxy */;
+		};
+		70740C3A172248EFAB1CEA18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
+			targetProxy = D81719F443844788B4AF0E53 /* PBXContainerItemProxy */;
+		};
+		70B6BCB151334A6CBDD08852 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0314F5ADE2845D6B07DC451 /* rc_test */;
+			targetProxy = F1EF258F90A94724AAAC3CE0 /* PBXContainerItemProxy */;
+		};
+		7EC8B1C6C2FD4B0D98AC5597 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
+			targetProxy = 53AA877F01D948CFBD6B2EBF /* PBXContainerItemProxy */;
+		};
+		7FB6E6E8FC734C65A94E3726 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 127FFEF2689F4D1F84114DA3 /* path_test */;
+			targetProxy = 91845BEEFA4D419AB406849B /* PBXContainerItemProxy */;
+		};
+		93B4181844F44132BE8F49C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
+			targetProxy = 76F360DD092D455FA8F15D87 /* PBXContainerItemProxy */;
+		};
+		B0B15EDDC157495BAD1BDD83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
+			targetProxy = DE77C86EA430491DAA45E5EF /* PBXContainerItemProxy */;
+		};
+		D48CF29E3C3D4C15AF5CC849 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9B134E6641E450F952F2112 /* log_test */;
+			targetProxy = 5608B181883C44DC88A3B92B /* PBXContainerItemProxy */;
+		};
+		E90470A63BAF44E9A200610C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
+			targetProxy = 866F06ED51FF481598C80A34 /* PBXContainerItemProxy */;
+		};
+		FC6399DFA81E4E53B3A0D56F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 219DBCD8BB0A4F9C9033BA8A /* bitmap_test */;
+			targetProxy = A4829218761C498886643B58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07DA6FFA7D614B89A8C623F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		09FA37147FF44507BEA5C252 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/RelWithDebInfo","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1                 -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libobserver.a,/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bitmap_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		10437E68614548E7A494BBAB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = /Users/franky/documents/github/wyy/unitest/build;
+			};
+			name = RelWithDebInfo;
+		};
+		1CB9313EB90B4FA88B1ABE5A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3BBD8592BF2249BDB022770A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/MinSizeRel","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/MinSizeRel/libobserver.a,/Users/franky/documents/github/wyy/lib/MinSizeRel/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bp_manager_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		481C030E9ED2475B83C36B2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/Debug/libobserver.a,/Users/franky/documents/github/wyy/lib/Debug/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bitmap_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		4C87CB651BC84B41A2F6524E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/Debug/libobserver.a,/Users/franky/documents/github/wyy/lib/Debug/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pidfile_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		511306C43B574D3EB0DBD152 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		555FCB0F0E754206B3EA858A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5FA9DF9EB04F447D945A3586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/Debug/libobserver.a,/Users/franky/documents/github/wyy/lib/Debug/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = md5_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		6BC8E3D28B7343F7AC404657 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		6F9C5D372C3F46AB972245C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/Release/libobserver.a,/Users/franky/documents/github/wyy/lib/Release/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = md5_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		77C1923957074730ACD3B0B5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/RelWithDebInfo","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1                 -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libobserver.a,/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rc_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		79F9B7C2BA174C2FA86948E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/Release/libobserver.a,/Users/franky/documents/github/wyy/lib/Release/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bp_manager_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		7CA82577AA304E9FB66E938B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = /Users/franky/documents/github/wyy/unitest/build;
+			};
+			name = Release;
+		};
+		8644CE25499742EC9EE59DD0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = /Users/franky/documents/github/wyy/unitest/build;
+			};
+			name = MinSizeRel;
+		};
+		867A043F86E74295838BDE33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/Debug/libobserver.a,/Users/franky/documents/github/wyy/lib/Debug/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = path_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		8DA1359B2ACE423EB6E18F6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = /Users/franky/documents/github/wyy/unitest/build;
+			};
+			name = Debug;
+		};
+		91A7A38499CF4AF99E6BE00E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/RelWithDebInfo","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1                 -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libobserver.a,/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = path_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9904411C955F475689D3BCEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		9F3E80830A064160AB5E558A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/RelWithDebInfo","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1                 -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libobserver.a,/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pidfile_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A4A4D6327D674CE2BD8EBF38 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/MinSizeRel","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/MinSizeRel/libobserver.a,/Users/franky/documents/github/wyy/lib/MinSizeRel/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pidfile_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A560CA93B7C84FD78004DF59 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/RelWithDebInfo","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1                 -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libobserver.a,/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bp_manager_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A7656A8D84754F05901CEB36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/Release/libobserver.a,/Users/franky/documents/github/wyy/lib/Release/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = log_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B66094FBC6FD409999B243FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/Release/libobserver.a,/Users/franky/documents/github/wyy/lib/Release/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pidfile_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B98F2AC5C6EB48579A35AE22 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/MinSizeRel","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/MinSizeRel/libobserver.a,/Users/franky/documents/github/wyy/lib/MinSizeRel/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = log_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		BB9523A44D6249CABEF68AB2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/MinSizeRel","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/MinSizeRel/libobserver.a,/Users/franky/documents/github/wyy/lib/MinSizeRel/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bitmap_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		BF4F73D0262049828E77E5D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/Release/libobserver.a,/Users/franky/documents/github/wyy/lib/Release/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = path_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C4A9E3E059F14D9F9E4CA630 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C69E8FE59C314275AB57AF0F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/MinSizeRel","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/MinSizeRel/libobserver.a,/Users/franky/documents/github/wyy/lib/MinSizeRel/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = path_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CBBBD85102434F66BE2ACD11 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/MinSizeRel","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/MinSizeRel/libobserver.a,/Users/franky/documents/github/wyy/lib/MinSizeRel/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rc_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D9765F596F3D47B59B64ACD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		DA7D604C707F43E9B5E92109 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/Debug/libobserver.a,/Users/franky/documents/github/wyy/lib/Debug/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rc_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		DBEBE2E5AD8841779FFE86DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/Debug/libobserver.a,/Users/franky/documents/github/wyy/lib/Debug/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bp_manager_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		DC899CE8B52F4805BF206C52 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/RelWithDebInfo","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1                 -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libobserver.a,/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = log_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DD9300119EF4412AA23F43FE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E02414C34DE743A7B7053CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E4A95B900B1B4D68A2855321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/Release/libobserver.a,/Users/franky/documents/github/wyy/lib/Release/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rc_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E8CEBD83278F42E385FD5AD9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/MinSizeRel","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/MinSizeRel/libobserver.a,/Users/franky/documents/github/wyy/lib/MinSizeRel/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = md5_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		ED3D33060D914EEA8B8BFB77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/Debug/libobserver.a,/Users/franky/documents/github/wyy/lib/Debug/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = log_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		ED59C9E036344BFBB82BB353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/Release/libobserver.a,/Users/franky/documents/github/wyy/lib/Release/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bitmap_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F48DECF606594A39AF009158 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/unitest/.,/Users/franky/documents/github/wyy/unitest/../deps,/Users/franky/documents/github/wyy/unitest/../src/observer,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /usr/local/lib64 /Users/franky/documents/github/wyy/unitest/../lib /Users/franky/documents/github/wyy/lib/RelWithDebInfo","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/usr/local/lib64/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib64,"/Users/franky/documents/github/wyy/unitest/../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/unitest/../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1                 -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-lpthread","-ldl","-lgtest","-lgtest_main",/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libobserver.a,/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = md5_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F8DDC6A73BAA4686B5442297 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F9CDA63FEFC544E692652818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/unitest;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10DBCE625ABA46FAAC03FE5B /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DA6FFA7D614B89A8C623F3 /* Debug */,
+				F9CDA63FEFC544E692652818 /* Release */,
+				F8DDC6A73BAA4686B5442297 /* MinSizeRel */,
+				511306C43B574D3EB0DBD152 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		254EEAFAA96F47A69AB68B84 /* Build configuration list for PBXProject "unitest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DA1359B2ACE423EB6E18F6D /* Debug */,
+				7CA82577AA304E9FB66E938B /* Release */,
+				8644CE25499742EC9EE59DD0 /* MinSizeRel */,
+				10437E68614548E7A494BBAB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3BCAF8832B874ED0AF533E36 /* Build configuration list for PBXNativeTarget "path_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				867A043F86E74295838BDE33 /* Debug */,
+				BF4F73D0262049828E77E5D2 /* Release */,
+				C69E8FE59C314275AB57AF0F /* MinSizeRel */,
+				91A7A38499CF4AF99E6BE00E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8B39734916E341B2989BD746 /* Build configuration list for PBXNativeTarget "log_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3D33060D914EEA8B8BFB77 /* Debug */,
+				A7656A8D84754F05901CEB36 /* Release */,
+				B98F2AC5C6EB48579A35AE22 /* MinSizeRel */,
+				DC899CE8B52F4805BF206C52 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		907FF5E30F664AA3ACE46382 /* Build configuration list for PBXNativeTarget "bp_manager_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEBE2E5AD8841779FFE86DC /* Debug */,
+				79F9B7C2BA174C2FA86948E8 /* Release */,
+				3BBD8592BF2249BDB022770A /* MinSizeRel */,
+				A560CA93B7C84FD78004DF59 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		971B1B7E8F09437FB02EC803 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BC8E3D28B7343F7AC404657 /* Debug */,
+				9904411C955F475689D3BCEA /* Release */,
+				1CB9313EB90B4FA88B1ABE5A /* MinSizeRel */,
+				C4A9E3E059F14D9F9E4CA630 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A1E205A2F35E4B98A6F0DD79 /* Build configuration list for PBXNativeTarget "pidfile_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C87CB651BC84B41A2F6524E /* Debug */,
+				B66094FBC6FD409999B243FC /* Release */,
+				A4A4D6327D674CE2BD8EBF38 /* MinSizeRel */,
+				9F3E80830A064160AB5E558A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B79C069F395F4630B6A9DB7B /* Build configuration list for PBXNativeTarget "bitmap_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				481C030E9ED2475B83C36B2F /* Debug */,
+				ED59C9E036344BFBB82BB353 /* Release */,
+				BB9523A44D6249CABEF68AB2 /* MinSizeRel */,
+				09FA37147FF44507BEA5C252 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C908BD7C369143FDA065D658 /* Build configuration list for PBXNativeTarget "rc_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7D604C707F43E9B5E92109 /* Debug */,
+				E4A95B900B1B4D68A2855321 /* Release */,
+				CBBBD85102434F66BE2ACD11 /* MinSizeRel */,
+				77C1923957074730ACD3B0B5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DAB79B41F2AA4AC783646551 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9765F596F3D47B59B64ACD8 /* Debug */,
+				E02414C34DE743A7B7053CF6 /* Release */,
+				DD9300119EF4412AA23F43FE /* MinSizeRel */,
+				555FCB0F0E754206B3EA858A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E67301F67B5C47D6B729E55C /* Build configuration list for PBXNativeTarget "md5_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA9DF9EB04F447D945A3586 /* Debug */,
+				6F9C5D372C3F46AB972245C4 /* Release */,
+				E8CEBD83278F42E385FD5AD9 /* MinSizeRel */,
+				F48DECF606594A39AF009158 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D320F78ADC6942BFB9E488FB /* Project object */;
+}

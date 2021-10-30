@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/franky/documents/GitHub/wyy/unitest/bp_manager_test.cpp" "unitest/CMakeFiles/bp_manager_test.dir/bp_manager_test.cpp.o" "gcc" "unitest/CMakeFiles/bp_manager_test.dir/bp_manager_test.cpp.o.d"
+  "/Users/franky/documents/github/wyy/unitest/bp_manager_test.cpp" "unitest/CMakeFiles/bp_manager_test.dir/bp_manager_test.cpp.o" "gcc" "unitest/CMakeFiles/bp_manager_test.dir/bp_manager_test.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/franky/documents/GitHub/wyy/build/src/observer/CMakeFiles/observer_static.dir/DependInfo.cmake"
-  "/Users/franky/documents/GitHub/wyy/build/deps/common/CMakeFiles/common.dir/DependInfo.cmake"
+  "/Users/franky/documents/github/wyy/build/src/observer/CMakeFiles/observer_static.dir/DependInfo.cmake"
+  "/Users/franky/documents/github/wyy/build/deps/common/CMakeFiles/common.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

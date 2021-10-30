@@ -128,7 +128,12 @@ RC DefaultHandler::create_table(const char *dbname, const char *relation_name, i
 }
 
 RC DefaultHandler::drop_table(const char *dbname, const char *relation_name) {
-  return RC::GENERIC_ERROR;
+    Db *db = find_db(dbname);
+    if(db == nullptr)
+    {
+        return RC::SCHEMA_DB_NOT_OPENED;
+    }
+    return db->drop_table(relation_name);
 }
 
 RC DefaultHandler::create_index(Trx *trx, const char *dbname, const char *relation_name, const char *index_name, const char *attribute_name) {
@@ -139,9 +144,15 @@ RC DefaultHandler::create_index(Trx *trx, const char *dbname, const char *relati
   return table->create_index(trx, index_name, attribute_name);
 }
 
-RC DefaultHandler::drop_index(Trx *trx, const char *dbname, const char *relation_name, const char *index_name) {
-
-  return RC::GENERIC_ERROR;
+RC DefaultHandler::drop_index(Trx *trx, const char *dbname, const char *relation_name, const char *index_name)
+{
+    Db *db = find_db(dbname);
+    if(db == nullptr)
+    {
+        return RC::SCHEMA_DB_NOT_OPENED;
+    }
+    return db->drop_index(relation_name, index_name);
+    
 }
 
 RC DefaultHandler::insert_record(Trx *trx, const char *dbname, const char *relation_name, int value_num, const Value *values) {

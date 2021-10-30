@@ -1,4 +1,4 @@
-# Install script for directory: /Users/franky/documents/GitHub/wyy/src/obclient
+# Install script for directory: /Users/franky/documents/github/wyy/src/obclient
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,13 +38,13 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/franky/documents/GitHub/wyy/build/bin/obclient")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/franky/documents/github/wyy/build/bin/obclient")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/obclient" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/obclient")
     execute_process(COMMAND /usr/bin/install_name_tool
       -delete_rpath "/usr/local/lib"
-      -delete_rpath "/Users/franky/documents/GitHub/wyy/build/src/obclient/../../lib"
-      -delete_rpath "/Users/franky/documents/GitHub/wyy/build/lib"
+      -delete_rpath "/Users/franky/documents/github/wyy/build/src/obclient/../../lib"
+      -delete_rpath "/Users/franky/documents/github/wyy/build/lib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/obclient")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/obclient")

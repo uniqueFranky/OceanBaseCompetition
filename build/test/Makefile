@@ -57,10 +57,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/franky/documents/GitHub/wyy
+CMAKE_SOURCE_DIR = /Users/franky/documents/github/wyy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/franky/documents/GitHub/wyy/build
+CMAKE_BINARY_DIR = /Users/franky/documents/github/wyy/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/franky/documents/GitHub/wyy/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/franky/documents/GitHub/wyy/build/CMakeFiles /Users/franky/documents/GitHub/wyy/build/test//CMakeFiles/progress.marks
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/franky/documents/GitHub/wyy/build/CMakeFiles 0
+	cd /Users/franky/documents/github/wyy/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/franky/documents/github/wyy/build/CMakeFiles /Users/franky/documents/github/wyy/build/test//CMakeFiles/progress.marks
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/franky/documents/github/wyy/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/franky/documents/GitHub/wyy/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/franky/documents/github/wyy/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/CMakeFiles/client_performance_test.dir/rule:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/client_performance_test.dir/rule
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/client_performance_test.dir/rule
 .PHONY : test/CMakeFiles/client_performance_test.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ client_performance_test: test/CMakeFiles/client_performance_test.dir/rule
 
 # fast build rule for target.
 client_performance_test/fast:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/client_performance_test.dir/build.make test/CMakeFiles/client_performance_test.dir/build
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/client_performance_test.dir/build.make test/CMakeFiles/client_performance_test.dir/build
 .PHONY : client_performance_test/fast
 
 client_performance_test.o: client_performance_test.cpp.o
@@ -180,7 +180,7 @@ client_performance_test.o: client_performance_test.cpp.o
 
 # target to build an object file
 client_performance_test.cpp.o:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/client_performance_test.dir/build.make test/CMakeFiles/client_performance_test.dir/client_performance_test.cpp.o
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/client_performance_test.dir/build.make test/CMakeFiles/client_performance_test.dir/client_performance_test.cpp.o
 .PHONY : client_performance_test.cpp.o
 
 client_performance_test.i: client_performance_test.cpp.i
@@ -188,7 +188,7 @@ client_performance_test.i: client_performance_test.cpp.i
 
 # target to preprocess a source file
 client_performance_test.cpp.i:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/client_performance_test.dir/build.make test/CMakeFiles/client_performance_test.dir/client_performance_test.cpp.i
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/client_performance_test.dir/build.make test/CMakeFiles/client_performance_test.dir/client_performance_test.cpp.i
 .PHONY : client_performance_test.cpp.i
 
 client_performance_test.s: client_performance_test.cpp.s
@@ -196,7 +196,7 @@ client_performance_test.s: client_performance_test.cpp.s
 
 # target to generate assembly for a file
 client_performance_test.cpp.s:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/client_performance_test.dir/build.make test/CMakeFiles/client_performance_test.dir/client_performance_test.cpp.s
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/client_performance_test.dir/build.make test/CMakeFiles/client_performance_test.dir/client_performance_test.cpp.s
 .PHONY : client_performance_test.cpp.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/franky/documents/GitHub/wyy/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/franky/documents/github/wyy/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

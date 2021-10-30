@@ -1,5 +1,5 @@
-if(EXISTS "/Users/franky/documents/GitHub/wyy/build/unitest/md5_test[1]_tests.cmake")
-  include("/Users/franky/documents/GitHub/wyy/build/unitest/md5_test[1]_tests.cmake")
+if(EXISTS "/Users/franky/documents/github/wyy/build/unitest/md5_test[1]_tests.cmake")
+  include("/Users/franky/documents/github/wyy/build/unitest/md5_test[1]_tests.cmake")
 else()
   add_test(md5_test_NOT_BUILT md5_test_NOT_BUILT)
 endif()

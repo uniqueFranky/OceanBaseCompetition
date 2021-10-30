@@ -1,0 +1,1543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		45C75EAE0768494F842A21DA /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 40DBC99759CF416DA5B15EB6 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				84B3278A343B6C0A922F591D /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		744B6BC962CD43C694CE0682 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0E0806B9ED4F4384AE58D742 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				19CB8955460648FD7A19D0A0 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				22998F88DA80470EB361FA61 /* PBXTargetDependency */,
+				E3B98E04808A40969F785E4E /* PBXTargetDependency */,
+				3F77033DF70A490BB1930361 /* PBXTargetDependency */,
+				618F8CFE7189471188E3240F /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		87CAD5BEA2094FA1AEC2F95F /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 44B395FC5B25460B988D7E6E /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				1707ADB4A6AB41E99DFA1DF0 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		021C2B930FC14141977B4C69 /* /Users/franky/documents/github/wyy/src/observer/init.cpp */ = {isa = PBXBuildFile; fileRef = 32C4BD8681F944A5B8395E75 /* /Users/franky/documents/github/wyy/src/observer/init.cpp */; };
+		0ECC6BBCCC264FD996CBF464 /* /Users/franky/documents/github/wyy/src/observer/sql/optimizer/optimize_stage.cpp */ = {isa = PBXBuildFile; fileRef = 05F99E36E48542A7A447185D /* /Users/franky/documents/github/wyy/src/observer/sql/optimizer/optimize_stage.cpp */; };
+		0F619EB5AF244CA78C95600D /* /Users/franky/documents/github/wyy/src/observer/event/sql_event.cpp */ = {isa = PBXBuildFile; fileRef = 5E4DB158DB8644D9B3D28A98 /* /Users/franky/documents/github/wyy/src/observer/event/sql_event.cpp */; };
+		14C33E1B9E48454A81A30E63 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table.cpp */ = {isa = PBXBuildFile; fileRef = C15822AE6B644C5EA818E364 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table.cpp */; };
+		1A5830971A294345A734FE57 /* /Users/franky/documents/github/wyy/src/observer/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 44F6A682CEA94043BA380E04 /* /Users/franky/documents/github/wyy/src/observer/CMakeLists.txt */; };
+		21A06C7E7B424701BE526382 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_meta.cpp */ = {isa = PBXBuildFile; fileRef = 7D505976718E424C84808B4A /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_meta.cpp */; };
+		25F0C3CA1761489A8C784F97 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree.cpp */ = {isa = PBXBuildFile; fileRef = 40A1C6F179CE41AABCE43964 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree.cpp */; };
+		2659CFF2B6684F7F9A89C9D5 /* /Users/franky/documents/github/wyy/src/observer/storage/common/meta_util.cpp */ = {isa = PBXBuildFile; fileRef = 482BC346A3E8403B975B0262 /* /Users/franky/documents/github/wyy/src/observer/storage/common/meta_util.cpp */; };
+		2792C6F333AC4D03B6482F85 /* /Users/franky/documents/github/wyy/src/observer/event/execution_plan_event.cpp */ = {isa = PBXBuildFile; fileRef = 3F3E0EDBF2CE4468B7895F09 /* /Users/franky/documents/github/wyy/src/observer/event/execution_plan_event.cpp */; };
+		2AC446AD99CD4DD8A8F25F48 /* /Users/franky/documents/github/wyy/src/observer/storage/mem/mem_storage_stage.cpp */ = {isa = PBXBuildFile; fileRef = 8331C1ED21DB4D6D9D2E4678 /* /Users/franky/documents/github/wyy/src/observer/storage/mem/mem_storage_stage.cpp */; };
+		2B25CDAC7DFB413081012072 /* /Users/franky/documents/github/wyy/src/observer/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = D0F39EBDC0DF48A7AE3527F6 /* /Users/franky/documents/github/wyy/src/observer/CMakeLists.txt */; };
+		2EDA68473FF440E19AD896F2 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree.cpp */ = {isa = PBXBuildFile; fileRef = 49EE69D680D64E06834370BF /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree.cpp */; };
+		33876D341EA64FA2855F46F6 /* /Users/franky/documents/github/wyy/src/observer/sql/plan_cache/plan_cache_stage.cpp */ = {isa = PBXBuildFile; fileRef = 9AB19AD357784F2495042D52 /* /Users/franky/documents/github/wyy/src/observer/sql/plan_cache/plan_cache_stage.cpp */; };
+		36A57C3D2ED240F683D99E38 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/resolve_stage.cpp */ = {isa = PBXBuildFile; fileRef = F72C66F5B2944D96AA5427B1 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/resolve_stage.cpp */; };
+		374F6B77EB7045ED8F5474E4 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse.cpp */ = {isa = PBXBuildFile; fileRef = 805DC8AFAF17439E88BCBC2C /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse.cpp */; };
+		39C8876B3A6342A598A40C72 /* /Users/franky/documents/github/wyy/src/observer/storage/common/record_manager.cpp */ = {isa = PBXBuildFile; fileRef = 176FBA4FB84F4CB6BEAA47EF /* /Users/franky/documents/github/wyy/src/observer/storage/common/record_manager.cpp */; };
+		3A2D7A35382146A5B017B09B /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_manager.cpp */ = {isa = PBXBuildFile; fileRef = A21D9D7A82DE48E7B39D71D4 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_manager.cpp */; };
+		3E52B227BC28481E8BD6A1AE /* /Users/franky/documents/github/wyy/src/observer/session/session.cpp */ = {isa = PBXBuildFile; fileRef = 8BED1FE7834441869EBFAF9E /* /Users/franky/documents/github/wyy/src/observer/session/session.cpp */; };
+		3F865C3E785345719C91B788 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/yacc_sql.tab.c */ = {isa = PBXBuildFile; fileRef = EE507CBED6004604ABD73D75 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/yacc_sql.tab.c */; };
+		400A533375AA4053A1C72443 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse_stage.cpp */ = {isa = PBXBuildFile; fileRef = D50D65D2AC4D4F38A3A82945 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse_stage.cpp */; };
+		44FD218515A94E33819770F2 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/tuple.cpp */ = {isa = PBXBuildFile; fileRef = B3DE5CB082C144A196A2E435 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/tuple.cpp */; };
+		4CAD6920B1DD4453851ED294 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree_index.cpp */ = {isa = PBXBuildFile; fileRef = 2B6782FADBDE481DB1BACA22 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree_index.cpp */; };
+		4DA3357DEC3B432680CEC221 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table.cpp */ = {isa = PBXBuildFile; fileRef = 470A32F952004AFFA9152A35 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table.cpp */; };
+		507D730D310F4FA49439553B /* /Users/franky/documents/github/wyy/src/observer/event/session_event.cpp */ = {isa = PBXBuildFile; fileRef = E11F19DE6BC44D548187EA8F /* /Users/franky/documents/github/wyy/src/observer/event/session_event.cpp */; };
+		53704E9BD5F24BC1A5FAE007 /* /Users/franky/documents/github/wyy/src/observer/session/session.cpp */ = {isa = PBXBuildFile; fileRef = 198382C0528D4DE09CB9AE8E /* /Users/franky/documents/github/wyy/src/observer/session/session.cpp */; };
+		56CB744860DB48EBBBB6471B /* /Users/franky/documents/github/wyy/src/observer/sql/optimizer/optimize_stage.cpp */ = {isa = PBXBuildFile; fileRef = 2DC02AAF30FF4FA4ADE5DE37 /* /Users/franky/documents/github/wyy/src/observer/sql/optimizer/optimize_stage.cpp */; };
+		61B5C21411F84FC69FA179C9 /* /Users/franky/documents/github/wyy/src/observer/sql/query_cache/query_cache_stage.cpp */ = {isa = PBXBuildFile; fileRef = 4CDE07732F3A481D97B841F9 /* /Users/franky/documents/github/wyy/src/observer/sql/query_cache/query_cache_stage.cpp */; };
+		63484C7395AE44B88FC43E90 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execute_stage.cpp */ = {isa = PBXBuildFile; fileRef = 46DCF178F9334AB7814ECD19 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execute_stage.cpp */; };
+		645A821995B944748D4E17D8 /* /Users/franky/documents/github/wyy/src/observer/storage/common/condition_filter.cpp */ = {isa = PBXBuildFile; fileRef = 7A2B43CE562A4F4388E9F401 /* /Users/franky/documents/github/wyy/src/observer/storage/common/condition_filter.cpp */; };
+		64A68C89418C45F5A48B06AC /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse_stage.cpp */ = {isa = PBXBuildFile; fileRef = 46D1C781E41D400D8E70B1C9 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse_stage.cpp */; };
+		65C6A2A00E3242908DDE0821 /* /Users/franky/documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp */ = {isa = PBXBuildFile; fileRef = CF8F6665DDC7490CBDAB05ED /* /Users/franky/documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp */; };
+		6627789E8732468983F4922B /* /Users/franky/documents/github/wyy/src/obclient/client.cpp */ = {isa = PBXBuildFile; fileRef = 7E9E17338A794810A9B520AD /* /Users/franky/documents/github/wyy/src/obclient/client.cpp */; };
+		7120102742FF454AB7E8AC0E /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 609636C9E0524B1BA6287EDD /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */; };
+		751BA21A255648E7828738FE /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_storage_stage.cpp */ = {isa = PBXBuildFile; fileRef = 05BE024E81134AD1A21E2A2A /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_storage_stage.cpp */; };
+		7BC011A4B31E4DDC93651962 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree_index.cpp */ = {isa = PBXBuildFile; fileRef = AFE319E1978D46EEADDFE4B0 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree_index.cpp */; };
+		7E1F3E3699664A80918E5A1B /* /Users/franky/documents/github/wyy/src/observer/sql/executor/value.cpp */ = {isa = PBXBuildFile; fileRef = 413A9686C8E64B1E9761E311 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/value.cpp */; };
+		7F95BC9C92EE4871A90DD3C1 /* /Users/franky/documents/github/wyy/src/observer/storage/mem/mem_storage_stage.cpp */ = {isa = PBXBuildFile; fileRef = 4C06B13004B9403FA584AA83 /* /Users/franky/documents/github/wyy/src/observer/storage/mem/mem_storage_stage.cpp */; };
+		809EB32A69354DD3AC94E3D5 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/tuple.cpp */ = {isa = PBXBuildFile; fileRef = F48DF165061E45FCADA421F2 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/tuple.cpp */; };
+		82ADB15D324D4F6F86343D8F /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execute_stage.cpp */ = {isa = PBXBuildFile; fileRef = E3F375EF72DA4108B5A99F2A /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execute_stage.cpp */; };
+		863C83C3C11F42C6B7B239A6 /* /Users/franky/documents/github/wyy/src/observer/session/session_stage.cpp */ = {isa = PBXBuildFile; fileRef = D91FDE987D7848BA92E66738 /* /Users/franky/documents/github/wyy/src/observer/session/session_stage.cpp */; };
+		884FCAD778AD45499224D763 /* /Users/franky/documents/github/wyy/src/observer/storage/common/field_meta.cpp */ = {isa = PBXBuildFile; fileRef = 4BEFB29418E94819A923443D /* /Users/franky/documents/github/wyy/src/observer/storage/common/field_meta.cpp */; };
+		89BAD490E0A24D32AC026588 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index.cpp */ = {isa = PBXBuildFile; fileRef = A59F9CA5B5614D80A690192F /* /Users/franky/documents/github/wyy/src/observer/storage/common/index.cpp */; };
+		8B8C782010694C75B270DF0A /* /Users/franky/documents/github/wyy/src/observer/storage/common/index.cpp */ = {isa = PBXBuildFile; fileRef = 488471DDA20A429FA490D543 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index.cpp */; };
+		911193CC757D4DF087D49B80 /* /Users/franky/documents/github/wyy/src/observer/event/execution_plan_event.cpp */ = {isa = PBXBuildFile; fileRef = B4F4D0CFA3D54BB39BD3D64E /* /Users/franky/documents/github/wyy/src/observer/event/execution_plan_event.cpp */; };
+		94B492CF2B6D44419C1FA7A3 /* /Users/franky/documents/github/wyy/src/observer/storage/common/record_manager.cpp */ = {isa = PBXBuildFile; fileRef = CD3C177A9B6D4800AD1E905B /* /Users/franky/documents/github/wyy/src/observer/storage/common/record_manager.cpp */; };
+		95590A022EE94AB9B1ACD3EE /* /Users/franky/documents/github/wyy/src/observer/rc.cpp */ = {isa = PBXBuildFile; fileRef = 958FB6B085C542DEA785D29F /* /Users/franky/documents/github/wyy/src/observer/rc.cpp */; };
+		985A0FB9B751449DB70E4A96 /* /Users/franky/documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp */ = {isa = PBXBuildFile; fileRef = 867670599C0F43BE9B0E0E81 /* /Users/franky/documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp */; };
+		9AB29C19F5784FA19D7A8C36 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table_meta.cpp */ = {isa = PBXBuildFile; fileRef = 17BC17BDE2974C2CB87DF71D /* /Users/franky/documents/github/wyy/src/observer/storage/common/table_meta.cpp */; };
+		9C9DD6D36C174A7A95B939E7 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_meta.cpp */ = {isa = PBXBuildFile; fileRef = 78020F6CC006486490FC79DA /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_meta.cpp */; };
+		9E1EB405010C4ADB9D4E0000 /* /Users/franky/documents/github/wyy/src/observer/event/storage_event.cpp */ = {isa = PBXBuildFile; fileRef = 252085DFAE384A489073B2B7 /* /Users/franky/documents/github/wyy/src/observer/event/storage_event.cpp */; };
+		A2D7F5EC0C7348968A1206BD /* /Users/franky/documents/github/wyy/src/observer/main.cpp */ = {isa = PBXBuildFile; fileRef = 0D7DB3CE26E54072B981329C /* /Users/franky/documents/github/wyy/src/observer/main.cpp */; };
+		A3E6FAA0AD244BB2B2B274B2 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_manager.cpp */ = {isa = PBXBuildFile; fileRef = 7E21AF171AB24B6CAF368F68 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_manager.cpp */; };
+		A62E3AE669E9432D9B7ACE9E /* /Users/franky/documents/github/wyy/src/observer/sql/query_cache/query_cache_stage.cpp */ = {isa = PBXBuildFile; fileRef = 1EEA2EF5E31A4CC8B56FA593 /* /Users/franky/documents/github/wyy/src/observer/sql/query_cache/query_cache_stage.cpp */; };
+		A73B05C3FE3846839753515E /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execution_node.cpp */ = {isa = PBXBuildFile; fileRef = F92FC1A71B784D53A6D7ECB8 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execution_node.cpp */; };
+		A7D22144485C4AF19A39ECD3 /* /Users/franky/documents/github/wyy/src/observer/session/session_stage.cpp */ = {isa = PBXBuildFile; fileRef = 401C1D836A384AE3AF135064 /* /Users/franky/documents/github/wyy/src/observer/session/session_stage.cpp */; };
+		A8F43782C02345558CCF93B2 /* /Users/franky/documents/github/wyy/src/observer/storage/common/field_meta.cpp */ = {isa = PBXBuildFile; fileRef = CC9350A1A5A2437DAEC7420C /* /Users/franky/documents/github/wyy/src/observer/storage/common/field_meta.cpp */; };
+		A9BC234088BA448CBA8243D5 /* /Users/franky/documents/github/wyy/src/observer/storage/common/meta_util.cpp */ = {isa = PBXBuildFile; fileRef = BD6D9444ADA1476D90A601B2 /* /Users/franky/documents/github/wyy/src/observer/storage/common/meta_util.cpp */; };
+		AA8C04441C934AA79F96D475 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table_meta.cpp */ = {isa = PBXBuildFile; fileRef = BB595586417B4403B0BFC229 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table_meta.cpp */; };
+		AB23C2F14BA04F28AA605C59 /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_storage_stage.cpp */ = {isa = PBXBuildFile; fileRef = 325F7F539495469F90B757FE /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_storage_stage.cpp */; };
+		B10F3A595E224E46A0145435 /* /Users/franky/documents/github/wyy/src/observer/net/server.cpp */ = {isa = PBXBuildFile; fileRef = D11D500D8486431FA2F6B9F3 /* /Users/franky/documents/github/wyy/src/observer/net/server.cpp */; };
+		B355D4C4EE1C4D418A818AB9 /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_handler.cpp */ = {isa = PBXBuildFile; fileRef = 1375544EE21847A7900E6E4D /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_handler.cpp */; };
+		B3703DFB7F494F87A1DF6E0F /* /Users/franky/documents/github/wyy/src/observer/sql/parser/lex.yy.c */ = {isa = PBXBuildFile; fileRef = 1D97465DBB414956AB75BE0A /* /Users/franky/documents/github/wyy/src/observer/sql/parser/lex.yy.c */; };
+		C5B80F7CE67840FA950C7BF2 /* /Users/franky/documents/github/wyy/src/observer/rc.cpp */ = {isa = PBXBuildFile; fileRef = 4D6E0297F9A44B26B75AE4D1 /* /Users/franky/documents/github/wyy/src/observer/rc.cpp */; };
+		C9B05B08EFB7479DB21419DA /* /Users/franky/documents/github/wyy/src/observer/storage/common/condition_filter.cpp */ = {isa = PBXBuildFile; fileRef = 177B6FD135314747ADFD139D /* /Users/franky/documents/github/wyy/src/observer/storage/common/condition_filter.cpp */; };
+		CD924F4A7E40456EACF648CA /* /Users/franky/documents/github/wyy/src/observer/event/session_event.cpp */ = {isa = PBXBuildFile; fileRef = 9113E5B2D7424FCBA05D9475 /* /Users/franky/documents/github/wyy/src/observer/event/session_event.cpp */; };
+		CEFFF026DB0141B2A16C52B2 /* /Users/franky/documents/github/wyy/src/observer/storage/trx/trx.cpp */ = {isa = PBXBuildFile; fileRef = E24C9FA41EF9469CA862FC84 /* /Users/franky/documents/github/wyy/src/observer/storage/trx/trx.cpp */; };
+		D0362178DC93414F8616F0FA /* /Users/franky/documents/github/wyy/src/observer/sql/parser/lex.yy.c */ = {isa = PBXBuildFile; fileRef = C1203ED5FC4C407BB803046C /* /Users/franky/documents/github/wyy/src/observer/sql/parser/lex.yy.c */; };
+		D4B8E07EE1DD45DD8B6964E2 /* /Users/franky/documents/github/wyy/src/observer/storage/trx/trx.cpp */ = {isa = PBXBuildFile; fileRef = E11F4AE289C2470796512022 /* /Users/franky/documents/github/wyy/src/observer/storage/trx/trx.cpp */; };
+		D9FAA0B6C06D455883B448D2 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/value.cpp */ = {isa = PBXBuildFile; fileRef = 43AD28D633CB464C94D500D6 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/value.cpp */; };
+		DCF57F37CED54540A274A943 /* /Users/franky/documents/github/wyy/src/observer/sql/plan_cache/plan_cache_stage.cpp */ = {isa = PBXBuildFile; fileRef = EDC7B225192C4DEC99013A83 /* /Users/franky/documents/github/wyy/src/observer/sql/plan_cache/plan_cache_stage.cpp */; };
+		DD84001AA5A74DDA8D73B7E4 /* /Users/franky/documents/github/wyy/src/observer/storage/common/db.cpp */ = {isa = PBXBuildFile; fileRef = 7E7DFA0F363A4541B6073AD5 /* /Users/franky/documents/github/wyy/src/observer/storage/common/db.cpp */; };
+		DE1C741D544F450E906F0ACA /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_handler.cpp */ = {isa = PBXBuildFile; fileRef = 07BF16DE53E84E33B7A92858 /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_handler.cpp */; };
+		E0A9BF7066C44D9FB5BE3908 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/resolve_stage.cpp */ = {isa = PBXBuildFile; fileRef = D2318006887441DC844AB1F7 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/resolve_stage.cpp */; };
+		E2B5214F739B48518D306903 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/yacc_sql.tab.c */ = {isa = PBXBuildFile; fileRef = B7D763142E2B46568D0DB9A0 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/yacc_sql.tab.c */; };
+		E51D0D641509438AA15B1E1C /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execution_node.cpp */ = {isa = PBXBuildFile; fileRef = 1D29775409F44DF18E8E92E8 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execution_node.cpp */; };
+		EB22FE0945A74073AF213131 /* /Users/franky/documents/github/wyy/src/observer/init.cpp */ = {isa = PBXBuildFile; fileRef = F5FD87D27F4541E5BDE56CCF /* /Users/franky/documents/github/wyy/src/observer/init.cpp */; };
+		F3E72D8C457941D48364DA84 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse.cpp */ = {isa = PBXBuildFile; fileRef = B1126F5FEB00467FBF27CAE4 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse.cpp */; };
+		F5E777875BF34B7989607231 /* /Users/franky/documents/github/wyy/src/observer/storage/common/db.cpp */ = {isa = PBXBuildFile; fileRef = 2BCEB0141EC84BE2BF4466DC /* /Users/franky/documents/github/wyy/src/observer/storage/common/db.cpp */; };
+		F61632FF35E64961867F5DE4 /* /Users/franky/documents/github/wyy/src/observer/net/server.cpp */ = {isa = PBXBuildFile; fileRef = 9FEDFF958C2448C487E7BC70 /* /Users/franky/documents/github/wyy/src/observer/net/server.cpp */; };
+		FA9D281B68BD4EF9BB8B79A9 /* /Users/franky/documents/github/wyy/src/observer/event/sql_event.cpp */ = {isa = PBXBuildFile; fileRef = 99A45AA27B72405898CF4618 /* /Users/franky/documents/github/wyy/src/observer/event/sql_event.cpp */; };
+		FE7AE2F80F424A3881186125 /* /Users/franky/documents/github/wyy/src/observer/event/storage_event.cpp */ = {isa = PBXBuildFile; fileRef = F5CE3FC092D74260ACA0CAE9 /* /Users/franky/documents/github/wyy/src/observer/event/storage_event.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		399F43C14B5E49C5BD257D66 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		55C82C5151E540C8A2A84E6B /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		B4C60201FD1E434187E3FD09 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		D20EFFF94780422DB737D101 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		04B3A3887EDB4DE2A4839E46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5EBA1BA7F2843DA8C9BAC75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A805CC11B434BC8B383A3DB;
+			remoteInfo = observer_static;
+		};
+		094C963B22E1495390959B0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5EBA1BA7F2843DA8C9BAC75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7185BE70A0CE420389138651;
+			remoteInfo = observer;
+		};
+		7F77FCE5FD1640E1BF853BAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5EBA1BA7F2843DA8C9BAC75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 744B6BC962CD43C694CE0682;
+			remoteInfo = ALL_BUILD;
+		};
+		84B4E502BE624F7687313B6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5EBA1BA7F2843DA8C9BAC75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		A6DAB44E416849D5B9635D8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5EBA1BA7F2843DA8C9BAC75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8BF4B347928417AA24F9A9D;
+			remoteInfo = obclient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		030896B8D645454794EC3F85 /* observer_static */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libobserver.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BE024E81134AD1A21E2A2A /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_storage_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = default_storage_stage.cpp; path = observer/storage/default/default_storage_stage.cpp; sourceTree = SOURCE_ROOT; };
+		05F99E36E48542A7A447185D /* /Users/franky/documents/github/wyy/src/observer/sql/optimizer/optimize_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = optimize_stage.cpp; path = observer/sql/optimizer/optimize_stage.cpp; sourceTree = SOURCE_ROOT; };
+		07BF16DE53E84E33B7A92858 /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_handler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = default_handler.cpp; path = observer/storage/default/default_handler.cpp; sourceTree = SOURCE_ROOT; };
+		0C1ADA46A73643F3B2E506BD /* obclient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = obclient; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D7DB3CE26E54072B981329C /* /Users/franky/documents/github/wyy/src/observer/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = observer/main.cpp; sourceTree = SOURCE_ROOT; };
+		1375544EE21847A7900E6E4D /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_handler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = default_handler.cpp; path = observer/storage/default/default_handler.cpp; sourceTree = SOURCE_ROOT; };
+		160CAB29ADEF4233A253C101 /* /Users/franky/documents/github/wyy/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		176FBA4FB84F4CB6BEAA47EF /* /Users/franky/documents/github/wyy/src/observer/storage/common/record_manager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = record_manager.cpp; path = observer/storage/common/record_manager.cpp; sourceTree = SOURCE_ROOT; };
+		177B6FD135314747ADFD139D /* /Users/franky/documents/github/wyy/src/observer/storage/common/condition_filter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = condition_filter.cpp; path = observer/storage/common/condition_filter.cpp; sourceTree = SOURCE_ROOT; };
+		17BC17BDE2974C2CB87DF71D /* /Users/franky/documents/github/wyy/src/observer/storage/common/table_meta.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = table_meta.cpp; path = observer/storage/common/table_meta.cpp; sourceTree = SOURCE_ROOT; };
+		198382C0528D4DE09CB9AE8E /* /Users/franky/documents/github/wyy/src/observer/session/session.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = session.cpp; path = observer/session/session.cpp; sourceTree = SOURCE_ROOT; };
+		1D29775409F44DF18E8E92E8 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execution_node.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = execution_node.cpp; path = observer/sql/executor/execution_node.cpp; sourceTree = SOURCE_ROOT; };
+		1D97465DBB414956AB75BE0A /* /Users/franky/documents/github/wyy/src/observer/sql/parser/lex.yy.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lex.yy.c; path = observer/sql/parser/lex.yy.c; sourceTree = SOURCE_ROOT; };
+		1EEA2EF5E31A4CC8B56FA593 /* /Users/franky/documents/github/wyy/src/observer/sql/query_cache/query_cache_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = query_cache_stage.cpp; path = observer/sql/query_cache/query_cache_stage.cpp; sourceTree = SOURCE_ROOT; };
+		252085DFAE384A489073B2B7 /* /Users/franky/documents/github/wyy/src/observer/event/storage_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = storage_event.cpp; path = observer/event/storage_event.cpp; sourceTree = SOURCE_ROOT; };
+		2B6782FADBDE481DB1BACA22 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree_index.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bplus_tree_index.cpp; path = observer/storage/common/bplus_tree_index.cpp; sourceTree = SOURCE_ROOT; };
+		2BCEB0141EC84BE2BF4466DC /* /Users/franky/documents/github/wyy/src/observer/storage/common/db.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = db.cpp; path = observer/storage/common/db.cpp; sourceTree = SOURCE_ROOT; };
+		2CE2EFC3108A492685CDBF7E /* observer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = observer; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DC02AAF30FF4FA4ADE5DE37 /* /Users/franky/documents/github/wyy/src/observer/sql/optimizer/optimize_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = optimize_stage.cpp; path = observer/sql/optimizer/optimize_stage.cpp; sourceTree = SOURCE_ROOT; };
+		325F7F539495469F90B757FE /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_storage_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = default_storage_stage.cpp; path = observer/storage/default/default_storage_stage.cpp; sourceTree = SOURCE_ROOT; };
+		32C4BD8681F944A5B8395E75 /* /Users/franky/documents/github/wyy/src/observer/init.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = init.cpp; path = observer/init.cpp; sourceTree = SOURCE_ROOT; };
+		3F3E0EDBF2CE4468B7895F09 /* /Users/franky/documents/github/wyy/src/observer/event/execution_plan_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = execution_plan_event.cpp; path = observer/event/execution_plan_event.cpp; sourceTree = SOURCE_ROOT; };
+		401C1D836A384AE3AF135064 /* /Users/franky/documents/github/wyy/src/observer/session/session_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = session_stage.cpp; path = observer/session/session_stage.cpp; sourceTree = SOURCE_ROOT; };
+		40A1C6F179CE41AABCE43964 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bplus_tree.cpp; path = observer/storage/common/bplus_tree.cpp; sourceTree = SOURCE_ROOT; };
+		413A9686C8E64B1E9761E311 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/value.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = value.cpp; path = observer/sql/executor/value.cpp; sourceTree = SOURCE_ROOT; };
+		43AD28D633CB464C94D500D6 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/value.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = value.cpp; path = observer/sql/executor/value.cpp; sourceTree = SOURCE_ROOT; };
+		44F6A682CEA94043BA380E04 /* /Users/franky/documents/github/wyy/src/observer/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = observer/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		46D1C781E41D400D8E70B1C9 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = parse_stage.cpp; path = observer/sql/parser/parse_stage.cpp; sourceTree = SOURCE_ROOT; };
+		46DCF178F9334AB7814ECD19 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execute_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = execute_stage.cpp; path = observer/sql/executor/execute_stage.cpp; sourceTree = SOURCE_ROOT; };
+		470A32F952004AFFA9152A35 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = table.cpp; path = observer/storage/common/table.cpp; sourceTree = SOURCE_ROOT; };
+		482BC346A3E8403B975B0262 /* /Users/franky/documents/github/wyy/src/observer/storage/common/meta_util.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = meta_util.cpp; path = observer/storage/common/meta_util.cpp; sourceTree = SOURCE_ROOT; };
+		488471DDA20A429FA490D543 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = index.cpp; path = observer/storage/common/index.cpp; sourceTree = SOURCE_ROOT; };
+		49EE69D680D64E06834370BF /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bplus_tree.cpp; path = observer/storage/common/bplus_tree.cpp; sourceTree = SOURCE_ROOT; };
+		4BEFB29418E94819A923443D /* /Users/franky/documents/github/wyy/src/observer/storage/common/field_meta.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = field_meta.cpp; path = observer/storage/common/field_meta.cpp; sourceTree = SOURCE_ROOT; };
+		4C06B13004B9403FA584AA83 /* /Users/franky/documents/github/wyy/src/observer/storage/mem/mem_storage_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mem_storage_stage.cpp; path = observer/storage/mem/mem_storage_stage.cpp; sourceTree = SOURCE_ROOT; };
+		4CDE07732F3A481D97B841F9 /* /Users/franky/documents/github/wyy/src/observer/sql/query_cache/query_cache_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = query_cache_stage.cpp; path = observer/sql/query_cache/query_cache_stage.cpp; sourceTree = SOURCE_ROOT; };
+		4D6E0297F9A44B26B75AE4D1 /* /Users/franky/documents/github/wyy/src/observer/rc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = rc.cpp; path = observer/rc.cpp; sourceTree = SOURCE_ROOT; };
+		5E4DB158DB8644D9B3D28A98 /* /Users/franky/documents/github/wyy/src/observer/event/sql_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sql_event.cpp; path = observer/event/sql_event.cpp; sourceTree = SOURCE_ROOT; };
+		609636C9E0524B1BA6287EDD /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = obclient/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		78020F6CC006486490FC79DA /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_meta.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = index_meta.cpp; path = observer/storage/common/index_meta.cpp; sourceTree = SOURCE_ROOT; };
+		7A2B43CE562A4F4388E9F401 /* /Users/franky/documents/github/wyy/src/observer/storage/common/condition_filter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = condition_filter.cpp; path = observer/storage/common/condition_filter.cpp; sourceTree = SOURCE_ROOT; };
+		7D505976718E424C84808B4A /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_meta.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = index_meta.cpp; path = observer/storage/common/index_meta.cpp; sourceTree = SOURCE_ROOT; };
+		7E21AF171AB24B6CAF368F68 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_manager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = index_manager.cpp; path = observer/storage/common/index_manager.cpp; sourceTree = SOURCE_ROOT; };
+		7E7DFA0F363A4541B6073AD5 /* /Users/franky/documents/github/wyy/src/observer/storage/common/db.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = db.cpp; path = observer/storage/common/db.cpp; sourceTree = SOURCE_ROOT; };
+		7E9E17338A794810A9B520AD /* /Users/franky/documents/github/wyy/src/obclient/client.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = client.cpp; path = obclient/client.cpp; sourceTree = SOURCE_ROOT; };
+		805DC8AFAF17439E88BCBC2C /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = parse.cpp; path = observer/sql/parser/parse.cpp; sourceTree = SOURCE_ROOT; };
+		8331C1ED21DB4D6D9D2E4678 /* /Users/franky/documents/github/wyy/src/observer/storage/mem/mem_storage_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mem_storage_stage.cpp; path = observer/storage/mem/mem_storage_stage.cpp; sourceTree = SOURCE_ROOT; };
+		867670599C0F43BE9B0E0E81 /* /Users/franky/documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = disk_buffer_pool.cpp; path = observer/storage/default/disk_buffer_pool.cpp; sourceTree = SOURCE_ROOT; };
+		8BED1FE7834441869EBFAF9E /* /Users/franky/documents/github/wyy/src/observer/session/session.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = session.cpp; path = observer/session/session.cpp; sourceTree = SOURCE_ROOT; };
+		9113E5B2D7424FCBA05D9475 /* /Users/franky/documents/github/wyy/src/observer/event/session_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = session_event.cpp; path = observer/event/session_event.cpp; sourceTree = SOURCE_ROOT; };
+		958FB6B085C542DEA785D29F /* /Users/franky/documents/github/wyy/src/observer/rc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = rc.cpp; path = observer/rc.cpp; sourceTree = SOURCE_ROOT; };
+		99A45AA27B72405898CF4618 /* /Users/franky/documents/github/wyy/src/observer/event/sql_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sql_event.cpp; path = observer/event/sql_event.cpp; sourceTree = SOURCE_ROOT; };
+		9AB19AD357784F2495042D52 /* /Users/franky/documents/github/wyy/src/observer/sql/plan_cache/plan_cache_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = plan_cache_stage.cpp; path = observer/sql/plan_cache/plan_cache_stage.cpp; sourceTree = SOURCE_ROOT; };
+		9FEDFF958C2448C487E7BC70 /* /Users/franky/documents/github/wyy/src/observer/net/server.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = server.cpp; path = observer/net/server.cpp; sourceTree = SOURCE_ROOT; };
+		A21D9D7A82DE48E7B39D71D4 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_manager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = index_manager.cpp; path = observer/storage/common/index_manager.cpp; sourceTree = SOURCE_ROOT; };
+		A59F9CA5B5614D80A690192F /* /Users/franky/documents/github/wyy/src/observer/storage/common/index.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = index.cpp; path = observer/storage/common/index.cpp; sourceTree = SOURCE_ROOT; };
+		AFE319E1978D46EEADDFE4B0 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree_index.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bplus_tree_index.cpp; path = observer/storage/common/bplus_tree_index.cpp; sourceTree = SOURCE_ROOT; };
+		B1126F5FEB00467FBF27CAE4 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = parse.cpp; path = observer/sql/parser/parse.cpp; sourceTree = SOURCE_ROOT; };
+		B3DE5CB082C144A196A2E435 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/tuple.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tuple.cpp; path = observer/sql/executor/tuple.cpp; sourceTree = SOURCE_ROOT; };
+		B4F4D0CFA3D54BB39BD3D64E /* /Users/franky/documents/github/wyy/src/observer/event/execution_plan_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = execution_plan_event.cpp; path = observer/event/execution_plan_event.cpp; sourceTree = SOURCE_ROOT; };
+		B7D763142E2B46568D0DB9A0 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/yacc_sql.tab.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = yacc_sql.tab.c; path = observer/sql/parser/yacc_sql.tab.c; sourceTree = SOURCE_ROOT; };
+		BB595586417B4403B0BFC229 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table_meta.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = table_meta.cpp; path = observer/storage/common/table_meta.cpp; sourceTree = SOURCE_ROOT; };
+		BD6D9444ADA1476D90A601B2 /* /Users/franky/documents/github/wyy/src/observer/storage/common/meta_util.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = meta_util.cpp; path = observer/storage/common/meta_util.cpp; sourceTree = SOURCE_ROOT; };
+		C1203ED5FC4C407BB803046C /* /Users/franky/documents/github/wyy/src/observer/sql/parser/lex.yy.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lex.yy.c; path = observer/sql/parser/lex.yy.c; sourceTree = SOURCE_ROOT; };
+		C15822AE6B644C5EA818E364 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = table.cpp; path = observer/storage/common/table.cpp; sourceTree = SOURCE_ROOT; };
+		CC9350A1A5A2437DAEC7420C /* /Users/franky/documents/github/wyy/src/observer/storage/common/field_meta.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = field_meta.cpp; path = observer/storage/common/field_meta.cpp; sourceTree = SOURCE_ROOT; };
+		CD3C177A9B6D4800AD1E905B /* /Users/franky/documents/github/wyy/src/observer/storage/common/record_manager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = record_manager.cpp; path = observer/storage/common/record_manager.cpp; sourceTree = SOURCE_ROOT; };
+		CF8F6665DDC7490CBDAB05ED /* /Users/franky/documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = disk_buffer_pool.cpp; path = observer/storage/default/disk_buffer_pool.cpp; sourceTree = SOURCE_ROOT; };
+		D0F39EBDC0DF48A7AE3527F6 /* /Users/franky/documents/github/wyy/src/observer/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = observer/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D11D500D8486431FA2F6B9F3 /* /Users/franky/documents/github/wyy/src/observer/net/server.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = server.cpp; path = observer/net/server.cpp; sourceTree = SOURCE_ROOT; };
+		D2318006887441DC844AB1F7 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/resolve_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = resolve_stage.cpp; path = observer/sql/parser/resolve_stage.cpp; sourceTree = SOURCE_ROOT; };
+		D50D65D2AC4D4F38A3A82945 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = parse_stage.cpp; path = observer/sql/parser/parse_stage.cpp; sourceTree = SOURCE_ROOT; };
+		D91FDE987D7848BA92E66738 /* /Users/franky/documents/github/wyy/src/observer/session/session_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = session_stage.cpp; path = observer/session/session_stage.cpp; sourceTree = SOURCE_ROOT; };
+		E11F19DE6BC44D548187EA8F /* /Users/franky/documents/github/wyy/src/observer/event/session_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = session_event.cpp; path = observer/event/session_event.cpp; sourceTree = SOURCE_ROOT; };
+		E11F4AE289C2470796512022 /* /Users/franky/documents/github/wyy/src/observer/storage/trx/trx.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = trx.cpp; path = observer/storage/trx/trx.cpp; sourceTree = SOURCE_ROOT; };
+		E24C9FA41EF9469CA862FC84 /* /Users/franky/documents/github/wyy/src/observer/storage/trx/trx.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = trx.cpp; path = observer/storage/trx/trx.cpp; sourceTree = SOURCE_ROOT; };
+		E3F375EF72DA4108B5A99F2A /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execute_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = execute_stage.cpp; path = observer/sql/executor/execute_stage.cpp; sourceTree = SOURCE_ROOT; };
+		EDC7B225192C4DEC99013A83 /* /Users/franky/documents/github/wyy/src/observer/sql/plan_cache/plan_cache_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = plan_cache_stage.cpp; path = observer/sql/plan_cache/plan_cache_stage.cpp; sourceTree = SOURCE_ROOT; };
+		EE507CBED6004604ABD73D75 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/yacc_sql.tab.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = yacc_sql.tab.c; path = observer/sql/parser/yacc_sql.tab.c; sourceTree = SOURCE_ROOT; };
+		F48DF165061E45FCADA421F2 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/tuple.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tuple.cpp; path = observer/sql/executor/tuple.cpp; sourceTree = SOURCE_ROOT; };
+		F5CE3FC092D74260ACA0CAE9 /* /Users/franky/documents/github/wyy/src/observer/event/storage_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = storage_event.cpp; path = observer/event/storage_event.cpp; sourceTree = SOURCE_ROOT; };
+		F5FD87D27F4541E5BDE56CCF /* /Users/franky/documents/github/wyy/src/observer/init.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = init.cpp; path = observer/init.cpp; sourceTree = SOURCE_ROOT; };
+		F72C66F5B2944D96AA5427B1 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/resolve_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = resolve_stage.cpp; path = observer/sql/parser/resolve_stage.cpp; sourceTree = SOURCE_ROOT; };
+		F92FC1A71B784D53A6D7ECB8 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execution_node.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = execution_node.cpp; path = observer/sql/executor/execution_node.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		670BE062B7C140998545F287 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8BF3C0EADFB4317B892B2FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFFD36172D74D0DA19463E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3240BEE1933E472DB49CD9D5 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		379341B886FA4BB5875E5E9C /* observer_static */ = {
+			isa = PBXGroup;
+			children = (
+				AAFCE46B80D241B6AAFE00B8 /* Source Files */,
+				D0F39EBDC0DF48A7AE3527F6 /* /Users/franky/documents/github/wyy/src/observer/CMakeLists.txt */,
+			);
+			name = observer_static;
+			sourceTree = "<group>";
+		};
+		3A4A8E039A64449697305E68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A725BD979714C20A1FA4558 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				3240BEE1933E472DB49CD9D5 /* CMake Rules */,
+				160CAB29ADEF4233A253C101 /* /Users/franky/documents/github/wyy/src/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		8306F690621E48F3852C403C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4F4D0CFA3D54BB39BD3D64E /* /Users/franky/documents/github/wyy/src/observer/event/execution_plan_event.cpp */,
+				9113E5B2D7424FCBA05D9475 /* /Users/franky/documents/github/wyy/src/observer/event/session_event.cpp */,
+				99A45AA27B72405898CF4618 /* /Users/franky/documents/github/wyy/src/observer/event/sql_event.cpp */,
+				252085DFAE384A489073B2B7 /* /Users/franky/documents/github/wyy/src/observer/event/storage_event.cpp */,
+				F5FD87D27F4541E5BDE56CCF /* /Users/franky/documents/github/wyy/src/observer/init.cpp */,
+				0D7DB3CE26E54072B981329C /* /Users/franky/documents/github/wyy/src/observer/main.cpp */,
+				9FEDFF958C2448C487E7BC70 /* /Users/franky/documents/github/wyy/src/observer/net/server.cpp */,
+				958FB6B085C542DEA785D29F /* /Users/franky/documents/github/wyy/src/observer/rc.cpp */,
+				8BED1FE7834441869EBFAF9E /* /Users/franky/documents/github/wyy/src/observer/session/session.cpp */,
+				D91FDE987D7848BA92E66738 /* /Users/franky/documents/github/wyy/src/observer/session/session_stage.cpp */,
+				46DCF178F9334AB7814ECD19 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execute_stage.cpp */,
+				1D29775409F44DF18E8E92E8 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execution_node.cpp */,
+				B3DE5CB082C144A196A2E435 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/tuple.cpp */,
+				43AD28D633CB464C94D500D6 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/value.cpp */,
+				2DC02AAF30FF4FA4ADE5DE37 /* /Users/franky/documents/github/wyy/src/observer/sql/optimizer/optimize_stage.cpp */,
+				1D97465DBB414956AB75BE0A /* /Users/franky/documents/github/wyy/src/observer/sql/parser/lex.yy.c */,
+				805DC8AFAF17439E88BCBC2C /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse.cpp */,
+				D50D65D2AC4D4F38A3A82945 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse_stage.cpp */,
+				D2318006887441DC844AB1F7 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/resolve_stage.cpp */,
+				B7D763142E2B46568D0DB9A0 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/yacc_sql.tab.c */,
+				EDC7B225192C4DEC99013A83 /* /Users/franky/documents/github/wyy/src/observer/sql/plan_cache/plan_cache_stage.cpp */,
+				4CDE07732F3A481D97B841F9 /* /Users/franky/documents/github/wyy/src/observer/sql/query_cache/query_cache_stage.cpp */,
+				40A1C6F179CE41AABCE43964 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree.cpp */,
+				AFE319E1978D46EEADDFE4B0 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree_index.cpp */,
+				177B6FD135314747ADFD139D /* /Users/franky/documents/github/wyy/src/observer/storage/common/condition_filter.cpp */,
+				2BCEB0141EC84BE2BF4466DC /* /Users/franky/documents/github/wyy/src/observer/storage/common/db.cpp */,
+				CC9350A1A5A2437DAEC7420C /* /Users/franky/documents/github/wyy/src/observer/storage/common/field_meta.cpp */,
+				A59F9CA5B5614D80A690192F /* /Users/franky/documents/github/wyy/src/observer/storage/common/index.cpp */,
+				A21D9D7A82DE48E7B39D71D4 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_manager.cpp */,
+				7D505976718E424C84808B4A /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_meta.cpp */,
+				BD6D9444ADA1476D90A601B2 /* /Users/franky/documents/github/wyy/src/observer/storage/common/meta_util.cpp */,
+				CD3C177A9B6D4800AD1E905B /* /Users/franky/documents/github/wyy/src/observer/storage/common/record_manager.cpp */,
+				C15822AE6B644C5EA818E364 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table.cpp */,
+				17BC17BDE2974C2CB87DF71D /* /Users/franky/documents/github/wyy/src/observer/storage/common/table_meta.cpp */,
+				1375544EE21847A7900E6E4D /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_handler.cpp */,
+				05BE024E81134AD1A21E2A2A /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_storage_stage.cpp */,
+				CF8F6665DDC7490CBDAB05ED /* /Users/franky/documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp */,
+				8331C1ED21DB4D6D9D2E4678 /* /Users/franky/documents/github/wyy/src/observer/storage/mem/mem_storage_stage.cpp */,
+				E11F4AE289C2470796512022 /* /Users/franky/documents/github/wyy/src/observer/storage/trx/trx.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		83AFDEF5EEB1435294DFDE30 /* observer */ = {
+			isa = PBXGroup;
+			children = (
+				8306F690621E48F3852C403C /* Source Files */,
+				44F6A682CEA94043BA380E04 /* /Users/franky/documents/github/wyy/src/observer/CMakeLists.txt */,
+			);
+			name = observer;
+			sourceTree = "<group>";
+		};
+		9A42023156B749E498BD8D75 /* obclient */ = {
+			isa = PBXGroup;
+			children = (
+				C19FDE66D279468E9F832C13 /* Source Files */,
+				609636C9E0524B1BA6287EDD /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */,
+			);
+			name = obclient;
+			sourceTree = "<group>";
+		};
+		AAFCE46B80D241B6AAFE00B8 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F3E0EDBF2CE4468B7895F09 /* /Users/franky/documents/github/wyy/src/observer/event/execution_plan_event.cpp */,
+				E11F19DE6BC44D548187EA8F /* /Users/franky/documents/github/wyy/src/observer/event/session_event.cpp */,
+				5E4DB158DB8644D9B3D28A98 /* /Users/franky/documents/github/wyy/src/observer/event/sql_event.cpp */,
+				F5CE3FC092D74260ACA0CAE9 /* /Users/franky/documents/github/wyy/src/observer/event/storage_event.cpp */,
+				32C4BD8681F944A5B8395E75 /* /Users/franky/documents/github/wyy/src/observer/init.cpp */,
+				D11D500D8486431FA2F6B9F3 /* /Users/franky/documents/github/wyy/src/observer/net/server.cpp */,
+				4D6E0297F9A44B26B75AE4D1 /* /Users/franky/documents/github/wyy/src/observer/rc.cpp */,
+				198382C0528D4DE09CB9AE8E /* /Users/franky/documents/github/wyy/src/observer/session/session.cpp */,
+				401C1D836A384AE3AF135064 /* /Users/franky/documents/github/wyy/src/observer/session/session_stage.cpp */,
+				E3F375EF72DA4108B5A99F2A /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execute_stage.cpp */,
+				F92FC1A71B784D53A6D7ECB8 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execution_node.cpp */,
+				F48DF165061E45FCADA421F2 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/tuple.cpp */,
+				413A9686C8E64B1E9761E311 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/value.cpp */,
+				05F99E36E48542A7A447185D /* /Users/franky/documents/github/wyy/src/observer/sql/optimizer/optimize_stage.cpp */,
+				C1203ED5FC4C407BB803046C /* /Users/franky/documents/github/wyy/src/observer/sql/parser/lex.yy.c */,
+				B1126F5FEB00467FBF27CAE4 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse.cpp */,
+				46D1C781E41D400D8E70B1C9 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse_stage.cpp */,
+				F72C66F5B2944D96AA5427B1 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/resolve_stage.cpp */,
+				EE507CBED6004604ABD73D75 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/yacc_sql.tab.c */,
+				9AB19AD357784F2495042D52 /* /Users/franky/documents/github/wyy/src/observer/sql/plan_cache/plan_cache_stage.cpp */,
+				1EEA2EF5E31A4CC8B56FA593 /* /Users/franky/documents/github/wyy/src/observer/sql/query_cache/query_cache_stage.cpp */,
+				49EE69D680D64E06834370BF /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree.cpp */,
+				2B6782FADBDE481DB1BACA22 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree_index.cpp */,
+				7A2B43CE562A4F4388E9F401 /* /Users/franky/documents/github/wyy/src/observer/storage/common/condition_filter.cpp */,
+				7E7DFA0F363A4541B6073AD5 /* /Users/franky/documents/github/wyy/src/observer/storage/common/db.cpp */,
+				4BEFB29418E94819A923443D /* /Users/franky/documents/github/wyy/src/observer/storage/common/field_meta.cpp */,
+				488471DDA20A429FA490D543 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index.cpp */,
+				7E21AF171AB24B6CAF368F68 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_manager.cpp */,
+				78020F6CC006486490FC79DA /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_meta.cpp */,
+				482BC346A3E8403B975B0262 /* /Users/franky/documents/github/wyy/src/observer/storage/common/meta_util.cpp */,
+				176FBA4FB84F4CB6BEAA47EF /* /Users/franky/documents/github/wyy/src/observer/storage/common/record_manager.cpp */,
+				470A32F952004AFFA9152A35 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table.cpp */,
+				BB595586417B4403B0BFC229 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table_meta.cpp */,
+				07BF16DE53E84E33B7A92858 /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_handler.cpp */,
+				325F7F539495469F90B757FE /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_storage_stage.cpp */,
+				867670599C0F43BE9B0E0E81 /* /Users/franky/documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp */,
+				4C06B13004B9403FA584AA83 /* /Users/franky/documents/github/wyy/src/observer/storage/mem/mem_storage_stage.cpp */,
+				E24C9FA41EF9469CA862FC84 /* /Users/franky/documents/github/wyy/src/observer/storage/trx/trx.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C19FDE66D279468E9F832C13 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E9E17338A794810A9B520AD /* /Users/franky/documents/github/wyy/src/obclient/client.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E5BFAE1AB4EF422584E66938 = {
+			isa = PBXGroup;
+			children = (
+				5A725BD979714C20A1FA4558 /* ALL_BUILD */,
+				9A42023156B749E498BD8D75 /* obclient */,
+				83AFDEF5EEB1435294DFDE30 /* observer */,
+				379341B886FA4BB5875E5E9C /* observer_static */,
+				F305EFFECBAE4E31846485AB /* Products */,
+				3A4A8E039A64449697305E68 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F305EFFECBAE4E31846485AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C1ADA46A73643F3B2E506BD /* obclient */,
+				2CE2EFC3108A492685CDBF7E /* observer */,
+				030896B8D645454794EC3F85 /* observer_static */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7185BE70A0CE420389138651 /* observer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39A48EFAC98349B590508140 /* Build configuration list for PBXNativeTarget "observer" */;
+			buildPhases = (
+				CBD931A9A07E474FAECF43F3 /* Sources */,
+				CBFFD36172D74D0DA19463E9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = observer;
+			productName = observer;
+			productReference = 2CE2EFC3108A492685CDBF7E /* observer */;
+			productType = "com.apple.product-type.tool";
+		};
+		7A805CC11B434BC8B383A3DB /* observer_static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4CEC68AAA8047AC832457DB /* Build configuration list for PBXNativeTarget "observer_static" */;
+			buildPhases = (
+				0DF0F1002A11492A9D5B14E9 /* Sources */,
+				B8BF3C0EADFB4317B892B2FA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = observer_static;
+			productName = observer_static;
+			productReference = 030896B8D645454794EC3F85 /* observer_static */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B8BF4B347928417AA24F9A9D /* obclient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E903377218DC4EEAAD77A4A7 /* Build configuration list for PBXNativeTarget "obclient" */;
+			buildPhases = (
+				10FE732B986644F792ABDB87 /* Sources */,
+				670BE062B7C140998545F287 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = obclient;
+			productName = obclient;
+			productReference = 0C1ADA46A73643F3B2E506BD /* obclient */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5EBA1BA7F2843DA8C9BAC75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1310;
+			};
+			buildConfigurationList = 12E000EED877490D947A245C /* Build configuration list for PBXProject "miniob" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				B4C60201FD1E434187E3FD09 /* Debug */,
+				55C82C5151E540C8A2A84E6B /* Release */,
+				399F43C14B5E49C5BD257D66 /* MinSizeRel */,
+				D20EFFF94780422DB737D101 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = E5BFAE1AB4EF422584E66938;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				744B6BC962CD43C694CE0682 /* ALL_BUILD */,
+				45C75EAE0768494F842A21DA /* ZERO_CHECK */,
+				87CAD5BEA2094FA1AEC2F95F /* install */,
+				B8BF4B347928417AA24F9A9D /* obclient */,
+				7185BE70A0CE420389138651 /* observer */,
+				7A805CC11B434BC8B383A3DB /* observer_static */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19CB8955460648FD7A19D0A0 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/franky/documents/github/wyy/src/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/franky/documents/github/wyy/src
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/franky/documents/github/wyy/src
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/franky/documents/github/wyy/src
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/franky/documents/github/wyy/src
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		84B3278A343B6C0A922F591D /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/franky/documents/github/wyy/src/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/franky/documents/github/wyy/src
+  make -f /Users/franky/documents/github/wyy/src/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/franky/documents/github/wyy/src
+  make -f /Users/franky/documents/github/wyy/src/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/franky/documents/github/wyy/src
+  make -f /Users/franky/documents/github/wyy/src/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/franky/documents/github/wyy/src
+  make -f /Users/franky/documents/github/wyy/src/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/franky/documents/github/wyy/src
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/franky/documents/github/wyy/src
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/franky/documents/github/wyy/src
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/franky/documents/github/wyy/src
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DF0F1002A11492A9D5B14E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2792C6F333AC4D03B6482F85 /* /Users/franky/documents/github/wyy/src/observer/event/execution_plan_event.cpp */,
+				507D730D310F4FA49439553B /* /Users/franky/documents/github/wyy/src/observer/event/session_event.cpp */,
+				0F619EB5AF244CA78C95600D /* /Users/franky/documents/github/wyy/src/observer/event/sql_event.cpp */,
+				FE7AE2F80F424A3881186125 /* /Users/franky/documents/github/wyy/src/observer/event/storage_event.cpp */,
+				021C2B930FC14141977B4C69 /* /Users/franky/documents/github/wyy/src/observer/init.cpp */,
+				B10F3A595E224E46A0145435 /* /Users/franky/documents/github/wyy/src/observer/net/server.cpp */,
+				C5B80F7CE67840FA950C7BF2 /* /Users/franky/documents/github/wyy/src/observer/rc.cpp */,
+				53704E9BD5F24BC1A5FAE007 /* /Users/franky/documents/github/wyy/src/observer/session/session.cpp */,
+				A7D22144485C4AF19A39ECD3 /* /Users/franky/documents/github/wyy/src/observer/session/session_stage.cpp */,
+				82ADB15D324D4F6F86343D8F /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execute_stage.cpp */,
+				A73B05C3FE3846839753515E /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execution_node.cpp */,
+				809EB32A69354DD3AC94E3D5 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/tuple.cpp */,
+				7E1F3E3699664A80918E5A1B /* /Users/franky/documents/github/wyy/src/observer/sql/executor/value.cpp */,
+				0ECC6BBCCC264FD996CBF464 /* /Users/franky/documents/github/wyy/src/observer/sql/optimizer/optimize_stage.cpp */,
+				D0362178DC93414F8616F0FA /* /Users/franky/documents/github/wyy/src/observer/sql/parser/lex.yy.c */,
+				F3E72D8C457941D48364DA84 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse.cpp */,
+				64A68C89418C45F5A48B06AC /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse_stage.cpp */,
+				36A57C3D2ED240F683D99E38 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/resolve_stage.cpp */,
+				3F865C3E785345719C91B788 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/yacc_sql.tab.c */,
+				33876D341EA64FA2855F46F6 /* /Users/franky/documents/github/wyy/src/observer/sql/plan_cache/plan_cache_stage.cpp */,
+				A62E3AE669E9432D9B7ACE9E /* /Users/franky/documents/github/wyy/src/observer/sql/query_cache/query_cache_stage.cpp */,
+				2EDA68473FF440E19AD896F2 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree.cpp */,
+				4CAD6920B1DD4453851ED294 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree_index.cpp */,
+				645A821995B944748D4E17D8 /* /Users/franky/documents/github/wyy/src/observer/storage/common/condition_filter.cpp */,
+				DD84001AA5A74DDA8D73B7E4 /* /Users/franky/documents/github/wyy/src/observer/storage/common/db.cpp */,
+				884FCAD778AD45499224D763 /* /Users/franky/documents/github/wyy/src/observer/storage/common/field_meta.cpp */,
+				8B8C782010694C75B270DF0A /* /Users/franky/documents/github/wyy/src/observer/storage/common/index.cpp */,
+				A3E6FAA0AD244BB2B2B274B2 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_manager.cpp */,
+				9C9DD6D36C174A7A95B939E7 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_meta.cpp */,
+				2659CFF2B6684F7F9A89C9D5 /* /Users/franky/documents/github/wyy/src/observer/storage/common/meta_util.cpp */,
+				39C8876B3A6342A598A40C72 /* /Users/franky/documents/github/wyy/src/observer/storage/common/record_manager.cpp */,
+				4DA3357DEC3B432680CEC221 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table.cpp */,
+				AA8C04441C934AA79F96D475 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table_meta.cpp */,
+				DE1C741D544F450E906F0ACA /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_handler.cpp */,
+				AB23C2F14BA04F28AA605C59 /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_storage_stage.cpp */,
+				985A0FB9B751449DB70E4A96 /* /Users/franky/documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp */,
+				7F95BC9C92EE4871A90DD3C1 /* /Users/franky/documents/github/wyy/src/observer/storage/mem/mem_storage_stage.cpp */,
+				CEFFF026DB0141B2A16C52B2 /* /Users/franky/documents/github/wyy/src/observer/storage/trx/trx.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10FE732B986644F792ABDB87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6627789E8732468983F4922B /* /Users/franky/documents/github/wyy/src/obclient/client.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD931A9A07E474FAECF43F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911193CC757D4DF087D49B80 /* /Users/franky/documents/github/wyy/src/observer/event/execution_plan_event.cpp */,
+				CD924F4A7E40456EACF648CA /* /Users/franky/documents/github/wyy/src/observer/event/session_event.cpp */,
+				FA9D281B68BD4EF9BB8B79A9 /* /Users/franky/documents/github/wyy/src/observer/event/sql_event.cpp */,
+				9E1EB405010C4ADB9D4E0000 /* /Users/franky/documents/github/wyy/src/observer/event/storage_event.cpp */,
+				EB22FE0945A74073AF213131 /* /Users/franky/documents/github/wyy/src/observer/init.cpp */,
+				A2D7F5EC0C7348968A1206BD /* /Users/franky/documents/github/wyy/src/observer/main.cpp */,
+				F61632FF35E64961867F5DE4 /* /Users/franky/documents/github/wyy/src/observer/net/server.cpp */,
+				95590A022EE94AB9B1ACD3EE /* /Users/franky/documents/github/wyy/src/observer/rc.cpp */,
+				3E52B227BC28481E8BD6A1AE /* /Users/franky/documents/github/wyy/src/observer/session/session.cpp */,
+				863C83C3C11F42C6B7B239A6 /* /Users/franky/documents/github/wyy/src/observer/session/session_stage.cpp */,
+				63484C7395AE44B88FC43E90 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execute_stage.cpp */,
+				E51D0D641509438AA15B1E1C /* /Users/franky/documents/github/wyy/src/observer/sql/executor/execution_node.cpp */,
+				44FD218515A94E33819770F2 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/tuple.cpp */,
+				D9FAA0B6C06D455883B448D2 /* /Users/franky/documents/github/wyy/src/observer/sql/executor/value.cpp */,
+				56CB744860DB48EBBBB6471B /* /Users/franky/documents/github/wyy/src/observer/sql/optimizer/optimize_stage.cpp */,
+				B3703DFB7F494F87A1DF6E0F /* /Users/franky/documents/github/wyy/src/observer/sql/parser/lex.yy.c */,
+				374F6B77EB7045ED8F5474E4 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse.cpp */,
+				400A533375AA4053A1C72443 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/parse_stage.cpp */,
+				E0A9BF7066C44D9FB5BE3908 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/resolve_stage.cpp */,
+				E2B5214F739B48518D306903 /* /Users/franky/documents/github/wyy/src/observer/sql/parser/yacc_sql.tab.c */,
+				DCF57F37CED54540A274A943 /* /Users/franky/documents/github/wyy/src/observer/sql/plan_cache/plan_cache_stage.cpp */,
+				61B5C21411F84FC69FA179C9 /* /Users/franky/documents/github/wyy/src/observer/sql/query_cache/query_cache_stage.cpp */,
+				25F0C3CA1761489A8C784F97 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree.cpp */,
+				7BC011A4B31E4DDC93651962 /* /Users/franky/documents/github/wyy/src/observer/storage/common/bplus_tree_index.cpp */,
+				C9B05B08EFB7479DB21419DA /* /Users/franky/documents/github/wyy/src/observer/storage/common/condition_filter.cpp */,
+				F5E777875BF34B7989607231 /* /Users/franky/documents/github/wyy/src/observer/storage/common/db.cpp */,
+				A8F43782C02345558CCF93B2 /* /Users/franky/documents/github/wyy/src/observer/storage/common/field_meta.cpp */,
+				89BAD490E0A24D32AC026588 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index.cpp */,
+				3A2D7A35382146A5B017B09B /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_manager.cpp */,
+				21A06C7E7B424701BE526382 /* /Users/franky/documents/github/wyy/src/observer/storage/common/index_meta.cpp */,
+				A9BC234088BA448CBA8243D5 /* /Users/franky/documents/github/wyy/src/observer/storage/common/meta_util.cpp */,
+				94B492CF2B6D44419C1FA7A3 /* /Users/franky/documents/github/wyy/src/observer/storage/common/record_manager.cpp */,
+				14C33E1B9E48454A81A30E63 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table.cpp */,
+				9AB29C19F5784FA19D7A8C36 /* /Users/franky/documents/github/wyy/src/observer/storage/common/table_meta.cpp */,
+				B355D4C4EE1C4D418A818AB9 /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_handler.cpp */,
+				751BA21A255648E7828738FE /* /Users/franky/documents/github/wyy/src/observer/storage/default/default_storage_stage.cpp */,
+				65C6A2A00E3242908DDE0821 /* /Users/franky/documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp */,
+				2AC446AD99CD4DD8A8F25F48 /* /Users/franky/documents/github/wyy/src/observer/storage/mem/mem_storage_stage.cpp */,
+				D4B8E07EE1DD45DD8B6964E2 /* /Users/franky/documents/github/wyy/src/observer/storage/trx/trx.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1707ADB4A6AB41E99DFA1DF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 744B6BC962CD43C694CE0682 /* ALL_BUILD */;
+			targetProxy = 7F77FCE5FD1640E1BF853BAB /* PBXContainerItemProxy */;
+		};
+		22998F88DA80470EB361FA61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8BF4B347928417AA24F9A9D /* obclient */;
+			targetProxy = A6DAB44E416849D5B9635D8E /* PBXContainerItemProxy */;
+		};
+		3F77033DF70A490BB1930361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A805CC11B434BC8B383A3DB /* observer_static */;
+			targetProxy = 04B3A3887EDB4DE2A4839E46 /* PBXContainerItemProxy */;
+		};
+		618F8CFE7189471188E3240F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
+			targetProxy = 84B4E502BE624F7687313B6C /* PBXContainerItemProxy */;
+		};
+		E3B98E04808A40969F785E4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7185BE70A0CE420389138651 /* observer */;
+			targetProxy = 094C963B22E1495390959B0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09733E2473BF4B34BCF1D56E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = /Users/franky/documents/github/wyy/src/build;
+			};
+			name = Debug;
+		};
+		10FFEE2A916A4508AB5BB29C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/obclient/.,/Users/franky/documents/github/wyy/src/obclient/../../deps,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/franky/documents/github/wyy/src/obclient/../../lib /Users/franky/documents/github/wyy/lib/MinSizeRel","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/Users/franky/documents/github/wyy/src/obclient/../../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/src/obclient/../../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/franky/documents/github/wyy/lib/MinSizeRel/libcommon.1.0.0.dylib,"-lpthread","-ldl","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = obclient;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		25AD63DDACAE431C881A76E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		5CFCE8A96DBC4980B1339D30 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/observer/.,/Users/franky/documents/github/wyy/src/observer,/Users/franky/documents/github/wyy/src/observer/../../deps,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (" -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = observer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/observer;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		614FAE2707834CBAA0CF68E4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/observer/.,/Users/franky/documents/github/wyy/src/observer,/Users/franky/documents/github/wyy/src/observer/../../deps,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (" -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1                 -DNDEBUG ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1                 -DNDEBUG '-std=gnu++14' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = observer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/observer;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		6F83ADEA345F4B03A9B45D0F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = /Users/franky/documents/github/wyy/src/build;
+			};
+			name = RelWithDebInfo;
+		};
+		75964816994F4A1D9D37B1D4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7752FA2CCA0A4F639FCD2416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		7BF3674D22E4403195A54C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/observer/.,/Users/franky/documents/github/wyy/src/observer,/Users/franky/documents/github/wyy/src/observer/../../deps,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (" -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             '-std=gnu++14' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = observer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/observer;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		7CFD6ACAE7A64414B3C67DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		7F6622C30DDC400583F31AA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/obclient/.,/Users/franky/documents/github/wyy/src/obclient/../../deps,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/franky/documents/github/wyy/src/obclient/../../lib /Users/franky/documents/github/wyy/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/Users/franky/documents/github/wyy/src/obclient/../../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/src/obclient/../../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/franky/documents/github/wyy/lib/Release/libcommon.1.0.0.dylib,"-lpthread","-ldl","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = obclient;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		8684FEF224DC480895BFDFD5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/observer/.,/Users/franky/documents/github/wyy/src/observer,/Users/franky/documents/github/wyy/src/observer/../../deps,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/franky/documents/github/wyy/src/observer/../../lib /Users/franky/documents/github/wyy/lib/MinSizeRel","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/Users/franky/documents/github/wyy/src/observer/../../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/src/observer/../../lib,"$(inherited)");
+				OTHER_CFLAGS = (" -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/franky/documents/github/wyy/lib/MinSizeRel/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = observer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/observer;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8E7907A903A340F6911E0644 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9517EC5BD65A43C0A208D422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/observer/.,/Users/franky/documents/github/wyy/src/observer,/Users/franky/documents/github/wyy/src/observer/../../deps,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/franky/documents/github/wyy/src/observer/../../lib /Users/franky/documents/github/wyy/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/Users/franky/documents/github/wyy/src/observer/../../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/src/observer/../../lib,"$(inherited)");
+				OTHER_CFLAGS = (" -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/franky/documents/github/wyy/lib/Release/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = observer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/observer;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		96AC7D52A2AD4C6695F6F839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		A2286F0F0708457E9A214377 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		ACE14D9C25FA48F1B9DDEE04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		AE4FFA5D55F7470398DC04CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		BB749A33A22340A4991ACDA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/observer/.,/Users/franky/documents/github/wyy/src/observer,/Users/franky/documents/github/wyy/src/observer/../../deps,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (" -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = observer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/observer;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C006CC39966340CBADA2A3E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/obclient/.,/Users/franky/documents/github/wyy/src/obclient/../../deps,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/franky/documents/github/wyy/src/obclient/../../lib /Users/franky/documents/github/wyy/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/Users/franky/documents/github/wyy/src/obclient/../../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/src/obclient/../../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/franky/documents/github/wyy/lib/Debug/libcommon.1.0.0.dylib,"-lpthread","-ldl","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = obclient;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C9D8C7413F4547E69218440E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/observer/.,/Users/franky/documents/github/wyy/src/observer,/Users/franky/documents/github/wyy/src/observer/../../deps,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/franky/documents/github/wyy/src/observer/../../lib /Users/franky/documents/github/wyy/lib/RelWithDebInfo","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/Users/franky/documents/github/wyy/src/observer/../../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/src/observer/../../lib,"$(inherited)");
+				OTHER_CFLAGS = (" -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1                 -DNDEBUG ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1                 -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = observer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/observer;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		CA69084BFE584A04A993B78D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/observer/.,/Users/franky/documents/github/wyy/src/observer,/Users/franky/documents/github/wyy/src/observer/../../deps,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/franky/documents/github/wyy/src/observer/../../lib /Users/franky/documents/github/wyy/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/Users/franky/documents/github/wyy/src/observer/../../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/src/observer/../../lib,"$(inherited)");
+				OTHER_CFLAGS = (" -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/franky/documents/github/wyy/lib/Debug/libcommon.1.0.0.dylib,"-lpthread","-ldl","-levent","-ljsoncpp","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = observer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/observer;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		CE2FEC29E8A749BE822B2E21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = /Users/franky/documents/github/wyy/src/build;
+			};
+			name = Release;
+		};
+		E36C32F6999C402991CEF737 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E49EEDF85DEB41D594C5208C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F3CC6A1BD3244156A3192F49 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = /Users/franky/documents/github/wyy/src/build;
+			};
+			name = MinSizeRel;
+		};
+		F51A43402EF44B19B6F54585 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FD0DF7E969914CB3A1DDC5C8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/obclient/.,/Users/franky/documents/github/wyy/src/obclient/../../deps,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/franky/documents/github/wyy/src/obclient/../../lib /Users/franky/documents/github/wyy/lib/RelWithDebInfo","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/Users/franky/documents/github/wyy/src/obclient/../../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/src/obclient/../../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1                 -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/franky/documents/github/wyy/lib/RelWithDebInfo/libcommon.1.0.0.dylib,"-lpthread","-ldl","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = obclient;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E0806B9ED4F4384AE58D742 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7752FA2CCA0A4F639FCD2416 /* Debug */,
+				ACE14D9C25FA48F1B9DDEE04 /* Release */,
+				75964816994F4A1D9D37B1D4 /* MinSizeRel */,
+				F51A43402EF44B19B6F54585 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		12E000EED877490D947A245C /* Build configuration list for PBXProject "miniob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09733E2473BF4B34BCF1D56E /* Debug */,
+				CE2FEC29E8A749BE822B2E21 /* Release */,
+				F3CC6A1BD3244156A3192F49 /* MinSizeRel */,
+				6F83ADEA345F4B03A9B45D0F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		39A48EFAC98349B590508140 /* Build configuration list for PBXNativeTarget "observer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA69084BFE584A04A993B78D /* Debug */,
+				9517EC5BD65A43C0A208D422 /* Release */,
+				8684FEF224DC480895BFDFD5 /* MinSizeRel */,
+				C9D8C7413F4547E69218440E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		40DBC99759CF416DA5B15EB6 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4FFA5D55F7470398DC04CF /* Debug */,
+				7CFD6ACAE7A64414B3C67DB7 /* Release */,
+				A2286F0F0708457E9A214377 /* MinSizeRel */,
+				E49EEDF85DEB41D594C5208C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		44B395FC5B25460B988D7E6E /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD63DDACAE431C881A76E3 /* Debug */,
+				96AC7D52A2AD4C6695F6F839 /* Release */,
+				8E7907A903A340F6911E0644 /* MinSizeRel */,
+				E36C32F6999C402991CEF737 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E4CEC68AAA8047AC832457DB /* Build configuration list for PBXNativeTarget "observer_static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BF3674D22E4403195A54C05 /* Debug */,
+				BB749A33A22340A4991ACDA0 /* Release */,
+				5CFCE8A96DBC4980B1339D30 /* MinSizeRel */,
+				614FAE2707834CBAA0CF68E4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E903377218DC4EEAAD77A4A7 /* Build configuration list for PBXNativeTarget "obclient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C006CC39966340CBADA2A3E8 /* Debug */,
+				7F6622C30DDC400583F31AA6 /* Release */,
+				10FFEE2A916A4508AB5BB29C /* MinSizeRel */,
+				FD0DF7E969914CB3A1DDC5C8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5EBA1BA7F2843DA8C9BAC75 /* Project object */;
+}

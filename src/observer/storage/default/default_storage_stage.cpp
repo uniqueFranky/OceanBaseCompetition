@@ -200,7 +200,21 @@ void DefaultStorageStage::handle_event(StageEvent *event) {
       snprintf(response, sizeof(response), "%s\n", rc == RC::SUCCESS ? "SUCCESS" : "FAILURE");
     }
     break;
-
+//   case SCF_DROP_INDEX:
+//      {
+//          const DropIndex &drop_index = sql->sstr.drop_index;
+//          rc = handler_->drop_index(current_trx, current_db, drop_index.relation_name,
+//                                      drop_index.index_name);
+//          snprintf(response, sizeof(response), "%s\n", rc == RC::SUCCESS ? "SUCCESS" : "FAILURE");
+//        }
+//        break;
+  case SCF_DROP_TABLE:
+      {
+          const DropTable &drop_table = sql->sstr.drop_table;
+          rc = handler_->drop_table(current_db, drop_table.relation_name);
+          snprintf(response, sizeof(response), "%s\n", rc == RC::SUCCESS ? "SUCCESS" : "FAILURE");
+      }
+    break;
   case SCF_SHOW_TABLES: {
       Db *db = handler_->find_db(current_db);
       if (nullptr == db) {

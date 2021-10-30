@@ -1,4 +1,4 @@
-# Install script for directory: /Users/franky/documents/GitHub/wyy/unitest
+# Install script for directory: /Users/franky/documents/github/wyy/unitest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

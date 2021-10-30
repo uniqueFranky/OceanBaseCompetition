@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = -D__MACH__
 
-CXX_INCLUDES = -I/Users/franky/documents/GitHub/wyy/unitest/. -I/Users/franky/documents/GitHub/wyy/unitest/../deps -I/Users/franky/documents/GitHub/wyy/unitest/../src/observer -I/usr/local/include
+CXX_INCLUDES = -I/Users/franky/documents/github/wyy/unitest/. -I/Users/franky/documents/github/wyy/unitest/../deps -I/Users/franky/documents/github/wyy/unitest/../src/observer -I/usr/local/include
 
-CXX_FLAGS =  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -std=gnu++14
+CXX_FLAGS =  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -std=gnu++14
 

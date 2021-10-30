@@ -293,7 +293,6 @@ static RC schema_add_field(Table *table, const char *field_name, TupleSchema &sc
   schema.add_if_not_exists(field_meta->type(), table->name(), field_meta->name());
   return RC::SUCCESS;
 }
-
 // 把所有的表和只跟这张表关联的condition都拿出来，生成最底层的select 执行节点
 RC create_selection_executor(Trx *trx, const Selects &selects, const char *db, const char *table_name, SelectExeNode &select_node) {
   // 列出跟这张表关联的Attr
@@ -310,6 +309,9 @@ RC create_selection_executor(Trx *trx, const Selects &selects, const char *db, c
       if (0 == strcmp("*", attr.attribute_name)) {
         // 列出这张表所有字段
         TupleSchema::from_table(table, schema);
+        if(selects.attr_num > 1)
+            return RC::SCHEMA_FIELD_REDUNDAN;
+          
         break; // 没有校验，给出* 之后，再写字段的错误
       } else {
         // 列出这张表相关字段
@@ -323,17 +325,20 @@ RC create_selection_executor(Trx *trx, const Selects &selects, const char *db, c
 
   // 找出仅与此表相关的过滤条件, 或者都是值的过滤条件
   std::vector<DefaultConditionFilter *> condition_filters;
-  for (size_t i = 0; i < selects.condition_num; i++) {
+  for (size_t i = 0; i < selects.condition_num; i++)
+  {
     const Condition &condition = selects.conditions[i];
     if ((condition.left_is_attr == 0 && condition.right_is_attr == 0) || // 两边都是值
         (condition.left_is_attr == 1 && condition.right_is_attr == 0 && match_table(selects, condition.left_attr.relation_name, table_name)) ||  // 左边是属性右边是值
         (condition.left_is_attr == 0 && condition.right_is_attr == 1 && match_table(selects, condition.right_attr.relation_name, table_name)) ||  // 左边是值，右边是属性名
         (condition.left_is_attr == 1 && condition.right_is_attr == 1 &&
             match_table(selects, condition.left_attr.relation_name, table_name) && match_table(selects, condition.right_attr.relation_name, table_name)) // 左右都是属性名，并且表名都符合
-        ) {
+        )
+    {
       DefaultConditionFilter *condition_filter = new DefaultConditionFilter();
       RC rc = condition_filter->init(*table, condition);
-      if (rc != RC::SUCCESS) {
+      if (rc != RC::SUCCESS)
+      {
         delete condition_filter;
         for (DefaultConditionFilter * &filter : condition_filters) {
           delete filter;

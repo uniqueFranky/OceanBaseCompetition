@@ -5,13 +5,13 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 C_DEFINES = -D__MACH__
 
-C_INCLUDES = -I/Users/franky/documents/GitHub/wyy/src/observer/. -I/Users/franky/documents/GitHub/wyy/src/observer -I/Users/franky/documents/GitHub/wyy/src/observer/../../deps -I/usr/local/include
+C_INCLUDES = -I/Users/franky/documents/github/wyy/src/observer/. -I/Users/franky/documents/github/wyy/src/observer -I/Users/franky/documents/github/wyy/src/observer/../../deps -I/usr/local/include
 
-C_FLAGS =  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk
+C_FLAGS =  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g 
 
 CXX_DEFINES = -D__MACH__
 
-CXX_INCLUDES = -I/Users/franky/documents/GitHub/wyy/src/observer/. -I/Users/franky/documents/GitHub/wyy/src/observer -I/Users/franky/documents/GitHub/wyy/src/observer/../../deps -I/usr/local/include
+CXX_INCLUDES = -I/Users/franky/documents/github/wyy/src/observer/. -I/Users/franky/documents/github/wyy/src/observer -I/Users/franky/documents/github/wyy/src/observer/../../deps -I/usr/local/include
 
-CXX_FLAGS =  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -std=gnu++14
+CXX_FLAGS =  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -std=gnu++14
 

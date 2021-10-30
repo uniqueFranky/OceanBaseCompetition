@@ -53,10 +53,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/franky/documents/GitHub/wyy
+CMAKE_SOURCE_DIR = /Users/franky/documents/github/wyy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/franky/documents/GitHub/wyy/build
+CMAKE_BINARY_DIR = /Users/franky/documents/github/wyy/build
 
 # Include any dependencies generated for this target.
 include unitest/CMakeFiles/log_test.dir/depend.make
@@ -72,16 +72,16 @@ include unitest/CMakeFiles/log_test.dir/flags.make
 unitest/CMakeFiles/log_test.dir/log_test.cpp.o: unitest/CMakeFiles/log_test.dir/flags.make
 unitest/CMakeFiles/log_test.dir/log_test.cpp.o: ../unitest/log_test.cpp
 unitest/CMakeFiles/log_test.dir/log_test.cpp.o: unitest/CMakeFiles/log_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/franky/documents/GitHub/wyy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object unitest/CMakeFiles/log_test.dir/log_test.cpp.o"
-	cd /Users/franky/documents/GitHub/wyy/build/unitest && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitest/CMakeFiles/log_test.dir/log_test.cpp.o -MF CMakeFiles/log_test.dir/log_test.cpp.o.d -o CMakeFiles/log_test.dir/log_test.cpp.o -c /Users/franky/documents/GitHub/wyy/unitest/log_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/franky/documents/github/wyy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object unitest/CMakeFiles/log_test.dir/log_test.cpp.o"
+	cd /Users/franky/documents/github/wyy/build/unitest && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT unitest/CMakeFiles/log_test.dir/log_test.cpp.o -MF CMakeFiles/log_test.dir/log_test.cpp.o.d -o CMakeFiles/log_test.dir/log_test.cpp.o -c /Users/franky/documents/github/wyy/unitest/log_test.cpp
 
 unitest/CMakeFiles/log_test.dir/log_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/log_test.dir/log_test.cpp.i"
-	cd /Users/franky/documents/GitHub/wyy/build/unitest && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/franky/documents/GitHub/wyy/unitest/log_test.cpp > CMakeFiles/log_test.dir/log_test.cpp.i
+	cd /Users/franky/documents/github/wyy/build/unitest && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/franky/documents/github/wyy/unitest/log_test.cpp > CMakeFiles/log_test.dir/log_test.cpp.i
 
 unitest/CMakeFiles/log_test.dir/log_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/log_test.dir/log_test.cpp.s"
-	cd /Users/franky/documents/GitHub/wyy/build/unitest && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/franky/documents/GitHub/wyy/unitest/log_test.cpp -o CMakeFiles/log_test.dir/log_test.cpp.s
+	cd /Users/franky/documents/github/wyy/build/unitest && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/franky/documents/github/wyy/unitest/log_test.cpp -o CMakeFiles/log_test.dir/log_test.cpp.s
 
 # Object files for target log_test
 log_test_OBJECTS = \
@@ -95,19 +95,19 @@ bin/log_test: unitest/CMakeFiles/log_test.dir/build.make
 bin/log_test: lib/libobserver.a
 bin/log_test: lib/libcommon.1.0.0.dylib
 bin/log_test: unitest/CMakeFiles/log_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/franky/documents/GitHub/wyy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/log_test"
-	cd /Users/franky/documents/GitHub/wyy/build/unitest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/log_test.dir/link.txt --verbose=$(VERBOSE)
-	cd /Users/franky/documents/GitHub/wyy/build/unitest && /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=log_test -D TEST_EXECUTABLE=/Users/franky/documents/GitHub/wyy/build/bin/log_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/GitHub/wyy/build/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=log_test_TESTS -D CTEST_FILE=/Users/franky/documents/GitHub/wyy/build/unitest/log_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/franky/documents/github/wyy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/log_test"
+	cd /Users/franky/documents/github/wyy/build/unitest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/log_test.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/franky/documents/github/wyy/build/unitest && /Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=log_test -D TEST_EXECUTABLE=/Users/franky/documents/github/wyy/build/bin/log_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/franky/documents/github/wyy/build/unitest -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=log_test_TESTS -D CTEST_FILE=/Users/franky/documents/github/wyy/build/unitest/log_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
 
 # Rule to build all files generated by this target.
 unitest/CMakeFiles/log_test.dir/build: bin/log_test
 .PHONY : unitest/CMakeFiles/log_test.dir/build
 
 unitest/CMakeFiles/log_test.dir/clean:
-	cd /Users/franky/documents/GitHub/wyy/build/unitest && $(CMAKE_COMMAND) -P CMakeFiles/log_test.dir/cmake_clean.cmake
+	cd /Users/franky/documents/github/wyy/build/unitest && $(CMAKE_COMMAND) -P CMakeFiles/log_test.dir/cmake_clean.cmake
 .PHONY : unitest/CMakeFiles/log_test.dir/clean
 
 unitest/CMakeFiles/log_test.dir/depend:
-	cd /Users/franky/documents/GitHub/wyy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/franky/documents/GitHub/wyy /Users/franky/documents/GitHub/wyy/unitest /Users/franky/documents/GitHub/wyy/build /Users/franky/documents/GitHub/wyy/build/unitest /Users/franky/documents/GitHub/wyy/build/unitest/CMakeFiles/log_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/franky/documents/github/wyy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/franky/documents/github/wyy /Users/franky/documents/github/wyy/unitest /Users/franky/documents/github/wyy/build /Users/franky/documents/github/wyy/build/unitest /Users/franky/documents/github/wyy/build/unitest/CMakeFiles/log_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : unitest/CMakeFiles/log_test.dir/depend
 

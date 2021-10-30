@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/franky/documents/GitHub/wyy/unitest/md5_test.cpp" "unitest/CMakeFiles/md5_test.dir/md5_test.cpp.o" "gcc" "unitest/CMakeFiles/md5_test.dir/md5_test.cpp.o.d"
+  "/Users/franky/documents/github/wyy/unitest/md5_test.cpp" "unitest/CMakeFiles/md5_test.dir/md5_test.cpp.o" "gcc" "unitest/CMakeFiles/md5_test.dir/md5_test.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/franky/documents/GitHub/wyy/build/src/observer/CMakeFiles/observer_static.dir/DependInfo.cmake"
-  "/Users/franky/documents/GitHub/wyy/build/deps/common/CMakeFiles/common.dir/DependInfo.cmake"
+  "/Users/franky/documents/github/wyy/build/src/observer/CMakeFiles/observer_static.dir/DependInfo.cmake"
+  "/Users/franky/documents/github/wyy/build/deps/common/CMakeFiles/common.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

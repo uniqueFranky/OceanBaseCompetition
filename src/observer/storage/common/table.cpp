@@ -46,6 +46,41 @@ Table::~Table() {
   LOG_INFO("Table has been closed: %s", name());
 }
 
+RC Table::drop(const char *meta_path,const char *data_path, const char *name, const char *base_dir)
+{
+    if (nullptr == name || common::is_blank(name))
+    {
+      LOG_WARN("Name cannot be empty");
+      return RC::INVALID_ARGUMENT;
+    }
+    LOG_INFO("Begin to drop table %s:%s", base_dir, name);
+    if(remove(meta_path) || remove(data_path))
+        return RC::SCHEMA_TABLE_NOT_EXIST;
+//    std::cout<<"### "<<indexes_.size()<<std::endl;
+    for(int i = 0; i < indexes_.size(); i++)
+    {
+        Index *ind = indexes_[i];
+        std::string index_path = index_data_file(base_dir, name, ind->index_meta().name());
+        RC rc = drop_index(index_path.c_str(), indexes_[i]->index_meta().name());
+        if(rc != RC::SUCCESS)
+            return rc;
+    }
+    return RC::SUCCESS;
+}
+
+RC Table::drop_index(const char *index_path, const char *name)
+{
+    if (nullptr == name || common::is_blank(name))
+    {
+      LOG_WARN("Name cannot be empty");
+      return RC::INVALID_ARGUMENT;
+    }
+    LOG_INFO("Begin to drop index %s:%s", name);
+    if(remove(index_path))
+        return RC::SCHEMA_INDEX_NOT_EXIST;
+    return RC::SUCCESS;
+}
+
 RC Table::create(const char *path, const char *name, const char *base_dir, int attribute_count, const AttrInfo attributes[]) {
 
   if (nullptr == name || common::is_blank(name)) {

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/franky/documents/GitHub/wyy/deps
+# Install script for directory: /Users/franky/documents/github/wyy/deps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/franky/documents/GitHub/wyy/build/deps/common/cmake_install.cmake")
+  include("/Users/franky/documents/github/wyy/build/deps/common/cmake_install.cmake")
 
 endif()
 

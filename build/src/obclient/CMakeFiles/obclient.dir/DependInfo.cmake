@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/franky/documents/GitHub/wyy/src/obclient/client.cpp" "src/obclient/CMakeFiles/obclient.dir/client.cpp.o" "gcc" "src/obclient/CMakeFiles/obclient.dir/client.cpp.o.d"
+  "/Users/franky/documents/github/wyy/src/obclient/client.cpp" "src/obclient/CMakeFiles/obclient.dir/client.cpp.o" "gcc" "src/obclient/CMakeFiles/obclient.dir/client.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/franky/documents/GitHub/wyy/build/deps/common/CMakeFiles/common.dir/DependInfo.cmake"
+  "/Users/franky/documents/github/wyy/build/deps/common/CMakeFiles/common.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

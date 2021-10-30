@@ -57,10 +57,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/franky/documents/GitHub/wyy
+CMAKE_SOURCE_DIR = /Users/franky/documents/github/wyy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/franky/documents/GitHub/wyy/build
+CMAKE_BINARY_DIR = /Users/franky/documents/github/wyy/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/franky/documents/GitHub/wyy/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/franky/documents/GitHub/wyy/build/CMakeFiles /Users/franky/documents/GitHub/wyy/build/src/obclient//CMakeFiles/progress.marks
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/obclient/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/franky/documents/GitHub/wyy/build/CMakeFiles 0
+	cd /Users/franky/documents/github/wyy/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/franky/documents/github/wyy/build/CMakeFiles /Users/franky/documents/github/wyy/build/src/obclient//CMakeFiles/progress.marks
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/obclient/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/franky/documents/github/wyy/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/obclient/clean
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/obclient/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/obclient/preinstall
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/obclient/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/obclient/preinstall
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/obclient/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/franky/documents/GitHub/wyy/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/franky/documents/github/wyy/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/obclient/CMakeFiles/obclient.dir/rule:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/obclient/CMakeFiles/obclient.dir/rule
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/obclient/CMakeFiles/obclient.dir/rule
 .PHONY : src/obclient/CMakeFiles/obclient.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ obclient: src/obclient/CMakeFiles/obclient.dir/rule
 
 # fast build rule for target.
 obclient/fast:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f src/obclient/CMakeFiles/obclient.dir/build.make src/obclient/CMakeFiles/obclient.dir/build
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f src/obclient/CMakeFiles/obclient.dir/build.make src/obclient/CMakeFiles/obclient.dir/build
 .PHONY : obclient/fast
 
 client.o: client.cpp.o
@@ -180,7 +180,7 @@ client.o: client.cpp.o
 
 # target to build an object file
 client.cpp.o:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f src/obclient/CMakeFiles/obclient.dir/build.make src/obclient/CMakeFiles/obclient.dir/client.cpp.o
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f src/obclient/CMakeFiles/obclient.dir/build.make src/obclient/CMakeFiles/obclient.dir/client.cpp.o
 .PHONY : client.cpp.o
 
 client.i: client.cpp.i
@@ -188,7 +188,7 @@ client.i: client.cpp.i
 
 # target to preprocess a source file
 client.cpp.i:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f src/obclient/CMakeFiles/obclient.dir/build.make src/obclient/CMakeFiles/obclient.dir/client.cpp.i
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f src/obclient/CMakeFiles/obclient.dir/build.make src/obclient/CMakeFiles/obclient.dir/client.cpp.i
 .PHONY : client.cpp.i
 
 client.s: client.cpp.s
@@ -196,7 +196,7 @@ client.s: client.cpp.s
 
 # target to generate assembly for a file
 client.cpp.s:
-	cd /Users/franky/documents/GitHub/wyy/build && $(MAKE) $(MAKESILENT) -f src/obclient/CMakeFiles/obclient.dir/build.make src/obclient/CMakeFiles/obclient.dir/client.cpp.s
+	cd /Users/franky/documents/github/wyy/build && $(MAKE) $(MAKESILENT) -f src/obclient/CMakeFiles/obclient.dir/build.make src/obclient/CMakeFiles/obclient.dir/client.cpp.s
 .PHONY : client.cpp.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/franky/documents/GitHub/wyy/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/franky/documents/github/wyy/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
