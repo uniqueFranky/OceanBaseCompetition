@@ -10,7 +10,7 @@
 		},
 		{
 			"len" : 4,
-			"name" : "id",
+			"name" : "q",
 			"offset" : 4,
 			"type" : "ints",
 			"visible" : true
@@ -19,9 +19,9 @@
 	"indexes" : 
 	[
 		{
-			"field_name" : "id",
+			"field_name" : "q",
 			"name" : "ind"
 		}
 	],
-	"table_name" : "t"
+	"table_name" : "z"
 }

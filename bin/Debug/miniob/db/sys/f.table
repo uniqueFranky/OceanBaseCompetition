@@ -16,12 +16,6 @@
 			"visible" : true
 		}
 	],
-	"indexes" : 
-	[
-		{
-			"field_name" : "id",
-			"name" : "ind"
-		}
-	],
-	"table_name" : "t"
+	"indexes" : null,
+	"table_name" : "f"
 }
