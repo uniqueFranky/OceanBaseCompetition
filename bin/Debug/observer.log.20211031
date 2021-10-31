@@ -7954,3 +7954,123 @@ ThreadPools=SQLThre
 [2021-10-31 20:27:22 pid:58514 tid:10017be00  INFO: /Users/franky/Documents/github/wyy/deps/common/metrics/metrics_registry.cpp register_metric 37]>>Successfully register metric :SessionStage.writesocket
 [2021-10-31 20:27:22 pid:58514 tid:10017be00  INFO: /Users/franky/Documents/github/wyy/src/observer/net/server.cpp start_tcp_server 330]>>Listen on port 6789
 [2021-10-31 20:27:22 pid:58514 tid:10017be00  INFO: /Users/franky/Documents/github/wyy/src/observer/net/server.cpp start_tcp_server 348]>>Observer start success
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/init.cpp init 204]>>Output configuration 
+Begin dump configuration
+[]
+
+[DefaultStorageStage]
+BaseDir=./miniob
+SystemDb=sys
+ThreadId=IOThreads
+
+[DefaultThreads]
+count=3
+
+[ExecuteStage]
+NextStages=DefaultStorageStage,MemStorageStage
+ThreadId=SQLThreads
+
+[IOThreads]
+count=3
+
+[LOG]
+LOG_CONSOLE_LEVEL=1
+LOG_FILE_LEVEL=3
+LOG_FILE_NAME=observer.log
+
+[MemStorageStage]
+ThreadId=IOThreads
+
+[MetricsStage]
+NextStages=TimerStage
+
+[NET]
+CLIENT_ADDRESS=INADDR_ANY
+MAX_CONNECTION_NUM=8192
+PORT=6789
+
+[OptimizeStage]
+NextStages=ExecuteStage
+ThreadId=SQLThreads
+
+[ParseStage]
+NextStages=OptimizeStage
+ThreadId=SQLThreads
+
+[PlanCacheStage]
+NextStages=ExecuteStage,ParseStage
+ThreadId=SQLThreads
+
+[QueryCacheStage]
+NextStages=PlanCacheStage
+ThreadId=SQLThreads
+
+[ResolveStage]
+NextStages=QueryCacheStage
+ThreadId=SQLThreads
+
+[SEDA_BASE]
+EventHistory=false
+MaxEventHistoryNum=100
+STAGES=SessionStage,ExecuteStage,OptimizeStage,ParseStage,ResolveStage,PlanCacheStage,QueryCacheStage,DefaultStorageStage,MemStorageStage,TimerStage,MetricsStage
+ThreadPools=SQLThre
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/init.cpp init_seda 67]>>(Re)Starting State: Pid: 59531 Time: Sun Oct 31 21:19:29 2021
+
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/init.cpp init_seda 68]>>The process Name is observer
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/seda_config.cpp init_event_history 202]>>Successfully init_event_history, EventHistory:0, MaxEventHops:100
+[2021-10-31 21:19:29 pid:59531 tid:700008eed000  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/thread_pool.cpp run_thread 243]>>threadid = 700008eed000, threadname = SQLThreads
+
+[2021-10-31 21:19:29 pid:59531 tid:700008ff3000  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/thread_pool.cpp run_thread 243]>>threadid = 700008ff3000, threadname = SQLThreads
+
+[2021-10-31 21:19:29 pid:59531 tid:7000090f9000  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/thread_pool.cpp run_thread 243]>>threadid = 7000090f9000, threadname = IOThreads
+
+[2021-10-31 21:19:29 pid:59531 tid:700009076000  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/thread_pool.cpp run_thread 243]>>threadid = 700009076000, threadname = IOThreads
+
+[2021-10-31 21:19:29 pid:59531 tid:700008f70000  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/thread_pool.cpp run_thread 243]>>threadid = 700008f70000, threadname = SQLThreads
+
+[2021-10-31 21:19:29 pid:59531 tid:700009282000  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/thread_pool.cpp run_thread 243]>>threadid = 700009282000, threadname = DefaultThreads
+
+[2021-10-31 21:19:29 pid:59531 tid:70000917c000  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/thread_pool.cpp run_thread 243]>>threadid = 70000917c000, threadname = IOThreads
+
+[2021-10-31 21:19:29 pid:59531 tid:7000091ff000  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/thread_pool.cpp run_thread 243]>>threadid = 7000091ff000, threadname = DefaultThreads
+
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/seda_config.cpp init_stages 348]>>Stage SessionStage use threadpool DefaultThreads.
+[2021-10-31 21:19:29 pid:59531 tid:700009305000  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/thread_pool.cpp run_thread 243]>>threadid = 700009305000, threadname = DefaultThreads
+
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/seda_config.cpp init_stages 348]>>Stage ExecuteStage use threadpool DefaultThreads.
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/seda_config.cpp init_stages 348]>>Stage OptimizeStage use threadpool DefaultThreads.
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/seda_config.cpp init_stages 348]>>Stage ParseStage use threadpool DefaultThreads.
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/seda_config.cpp init_stages 348]>>Stage ResolveStage use threadpool DefaultThreads.
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/seda_config.cpp init_stages 348]>>Stage PlanCacheStage use threadpool DefaultThreads.
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/seda_config.cpp init_stages 348]>>Stage QueryCacheStage use threadpool DefaultThreads.
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/storage/default/default_storage_stage.cpp set_properties 86]>>Use sys as system db
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/storage/default/default_handler.cpp init 52]>>Default handler init with ./miniob success
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  WARNNING: /Users/franky/Documents/github/wyy/src/observer/storage/default/default_handler.cpp create_db 74]>>Db already exists: sys
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/storage/common/field_meta.cpp init 70]>>Init a field with name=__trx
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/storage/common/field_meta.cpp init 70]>>Init a field with name=__trx
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/storage/common/field_meta.cpp init 70]>>Init a field with name=id
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp open_file 107]>>Successfully open file ./miniob/db/sys/t.data.
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp open_file 147]>>Successfully open ./miniob/db/sys/t.data. file_id=0, hdr_frame=0x100688000
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp open_file 107]>>Successfully open file ./miniob/db/sys/t-ind.index.
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp open_file 147]>>Successfully open ./miniob/db/sys/t-ind.index. file_id=1, hdr_frame=0x100689018
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  ERROR: /Users/franky/Documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp check_page_num 549]>>Invalid pageNum:1, file's name:./miniob/db/sys/t-ind.index
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  ERROR: /Users/franky/Documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp get_this_page 187]>>Failed to load page ./miniob/db/sys/t-ind.index:1, due to invalid pageNum.
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  ERROR: /Users/franky/Documents/github/wyy/src/observer/storage/common/table.cpp open 185]>>Failed to open index. table=t, index=ind, file=./miniob/db/sys/t-ind.index, rc=2308:BUFFERPOOL_INVALID_PAGE_NUM
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/storage/default/disk_buffer_pool.cpp close_file 173]>>Successfully close file 0:./miniob/db/sys/t.data.
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/storage/common/table.cpp ~Table 46]>>Table has been closed: t
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  ERROR: /Users/franky/Documents/github/wyy/src/observer/storage/common/db.cpp open_all_tables 127]>>Failed to open table. filename=t.table
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  ERROR: /Users/franky/Documents/github/wyy/src/observer/storage/default/default_handler.cpp open_db 108]>>Failed to open db: sys. error=2308
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/storage/default/default_storage_stage.cpp set_properties 110]>>Open system db success: sys
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/seda_config.cpp init_stages 348]>>Stage DefaultStorageStage use threadpool DefaultThreads.
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/seda_config.cpp init_stages 348]>>Stage MemStorageStage use threadpool DefaultThreads.
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/seda_config.cpp get_thread_pool 292]>>Not set thread_pool_id for TimerStage, use default threadpool DefaultThreads
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/seda_config.cpp init_stages 348]>>Stage TimerStage use threadpool DefaultThreads.
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/seda_config.cpp get_thread_pool 292]>>Not set thread_pool_id for MetricsStage, use default threadpool DefaultThreads
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/seda/seda_config.cpp init_stages 348]>>Stage MetricsStage use threadpool DefaultThreads.
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/metrics/metrics_registry.cpp register_metric 37]>>Successfully register metric :DefaultStorageStage.query
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/metrics/metrics_registry.cpp register_metric 37]>>Successfully register metric :SessionStage.sql
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/init.cpp init 228]>>Successfully init utility
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/metrics/metrics_registry.cpp register_metric 37]>>Successfully register metric :SessionStage.readsocket
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/deps/common/metrics/metrics_registry.cpp register_metric 37]>>Successfully register metric :SessionStage.writesocket
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/net/server.cpp start_tcp_server 330]>>Listen on port 6789
+[2021-10-31 21:19:29 pid:59531 tid:100177e00  INFO: /Users/franky/Documents/github/wyy/src/observer/net/server.cpp start_tcp_server 348]>>Observer start success

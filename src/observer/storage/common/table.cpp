@@ -211,8 +211,8 @@ RC Table::rollback_insert(Trx *trx, const RID &rid) {
   // remove all indexes
   rc = delete_entry_of_indexes(record.data, rid, false);
   if (rc != RC::SUCCESS) {
-    LOG_ERROR("Failed to delete indexes of record(rid=%d.%d) while rollback insert, rc=%d:%s",
-              rid.page_num, rid.slot_num, rc, strrc(rc));
+//    LOG_ERROR("Failed to delete indexes of record(rid=%d.%d) while rollback insert, rc=%d:%s",
+//              rid.page_num, rid.slot_num, rc, strrc(rc)); 
   } else {
     rc = record_handler_->delete_record(&rid);
   }
@@ -641,8 +641,8 @@ RC Table::delete_record(Trx *trx, Record *record) {
   } else {
     rc = delete_entry_of_indexes(record->data, record->rid, false);// 重复代码 refer to commit_delete
     if (rc != RC::SUCCESS) {
-      LOG_ERROR("Failed to delete indexes of record (rid=%d.%d). rc=%d:%s",
-                record->rid.page_num, record->rid.slot_num, rc, strrc(rc));
+//      LOG_ERROR("Failed to delete indexes of record (rid=%d.%d). rc=%d:%s",
+//                record->rid.page_num, record->rid.slot_num, rc, strrc(rc));
     } else {
       rc = record_handler_->delete_record(&record->rid);
     }
@@ -659,8 +659,8 @@ RC Table::commit_delete(Trx *trx, const RID &rid) {
   }
   rc = delete_entry_of_indexes(record.data, record.rid, false);
   if (rc != RC::SUCCESS) {
-    LOG_ERROR("Failed to delete indexes of record(rid=%d.%d). rc=%d:%s",
-              rid.page_num, rid.slot_num, rc, strrc(rc));// panic?
+//    LOG_ERROR("Failed to delete indexes of record(rid=%d.%d). rc=%d:%s",
+//              rid.page_num, rid.slot_num, rc, strrc(rc));// panic?
   }
 
   rc = record_handler_->delete_record(&rid);
