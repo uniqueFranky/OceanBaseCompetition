@@ -554,8 +554,44 @@ RC Table::create_index(Trx *trx, const char *index_name, const char *attribute_n
   return rc;
 }
 
-RC Table::update_record(Trx *trx, const char *attribute_name, const Value *value, int condition_num, const Condition conditions[], int *updated_count) {
-  return RC::GENERIC_ERROR;
+RC Table::update_record(Trx *trx, const char *attribute_name, const Value *value, int condition_num, const Condition conditions[], int *updated_count)
+{
+    if(value->type != table_meta_.field(attribute_name)->type())
+        return RC::SCHEMA_FIELD_TYPE_MISMATCH;
+    RecordFileScanner scanner;
+    CompositeConditionFilter filter;
+    RC rc = filter.init(*this, conditions, condition_num);
+    if(rc != SUCCESS)
+        return RC::SCHEMA_FIELD_NOT_EXIST;
+    rc = scanner.open_scan(*data_buffer_pool_, file_id_, &filter);
+    if (rc != RC::SUCCESS)
+    {
+      LOG_ERROR("failed to open scanner. file id=%d. rc=%d:%s", file_id_, rc, strrc(rc));
+      return rc;
+    }
+    int record_count = 0;
+    Record tmpRecord;
+    std::vector<Record> records;
+    rc = scanner.get_first_record(&tmpRecord);
+    for ( ; RC::SUCCESS == rc; rc = scanner.get_next_record(&tmpRecord))
+    {
+        records.push_back(tmpRecord);
+        record_count++;
+    }
+    scanner.close_scan();
+    int offset = table_meta_.field(attribute_name)->offset();
+    for(Record rcd : records)
+    {
+        Record tmp = rcd;
+        memcpy(tmp.data + offset, value->data, table_meta_.field(attribute_name)->len());
+        rc = delete_record(trx, &rcd);
+        if(RC::SUCCESS != rc)
+            return rc;
+        rc = insert_record(trx, &tmp);
+        if(RC::SUCCESS != rc)
+            return rc;
+    }
+    return rc;
 }
 
 class RecordDeleter {

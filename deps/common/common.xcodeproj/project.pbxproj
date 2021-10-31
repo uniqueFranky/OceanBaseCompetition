@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		45C75EAE0768494F842A21DA /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 128B521FFA8F442FB70CB9B5 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 0AAB1BE59B05454490AD8044 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				3B50F7C3C59A7FC61310032C /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -20,26 +20,26 @@
 		};
 		744B6BC962CD43C694CE0682 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 8713DB12A5D44FACB46F5DC8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 7CFCBA2E690B44478E98F38A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				923F07A96F14AD5CBD145F5B /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				4F222ABA3A6148D58A137ED8 /* PBXTargetDependency */,
-				A3240C7D67E3433E8E469DC0 /* PBXTargetDependency */,
-				77FDA287E50B4E869C44CB01 /* PBXTargetDependency */,
+				DC27EA824345447F8AFE57CB /* PBXTargetDependency */,
+				733DC2C255C1487FB6FBF247 /* PBXTargetDependency */,
+				7AA4B43893F14C8B81920256 /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		87CAD5BEA2094FA1AEC2F95F /* install */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = E0151B6B4645496D8139D961 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildConfigurationList = 9A1AE44E5BD840BE9EB04916 /* Build configuration list for PBXAggregateTarget "install" */;
 			buildPhases = (
 				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
 			);
 			dependencies = (
-				18159989A8BF45AEA615D508 /* PBXTargetDependency */,
+				71FE34B87BD747948A9B8E8D /* PBXTargetDependency */,
 			);
 			name = install;
 			productName = install;
@@ -47,113 +47,113 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		01130ACE407C45CE91148DC8 /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */ = {isa = PBXBuildFile; fileRef = EA9A57B226264B3F8BC90B66 /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */; };
-		01225A5EDE4B4FB584D8A4D6 /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */ = {isa = PBXBuildFile; fileRef = 3A01C5AB15704981BCF8A031 /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */; };
-		05BC50276AC9425D97D8438B /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */ = {isa = PBXBuildFile; fileRef = FB833D82118A4626863A9D59 /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */; };
-		09153B9F066442DFAF1E2170 /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */ = {isa = PBXBuildFile; fileRef = 8FCE6A3C769E4901B205E94C /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */; };
-		0BD5790FD4454A4B9DB78B50 /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */ = {isa = PBXBuildFile; fileRef = 463D480E8C4140E4BAAEA30C /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */; };
-		0BF28A921737473BADC4345F /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */ = {isa = PBXBuildFile; fileRef = 3C55046E4F8D44B79C0E66FD /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */; };
-		100CCCBC095F460AA1E78111 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */ = {isa = PBXBuildFile; fileRef = CBE0FE08814149CA9293EFE7 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */; };
-		12746F1B40804D0BAB01CD9E /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */ = {isa = PBXBuildFile; fileRef = FA1B5BB1669D4E078858A033 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */; };
-		14386280B0E74F078DD5E8C1 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */ = {isa = PBXBuildFile; fileRef = 5B1A4E477291414492AE9441 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */; };
-		17C77F88A755465FB8620E95 /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */ = {isa = PBXBuildFile; fileRef = 5217F8E02A454E6AA93AE06F /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */; };
-		19347F1C2EC4402D9E66C851 /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */ = {isa = PBXBuildFile; fileRef = BBAA93821DBC4AAA922586F8 /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */; };
-		1956D8EDF56F46A9A7A48E4E /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */ = {isa = PBXBuildFile; fileRef = BA4AE1EC9F904FA78C3BE2C9 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */; };
-		1CC3404BD8974B6BA4C0CEFC /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */ = {isa = PBXBuildFile; fileRef = 4D744C3C6EA942D58C4121DF /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */; };
-		2A236352FC5546CFA89EBC99 /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */ = {isa = PBXBuildFile; fileRef = 8DF1308F312D4EB1BC5AA44A /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */; };
-		2CB7A825887D49CEBCBAF0C3 /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */ = {isa = PBXBuildFile; fileRef = 353BB97216964D9AAF17A1AE /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */; };
-		2D3C7F68B6A64D31B268C8AC /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */ = {isa = PBXBuildFile; fileRef = 0F32F872A8DD4F75A49374C0 /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */; };
-		2E0E5284942D437C86D21489 /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */ = {isa = PBXBuildFile; fileRef = 9E6973DEC69C412B864A2F6A /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */; };
-		36B570CBC8FF44649754ECFE /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */ = {isa = PBXBuildFile; fileRef = 010343F0797D41D88AAD4F0D /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */; };
-		36B9CCF77ABD4635AB7BD876 /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */ = {isa = PBXBuildFile; fileRef = 7A2226368F344029A9C150E0 /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */; };
-		39EE885B0BAD4408AAC02F2D /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */ = {isa = PBXBuildFile; fileRef = 13B19E22963F48ABBA29251D /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */; };
-		3C3F780E7F1F40DEB4497EDC /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */ = {isa = PBXBuildFile; fileRef = 119CF73E41AE42AF8A6CFB13 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */; };
-		3C82E2A800B243989F56AA4F /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 3D833B39161D4293A09DF65A /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */; };
-		3E678FFCC467476E9C070E76 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */ = {isa = PBXBuildFile; fileRef = F98D0739BE984057A87BA1E5 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */; };
-		41378106685E4156A6984AD6 /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */ = {isa = PBXBuildFile; fileRef = 7A1EF2C31533486688E1D905 /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */; };
-		426447E1D3FE49D49BB3C087 /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */ = {isa = PBXBuildFile; fileRef = A19497B1A4294259BAC8F62F /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */; };
-		4652E48C120F4F82AB199A31 /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */ = {isa = PBXBuildFile; fileRef = 917A8F1852554A2EACB7A8C8 /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */; };
-		47BAFFC7E9ED4B948B887E77 /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */ = {isa = PBXBuildFile; fileRef = 09D3A0FC283A408C84127797 /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */; };
-		507BA09FED4E4C1EA9498BF3 /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */ = {isa = PBXBuildFile; fileRef = 8299A1AA4B084685A944AE2D /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */; };
-		58AC959314CB402F9DD9C600 /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */ = {isa = PBXBuildFile; fileRef = ED02578C78CA428AA02DEC2F /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */; };
-		5AD58C8ED97E42B99AF69B0F /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */ = {isa = PBXBuildFile; fileRef = 73A5E3D9F35747F9A0B9FE66 /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */; };
-		60AC5370A2DE40B9AC6C9919 /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */ = {isa = PBXBuildFile; fileRef = B90EDF92BA474F328DF69D4E /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */; };
-		6123DBB8C200410BAFD2A82E /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */ = {isa = PBXBuildFile; fileRef = 3330DFB0D0924607B1E605D1 /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */; };
-		61BFE0FF3E1044C485291ADE /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */ = {isa = PBXBuildFile; fileRef = 4B613EAE3DB44F789F35AC77 /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */; };
-		67DE8CDD8610425B8DDCB78E /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */ = {isa = PBXBuildFile; fileRef = FD176208E9B54294A8D95A97 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */; };
-		69D262C5E7DB4E65ADAFC6A5 /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */ = {isa = PBXBuildFile; fileRef = AB14AA363D614C60B9E56CDD /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */; };
-		6E372B6F3A7A43299C2CFDB0 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */ = {isa = PBXBuildFile; fileRef = 9F1C5426D09042BFAC84E911 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */; };
-		6FAEC5EBB1834B8982483ED1 /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */ = {isa = PBXBuildFile; fileRef = 2D8461014D354D51B3942BD5 /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */; };
-		753675D69C5E467A8524CCC0 /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */ = {isa = PBXBuildFile; fileRef = 6821EE70FB9743DA8753C796 /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */; };
-		75C18A8A1FB34BB18B4F42C2 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */ = {isa = PBXBuildFile; fileRef = 5129F81736264B2DB9F09F10 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */; };
-		7892AFFC6E1B406C95177B12 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */ = {isa = PBXBuildFile; fileRef = CA9C2ADA6BBB43CEB77CC439 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */; };
-		7C3C4F7DEABE400CAC5657DE /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */ = {isa = PBXBuildFile; fileRef = 2FF4573315064D12B42AC7F9 /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */; };
-		7E7AC157BAA3459BB7CA719F /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */ = {isa = PBXBuildFile; fileRef = 93F7F691002C4CE4A5DF63AC /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */; };
-		93C37AFD16874242B6068AF9 /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */ = {isa = PBXBuildFile; fileRef = D7EBEB835C794D5DBD2BE23E /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */; };
-		98269F0355FD4C8BBEAC9167 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */ = {isa = PBXBuildFile; fileRef = 12C05F4296B941DD9C983636 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */; };
-		9A822B15B3D444B691BEA93E /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */ = {isa = PBXBuildFile; fileRef = 519F87387B5746D8B6537C86 /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */; };
-		9A99A2CC3CC14869B2B63F46 /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */ = {isa = PBXBuildFile; fileRef = 27536880E3664A92855E3DB1 /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */; };
-		9CE55B0364CA41B387BF0B83 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */ = {isa = PBXBuildFile; fileRef = 15D54264B9F4457DA534DF69 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */; };
-		A1F1A4B0E57D42458E897106 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */ = {isa = PBXBuildFile; fileRef = 0040CC3F185D4FBE9A0BB4A4 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */; };
-		AA42D8FB996E4E7CB3190A46 /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */ = {isa = PBXBuildFile; fileRef = BD2C5DD89DCB4AC19B032414 /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */; };
-		AD346F24E9534C26B40C86AA /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */ = {isa = PBXBuildFile; fileRef = 23E79751B70E4E65BC7E6CB5 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */; };
-		AFCF730CA90F454DB88E4BB6 /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */ = {isa = PBXBuildFile; fileRef = 5F7BFC819EA6412E8BC8A2A1 /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */; };
-		AFD9253B234340B6B17FE66A /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */ = {isa = PBXBuildFile; fileRef = 306CDFF01E0948DFA3DB8DA7 /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */; };
-		B1F74B3DAB014724ABA60D83 /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */ = {isa = PBXBuildFile; fileRef = 67C4D47A0DE1461AA6670957 /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */; };
-		BDAC5F2E6E2C45ADACBB8AE8 /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */ = {isa = PBXBuildFile; fileRef = DEB39A6D42FE42CFAE84BF35 /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */; };
-		BF407079AA644B009340A3C5 /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */ = {isa = PBXBuildFile; fileRef = 117F8982FD2040AA8CC4C768 /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */; };
-		C1AAD27F23464B7EB805B977 /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */ = {isa = PBXBuildFile; fileRef = 14CC40C8FA654554BD5F400F /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */; };
-		C520EEDB389342B1B8515D0C /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = A33F6C1D047D42FAA19ABACA /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */; };
-		C552129D52604BFBB71A3889 /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */ = {isa = PBXBuildFile; fileRef = E4B7B2D556C44A09B06D86F2 /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */; };
-		C6B7AA9F5B4B4E788218BCD6 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */ = {isa = PBXBuildFile; fileRef = BEFC272D4A2C4A0EAD40E0D4 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */; };
-		C831270634F446DCAAEFF5B1 /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */ = {isa = PBXBuildFile; fileRef = A0142030418649F8BBD62E4D /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */; };
-		D101A1DEC6E74E76AB474B24 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */ = {isa = PBXBuildFile; fileRef = 82427791259247E59463ACB2 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */; };
-		D123FB706882415F99216EC6 /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */ = {isa = PBXBuildFile; fileRef = EF91D9B7BC6448D08DBDC689 /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */; };
-		D264500551A7434AA455A335 /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */ = {isa = PBXBuildFile; fileRef = 8B682B36DB744144AF48F85B /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */; };
-		D3439656A3DD4841982FB760 /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */ = {isa = PBXBuildFile; fileRef = AEEE13B274AF4DA381110104 /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */; };
-		D63B81997368497F81CD1303 /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */ = {isa = PBXBuildFile; fileRef = 4FE1D147ACCE445B9875133C /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */; };
-		D9353805816D4D4CA53CD467 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */ = {isa = PBXBuildFile; fileRef = DB3D6553F2E44AA18305E4BA /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */; };
-		DBC069FDA8A640ED851DB4FB /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */ = {isa = PBXBuildFile; fileRef = 8F70AB0F1EE645FE83025936 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */; };
-		DCFF7F7D397A44058C400724 /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */ = {isa = PBXBuildFile; fileRef = 0D873AA7C2AE476D8B511A41 /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */; };
-		DD9A84E0E8324065A35ABC09 /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */ = {isa = PBXBuildFile; fileRef = 99DE8F05E67B40199286D4A8 /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */; };
-		DF422BF3007649EE975902A1 /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */ = {isa = PBXBuildFile; fileRef = 724781B50AC24B448359A21C /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */; };
-		DF97DD2E388143AAA69B9050 /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */ = {isa = PBXBuildFile; fileRef = 6F9C5A416D024A70ABB3BB38 /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */; };
-		E14F54C00C3042B0AC54288D /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */ = {isa = PBXBuildFile; fileRef = 7C2BB21A78A6484F8CB0F174 /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */; };
-		EDA0B0A30C6240AF8B63D1D3 /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */ = {isa = PBXBuildFile; fileRef = 5CCCF655B0E64CF19AF123C3 /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */; };
-		EDC59148578A401BB0196465 /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */ = {isa = PBXBuildFile; fileRef = 1D513048F9E940058AE39F00 /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */; };
-		EE8592433658481683E40364 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */ = {isa = PBXBuildFile; fileRef = 36FF37038CA0433D9DA7DCE0 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */; };
-		EF40270773AE4BF79BD6EB90 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */ = {isa = PBXBuildFile; fileRef = E48586B2D45D4B54AED4ED72 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */; };
-		EFD16185C92D42F8920AB2DD /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */ = {isa = PBXBuildFile; fileRef = 63A887132877461AB5ADC5F3 /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */; };
-		F211FF7CA004412E92DC53A3 /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */ = {isa = PBXBuildFile; fileRef = B9F1BCBAC19B4D74B348552F /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */; };
-		F40668A093F14D288F5105DE /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */ = {isa = PBXBuildFile; fileRef = 7715192AE5F84B63B3F215C1 /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */; };
-		F93D21DEBD58404DB368EB28 /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */ = {isa = PBXBuildFile; fileRef = B8A6B91BA17242C8BC92789D /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */; };
-		FA977364DB9C47FABDC91165 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */ = {isa = PBXBuildFile; fileRef = 82CC87CDDEF244A6897BC587 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */; };
-		FDED52F6FF004C29B7DE38FE /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */ = {isa = PBXBuildFile; fileRef = 9A267807975A4910B067D05B /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */; };
+		0922CAC225BF4D28A795EB05 /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */ = {isa = PBXBuildFile; fileRef = 090D183021A94AAEB9F1869A /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */; };
+		0985D7DA1D244DEEA83F58C6 /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */ = {isa = PBXBuildFile; fileRef = 1D6EEF66D1094ED9949F885D /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */; };
+		11F12813F25B4A1FBA608ACE /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */ = {isa = PBXBuildFile; fileRef = 816B57E7274243C3978B7C75 /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */; };
+		158BFB419925476186CF4BD3 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */ = {isa = PBXBuildFile; fileRef = DB61A64B133947CB8D0BB811 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */; };
+		17745E6BB2544B7DBE89B1BC /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */ = {isa = PBXBuildFile; fileRef = 25C46C5582834072822ADEEA /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */; };
+		18A4C25D928A46EDA842FD58 /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */ = {isa = PBXBuildFile; fileRef = 3A514ABB383B43C6959003F9 /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */; };
+		195C1ABBCF4F461B88EE6C9E /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */ = {isa = PBXBuildFile; fileRef = CD19F884976049D194017BF1 /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */; };
+		1B80F112CA1B4D6E8783AF24 /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */ = {isa = PBXBuildFile; fileRef = 0B44A56A22794D999578D06E /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */; };
+		1EEF857E59344A84BA4E87AA /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */ = {isa = PBXBuildFile; fileRef = BFC1EE51B2AA4180ABE25FDD /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */; };
+		22367B96138046259B443C55 /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */ = {isa = PBXBuildFile; fileRef = CB225E21279D44DD8C71A3EC /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */; };
+		225831289580423495C99A1E /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */ = {isa = PBXBuildFile; fileRef = 5CE30DEBECA64EF69D46EF17 /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */; };
+		2341C83FF73344219D1DF597 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */ = {isa = PBXBuildFile; fileRef = 5CD9D244BD6242B0ABBE6374 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */; };
+		24DAD3DB3BE14E0DB96C58EF /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */ = {isa = PBXBuildFile; fileRef = 34181F0E7379488A811BE7D7 /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */; };
+		2514B900B81C4AE789DEA4A5 /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */ = {isa = PBXBuildFile; fileRef = 1980443B7D3843A1AB3B6230 /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */; };
+		3174BC99B1364E5C90AF530D /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */ = {isa = PBXBuildFile; fileRef = 93AED7F57C084C029D75DEE4 /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */; };
+		32014E4DC5A14868B52E1CA3 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */ = {isa = PBXBuildFile; fileRef = A008890B5F0F4542A7A21209 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */; };
+		32917F7B937A4DA68593B813 /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */ = {isa = PBXBuildFile; fileRef = 78F1CA15ADA7439FAFBAE270 /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */; };
+		35E3EC6680C24F308CED965E /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */ = {isa = PBXBuildFile; fileRef = 7BEE3B6D7D5145018C88EDD7 /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */; };
+		36AD0CC31B6F4E98B3D264E4 /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */ = {isa = PBXBuildFile; fileRef = 16AF18FA4A2E45599087AC31 /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */; };
+		3A133A739250475FB82C28ED /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */ = {isa = PBXBuildFile; fileRef = 5CEC987E23D543D2B68FB2A4 /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */; };
+		3A797F7138B14F2CAE010F93 /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */ = {isa = PBXBuildFile; fileRef = 43ED366D33EF4488BC4A5A3C /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */; };
+		40AEFC3778D34672B3B0C94B /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */ = {isa = PBXBuildFile; fileRef = 726755A59B0B48288225C6C2 /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */; };
+		43FF804F8C0643F2A20B14A8 /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = C4CF66A9A98149ED9D467193 /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */; };
+		4B2FCDE312F44AB1A5AA4677 /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */ = {isa = PBXBuildFile; fileRef = DC23C47F2768402BA5AF0B6E /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */; };
+		4BEFDCB5E75D452A88374EAA /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */ = {isa = PBXBuildFile; fileRef = 85C16345251A4D2DAEFEB263 /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */; };
+		4DF232B20C9E4D4F97FD8B06 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */ = {isa = PBXBuildFile; fileRef = 40EF2CA473A342F8AF3C5EA4 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */; };
+		4E72B80165E94943B472C6C2 /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */ = {isa = PBXBuildFile; fileRef = 781AA340E022477A9608AAE2 /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */; };
+		55F142627AF247C4BD410171 /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */ = {isa = PBXBuildFile; fileRef = 638DE07CBE7945CA947BE737 /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */; };
+		60364ACB359D407D9C1BD257 /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */ = {isa = PBXBuildFile; fileRef = 350687FF9C2E418EAAF6AD76 /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */; };
+		678ABA97F3224CBE893BC869 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */ = {isa = PBXBuildFile; fileRef = 20B93EA8EC994843B79343B0 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */; };
+		6A939BF073814C6D8F902B5A /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */ = {isa = PBXBuildFile; fileRef = 45E110C2616C49C2ABF08660 /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */; };
+		6B660A27A59D4005B2BFECB3 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */ = {isa = PBXBuildFile; fileRef = 9ECDBE4C6AD349148198AD18 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */; };
+		6E4A082BD28846B4AA0E4A3D /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */ = {isa = PBXBuildFile; fileRef = E056372A2DB24ACCBB5959C7 /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */; };
+		709FBDE8E3C04C98857D2D41 /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */ = {isa = PBXBuildFile; fileRef = DDB37B24EE3643B29FC31D45 /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */; };
+		71EED59CC8BA448DAA4523B0 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */ = {isa = PBXBuildFile; fileRef = FA191E2CBFA94FCFBF741699 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */; };
+		73C03C2DE31342C4972DEFCB /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */ = {isa = PBXBuildFile; fileRef = 91D89023170D471E963F74FE /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */; };
+		7D0160AEEAC64E30A7D12508 /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */ = {isa = PBXBuildFile; fileRef = 0D73289F6D574740B12070B9 /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */; };
+		837176B04D0348C8A66D3622 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */ = {isa = PBXBuildFile; fileRef = B6575DFA10D945A7AD1D0090 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */; };
+		8716B33EC3CA4610BA5D0CD0 /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */ = {isa = PBXBuildFile; fileRef = CB688704C6964667AFF15694 /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */; };
+		8A4EBC09C2CD4AE09484D643 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */ = {isa = PBXBuildFile; fileRef = 9292F2EB96C04D7FB24F42DC /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */; };
+		8A706D88DBBC4997AD45C95A /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */ = {isa = PBXBuildFile; fileRef = 4208DDD7F64E49DDA5E66BEA /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */; };
+		923ADF38F7DF4CE092D5D274 /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */ = {isa = PBXBuildFile; fileRef = 5AC1449F01E4486D976D27FA /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */; };
+		97D27DFACA284DB1AAB5D180 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */ = {isa = PBXBuildFile; fileRef = 5B9145BF3BC1422B9CC61D7B /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */; };
+		9ADEE2896C19490D9FA7DF73 /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */ = {isa = PBXBuildFile; fileRef = DFCFC0CB9D6A4FB6B7964D0A /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */; };
+		9B0262B939C642DABF1EE78C /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */ = {isa = PBXBuildFile; fileRef = 8A482BEC07A84774960671FE /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */; };
+		9CD3CEE661A4433C8CDEA42D /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */ = {isa = PBXBuildFile; fileRef = 7202F6B5383D4F7AB51D71AB /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */; };
+		A065E6064C134032B8B352BB /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */ = {isa = PBXBuildFile; fileRef = 83F188D43931448CA20ABF9E /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */; };
+		A23AC5AC8B35414CAB5185B0 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */ = {isa = PBXBuildFile; fileRef = D51172B40BF34E31AD663F13 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */; };
+		A565EA33C14945FD9ED7F44E /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */ = {isa = PBXBuildFile; fileRef = 1BB534A01E2B4BDDAD0AC634 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */; };
+		A84CA0487F074BA8BEB6D866 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */ = {isa = PBXBuildFile; fileRef = 98D81F3F7D6047508EDC9502 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */; };
+		B31A1B3931104BD890DF84F2 /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */ = {isa = PBXBuildFile; fileRef = 3CDEF5676C1B4B1DB7EE1CE6 /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */; };
+		B31AF5B9DB3B4C499979974D /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */ = {isa = PBXBuildFile; fileRef = 00D944BAE11E418A848356FF /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */; };
+		B7A6749BDEEB4F75904E4683 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */ = {isa = PBXBuildFile; fileRef = AA9AD77D988741F08281F201 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */; };
+		B8453E8A288C451C9993E4E2 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */ = {isa = PBXBuildFile; fileRef = 9A20A7E909304A158C6A655C /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */; };
+		B8E898CB5F414B41B40457A4 /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */ = {isa = PBXBuildFile; fileRef = AA4E97CA29BA4F76AD88BB3F /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */; };
+		BB1F12AD81E24C9CA68D6448 /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */ = {isa = PBXBuildFile; fileRef = 3AA7D01BA8484C52BB41E0EA /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */; };
+		BFFE29DBD55F4A27949629AA /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */ = {isa = PBXBuildFile; fileRef = DFACB13E62324AB2B6CE42EF /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */; };
+		C54487B5418F452DB715E260 /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */ = {isa = PBXBuildFile; fileRef = 637B40AA6CB645FBB72CD0AE /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */; };
+		C7C18D8082EB4AD1BCEFBA10 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */ = {isa = PBXBuildFile; fileRef = 3F4FF76BB0D043208994CE60 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */; };
+		CA896ACD55B647BABEC558D5 /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */ = {isa = PBXBuildFile; fileRef = 38710CAF811A4261A4359BA8 /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */; };
+		CD7E6DCCD6064B5EAA7EF7C1 /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */ = {isa = PBXBuildFile; fileRef = D9E3A62CF46C4843A714AD56 /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */; };
+		CD8371E77CDE40F2A20F558C /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */ = {isa = PBXBuildFile; fileRef = F2B13BF1DACB421486270514 /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */; };
+		CFE89130C4FA41B58A751DD5 /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */ = {isa = PBXBuildFile; fileRef = 2E6F2911E01A4DB4A531728E /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */; };
+		D11A4DE68B03401DB23958D4 /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */ = {isa = PBXBuildFile; fileRef = FEEBB8F44B9E4FA0850ED3FE /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */; };
+		D144B3975C6A4DA6AC3F081B /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */ = {isa = PBXBuildFile; fileRef = 561EFC64DCF44C039B715DF7 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */; };
+		D3D09860CEDF47FF9D476874 /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */ = {isa = PBXBuildFile; fileRef = 2CDD81FA70224F99BA8C3AD7 /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */; };
+		D70CA8649DE04CBF800539E2 /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */ = {isa = PBXBuildFile; fileRef = 7F4FA59D967A44EB9F41AF94 /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */; };
+		D9D78D3EAD734C2881879324 /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */ = {isa = PBXBuildFile; fileRef = B97591AC55B54E7992853A02 /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */; };
+		DBE8C2B7C94440D5A12661D4 /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = BD828A8DCA724E029E648F4E /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */; };
+		DFA80CF92977498DB5FEF2DC /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */ = {isa = PBXBuildFile; fileRef = FCCDA3CF9CB0452C9AD85605 /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */; };
+		E250F5BCCB244BBAA438EAE6 /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */ = {isa = PBXBuildFile; fileRef = 21810EF8A8F04F36908D45A5 /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */; };
+		E2D4BC49C3924C3E97352E9C /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */ = {isa = PBXBuildFile; fileRef = D742403DF9C6471BB0E3EBE7 /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */; };
+		E441324A13EC410B83711028 /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */ = {isa = PBXBuildFile; fileRef = 96BB107A951941FB89DEB1E0 /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */; };
+		E642FF78346A47CA88DD498D /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */ = {isa = PBXBuildFile; fileRef = C25E077A3AC84310890F0A7A /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */; };
+		E746C6102CDB4F82A2BF1EFB /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */ = {isa = PBXBuildFile; fileRef = C97F967D4B3048D88FD8D18A /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */; };
+		ED2C21EFEC4D4427AA104CCF /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */ = {isa = PBXBuildFile; fileRef = ACE3A345D62744289220E05D /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */; };
+		EE048557EE1B43EF9E806824 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */ = {isa = PBXBuildFile; fileRef = 58305BAE9E8842E08CF1BD91 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */; };
+		F4DFBFEA0A224A32A7D7E1E7 /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */ = {isa = PBXBuildFile; fileRef = 4FAB9DFF882647D9BB5A4898 /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */; };
+		F676A50E2A614BE082F53077 /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */ = {isa = PBXBuildFile; fileRef = D729CD557BE744FEA808E42C /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */; };
+		FB21E1FFA2FE469F9189C556 /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */ = {isa = PBXBuildFile; fileRef = 33C3A3AEB6B64F37BFC23360 /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */; };
+		FC08D937CC2449ADA15BFFDF /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */ = {isa = PBXBuildFile; fileRef = 26BF174209F84F4E8494D7E2 /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */; };
+		FCBC8A443C1649A38B6523CE /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */ = {isa = PBXBuildFile; fileRef = 8B8C33B884E74BAC9FD18E90 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		AD1738C411F149D0B137B095 /* RelWithDebInfo */ = {
+		1F4D6E3DECEB4292B9E6C0FD /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = RelWithDebInfo;
 		};
-		D4E6DC430EDA4AD7B25879F3 /* MinSizeRel */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = MinSizeRel;
-		};
-		F41BA0EB8CB7497384DEFAD5 /* Release */ = {
+		B8F7A553F6CF4954A0A5D7D5 /* Release */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Release;
 		};
-		F480163895B147D28AE12BCA /* Debug */ = {
+		C53ECAFD576940B7BEC3C9E0 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		FDE088D3846842529C26C6BE /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -163,147 +163,147 @@
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		05D6AFE62B2A43CF93DED200 /* PBXContainerItemProxy */ = {
+		05E92DDE8550495891FEEFC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0D15864EF40F4CDFA4244468 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
 			remoteInfo = ZERO_CHECK;
 		};
-		1CAAF68AE9114D14BCBDE6E8 /* PBXContainerItemProxy */ = {
+		0C3EA24427834AEF97B8F394 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0D15864EF40F4CDFA4244468 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9D5FFA11592E4171875A6CD4;
 			remoteInfo = common;
 		};
-		3E383ABF8F62453CB14C672A /* PBXContainerItemProxy */ = {
+		1C6C1F6E71214E4C816A9176 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0D15864EF40F4CDFA4244468 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 744B6BC962CD43C694CE0682;
 			remoteInfo = ALL_BUILD;
 		};
-		A5B663FB1B144C349E77D961 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0D15864EF40F4CDFA4244468 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
-			remoteInfo = ZERO_CHECK;
-		};
-		BEC69D47924E48C1A4F7C263 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0D15864EF40F4CDFA4244468 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
-			remoteInfo = ZERO_CHECK;
-		};
-		D852D45F5969467CBA0E0B79 /* PBXContainerItemProxy */ = {
+		59E038B29AB344FEBBD20DE2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0D15864EF40F4CDFA4244468 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F45B2E9E7C914AED98276520;
 			remoteInfo = common_static;
 		};
+		61CBD1A92FB54C1389B72FBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D15864EF40F4CDFA4244468 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		F77B358ED78A4E739104E3CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D15864EF40F4CDFA4244468 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
+			remoteInfo = ZERO_CHECK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0040CC3F185D4FBE9A0BB4A4 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = log_reporter.cpp; path = metrics/log_reporter.cpp; sourceTree = SOURCE_ROOT; };
-		010343F0797D41D88AAD4F0D /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = io.cpp; path = io/io.cpp; sourceTree = SOURCE_ROOT; };
-		09D3A0FC283A408C84127797 /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = md5.cpp; path = math/md5.cpp; sourceTree = SOURCE_ROOT; };
-		0D873AA7C2AE476D8B511A41 /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = console_reporter.cpp; path = metrics/console_reporter.cpp; sourceTree = SOURCE_ROOT; };
-		0F32F872A8DD4F75A49374C0 /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = console_reporter.cpp; path = metrics/console_reporter.cpp; sourceTree = SOURCE_ROOT; };
-		117F8982FD2040AA8CC4C768 /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = os.cpp; path = os/os.cpp; sourceTree = SOURCE_ROOT; };
-		119CF73E41AE42AF8A6CFB13 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ini.cpp; path = conf/ini.cpp; sourceTree = SOURCE_ROOT; };
-		12C05F4296B941DD9C983636 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = log_reporter.cpp; path = metrics/log_reporter.cpp; sourceTree = SOURCE_ROOT; };
-		13B19E22963F48ABBA29251D /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timeout_info.cpp; path = time/timeout_info.cpp; sourceTree = SOURCE_ROOT; };
-		14CC40C8FA654554BD5F400F /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reservoir.cpp; path = metrics/reservoir.cpp; sourceTree = SOURCE_ROOT; };
-		15D54264B9F4457DA534DF69 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pidfile.cpp; path = os/pidfile.cpp; sourceTree = SOURCE_ROOT; };
-		15F532A04825411FB81EF197 /* common */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libcommon.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D513048F9E940058AE39F00 /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = uniform_reservoir.cpp; path = metrics/uniform_reservoir.cpp; sourceTree = SOURCE_ROOT; };
-		23E79751B70E4E65BC7E6CB5 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = histogram_snapshot.cpp; path = metrics/histogram_snapshot.cpp; sourceTree = SOURCE_ROOT; };
-		27536880E3664A92855E3DB1 /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = process_param.cpp; path = os/process_param.cpp; sourceTree = SOURCE_ROOT; };
-		2D8461014D354D51B3942BD5 /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = uniform_reservoir.cpp; path = metrics/uniform_reservoir.cpp; sourceTree = SOURCE_ROOT; };
-		2FF4573315064D12B42AC7F9 /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = regex.cpp; path = math/regex.cpp; sourceTree = SOURCE_ROOT; };
-		306CDFF01E0948DFA3DB8DA7 /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = process.cpp; path = os/process.cpp; sourceTree = SOURCE_ROOT; };
-		3330DFB0D0924607B1E605D1 /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = init.cpp; path = seda/init.cpp; sourceTree = SOURCE_ROOT; };
-		353BB97216964D9AAF17A1AE /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = event_dispatcher.cpp; path = seda/event_dispatcher.cpp; sourceTree = SOURCE_ROOT; };
-		36FF37038CA0433D9DA7DCE0 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = histogram_snapshot.cpp; path = metrics/histogram_snapshot.cpp; sourceTree = SOURCE_ROOT; };
-		3A01C5AB15704981BCF8A031 /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = signal.cpp; path = os/signal.cpp; sourceTree = SOURCE_ROOT; };
-		3C55046E4F8D44B79C0E66FD /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = os.cpp; path = os/os.cpp; sourceTree = SOURCE_ROOT; };
-		3D833B39161D4293A09DF65A /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		463D480E8C4140E4BAAEA30C /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = roll_select_dir.cpp; path = io/roll_select_dir.cpp; sourceTree = SOURCE_ROOT; };
-		4B613EAE3DB44F789F35AC77 /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = string.cpp; path = lang/string.cpp; sourceTree = SOURCE_ROOT; };
-		4D744C3C6EA942D58C4121DF /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = thread_pool.cpp; path = seda/thread_pool.cpp; sourceTree = SOURCE_ROOT; };
-		4FE1D147ACCE445B9875133C /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = datetime.cpp; path = time/datetime.cpp; sourceTree = SOURCE_ROOT; };
-		5129F81736264B2DB9F09F10 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timer_stage.cpp; path = seda/timer_stage.cpp; sourceTree = SOURCE_ROOT; };
-		519F87387B5746D8B6537C86 /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stage_event.cpp; path = seda/stage_event.cpp; sourceTree = SOURCE_ROOT; };
-		5217F8E02A454E6AA93AE06F /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = path.cpp; path = os/path.cpp; sourceTree = SOURCE_ROOT; };
-		5B1A4E477291414492AE9441 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = callback.cpp; path = seda/callback.cpp; sourceTree = SOURCE_ROOT; };
-		5CCCF655B0E64CF19AF123C3 /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bitmap.cpp; path = lang/bitmap.cpp; sourceTree = SOURCE_ROOT; };
-		5F7BFC819EA6412E8BC8A2A1 /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = thread_pool.cpp; path = seda/thread_pool.cpp; sourceTree = SOURCE_ROOT; };
-		63A887132877461AB5ADC5F3 /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = seda_config.cpp; path = seda/seda_config.cpp; sourceTree = SOURCE_ROOT; };
-		67C4D47A0DE1461AA6670957 /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stage_event.cpp; path = seda/stage_event.cpp; sourceTree = SOURCE_ROOT; };
-		6821EE70FB9743DA8753C796 /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reservoir.cpp; path = metrics/reservoir.cpp; sourceTree = SOURCE_ROOT; };
-		6F9C5A416D024A70ABB3BB38 /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reporter.cpp; path = metrics/reporter.cpp; sourceTree = SOURCE_ROOT; };
-		724781B50AC24B448359A21C /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reporter.cpp; path = metrics/reporter.cpp; sourceTree = SOURCE_ROOT; };
-		73A5E3D9F35747F9A0B9FE66 /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = seda_config.cpp; path = seda/seda_config.cpp; sourceTree = SOURCE_ROOT; };
-		7715192AE5F84B63B3F215C1 /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = string.cpp; path = lang/string.cpp; sourceTree = SOURCE_ROOT; };
-		7A1EF2C31533486688E1D905 /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = io.cpp; path = io/io.cpp; sourceTree = SOURCE_ROOT; };
-		7A2226368F344029A9C150E0 /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = regex.cpp; path = math/regex.cpp; sourceTree = SOURCE_ROOT; };
-		7C2BB21A78A6484F8CB0F174 /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = kill_thread.cpp; path = seda/kill_thread.cpp; sourceTree = SOURCE_ROOT; };
-		82427791259247E59463ACB2 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = callback.cpp; path = seda/callback.cpp; sourceTree = SOURCE_ROOT; };
-		8299A1AA4B084685A944AE2D /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sampler.cpp; path = metrics/sampler.cpp; sourceTree = SOURCE_ROOT; };
-		82CC87CDDEF244A6897BC587 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics_stage.cpp; path = seda/metrics_stage.cpp; sourceTree = SOURCE_ROOT; };
-		8B682B36DB744144AF48F85B /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = signal.cpp; path = os/signal.cpp; sourceTree = SOURCE_ROOT; };
-		8DF1308F312D4EB1BC5AA44A /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = process.cpp; path = os/process.cpp; sourceTree = SOURCE_ROOT; };
-		8F70AB0F1EE645FE83025936 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mutex.cpp; path = lang/mutex.cpp; sourceTree = SOURCE_ROOT; };
-		8FCE6A3C769E4901B205E94C /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = log.cpp; path = log/log.cpp; sourceTree = SOURCE_ROOT; };
-		917A8F1852554A2EACB7A8C8 /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = random_generator.cpp; path = math/random_generator.cpp; sourceTree = SOURCE_ROOT; };
-		93F7F691002C4CE4A5DF63AC /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics_stage.cpp; path = seda/metrics_stage.cpp; sourceTree = SOURCE_ROOT; };
-		99DE8F05E67B40199286D4A8 /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = random_generator.cpp; path = math/random_generator.cpp; sourceTree = SOURCE_ROOT; };
-		9A267807975A4910B067D05B /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = process_param.cpp; path = os/process_param.cpp; sourceTree = SOURCE_ROOT; };
-		9E6973DEC69C412B864A2F6A /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stage.cpp; path = seda/stage.cpp; sourceTree = SOURCE_ROOT; };
-		9F1C5426D09042BFAC84E911 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics_report_event.cpp; path = seda/metrics_report_event.cpp; sourceTree = SOURCE_ROOT; };
-		A0142030418649F8BBD62E4D /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timer_snapshot.cpp; path = metrics/timer_snapshot.cpp; sourceTree = SOURCE_ROOT; };
-		A19497B1A4294259BAC8F62F /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = example_stage.cpp; path = seda/example_stage.cpp; sourceTree = SOURCE_ROOT; };
-		A33F6C1D047D42FAA19ABACA /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		AB14AA363D614C60B9E56CDD /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timer_snapshot.cpp; path = metrics/timer_snapshot.cpp; sourceTree = SOURCE_ROOT; };
-		AEEE13B274AF4DA381110104 /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = kill_thread.cpp; path = seda/kill_thread.cpp; sourceTree = SOURCE_ROOT; };
-		B8A6B91BA17242C8BC92789D /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bitmap.cpp; path = lang/bitmap.cpp; sourceTree = SOURCE_ROOT; };
-		B90EDF92BA474F328DF69D4E /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = init.cpp; path = seda/init.cpp; sourceTree = SOURCE_ROOT; };
-		B9F1BCBAC19B4D74B348552F /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = md5.cpp; path = math/md5.cpp; sourceTree = SOURCE_ROOT; };
-		BA4AE1EC9F904FA78C3BE2C9 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics.cpp; path = metrics/metrics.cpp; sourceTree = SOURCE_ROOT; };
-		BBAA93821DBC4AAA922586F8 /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = example_stage.cpp; path = seda/example_stage.cpp; sourceTree = SOURCE_ROOT; };
-		BD2C5DD89DCB4AC19B032414 /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = roll_select_dir.cpp; path = io/roll_select_dir.cpp; sourceTree = SOURCE_ROOT; };
-		BEFC272D4A2C4A0EAD40E0D4 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mutex.cpp; path = lang/mutex.cpp; sourceTree = SOURCE_ROOT; };
-		CA9C2ADA6BBB43CEB77CC439 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ini.cpp; path = conf/ini.cpp; sourceTree = SOURCE_ROOT; };
-		CBE0FE08814149CA9293EFE7 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics_registry.cpp; path = metrics/metrics_registry.cpp; sourceTree = SOURCE_ROOT; };
-		CFAB872712704B4FBE97AC86 /* common_static */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7EBEB835C794D5DBD2BE23E /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = log.cpp; path = log/log.cpp; sourceTree = SOURCE_ROOT; };
-		DB3D6553F2E44AA18305E4BA /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timer_stage.cpp; path = seda/timer_stage.cpp; sourceTree = SOURCE_ROOT; };
-		DEB39A6D42FE42CFAE84BF35 /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timeout_info.cpp; path = time/timeout_info.cpp; sourceTree = SOURCE_ROOT; };
-		E48586B2D45D4B54AED4ED72 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics.cpp; path = metrics/metrics.cpp; sourceTree = SOURCE_ROOT; };
-		E4B7B2D556C44A09B06D86F2 /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = datetime.cpp; path = time/datetime.cpp; sourceTree = SOURCE_ROOT; };
-		EA9A57B226264B3F8BC90B66 /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sampler.cpp; path = metrics/sampler.cpp; sourceTree = SOURCE_ROOT; };
-		ED02578C78CA428AA02DEC2F /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = path.cpp; path = os/path.cpp; sourceTree = SOURCE_ROOT; };
-		EF91D9B7BC6448D08DBDC689 /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = event_dispatcher.cpp; path = seda/event_dispatcher.cpp; sourceTree = SOURCE_ROOT; };
-		F713B8ADE1C04DE0840A545F /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		F98D0739BE984057A87BA1E5 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics_registry.cpp; path = metrics/metrics_registry.cpp; sourceTree = SOURCE_ROOT; };
-		FA1B5BB1669D4E078858A033 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pidfile.cpp; path = os/pidfile.cpp; sourceTree = SOURCE_ROOT; };
-		FB833D82118A4626863A9D59 /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stage.cpp; path = seda/stage.cpp; sourceTree = SOURCE_ROOT; };
-		FD176208E9B54294A8D95A97 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics_report_event.cpp; path = seda/metrics_report_event.cpp; sourceTree = SOURCE_ROOT; };
+		00D944BAE11E418A848356FF /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = signal.cpp; path = os/signal.cpp; sourceTree = SOURCE_ROOT; };
+		090D183021A94AAEB9F1869A /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = random_generator.cpp; path = math/random_generator.cpp; sourceTree = SOURCE_ROOT; };
+		0B44A56A22794D999578D06E /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = os.cpp; path = os/os.cpp; sourceTree = SOURCE_ROOT; };
+		0D73289F6D574740B12070B9 /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timeout_info.cpp; path = time/timeout_info.cpp; sourceTree = SOURCE_ROOT; };
+		16AF18FA4A2E45599087AC31 /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = datetime.cpp; path = time/datetime.cpp; sourceTree = SOURCE_ROOT; };
+		1980443B7D3843A1AB3B6230 /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = example_stage.cpp; path = seda/example_stage.cpp; sourceTree = SOURCE_ROOT; };
+		1BB534A01E2B4BDDAD0AC634 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ini.cpp; path = conf/ini.cpp; sourceTree = SOURCE_ROOT; };
+		1D6EEF66D1094ED9949F885D /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = console_reporter.cpp; path = metrics/console_reporter.cpp; sourceTree = SOURCE_ROOT; };
+		20B93EA8EC994843B79343B0 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = histogram_snapshot.cpp; path = metrics/histogram_snapshot.cpp; sourceTree = SOURCE_ROOT; };
+		21810EF8A8F04F36908D45A5 /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bitmap.cpp; path = lang/bitmap.cpp; sourceTree = SOURCE_ROOT; };
+		25C46C5582834072822ADEEA /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = string.cpp; path = lang/string.cpp; sourceTree = SOURCE_ROOT; };
+		26BF174209F84F4E8494D7E2 /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sampler.cpp; path = metrics/sampler.cpp; sourceTree = SOURCE_ROOT; };
+		2CDD81FA70224F99BA8C3AD7 /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = process.cpp; path = os/process.cpp; sourceTree = SOURCE_ROOT; };
+		2E6F2911E01A4DB4A531728E /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = example_stage.cpp; path = seda/example_stage.cpp; sourceTree = SOURCE_ROOT; };
+		33C3A3AEB6B64F37BFC23360 /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stage.cpp; path = seda/stage.cpp; sourceTree = SOURCE_ROOT; };
+		34181F0E7379488A811BE7D7 /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = kill_thread.cpp; path = seda/kill_thread.cpp; sourceTree = SOURCE_ROOT; };
+		350687FF9C2E418EAAF6AD76 /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = string.cpp; path = lang/string.cpp; sourceTree = SOURCE_ROOT; };
+		38710CAF811A4261A4359BA8 /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = init.cpp; path = seda/init.cpp; sourceTree = SOURCE_ROOT; };
+		3A514ABB383B43C6959003F9 /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = seda_config.cpp; path = seda/seda_config.cpp; sourceTree = SOURCE_ROOT; };
+		3AA7D01BA8484C52BB41E0EA /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bitmap.cpp; path = lang/bitmap.cpp; sourceTree = SOURCE_ROOT; };
+		3CDEF5676C1B4B1DB7EE1CE6 /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = log.cpp; path = log/log.cpp; sourceTree = SOURCE_ROOT; };
+		3F4FF76BB0D043208994CE60 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ini.cpp; path = conf/ini.cpp; sourceTree = SOURCE_ROOT; };
+		40EF2CA473A342F8AF3C5EA4 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timer_stage.cpp; path = seda/timer_stage.cpp; sourceTree = SOURCE_ROOT; };
+		4208DDD7F64E49DDA5E66BEA /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timer_snapshot.cpp; path = metrics/timer_snapshot.cpp; sourceTree = SOURCE_ROOT; };
+		43ED366D33EF4488BC4A5A3C /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = md5.cpp; path = math/md5.cpp; sourceTree = SOURCE_ROOT; };
+		45E110C2616C49C2ABF08660 /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = path.cpp; path = os/path.cpp; sourceTree = SOURCE_ROOT; };
+		4FAB9DFF882647D9BB5A4898 /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = roll_select_dir.cpp; path = io/roll_select_dir.cpp; sourceTree = SOURCE_ROOT; };
+		561EFC64DCF44C039B715DF7 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mutex.cpp; path = lang/mutex.cpp; sourceTree = SOURCE_ROOT; };
+		58305BAE9E8842E08CF1BD91 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timer_stage.cpp; path = seda/timer_stage.cpp; sourceTree = SOURCE_ROOT; };
+		5AC1449F01E4486D976D27FA /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = kill_thread.cpp; path = seda/kill_thread.cpp; sourceTree = SOURCE_ROOT; };
+		5B9145BF3BC1422B9CC61D7B /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics_registry.cpp; path = metrics/metrics_registry.cpp; sourceTree = SOURCE_ROOT; };
+		5CD9D244BD6242B0ABBE6374 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pidfile.cpp; path = os/pidfile.cpp; sourceTree = SOURCE_ROOT; };
+		5CE30DEBECA64EF69D46EF17 /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = md5.cpp; path = math/md5.cpp; sourceTree = SOURCE_ROOT; };
+		5CEC987E23D543D2B68FB2A4 /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = random_generator.cpp; path = math/random_generator.cpp; sourceTree = SOURCE_ROOT; };
+		637B40AA6CB645FBB72CD0AE /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = seda_config.cpp; path = seda/seda_config.cpp; sourceTree = SOURCE_ROOT; };
+		638DE07CBE7945CA947BE737 /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = thread_pool.cpp; path = seda/thread_pool.cpp; sourceTree = SOURCE_ROOT; };
+		7202F6B5383D4F7AB51D71AB /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reporter.cpp; path = metrics/reporter.cpp; sourceTree = SOURCE_ROOT; };
+		726755A59B0B48288225C6C2 /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = regex.cpp; path = math/regex.cpp; sourceTree = SOURCE_ROOT; };
+		73C4531318D34FCC9CD82BED /* common */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libcommon.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		781AA340E022477A9608AAE2 /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = signal.cpp; path = os/signal.cpp; sourceTree = SOURCE_ROOT; };
+		78F1CA15ADA7439FAFBAE270 /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = io.cpp; path = io/io.cpp; sourceTree = SOURCE_ROOT; };
+		7BEE3B6D7D5145018C88EDD7 /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = event_dispatcher.cpp; path = seda/event_dispatcher.cpp; sourceTree = SOURCE_ROOT; };
+		7C5279156BB541129A99E2BE /* common_static */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F4FA59D967A44EB9F41AF94 /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = init.cpp; path = seda/init.cpp; sourceTree = SOURCE_ROOT; };
+		816B57E7274243C3978B7C75 /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = process_param.cpp; path = os/process_param.cpp; sourceTree = SOURCE_ROOT; };
+		83F188D43931448CA20ABF9E /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics_stage.cpp; path = seda/metrics_stage.cpp; sourceTree = SOURCE_ROOT; };
+		85C16345251A4D2DAEFEB263 /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = process.cpp; path = os/process.cpp; sourceTree = SOURCE_ROOT; };
+		8A482BEC07A84774960671FE /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sampler.cpp; path = metrics/sampler.cpp; sourceTree = SOURCE_ROOT; };
+		8B8C33B884E74BAC9FD18E90 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = callback.cpp; path = seda/callback.cpp; sourceTree = SOURCE_ROOT; };
+		902692500A38454C90B5DD0E /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		91D89023170D471E963F74FE /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = log.cpp; path = log/log.cpp; sourceTree = SOURCE_ROOT; };
+		9292F2EB96C04D7FB24F42DC /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics.cpp; path = metrics/metrics.cpp; sourceTree = SOURCE_ROOT; };
+		93AED7F57C084C029D75DEE4 /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stage_event.cpp; path = seda/stage_event.cpp; sourceTree = SOURCE_ROOT; };
+		96BB107A951941FB89DEB1E0 /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stage.cpp; path = seda/stage.cpp; sourceTree = SOURCE_ROOT; };
+		98D81F3F7D6047508EDC9502 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = callback.cpp; path = seda/callback.cpp; sourceTree = SOURCE_ROOT; };
+		9A20A7E909304A158C6A655C /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = log_reporter.cpp; path = metrics/log_reporter.cpp; sourceTree = SOURCE_ROOT; };
+		9ECDBE4C6AD349148198AD18 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = log_reporter.cpp; path = metrics/log_reporter.cpp; sourceTree = SOURCE_ROOT; };
+		A008890B5F0F4542A7A21209 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = histogram_snapshot.cpp; path = metrics/histogram_snapshot.cpp; sourceTree = SOURCE_ROOT; };
+		AA4E97CA29BA4F76AD88BB3F /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = console_reporter.cpp; path = metrics/console_reporter.cpp; sourceTree = SOURCE_ROOT; };
+		AA9AD77D988741F08281F201 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics_stage.cpp; path = seda/metrics_stage.cpp; sourceTree = SOURCE_ROOT; };
+		ACE3A345D62744289220E05D /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = thread_pool.cpp; path = seda/thread_pool.cpp; sourceTree = SOURCE_ROOT; };
+		B6575DFA10D945A7AD1D0090 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mutex.cpp; path = lang/mutex.cpp; sourceTree = SOURCE_ROOT; };
+		B97591AC55B54E7992853A02 /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = os.cpp; path = os/os.cpp; sourceTree = SOURCE_ROOT; };
+		BD828A8DCA724E029E648F4E /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BFC1EE51B2AA4180ABE25FDD /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics_report_event.cpp; path = seda/metrics_report_event.cpp; sourceTree = SOURCE_ROOT; };
+		C25E077A3AC84310890F0A7A /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timer_snapshot.cpp; path = metrics/timer_snapshot.cpp; sourceTree = SOURCE_ROOT; };
+		C4CF66A9A98149ED9D467193 /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C97F967D4B3048D88FD8D18A /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = process_param.cpp; path = os/process_param.cpp; sourceTree = SOURCE_ROOT; };
+		CB225E21279D44DD8C71A3EC /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = uniform_reservoir.cpp; path = metrics/uniform_reservoir.cpp; sourceTree = SOURCE_ROOT; };
+		CB688704C6964667AFF15694 /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = event_dispatcher.cpp; path = seda/event_dispatcher.cpp; sourceTree = SOURCE_ROOT; };
+		CD19F884976049D194017BF1 /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = path.cpp; path = os/path.cpp; sourceTree = SOURCE_ROOT; };
+		D51172B40BF34E31AD663F13 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics_report_event.cpp; path = seda/metrics_report_event.cpp; sourceTree = SOURCE_ROOT; };
+		D729CD557BE744FEA808E42C /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stage_event.cpp; path = seda/stage_event.cpp; sourceTree = SOURCE_ROOT; };
+		D742403DF9C6471BB0E3EBE7 /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reporter.cpp; path = metrics/reporter.cpp; sourceTree = SOURCE_ROOT; };
+		D9E3A62CF46C4843A714AD56 /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reservoir.cpp; path = metrics/reservoir.cpp; sourceTree = SOURCE_ROOT; };
+		DB61A64B133947CB8D0BB811 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics.cpp; path = metrics/metrics.cpp; sourceTree = SOURCE_ROOT; };
+		DC23C47F2768402BA5AF0B6E /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = io.cpp; path = io/io.cpp; sourceTree = SOURCE_ROOT; };
+		DDB37B24EE3643B29FC31D45 /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timeout_info.cpp; path = time/timeout_info.cpp; sourceTree = SOURCE_ROOT; };
+		DFACB13E62324AB2B6CE42EF /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = metrics_registry.cpp; path = metrics/metrics_registry.cpp; sourceTree = SOURCE_ROOT; };
+		DFCFC0CB9D6A4FB6B7964D0A /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reservoir.cpp; path = metrics/reservoir.cpp; sourceTree = SOURCE_ROOT; };
+		E056372A2DB24ACCBB5959C7 /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = regex.cpp; path = math/regex.cpp; sourceTree = SOURCE_ROOT; };
+		F2B13BF1DACB421486270514 /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = uniform_reservoir.cpp; path = metrics/uniform_reservoir.cpp; sourceTree = SOURCE_ROOT; };
+		FA191E2CBFA94FCFBF741699 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pidfile.cpp; path = os/pidfile.cpp; sourceTree = SOURCE_ROOT; };
+		FCCDA3CF9CB0452C9AD85605 /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = roll_select_dir.cpp; path = io/roll_select_dir.cpp; sourceTree = SOURCE_ROOT; };
+		FEEBB8F44B9E4FA0850ED3FE /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = datetime.cpp; path = time/datetime.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C49F28B7D1924B65948E01EB /* Frameworks */ = {
+		13A64268AA714D68A6EAFF17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5EF4522E9AA40319BE2E84C /* Frameworks */ = {
+		B8B721ABB62241C189F47FE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -313,159 +313,159 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24129EE9093248DC9F29CB9E /* Products */ = {
+		11E51E20387F44559514A992 /* common_static */ = {
 			isa = PBXGroup;
 			children = (
-				15F532A04825411FB81EF197 /* common */,
-				CFAB872712704B4FBE97AC86 /* common_static */,
+				81EBE03778FF4B49A1504091 /* Source Files */,
+				C4CF66A9A98149ED9D467193 /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */,
 			);
-			name = Products;
+			name = common_static;
 			sourceTree = "<group>";
 		};
-		44E4B2DF831B40E28A5F3156 /* Source Files */ = {
+		145897B9014C48718D68BEF2 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				119CF73E41AE42AF8A6CFB13 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */,
-				7A1EF2C31533486688E1D905 /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */,
-				BD2C5DD89DCB4AC19B032414 /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */,
-				B8A6B91BA17242C8BC92789D /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */,
-				BEFC272D4A2C4A0EAD40E0D4 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */,
-				4B613EAE3DB44F789F35AC77 /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */,
-				D7EBEB835C794D5DBD2BE23E /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */,
-				09D3A0FC283A408C84127797 /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */,
-				99DE8F05E67B40199286D4A8 /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */,
-				7A2226368F344029A9C150E0 /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */,
-				0D873AA7C2AE476D8B511A41 /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */,
-				36FF37038CA0433D9DA7DCE0 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */,
-				12C05F4296B941DD9C983636 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */,
-				BA4AE1EC9F904FA78C3BE2C9 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */,
-				F98D0739BE984057A87BA1E5 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */,
-				6F9C5A416D024A70ABB3BB38 /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */,
-				14CC40C8FA654554BD5F400F /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */,
-				8299A1AA4B084685A944AE2D /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */,
-				AB14AA363D614C60B9E56CDD /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */,
-				1D513048F9E940058AE39F00 /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */,
-				117F8982FD2040AA8CC4C768 /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */,
-				ED02578C78CA428AA02DEC2F /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */,
-				15D54264B9F4457DA534DF69 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */,
-				8DF1308F312D4EB1BC5AA44A /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */,
-				9A267807975A4910B067D05B /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */,
-				3A01C5AB15704981BCF8A031 /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */,
-				5B1A4E477291414492AE9441 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */,
-				EF91D9B7BC6448D08DBDC689 /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */,
-				BBAA93821DBC4AAA922586F8 /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */,
-				3330DFB0D0924607B1E605D1 /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */,
-				AEEE13B274AF4DA381110104 /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */,
-				FD176208E9B54294A8D95A97 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */,
-				93F7F691002C4CE4A5DF63AC /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */,
-				63A887132877461AB5ADC5F3 /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */,
-				FB833D82118A4626863A9D59 /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */,
-				67C4D47A0DE1461AA6670957 /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */,
-				4D744C3C6EA942D58C4121DF /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */,
-				DB3D6553F2E44AA18305E4BA /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */,
-				4FE1D147ACCE445B9875133C /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */,
-				DEB39A6D42FE42CFAE84BF35 /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */,
+				C98C1412611841FA9DCF7320 /* Source Files */,
+				BD828A8DCA724E029E648F4E /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */,
 			);
-			name = "Source Files";
+			name = common;
 			sourceTree = "<group>";
 		};
-		61F63EB436A9475DB7100705 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		721C0E9FAB9B4DD5BE376DAD /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				CA9C2ADA6BBB43CEB77CC439 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */,
-				010343F0797D41D88AAD4F0D /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */,
-				463D480E8C4140E4BAAEA30C /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */,
-				5CCCF655B0E64CF19AF123C3 /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */,
-				8F70AB0F1EE645FE83025936 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */,
-				7715192AE5F84B63B3F215C1 /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */,
-				8FCE6A3C769E4901B205E94C /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */,
-				B9F1BCBAC19B4D74B348552F /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */,
-				917A8F1852554A2EACB7A8C8 /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */,
-				2FF4573315064D12B42AC7F9 /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */,
-				0F32F872A8DD4F75A49374C0 /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */,
-				23E79751B70E4E65BC7E6CB5 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */,
-				0040CC3F185D4FBE9A0BB4A4 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */,
-				E48586B2D45D4B54AED4ED72 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */,
-				CBE0FE08814149CA9293EFE7 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */,
-				724781B50AC24B448359A21C /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */,
-				6821EE70FB9743DA8753C796 /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */,
-				EA9A57B226264B3F8BC90B66 /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */,
-				A0142030418649F8BBD62E4D /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */,
-				2D8461014D354D51B3942BD5 /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */,
-				3C55046E4F8D44B79C0E66FD /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */,
-				5217F8E02A454E6AA93AE06F /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */,
-				FA1B5BB1669D4E078858A033 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */,
-				306CDFF01E0948DFA3DB8DA7 /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */,
-				27536880E3664A92855E3DB1 /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */,
-				8B682B36DB744144AF48F85B /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */,
-				82427791259247E59463ACB2 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */,
-				353BB97216964D9AAF17A1AE /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */,
-				A19497B1A4294259BAC8F62F /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */,
-				B90EDF92BA474F328DF69D4E /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */,
-				7C2BB21A78A6484F8CB0F174 /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */,
-				9F1C5426D09042BFAC84E911 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */,
-				82CC87CDDEF244A6897BC587 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */,
-				73A5E3D9F35747F9A0B9FE66 /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */,
-				9E6973DEC69C412B864A2F6A /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */,
-				519F87387B5746D8B6537C86 /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */,
-				5F7BFC819EA6412E8BC8A2A1 /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */,
-				5129F81736264B2DB9F09F10 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */,
-				E4B7B2D556C44A09B06D86F2 /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */,
-				13B19E22963F48ABBA29251D /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		89229BA8EF9848A3B42ED4A7 = {
-			isa = PBXGroup;
-			children = (
-				F829CDDB7F634295B7442B6E /* common */,
-				DDD7E8EB15384F4BB6AD5000 /* common_static */,
-				9690AF3C0910482E8B256B61 /* ALL_BUILD */,
-				24129EE9093248DC9F29CB9E /* Products */,
-				9B817F1281AA4509AC40021B /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		9690AF3C0910482E8B256B61 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				61F63EB436A9475DB7100705 /* CMake Rules */,
-				F713B8ADE1C04DE0840A545F /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		9B817F1281AA4509AC40021B /* Frameworks */ = {
+		4130481D40FC448D85A70643 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DDD7E8EB15384F4BB6AD5000 /* common_static */ = {
+		4537C4E58F274D9E85509920 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				721C0E9FAB9B4DD5BE376DAD /* Source Files */,
-				A33F6C1D047D42FAA19ABACA /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */,
+				73C4531318D34FCC9CD82BED /* common */,
+				7C5279156BB541129A99E2BE /* common_static */,
 			);
-			name = common_static;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		F829CDDB7F634295B7442B6E /* common */ = {
+		708A0776E8B8479898D324E6 = {
 			isa = PBXGroup;
 			children = (
-				44E4B2DF831B40E28A5F3156 /* Source Files */,
-				3D833B39161D4293A09DF65A /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */,
+				145897B9014C48718D68BEF2 /* common */,
+				11E51E20387F44559514A992 /* common_static */,
+				745F8FB2ED9E4F64ACCE58F2 /* ALL_BUILD */,
+				4537C4E58F274D9E85509920 /* Products */,
+				4130481D40FC448D85A70643 /* Frameworks */,
 			);
-			name = common;
+			sourceTree = "<group>";
+		};
+		745F8FB2ED9E4F64ACCE58F2 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				77C9C27D1DCE4EE3BBCE3989 /* CMake Rules */,
+				902692500A38454C90B5DD0E /* /Users/franky/documents/github/wyy/deps/common/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		77C9C27D1DCE4EE3BBCE3989 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		81EBE03778FF4B49A1504091 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BB534A01E2B4BDDAD0AC634 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */,
+				DC23C47F2768402BA5AF0B6E /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */,
+				FCCDA3CF9CB0452C9AD85605 /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */,
+				21810EF8A8F04F36908D45A5 /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */,
+				B6575DFA10D945A7AD1D0090 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */,
+				25C46C5582834072822ADEEA /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */,
+				91D89023170D471E963F74FE /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */,
+				43ED366D33EF4488BC4A5A3C /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */,
+				5CEC987E23D543D2B68FB2A4 /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */,
+				726755A59B0B48288225C6C2 /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */,
+				1D6EEF66D1094ED9949F885D /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */,
+				20B93EA8EC994843B79343B0 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */,
+				9ECDBE4C6AD349148198AD18 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */,
+				9292F2EB96C04D7FB24F42DC /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */,
+				DFACB13E62324AB2B6CE42EF /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */,
+				D742403DF9C6471BB0E3EBE7 /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */,
+				D9E3A62CF46C4843A714AD56 /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */,
+				8A482BEC07A84774960671FE /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */,
+				4208DDD7F64E49DDA5E66BEA /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */,
+				F2B13BF1DACB421486270514 /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */,
+				0B44A56A22794D999578D06E /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */,
+				CD19F884976049D194017BF1 /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */,
+				5CD9D244BD6242B0ABBE6374 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */,
+				2CDD81FA70224F99BA8C3AD7 /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */,
+				C97F967D4B3048D88FD8D18A /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */,
+				781AA340E022477A9608AAE2 /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */,
+				8B8C33B884E74BAC9FD18E90 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */,
+				CB688704C6964667AFF15694 /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */,
+				1980443B7D3843A1AB3B6230 /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */,
+				38710CAF811A4261A4359BA8 /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */,
+				34181F0E7379488A811BE7D7 /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */,
+				BFC1EE51B2AA4180ABE25FDD /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */,
+				AA9AD77D988741F08281F201 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */,
+				3A514ABB383B43C6959003F9 /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */,
+				96BB107A951941FB89DEB1E0 /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */,
+				D729CD557BE744FEA808E42C /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */,
+				ACE3A345D62744289220E05D /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */,
+				40EF2CA473A342F8AF3C5EA4 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */,
+				16AF18FA4A2E45599087AC31 /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */,
+				0D73289F6D574740B12070B9 /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C98C1412611841FA9DCF7320 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F4FF76BB0D043208994CE60 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */,
+				78F1CA15ADA7439FAFBAE270 /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */,
+				4FAB9DFF882647D9BB5A4898 /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */,
+				3AA7D01BA8484C52BB41E0EA /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */,
+				561EFC64DCF44C039B715DF7 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */,
+				350687FF9C2E418EAAF6AD76 /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */,
+				3CDEF5676C1B4B1DB7EE1CE6 /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */,
+				5CE30DEBECA64EF69D46EF17 /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */,
+				090D183021A94AAEB9F1869A /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */,
+				E056372A2DB24ACCBB5959C7 /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */,
+				AA4E97CA29BA4F76AD88BB3F /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */,
+				A008890B5F0F4542A7A21209 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */,
+				9A20A7E909304A158C6A655C /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */,
+				DB61A64B133947CB8D0BB811 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */,
+				5B9145BF3BC1422B9CC61D7B /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */,
+				7202F6B5383D4F7AB51D71AB /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */,
+				DFCFC0CB9D6A4FB6B7964D0A /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */,
+				26BF174209F84F4E8494D7E2 /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */,
+				C25E077A3AC84310890F0A7A /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */,
+				CB225E21279D44DD8C71A3EC /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */,
+				B97591AC55B54E7992853A02 /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */,
+				45E110C2616C49C2ABF08660 /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */,
+				FA191E2CBFA94FCFBF741699 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */,
+				85C16345251A4D2DAEFEB263 /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */,
+				816B57E7274243C3978B7C75 /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */,
+				00D944BAE11E418A848356FF /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */,
+				98D81F3F7D6047508EDC9502 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */,
+				7BEE3B6D7D5145018C88EDD7 /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */,
+				2E6F2911E01A4DB4A531728E /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */,
+				7F4FA59D967A44EB9F41AF94 /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */,
+				5AC1449F01E4486D976D27FA /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */,
+				D51172B40BF34E31AD663F13 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */,
+				83F188D43931448CA20ABF9E /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */,
+				637B40AA6CB645FBB72CD0AE /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */,
+				33C3A3AEB6B64F37BFC23360 /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */,
+				93AED7F57C084C029D75DEE4 /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */,
+				638DE07CBE7945CA947BE737 /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */,
+				58305BAE9E8842E08CF1BD91 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */,
+				FEEBB8F44B9E4FA0850ED3FE /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */,
+				DDB37B24EE3643B29FC31D45 /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */,
+			);
+			name = "Source Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,37 +473,37 @@
 /* Begin PBXNativeTarget section */
 		9D5FFA11592E4171875A6CD4 /* common */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02BC99157747438FBB02C7B9 /* Build configuration list for PBXNativeTarget "common" */;
+			buildConfigurationList = DBD0C9D108EE45A784220800 /* Build configuration list for PBXNativeTarget "common" */;
 			buildPhases = (
-				8921F48A6D7D49D3BB871AC3 /* Sources */,
-				C49F28B7D1924B65948E01EB /* Frameworks */,
+				A7B20AEFF3EA4AACA949629B /* Sources */,
+				B8B721ABB62241C189F47FE0 /* Frameworks */,
 				4C0C384BF967ABCE01318D9C /* CMake PostBuild Rules */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2DF63C3BDDEB479295B38495 /* PBXTargetDependency */,
+				3521559DA56A40B6A5974F0E /* PBXTargetDependency */,
 			);
 			name = common;
 			productName = common;
-			productReference = 15F532A04825411FB81EF197 /* common */;
+			productReference = 73C4531318D34FCC9CD82BED /* common */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 		F45B2E9E7C914AED98276520 /* common_static */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24FC192F08DE483F9B3EE818 /* Build configuration list for PBXNativeTarget "common_static" */;
+			buildConfigurationList = 7E7D741BE4AB430E84BAC809 /* Build configuration list for PBXNativeTarget "common_static" */;
 			buildPhases = (
-				C856FEA240694A89A13A2AA8 /* Sources */,
-				F5EF4522E9AA40319BE2E84C /* Frameworks */,
+				48A6800565834FEFB205BD30 /* Sources */,
+				13A64268AA714D68A6EAFF17 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7B385FF96E794A1A9EF1A621 /* PBXTargetDependency */,
+				1873943B5C9F445BBED9B719 /* PBXTargetDependency */,
 			);
 			name = common_static;
 			productName = common_static;
-			productReference = CFAB872712704B4FBE97AC86 /* common_static */;
+			productReference = 7C5279156BB541129A99E2BE /* common_static */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -515,18 +515,18 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1310;
 			};
-			buildConfigurationList = 073EB51CF06745418ABE2DC9 /* Build configuration list for PBXProject "common" */;
+			buildConfigurationList = A8F75F39B0A54549979F5802 /* Build configuration list for PBXProject "common" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				F480163895B147D28AE12BCA /* Debug */,
-				F41BA0EB8CB7497384DEFAD5 /* Release */,
-				D4E6DC430EDA4AD7B25879F3 /* MinSizeRel */,
-				AD1738C411F149D0B137B095 /* RelWithDebInfo */,
+				FDE088D3846842529C26C6BE /* Debug */,
+				B8F7A553F6CF4954A0A5D7D5 /* Release */,
+				C53ECAFD576940B7BEC3C9E0 /* MinSizeRel */,
+				1F4D6E3DECEB4292B9E6C0FD /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 89229BA8EF9848A3B42ED4A7;
+			mainGroup = 708A0776E8B8479898D324E6;
 			projectDirPath = .;
 			projectRoot = "";
 			targets = (
@@ -716,345 +716,137 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8921F48A6D7D49D3BB871AC3 /* Sources */ = {
+		48A6800565834FEFB205BD30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C3F780E7F1F40DEB4497EDC /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */,
-				41378106685E4156A6984AD6 /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */,
-				AA42D8FB996E4E7CB3190A46 /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */,
-				F93D21DEBD58404DB368EB28 /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */,
-				C6B7AA9F5B4B4E788218BCD6 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */,
-				61BFE0FF3E1044C485291ADE /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */,
-				93C37AFD16874242B6068AF9 /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */,
-				47BAFFC7E9ED4B948B887E77 /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */,
-				DD9A84E0E8324065A35ABC09 /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */,
-				36B9CCF77ABD4635AB7BD876 /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */,
-				DCFF7F7D397A44058C400724 /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */,
-				EE8592433658481683E40364 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */,
-				98269F0355FD4C8BBEAC9167 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */,
-				1956D8EDF56F46A9A7A48E4E /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */,
-				3E678FFCC467476E9C070E76 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */,
-				DF97DD2E388143AAA69B9050 /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */,
-				C1AAD27F23464B7EB805B977 /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */,
-				507BA09FED4E4C1EA9498BF3 /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */,
-				69D262C5E7DB4E65ADAFC6A5 /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */,
-				EDC59148578A401BB0196465 /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */,
-				BF407079AA644B009340A3C5 /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */,
-				58AC959314CB402F9DD9C600 /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */,
-				9CE55B0364CA41B387BF0B83 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */,
-				2A236352FC5546CFA89EBC99 /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */,
-				FDED52F6FF004C29B7DE38FE /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */,
-				01225A5EDE4B4FB584D8A4D6 /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */,
-				14386280B0E74F078DD5E8C1 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */,
-				D123FB706882415F99216EC6 /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */,
-				19347F1C2EC4402D9E66C851 /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */,
-				6123DBB8C200410BAFD2A82E /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */,
-				D3439656A3DD4841982FB760 /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */,
-				67DE8CDD8610425B8DDCB78E /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */,
-				7E7AC157BAA3459BB7CA719F /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */,
-				EFD16185C92D42F8920AB2DD /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */,
-				05BC50276AC9425D97D8438B /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */,
-				B1F74B3DAB014724ABA60D83 /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */,
-				1CC3404BD8974B6BA4C0CEFC /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */,
-				D9353805816D4D4CA53CD467 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */,
-				D63B81997368497F81CD1303 /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */,
-				BDAC5F2E6E2C45ADACBB8AE8 /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */,
+				A565EA33C14945FD9ED7F44E /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */,
+				4B2FCDE312F44AB1A5AA4677 /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */,
+				DFA80CF92977498DB5FEF2DC /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */,
+				E250F5BCCB244BBAA438EAE6 /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */,
+				837176B04D0348C8A66D3622 /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */,
+				17745E6BB2544B7DBE89B1BC /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */,
+				73C03C2DE31342C4972DEFCB /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */,
+				3A797F7138B14F2CAE010F93 /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */,
+				3A133A739250475FB82C28ED /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */,
+				40AEFC3778D34672B3B0C94B /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */,
+				0985D7DA1D244DEEA83F58C6 /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */,
+				678ABA97F3224CBE893BC869 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */,
+				6B660A27A59D4005B2BFECB3 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */,
+				8A4EBC09C2CD4AE09484D643 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */,
+				BFFE29DBD55F4A27949629AA /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */,
+				E2D4BC49C3924C3E97352E9C /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */,
+				CD7E6DCCD6064B5EAA7EF7C1 /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */,
+				9B0262B939C642DABF1EE78C /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */,
+				8A706D88DBBC4997AD45C95A /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */,
+				CD8371E77CDE40F2A20F558C /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */,
+				1B80F112CA1B4D6E8783AF24 /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */,
+				195C1ABBCF4F461B88EE6C9E /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */,
+				2341C83FF73344219D1DF597 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */,
+				D3D09860CEDF47FF9D476874 /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */,
+				E746C6102CDB4F82A2BF1EFB /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */,
+				4E72B80165E94943B472C6C2 /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */,
+				FCBC8A443C1649A38B6523CE /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */,
+				8716B33EC3CA4610BA5D0CD0 /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */,
+				2514B900B81C4AE789DEA4A5 /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */,
+				CA896ACD55B647BABEC558D5 /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */,
+				24DAD3DB3BE14E0DB96C58EF /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */,
+				1EEF857E59344A84BA4E87AA /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */,
+				B7A6749BDEEB4F75904E4683 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */,
+				18A4C25D928A46EDA842FD58 /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */,
+				E441324A13EC410B83711028 /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */,
+				F676A50E2A614BE082F53077 /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */,
+				ED2C21EFEC4D4427AA104CCF /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */,
+				4DF232B20C9E4D4F97FD8B06 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */,
+				36AD0CC31B6F4E98B3D264E4 /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */,
+				7D0160AEEAC64E30A7D12508 /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C856FEA240694A89A13A2AA8 /* Sources */ = {
+		A7B20AEFF3EA4AACA949629B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7892AFFC6E1B406C95177B12 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */,
-				36B570CBC8FF44649754ECFE /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */,
-				0BD5790FD4454A4B9DB78B50 /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */,
-				EDA0B0A30C6240AF8B63D1D3 /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */,
-				DBC069FDA8A640ED851DB4FB /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */,
-				F40668A093F14D288F5105DE /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */,
-				09153B9F066442DFAF1E2170 /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */,
-				F211FF7CA004412E92DC53A3 /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */,
-				4652E48C120F4F82AB199A31 /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */,
-				7C3C4F7DEABE400CAC5657DE /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */,
-				2D3C7F68B6A64D31B268C8AC /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */,
-				AD346F24E9534C26B40C86AA /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */,
-				A1F1A4B0E57D42458E897106 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */,
-				EF40270773AE4BF79BD6EB90 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */,
-				100CCCBC095F460AA1E78111 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */,
-				DF422BF3007649EE975902A1 /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */,
-				753675D69C5E467A8524CCC0 /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */,
-				01130ACE407C45CE91148DC8 /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */,
-				C831270634F446DCAAEFF5B1 /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */,
-				6FAEC5EBB1834B8982483ED1 /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */,
-				0BF28A921737473BADC4345F /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */,
-				17C77F88A755465FB8620E95 /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */,
-				12746F1B40804D0BAB01CD9E /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */,
-				AFD9253B234340B6B17FE66A /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */,
-				9A99A2CC3CC14869B2B63F46 /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */,
-				D264500551A7434AA455A335 /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */,
-				D101A1DEC6E74E76AB474B24 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */,
-				2CB7A825887D49CEBCBAF0C3 /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */,
-				426447E1D3FE49D49BB3C087 /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */,
-				60AC5370A2DE40B9AC6C9919 /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */,
-				E14F54C00C3042B0AC54288D /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */,
-				6E372B6F3A7A43299C2CFDB0 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */,
-				FA977364DB9C47FABDC91165 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */,
-				5AD58C8ED97E42B99AF69B0F /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */,
-				2E0E5284942D437C86D21489 /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */,
-				9A822B15B3D444B691BEA93E /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */,
-				AFCF730CA90F454DB88E4BB6 /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */,
-				75C18A8A1FB34BB18B4F42C2 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */,
-				C552129D52604BFBB71A3889 /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */,
-				39EE885B0BAD4408AAC02F2D /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */,
+				C7C18D8082EB4AD1BCEFBA10 /* /Users/franky/documents/github/wyy/deps/common/conf/ini.cpp */,
+				32917F7B937A4DA68593B813 /* /Users/franky/documents/github/wyy/deps/common/io/io.cpp */,
+				F4DFBFEA0A224A32A7D7E1E7 /* /Users/franky/documents/github/wyy/deps/common/io/roll_select_dir.cpp */,
+				BB1F12AD81E24C9CA68D6448 /* /Users/franky/documents/github/wyy/deps/common/lang/bitmap.cpp */,
+				D144B3975C6A4DA6AC3F081B /* /Users/franky/documents/github/wyy/deps/common/lang/mutex.cpp */,
+				60364ACB359D407D9C1BD257 /* /Users/franky/documents/github/wyy/deps/common/lang/string.cpp */,
+				B31A1B3931104BD890DF84F2 /* /Users/franky/documents/github/wyy/deps/common/log/log.cpp */,
+				225831289580423495C99A1E /* /Users/franky/documents/github/wyy/deps/common/math/md5.cpp */,
+				0922CAC225BF4D28A795EB05 /* /Users/franky/documents/github/wyy/deps/common/math/random_generator.cpp */,
+				6E4A082BD28846B4AA0E4A3D /* /Users/franky/documents/github/wyy/deps/common/math/regex.cpp */,
+				B8E898CB5F414B41B40457A4 /* /Users/franky/documents/github/wyy/deps/common/metrics/console_reporter.cpp */,
+				32014E4DC5A14868B52E1CA3 /* /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.cpp */,
+				B8453E8A288C451C9993E4E2 /* /Users/franky/documents/github/wyy/deps/common/metrics/log_reporter.cpp */,
+				158BFB419925476186CF4BD3 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics.cpp */,
+				97D27DFACA284DB1AAB5D180 /* /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.cpp */,
+				9CD3CEE661A4433C8CDEA42D /* /Users/franky/documents/github/wyy/deps/common/metrics/reporter.cpp */,
+				9ADEE2896C19490D9FA7DF73 /* /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.cpp */,
+				FC08D937CC2449ADA15BFFDF /* /Users/franky/documents/github/wyy/deps/common/metrics/sampler.cpp */,
+				E642FF78346A47CA88DD498D /* /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.cpp */,
+				22367B96138046259B443C55 /* /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.cpp */,
+				D9D78D3EAD734C2881879324 /* /Users/franky/documents/github/wyy/deps/common/os/os.cpp */,
+				6A939BF073814C6D8F902B5A /* /Users/franky/documents/github/wyy/deps/common/os/path.cpp */,
+				71EED59CC8BA448DAA4523B0 /* /Users/franky/documents/github/wyy/deps/common/os/pidfile.cpp */,
+				4BEFDCB5E75D452A88374EAA /* /Users/franky/documents/github/wyy/deps/common/os/process.cpp */,
+				11F12813F25B4A1FBA608ACE /* /Users/franky/documents/github/wyy/deps/common/os/process_param.cpp */,
+				B31AF5B9DB3B4C499979974D /* /Users/franky/documents/github/wyy/deps/common/os/signal.cpp */,
+				A84CA0487F074BA8BEB6D866 /* /Users/franky/documents/github/wyy/deps/common/seda/callback.cpp */,
+				35E3EC6680C24F308CED965E /* /Users/franky/documents/github/wyy/deps/common/seda/event_dispatcher.cpp */,
+				CFE89130C4FA41B58A751DD5 /* /Users/franky/documents/github/wyy/deps/common/seda/example_stage.cpp */,
+				D70CA8649DE04CBF800539E2 /* /Users/franky/documents/github/wyy/deps/common/seda/init.cpp */,
+				923ADF38F7DF4CE092D5D274 /* /Users/franky/documents/github/wyy/deps/common/seda/kill_thread.cpp */,
+				A23AC5AC8B35414CAB5185B0 /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_report_event.cpp */,
+				A065E6064C134032B8B352BB /* /Users/franky/documents/github/wyy/deps/common/seda/metrics_stage.cpp */,
+				C54487B5418F452DB715E260 /* /Users/franky/documents/github/wyy/deps/common/seda/seda_config.cpp */,
+				FB21E1FFA2FE469F9189C556 /* /Users/franky/documents/github/wyy/deps/common/seda/stage.cpp */,
+				3174BC99B1364E5C90AF530D /* /Users/franky/documents/github/wyy/deps/common/seda/stage_event.cpp */,
+				55F142627AF247C4BD410171 /* /Users/franky/documents/github/wyy/deps/common/seda/thread_pool.cpp */,
+				EE048557EE1B43EF9E806824 /* /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.cpp */,
+				D11A4DE68B03401DB23958D4 /* /Users/franky/documents/github/wyy/deps/common/time/datetime.cpp */,
+				709FBDE8E3C04C98857D2D41 /* /Users/franky/documents/github/wyy/deps/common/time/timeout_info.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		18159989A8BF45AEA615D508 /* PBXTargetDependency */ = {
+		1873943B5C9F445BBED9B719 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
+			targetProxy = 61CBD1A92FB54C1389B72FBC /* PBXContainerItemProxy */;
+		};
+		3521559DA56A40B6A5974F0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
+			targetProxy = F77B358ED78A4E739104E3CC /* PBXContainerItemProxy */;
+		};
+		71FE34B87BD747948A9B8E8D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 744B6BC962CD43C694CE0682 /* ALL_BUILD */;
-			targetProxy = 3E383ABF8F62453CB14C672A /* PBXContainerItemProxy */;
+			targetProxy = 1C6C1F6E71214E4C816A9176 /* PBXContainerItemProxy */;
 		};
-		2DF63C3BDDEB479295B38495 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
-			targetProxy = A5B663FB1B144C349E77D961 /* PBXContainerItemProxy */;
-		};
-		4F222ABA3A6148D58A137ED8 /* PBXTargetDependency */ = {
+		733DC2C255C1487FB6FBF247 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9D5FFA11592E4171875A6CD4 /* common */;
-			targetProxy = 1CAAF68AE9114D14BCBDE6E8 /* PBXContainerItemProxy */;
+			targetProxy = 0C3EA24427834AEF97B8F394 /* PBXContainerItemProxy */;
 		};
-		77FDA287E50B4E869C44CB01 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
-			targetProxy = 05D6AFE62B2A43CF93DED200 /* PBXContainerItemProxy */;
-		};
-		7B385FF96E794A1A9EF1A621 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
-			targetProxy = BEC69D47924E48C1A4F7C263 /* PBXContainerItemProxy */;
-		};
-		A3240C7D67E3433E8E469DC0 /* PBXTargetDependency */ = {
+		7AA4B43893F14C8B81920256 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F45B2E9E7C914AED98276520 /* common_static */;
-			targetProxy = D852D45F5969467CBA0E0B79 /* PBXContainerItemProxy */;
+			targetProxy = 59E038B29AB344FEBBD20DE2 /* PBXContainerItemProxy */;
+		};
+		DC27EA824345447F8AFE57CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
+			targetProxy = 05E92DDE8550495891FEEFC8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1B9111FB9E6B49DC986D63FD /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/MinSizeRel;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"'MAIJOR_VER=1'","'MINOR_VER=0'","'PATCH_VER=0'","'OTHER_VER=1'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/deps/common/..,"$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = common;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		20C319E96E0D4D6995F8FE85 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/Debug;
-				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
-				DYLIB_CURRENT_VERSION = 1.0.0;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .dylib;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",common_EXPORTS,__MACH__,"'MAIJOR_VER=1'","'MINOR_VER=0'","'PATCH_VER=0'","'OTHER_VER=1'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/deps/common/..,"$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = DYNAMIC;
-				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             -fPIC '-std=gnu++14' ";
-				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names -install_name @rpath/libcommon.1.dylib","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = common.1.0.0;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		2C091CEC57574D988EAAA7A4 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				MACOSX_DEPLOYMENT_TARGET = 11.6;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
-				SYMROOT = /Users/franky/documents/github/wyy/deps/common/build;
-			};
-			name = RelWithDebInfo;
-		};
-		31A808A4D70949D8A847E70B /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		3969CEDD80CA4115A86FD81D /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				MACOSX_DEPLOYMENT_TARGET = 11.6;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
-				SYMROOT = /Users/franky/documents/github/wyy/deps/common/build;
-			};
-			name = MinSizeRel;
-		};
-		4B6615D5791F456BBEF7F7A1 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		4D0486E1AB034ABF81F6EA07 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		6EA11637CCE34F7FB805CA88 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/RelWithDebInfo;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"'MAIJOR_VER=1'","'MINOR_VER=0'","'PATCH_VER=0'","'OTHER_VER=1'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/deps/common/..,"$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1                 -DNDEBUG '-std=gnu++14' ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = common;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		782DBE98E223461FAA410DCA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/Release;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"'MAIJOR_VER=1'","'MINOR_VER=0'","'PATCH_VER=0'","'OTHER_VER=1'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/deps/common/..,"$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = common;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		7A0D8520F12F4412BF75A66D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		ADF27BBD8DAC4FEAB2C6E152 /* RelWithDebInfo */ = {
+		025EC5BBD31C4B8FA68FDAB0 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1082,7 +874,7 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		AE1A0CF55C474B2798B44D5D /* Debug */ = {
+		13C158514646431F97BA78BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1094,26 +886,15 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
+				PRODUCT_NAME = install;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Debug;
-		};
-		B35634B9B4AC40F0A3423CFF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				MACOSX_DEPLOYMENT_TARGET = 11.6;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
-				SYMROOT = /Users/franky/documents/github/wyy/deps/common/build;
-			};
 			name = Release;
 		};
-		B92F56B06AC44D3BA4AB86B8 /* MinSizeRel */ = {
+		1655CE6661D44B70BF819461 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1133,35 +914,7 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		BBAE24B7F93743609B1474F9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/Release;
-				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
-				DYLIB_CURRENT_VERSION = 1.0.0;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .dylib;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",common_EXPORTS,__MACH__,"'MAIJOR_VER=1'","'MINOR_VER=0'","'PATCH_VER=0'","'OTHER_VER=1'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/deps/common/..,"$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = DYNAMIC;
-				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG -fPIC '-std=gnu++14' ";
-				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names -install_name @rpath/libcommon.1.dylib","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = common.1.0.0;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		C2D95A6220AD457ABF20AC0F /* RelWithDebInfo */ = {
+		1B89E1B6D9C247D78C8B2288 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1173,50 +926,30 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
+				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = RelWithDebInfo;
+			name = MinSizeRel;
 		};
-		CC21438D043A46A989D452E9 /* Debug */ = {
+		3329CDC497264771A53FF463 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		CCDB885B2D604899A77E3C01 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/Debug;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/MinSizeRel;
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"'MAIJOR_VER=1'","'MINOR_VER=0'","'PATCH_VER=0'","'OTHER_VER=1'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/deps/common/..,"$(inherited)");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             '-std=gnu++14' ";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
 				OTHER_LIBTOOLFLAGS = ("");
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = common;
@@ -1225,9 +958,35 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Debug;
+			name = MinSizeRel;
 		};
-		D7F2F73304864945905EA502 /* MinSizeRel */ = {
+		3D18BD91DBB94689BA595813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"'MAIJOR_VER=1'","'MINOR_VER=0'","'PATCH_VER=0'","'OTHER_VER=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/deps/common/..,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = common;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		3F250BCDBC0B44F7AEB5F82A /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1255,27 +1014,18 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		DFA5ACD2B7A94003B8C0F064 /* RelWithDebInfo */ = {
+		4EE71A027C774D618BF8867A /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = /Users/franky/documents/github/wyy/deps/common/build;
 			};
 			name = RelWithDebInfo;
 		};
-		E4998FEE39524C18AA071163 /* MinSizeRel */ = {
+		4EFF97A72EA1407B8A718B22 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1295,7 +1045,27 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		F9DB1D6D30C24184A93E6133 /* Debug */ = {
+		59FB20089FDF4FCA8D8007A8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5DC3080F612F4C3AAD131768 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1308,6 +1078,32 @@ exit 0";
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		621DD5146DB64B3C9D644E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"'MAIJOR_VER=1'","'MINOR_VER=0'","'PATCH_VER=0'","'OTHER_VER=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/deps/common/..,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             '-std=gnu++14' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = common;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
 				USE_HEADERMAP = NO;
@@ -1315,7 +1111,7 @@ exit 0";
 			};
 			name = Debug;
 		};
-		FBD486E5F73B4EB1BEE72BD5 /* Release */ = {
+		63CB2C2B805649F6811BF5AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1327,7 +1123,63 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		63EA0E3D953E4DA1AA2FAC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/Debug;
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",common_EXPORTS,__MACH__,"'MAIJOR_VER=1'","'MINOR_VER=0'","'PATCH_VER=0'","'OTHER_VER=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/deps/common/..,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             -fPIC '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names -install_name @rpath/libcommon.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = common.1.0.0;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		8F9A528E52BC421FA0D8D105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/Release;
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",common_EXPORTS,__MACH__,"'MAIJOR_VER=1'","'MINOR_VER=0'","'PATCH_VER=0'","'OTHER_VER=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/deps/common/..,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG -fPIC '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names -install_name @rpath/libcommon.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = common.1.0.0;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
 				USE_HEADERMAP = NO;
@@ -1335,7 +1187,29 @@ exit 0";
 			};
 			name = Release;
 		};
-		FF2CF13B53F548958EB0624E /* Debug */ = {
+		A8C6CA534C5042BD823AF32E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = /Users/franky/documents/github/wyy/deps/common/build;
+			};
+			name = Release;
+		};
+		A9054FA48AF34043AF8BD12D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = /Users/franky/documents/github/wyy/deps/common/build;
+			};
+			name = MinSizeRel;
+		};
+		C4FE689D5B9542B9A24CEF9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
@@ -1346,71 +1220,197 @@ exit 0";
 			};
 			name = Debug;
 		};
+		C9F4C618B4224D2DB1F1FDBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		CC7336C1BB1E41E1AA3EB4E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		DA491F4E685445FD9E8A2A78 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E50FFBD648C04752856B3802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F6C9C3A9C0F245A380321096 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/lib/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"'MAIJOR_VER=1'","'MINOR_VER=0'","'PATCH_VER=0'","'OTHER_VER=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/deps/common/..,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1                 -DNDEBUG '-std=gnu++14' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = common;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F772D1FC9EDA4ACCAB8C47F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/deps/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02BC99157747438FBB02C7B9 /* Build configuration list for PBXNativeTarget "common" */ = {
+		0AAB1BE59B05454490AD8044 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				20C319E96E0D4D6995F8FE85 /* Debug */,
-				BBAE24B7F93743609B1474F9 /* Release */,
-				D7F2F73304864945905EA502 /* MinSizeRel */,
-				ADF27BBD8DAC4FEAB2C6E152 /* RelWithDebInfo */,
+				C9F4C618B4224D2DB1F1FDBF /* Debug */,
+				E50FFBD648C04752856B3802 /* Release */,
+				1655CE6661D44B70BF819461 /* MinSizeRel */,
+				DA491F4E685445FD9E8A2A78 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		073EB51CF06745418ABE2DC9 /* Build configuration list for PBXProject "common" */ = {
+		7CFCBA2E690B44478E98F38A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF2CF13B53F548958EB0624E /* Debug */,
-				B35634B9B4AC40F0A3423CFF /* Release */,
-				3969CEDD80CA4115A86FD81D /* MinSizeRel */,
-				2C091CEC57574D988EAAA7A4 /* RelWithDebInfo */,
+				63CB2C2B805649F6811BF5AC /* Debug */,
+				CC7336C1BB1E41E1AA3EB4E1 /* Release */,
+				1B89E1B6D9C247D78C8B2288 /* MinSizeRel */,
+				59FB20089FDF4FCA8D8007A8 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		128B521FFA8F442FB70CB9B5 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		7E7D741BE4AB430E84BAC809 /* Build configuration list for PBXNativeTarget "common_static" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC21438D043A46A989D452E9 /* Debug */,
-				7A0D8520F12F4412BF75A66D /* Release */,
-				B92F56B06AC44D3BA4AB86B8 /* MinSizeRel */,
-				4B6615D5791F456BBEF7F7A1 /* RelWithDebInfo */,
+				621DD5146DB64B3C9D644E5F /* Debug */,
+				3D18BD91DBB94689BA595813 /* Release */,
+				3329CDC497264771A53FF463 /* MinSizeRel */,
+				F6C9C3A9C0F245A380321096 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		24FC192F08DE483F9B3EE818 /* Build configuration list for PBXNativeTarget "common_static" */ = {
+		9A1AE44E5BD840BE9EB04916 /* Build configuration list for PBXAggregateTarget "install" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CCDB885B2D604899A77E3C01 /* Debug */,
-				782DBE98E223461FAA410DCA /* Release */,
-				1B9111FB9E6B49DC986D63FD /* MinSizeRel */,
-				6EA11637CCE34F7FB805CA88 /* RelWithDebInfo */,
+				F772D1FC9EDA4ACCAB8C47F7 /* Debug */,
+				13C158514646431F97BA78BF /* Release */,
+				4EFF97A72EA1407B8A718B22 /* MinSizeRel */,
+				5DC3080F612F4C3AAD131768 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		8713DB12A5D44FACB46F5DC8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		A8F75F39B0A54549979F5802 /* Build configuration list for PBXProject "common" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AE1A0CF55C474B2798B44D5D /* Debug */,
-				4D0486E1AB034ABF81F6EA07 /* Release */,
-				31A808A4D70949D8A847E70B /* MinSizeRel */,
-				DFA5ACD2B7A94003B8C0F064 /* RelWithDebInfo */,
+				C4FE689D5B9542B9A24CEF9F /* Debug */,
+				A8C6CA534C5042BD823AF32E /* Release */,
+				A9054FA48AF34043AF8BD12D /* MinSizeRel */,
+				4EE71A027C774D618BF8867A /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		E0151B6B4645496D8139D961 /* Build configuration list for PBXAggregateTarget "install" */ = {
+		DBD0C9D108EE45A784220800 /* Build configuration list for PBXNativeTarget "common" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F9DB1D6D30C24184A93E6133 /* Debug */,
-				FBD486E5F73B4EB1BEE72BD5 /* Release */,
-				E4998FEE39524C18AA071163 /* MinSizeRel */,
-				C2D95A6220AD457ABF20AC0F /* RelWithDebInfo */,
+				63EA0E3D953E4DA1AA2FAC41 /* Debug */,
+				8F9A528E52BC421FA0D8D105 /* Release */,
+				3F250BCDBC0B44F7AEB5F82A /* MinSizeRel */,
+				025EC5BBD31C4B8FA68FDAB0 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

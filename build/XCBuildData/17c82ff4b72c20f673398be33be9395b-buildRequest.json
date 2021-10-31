@@ -1,0 +1,103 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e58667172889fc9614b3c59470a618064f914af2b"
+    },
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e586671726f6bd8101bb102b9fbaccbb0716502cf"
+    },
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e586671729ccb665adfbcef93a2a2f93625ac46b0"
+    },
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e58667172b99f1ef6d0e9ae45bfb2ea58e4cc020a"
+    },
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e58667172d00d624bd135d230f586c3d9f18bf627"
+    },
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e586671722b9951920de9bfc654d9f25289561bd0"
+    },
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e586671720f7ece46e96a3b1985804b3b55c55cb8"
+    },
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e5866717283a55940c51db0aa48d782063160c782"
+    },
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e58667172f17b25d3f0a2b593145e0b4e956ad011"
+    },
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e586671728e30c2f9797175a2151e37d07fde75af"
+    },
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e58667172d3753d8997733659d67ceab66d6f4726"
+    },
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e58667172951cec62a59bbd70d6647a83aada9a63"
+    },
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e58667172178015713e301cdf94e6f27c165439f0"
+    },
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e58667172e34f9234f9abf13c5d627357e0208f47"
+    },
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e58667172c9f6eb6c87f443cece8cda6725da3928"
+    },
+    {
+      "guid" : "eb0e3daf7cee321846c5cb5e586671728a73f17921bba77298f939534571d601"
+    }
+  ],
+  "containerPath" : "/Users/franky/Documents/github/wyy/minidb.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx12.0",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "x86_64h",
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/franky/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/franky/Library/Developer/Xcode/DerivedData/minidb-gxhdkpkbhsjtapcfmzrhmwqpdazi/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/franky/Library/Developer/Xcode/DerivedData/minidb-gxhdkpkbhsjtapcfmzrhmwqpdazi/Index/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

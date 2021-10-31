@@ -1,112 +1,656 @@
-# include 另外一个cmake 配置
-#INCLUDE(file1 [OPTIONAL])
+cmake_minimum_required(VERSION 3.17)
+project(wyy)
 
-cmake_minimum_required(VERSION 3.10)
 set(CMAKE_CXX_STANDARD 14)
-#SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-project(minidb)
+include_directories(.)
+include_directories(CMakeScripts)
+include_directories(deps)
+include_directories(deps/common)
+include_directories(deps/common/conf)
+include_directories(deps/common/io)
+include_directories(deps/common/lang)
+include_directories(deps/common/log)
+include_directories(deps/common/math)
+include_directories(deps/common/metrics)
+include_directories(deps/common/mm)
+include_directories(deps/common/os)
+include_directories(deps/common/seda)
+include_directories(deps/common/time)
+include_directories(deps/googletest)
+include_directories(deps/googletest/googlemock)
+include_directories(deps/googletest/googlemock/include)
+include_directories(deps/googletest/googlemock/include/gmock)
+include_directories(deps/googletest/googlemock/include/gmock/internal)
+include_directories(deps/googletest/googlemock/include/gmock/internal/custom)
+include_directories(deps/googletest/googlemock/src)
+include_directories(deps/googletest/googlemock/test)
+include_directories(deps/googletest/googletest)
+include_directories(deps/googletest/googletest/include)
+include_directories(deps/googletest/googletest/include/gtest)
+include_directories(deps/googletest/googletest/include/gtest/internal)
+include_directories(deps/googletest/googletest/include/gtest/internal/custom)
+include_directories(deps/googletest/googletest/samples)
+include_directories(deps/googletest/googletest/src)
+include_directories(deps/googletest/googletest/test)
+include_directories(deps/jsoncpp)
+include_directories(deps/jsoncpp/example)
+include_directories(deps/jsoncpp/include)
+include_directories(deps/jsoncpp/include/json)
+include_directories(deps/jsoncpp/src)
+include_directories(deps/jsoncpp/src/jsontestrunner)
+include_directories(deps/jsoncpp/src/lib_json)
+include_directories(deps/jsoncpp/src/test_lib_json)
+include_directories(deps/libevent)
+include_directories(deps/libevent/compat)
+include_directories(deps/libevent/compat/sys)
+include_directories(deps/libevent/include)
+include_directories(deps/libevent/include/event2)
+include_directories(deps/libevent/sample)
+include_directories(deps/libevent/test)
+include_directories(deps/libevent/WIN32-Code)
+include_directories(deps/libevent/WIN32-Code/nmake)
+include_directories(deps/libevent/WIN32-Code/nmake/event2)
+include_directories(lib)
+include_directories(src)
+include_directories(src/obclient)
+include_directories(src/observer)
+include_directories(src/observer/event)
+include_directories(src/observer/handler)
+include_directories(src/observer/net)
+include_directories(src/observer/session)
+include_directories(src/observer/sql)
+include_directories(src/observer/sql/executor)
+include_directories(src/observer/sql/optimizer)
+include_directories(src/observer/sql/parser)
+include_directories(src/observer/sql/plan_cache)
+include_directories(src/observer/sql/query_cache)
+include_directories(src/observer/storage)
+include_directories(src/observer/storage/common)
+include_directories(src/observer/storage/default)
+include_directories(src/observer/storage/mem)
+include_directories(src/observer/storage/trx)
+include_directories(test)
+include_directories(unitest)
 
-MESSAGE(STATUS "This is SOURCE dir " ${test_SOURCE_DIR})
-MESSAGE(STATUS "This is BINARY dir " ${test_BINARY_DIR})
-MESSAGE(STATUS "This is Project source dir " ${PROJECT_SOURCE_DIR})
-MESSAGE(STATUS "This is PROJECT_BINARY_DIR dir " ${PROJECT_BINARY_DIR})
-
-
-SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
-#SET(LIBRARY_OUTPUT_PATH <路径>)
-
-MESSAGE(STATUS "HOME dir: $ENV{HOME}")
-#SET(ENV{变量名} 值)
-IF(WIN32)
-    MESSAGE(STATUS "This is windows.")
-    ADD_DEFINITIONS(-DWIN32)
-ELSEIF(WIN64)
-        MESSAGE(STATUS "This is windows.")
-        ADD_DEFINITIONS(-DWIN64)
-ELSEIF(APPLE)
-    MESSAGE(STATUS "This is apple")
-    # normally __MACH__ has already been defined
-    ADD_DEFINITIONS(-D__MACH__ )
-ELSEIF(UNIX)
-    MESSAGE(STATUS "This is UNIX")
-    ADD_DEFINITIONS(-DUNIX -DLINUX)
-ELSE()
-    MESSAGE(STATUS "This is UNKNOW OS")
-ENDIF(WIN32)
-
-# This is for clangd plugin for vscode
-#SET(CMAKE_COMMON_FLAGS ${CMAKE_COMMON_FLAGS} " -Wstring-plus-int -Wsizeof-array-argument -Wunused-variable -Wmissing-braces")
-SET(CMAKE_COMMON_FLAGS "${CMAKE_COMMON_FLAGS} -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1")
-IF(DEBUG)
-    MESSAGE("DEBUG has been set as TRUE ${DEBUG}")
-    #"${CMAKE_COMMON_FLAGS}  -O0 -g "  ${CMAKE_COMMON_FLAGS}最好在""以内，防止被cmake 增加了;
-    SET(CMAKE_COMMON_FLAGS "${CMAKE_COMMON_FLAGS}  -O0 -g -DDEBUG ")
-    ADD_DEFINITIONS(-DENABLE_DEBUG)
-ELSEIF(NOT DEFINED ENV{DEBUG})
-    MESSAGE("Disable debug")
-    SET(CMAKE_COMMON_FLAGS "${CMAKE_COMMON_FLAGS}  -O2 -g ")
-ELSE()
-    MESSAGE("Enable debug")
-    SET(CMAKE_COMMON_FLAGS "${CMAKE_COMMON_FLAGS}  -O0 -g -DDEBUG")
-    ADD_DEFINITIONS(-DENABLE_DEBUG)
-ENDIF()
-SET(CMAKE_CXX_FLAGS ${CMAKE_COMMON_FLAGS})
-SET(CMAKE_C_FLAGS ${CMAKE_COMMON_FLAGS})
-MESSAGE("CMAKE_CXX_FLAGS is " ${CMAKE_CXX_FLAGS})
-
-
-IF (CMAKE_INSTALL_PREFIX)
-    MESSAGE("CMAKE_INSTALL_PREFIX has been set as " ${CMAKE_INSTALL_PREFIX} )
-ELSEIF(DEFINED ENV{CMAKE_INSTALL_PREFIX})
-    SET(CMAKE_INSTALL_PREFIX $ENV{CMAKE_INSTALL_PREFIX})
-ELSE()
-    SET(CMAKE_INSTALL_PREFIX /tmp/${PROJECT_NAME})
-ENDIF()
-MESSAGE("Install target dir is " ${CMAKE_INSTALL_PREFIX})
-
-
-# ADD_SUBDIRECTORY(src bin)  bin 为目标目录， 可以省略
-ADD_SUBDIRECTORY(deps)
-ADD_SUBDIRECTORY(src)
-ADD_SUBDIRECTORY(unitest)
-ADD_SUBDIRECTORY(test)
-
-
-# install 准备安装的目录是cmakefile 的当前目录， 不是build 后生成的目录
-# Files 默认权限OWNER_WRITE, OWNER_READ, GROUP_READ,和WORLD_READ，即644权限
-# INSTALL(FILES docs/README DESTINATION ./  )
-# INSTALL(DIRECTORY docs DESTINATION ./
-#        PATTERN "README" EXCLUDE)
-#  PERMISSIONS 可以直接替换
-#INSTALL(DIRECTORY bin DESTINATION ./
-#        FILE_PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_EXECUTE GROUP_READ WORLD_READ
-#        DIRECTORY_PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_EXECUTE GROUP_READ WORLD_READ WORLD_EXECUTE)
-
-INSTALL(DIRECTORY etc DESTINATION .
-		FILE_PERMISSIONS OWNER_WRITE OWNER_READ GROUP_READ WORLD_READ)
-
-#INSTALL([[SCRIPT <file>] [CODE <code>]] [...])
-# script 表示安装时，调用cmake 脚步
-# code 表示安装时，执行cmake 命令， 例如
-INSTALL(CODE "MESSAGE(\"Sample install message.\")")
-# EXEC_PROGRAM make时执行命令
-#EXEC_PROGRAM(Executable [directory in which to run]
-#        [ARGS <arguments to executable>]
-#        [OUTPUT_VARIABLE <var>]
-
-
-
-
-# ADD_TEST与ENABLE_TESTING 参考书籍
-
-#EXEC_PROGRAM(Executable [directory in which to run]
-#        [ARGS <arguments to executable>]
-#        [OUTPUT_VARIABLE <var>]
-#        [RETURN_VALUE <var>])
-# 生产make时，执行
-#EXEC_PROGRAM(ls ARGS "*.c" OUTPUT_VARIABLE LS_OUTPUT RETURN_VALUE
-#        LS_RVALUE)
-#IF(not LS_RVALUE)
-#    MESSAGE(STATUS "ls result: " ${LS_OUTPUT})
-#ENDIF(not LS_RVALUE)
+add_executable(wyy
+        CMakeScripts/ReRunCMake.make
+        deps/common/conf/ini.cpp
+        deps/common/conf/ini.h
+        deps/common/io/io.cpp
+        deps/common/io/io.h
+        deps/common/io/roll_select_dir.cpp
+        deps/common/io/roll_select_dir.h
+        deps/common/io/select_dir.h
+        deps/common/lang/bitmap.cpp
+        deps/common/lang/bitmap.h
+        deps/common/lang/mutex.cpp
+        deps/common/lang/mutex.h
+        deps/common/lang/serializable.h
+        deps/common/lang/string.cpp
+        deps/common/lang/string.h
+        deps/common/log/log.cpp
+        deps/common/log/log.h
+        deps/common/math/md5.cpp
+        deps/common/math/md5.h
+        deps/common/math/random_generator.cpp
+        deps/common/math/random_generator.h
+        deps/common/math/regex.cpp
+        deps/common/math/regex.h
+        deps/common/metrics/console_reporter.cpp
+        deps/common/metrics/console_reporter.h
+        deps/common/metrics/histogram_snapshot.cpp
+        deps/common/metrics/histogram_snapshot.h
+        deps/common/metrics/log_reporter.cpp
+        deps/common/metrics/log_reporter.h
+        deps/common/metrics/metric.h
+        deps/common/metrics/metrics.cpp
+        deps/common/metrics/metrics.h
+        deps/common/metrics/metrics_registry.cpp
+        deps/common/metrics/metrics_registry.h
+        deps/common/metrics/reporter.cpp
+        deps/common/metrics/reporter.h
+        deps/common/metrics/reservoir.cpp
+        deps/common/metrics/reservoir.h
+        deps/common/metrics/sampler.cpp
+        deps/common/metrics/sampler.h
+        deps/common/metrics/snapshot.h
+        deps/common/metrics/timer_snapshot.cpp
+        deps/common/metrics/timer_snapshot.h
+        deps/common/metrics/uniform_reservoir.cpp
+        deps/common/metrics/uniform_reservoir.h
+        deps/common/mm/debug_new.h
+        deps/common/mm/mem.h
+        deps/common/mm/mpool.h
+        deps/common/os/os.cpp
+        deps/common/os/os.h
+        deps/common/os/path.cpp
+        deps/common/os/path.h
+        deps/common/os/pidfile.cpp
+        deps/common/os/pidfile.h
+        deps/common/os/process.cpp
+        deps/common/os/process.h
+        deps/common/os/process_param.cpp
+        deps/common/os/process_param.h
+        deps/common/os/signal.cpp
+        deps/common/os/signal.h
+        deps/common/seda/callback.cpp
+        deps/common/seda/callback.h
+        deps/common/seda/class_factory.h
+        deps/common/seda/event_dispatcher.cpp
+        deps/common/seda/event_dispatcher.h
+        deps/common/seda/example_stage.cpp
+        deps/common/seda/example_stage.h
+        deps/common/seda/init.cpp
+        deps/common/seda/init.h
+        deps/common/seda/kill_thread.cpp
+        deps/common/seda/kill_thread.h
+        deps/common/seda/metrics_report_event.cpp
+        deps/common/seda/metrics_report_event.h
+        deps/common/seda/metrics_stage.cpp
+        deps/common/seda/metrics_stage.h
+        deps/common/seda/seda_config.cpp
+        deps/common/seda/seda_config.h
+        deps/common/seda/seda_defs.h
+        deps/common/seda/stage.cpp
+        deps/common/seda/stage.h
+        deps/common/seda/stage_event.cpp
+        deps/common/seda/stage_event.h
+        deps/common/seda/stage_factory.h
+        deps/common/seda/thread_pool.cpp
+        deps/common/seda/thread_pool.h
+        deps/common/seda/timer_stage.cpp
+        deps/common/seda/timer_stage.h
+        deps/common/time/datetime.cpp
+        deps/common/time/datetime.h
+        deps/common/time/timeout_info.cpp
+        deps/common/time/timeout_info.h
+        deps/common/defs.h
+        deps/common/version.h
+        deps/googletest/googlemock/include/gmock/internal/custom/gmock-generated-actions.h
+        deps/googletest/googlemock/include/gmock/internal/custom/gmock-matchers.h
+        deps/googletest/googlemock/include/gmock/internal/custom/gmock-port.h
+        deps/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h
+        deps/googletest/googlemock/include/gmock/internal/gmock-port.h
+        deps/googletest/googlemock/include/gmock/internal/gmock-pp.h
+        deps/googletest/googlemock/include/gmock/gmock-actions.h
+        deps/googletest/googlemock/include/gmock/gmock-cardinalities.h
+        deps/googletest/googlemock/include/gmock/gmock-function-mocker.h
+        deps/googletest/googlemock/include/gmock/gmock-matchers.h
+        deps/googletest/googlemock/include/gmock/gmock-more-actions.h
+        deps/googletest/googlemock/include/gmock/gmock-more-matchers.h
+        deps/googletest/googlemock/include/gmock/gmock-nice-strict.h
+        deps/googletest/googlemock/include/gmock/gmock-spec-builders.h
+        deps/googletest/googlemock/include/gmock/gmock.h
+        deps/googletest/googlemock/src/gmock-all.cc
+        deps/googletest/googlemock/src/gmock-cardinalities.cc
+        deps/googletest/googlemock/src/gmock-internal-utils.cc
+        deps/googletest/googlemock/src/gmock-matchers.cc
+        deps/googletest/googlemock/src/gmock-spec-builders.cc
+        deps/googletest/googlemock/src/gmock.cc
+        deps/googletest/googlemock/src/gmock_main.cc
+        deps/googletest/googlemock/test/gmock-actions_test.cc
+        deps/googletest/googlemock/test/gmock-cardinalities_test.cc
+        deps/googletest/googlemock/test/gmock-function-mocker_test.cc
+        deps/googletest/googlemock/test/gmock-internal-utils_test.cc
+        deps/googletest/googlemock/test/gmock-matchers_test.cc
+        deps/googletest/googlemock/test/gmock-more-actions_test.cc
+        deps/googletest/googlemock/test/gmock-nice-strict_test.cc
+        deps/googletest/googlemock/test/gmock-port_test.cc
+        deps/googletest/googlemock/test/gmock-pp-string_test.cc
+        deps/googletest/googlemock/test/gmock-pp_test.cc
+        deps/googletest/googlemock/test/gmock-spec-builders_test.cc
+        deps/googletest/googlemock/test/gmock_all_test.cc
+        deps/googletest/googlemock/test/gmock_ex_test.cc
+        deps/googletest/googlemock/test/gmock_leak_test_.cc
+        deps/googletest/googlemock/test/gmock_link2_test.cc
+        deps/googletest/googlemock/test/gmock_link_test.cc
+        deps/googletest/googlemock/test/gmock_link_test.h
+        deps/googletest/googlemock/test/gmock_output_test_.cc
+        deps/googletest/googlemock/test/gmock_stress_test.cc
+        deps/googletest/googlemock/test/gmock_test.cc
+        deps/googletest/googletest/include/gtest/internal/custom/gtest-port.h
+        deps/googletest/googletest/include/gtest/internal/custom/gtest-printers.h
+        deps/googletest/googletest/include/gtest/internal/custom/gtest.h
+        deps/googletest/googletest/include/gtest/internal/gtest-death-test-internal.h
+        deps/googletest/googletest/include/gtest/internal/gtest-filepath.h
+        deps/googletest/googletest/include/gtest/internal/gtest-internal.h
+        deps/googletest/googletest/include/gtest/internal/gtest-param-util.h
+        deps/googletest/googletest/include/gtest/internal/gtest-port-arch.h
+        deps/googletest/googletest/include/gtest/internal/gtest-port.h
+        deps/googletest/googletest/include/gtest/internal/gtest-string.h
+        deps/googletest/googletest/include/gtest/internal/gtest-type-util.h
+        deps/googletest/googletest/include/gtest/gtest-death-test.h
+        deps/googletest/googletest/include/gtest/gtest-matchers.h
+        deps/googletest/googletest/include/gtest/gtest-message.h
+        deps/googletest/googletest/include/gtest/gtest-param-test.h
+        deps/googletest/googletest/include/gtest/gtest-printers.h
+        deps/googletest/googletest/include/gtest/gtest-spi.h
+        deps/googletest/googletest/include/gtest/gtest-test-part.h
+        deps/googletest/googletest/include/gtest/gtest-typed-test.h
+        deps/googletest/googletest/include/gtest/gtest.h
+        deps/googletest/googletest/include/gtest/gtest_pred_impl.h
+        deps/googletest/googletest/include/gtest/gtest_prod.h
+        deps/googletest/googletest/samples/prime_tables.h
+        deps/googletest/googletest/samples/sample1.cc
+        deps/googletest/googletest/samples/sample1.h
+        deps/googletest/googletest/samples/sample10_unittest.cc
+        deps/googletest/googletest/samples/sample1_unittest.cc
+        deps/googletest/googletest/samples/sample2.cc
+        deps/googletest/googletest/samples/sample2.h
+        deps/googletest/googletest/samples/sample2_unittest.cc
+        deps/googletest/googletest/samples/sample3-inl.h
+        deps/googletest/googletest/samples/sample3_unittest.cc
+        deps/googletest/googletest/samples/sample4.cc
+        deps/googletest/googletest/samples/sample4.h
+        deps/googletest/googletest/samples/sample4_unittest.cc
+        deps/googletest/googletest/samples/sample5_unittest.cc
+        deps/googletest/googletest/samples/sample6_unittest.cc
+        deps/googletest/googletest/samples/sample7_unittest.cc
+        deps/googletest/googletest/samples/sample8_unittest.cc
+        deps/googletest/googletest/samples/sample9_unittest.cc
+        deps/googletest/googletest/src/gtest-all.cc
+        deps/googletest/googletest/src/gtest-death-test.cc
+        deps/googletest/googletest/src/gtest-filepath.cc
+        deps/googletest/googletest/src/gtest-internal-inl.h
+        deps/googletest/googletest/src/gtest-matchers.cc
+        deps/googletest/googletest/src/gtest-port.cc
+        deps/googletest/googletest/src/gtest-printers.cc
+        deps/googletest/googletest/src/gtest-test-part.cc
+        deps/googletest/googletest/src/gtest-typed-test.cc
+        deps/googletest/googletest/src/gtest.cc
+        deps/googletest/googletest/src/gtest_main.cc
+        deps/googletest/googletest/test/googletest-break-on-failure-unittest_.cc
+        deps/googletest/googletest/test/googletest-catch-exceptions-test_.cc
+        deps/googletest/googletest/test/googletest-color-test_.cc
+        deps/googletest/googletest/test/googletest-death-test-test.cc
+        deps/googletest/googletest/test/googletest-death-test_ex_test.cc
+        deps/googletest/googletest/test/googletest-env-var-test_.cc
+        deps/googletest/googletest/test/googletest-failfast-unittest_.cc
+        deps/googletest/googletest/test/googletest-filepath-test.cc
+        deps/googletest/googletest/test/googletest-filter-unittest_.cc
+        deps/googletest/googletest/test/googletest-global-environment-unittest_.cc
+        deps/googletest/googletest/test/googletest-list-tests-unittest_.cc
+        deps/googletest/googletest/test/googletest-listener-test.cc
+        deps/googletest/googletest/test/googletest-message-test.cc
+        deps/googletest/googletest/test/googletest-options-test.cc
+        deps/googletest/googletest/test/googletest-output-test_.cc
+        deps/googletest/googletest/test/googletest-param-test-invalid-name1-test_.cc
+        deps/googletest/googletest/test/googletest-param-test-invalid-name2-test_.cc
+        deps/googletest/googletest/test/googletest-param-test-test.cc
+        deps/googletest/googletest/test/googletest-param-test-test.h
+        deps/googletest/googletest/test/googletest-param-test2-test.cc
+        deps/googletest/googletest/test/googletest-port-test.cc
+        deps/googletest/googletest/test/googletest-printers-test.cc
+        deps/googletest/googletest/test/googletest-setuptestsuite-test_.cc
+        deps/googletest/googletest/test/googletest-shuffle-test_.cc
+        deps/googletest/googletest/test/googletest-test-part-test.cc
+        deps/googletest/googletest/test/googletest-throw-on-failure-test_.cc
+        deps/googletest/googletest/test/googletest-uninitialized-test_.cc
+        deps/googletest/googletest/test/gtest-typed-test2_test.cc
+        deps/googletest/googletest/test/gtest-typed-test_test.cc
+        deps/googletest/googletest/test/gtest-typed-test_test.h
+        deps/googletest/googletest/test/gtest-unittest-api_test.cc
+        deps/googletest/googletest/test/gtest_all_test.cc
+        deps/googletest/googletest/test/gtest_assert_by_exception_test.cc
+        deps/googletest/googletest/test/gtest_environment_test.cc
+        deps/googletest/googletest/test/gtest_help_test_.cc
+        deps/googletest/googletest/test/gtest_list_output_unittest_.cc
+        deps/googletest/googletest/test/gtest_main_unittest.cc
+        deps/googletest/googletest/test/gtest_no_test_unittest.cc
+        deps/googletest/googletest/test/gtest_pred_impl_unittest.cc
+        deps/googletest/googletest/test/gtest_premature_exit_test.cc
+        deps/googletest/googletest/test/gtest_prod_test.cc
+        deps/googletest/googletest/test/gtest_repeat_test.cc
+        deps/googletest/googletest/test/gtest_skip_in_environment_setup_test.cc
+        deps/googletest/googletest/test/gtest_skip_test.cc
+        deps/googletest/googletest/test/gtest_sole_header_test.cc
+        deps/googletest/googletest/test/gtest_stress_test.cc
+        deps/googletest/googletest/test/gtest_test_macro_stack_footprint_test.cc
+        deps/googletest/googletest/test/gtest_testbridge_test_.cc
+        deps/googletest/googletest/test/gtest_throw_on_failure_ex_test.cc
+        deps/googletest/googletest/test/gtest_unittest.cc
+        deps/googletest/googletest/test/gtest_xml_outfile1_test_.cc
+        deps/googletest/googletest/test/gtest_xml_outfile2_test_.cc
+        deps/googletest/googletest/test/gtest_xml_output_unittest_.cc
+        deps/googletest/googletest/test/production.cc
+        deps/googletest/googletest/test/production.h
+        deps/jsoncpp/example/readFromStream/readFromStream.cpp
+        deps/jsoncpp/example/readFromString/readFromString.cpp
+        deps/jsoncpp/example/streamWrite/streamWrite.cpp
+        deps/jsoncpp/example/stringWrite/stringWrite.cpp
+        deps/jsoncpp/include/json/allocator.h
+        deps/jsoncpp/include/json/assertions.h
+        deps/jsoncpp/include/json/config.h
+        deps/jsoncpp/include/json/forwards.h
+        deps/jsoncpp/include/json/json.h
+        deps/jsoncpp/include/json/json_features.h
+        deps/jsoncpp/include/json/reader.h
+        deps/jsoncpp/include/json/value.h
+        deps/jsoncpp/include/json/version.h
+        deps/jsoncpp/include/json/writer.h
+        deps/jsoncpp/src/jsontestrunner/main.cpp
+        deps/jsoncpp/src/lib_json/json_reader.cpp
+        deps/jsoncpp/src/lib_json/json_tool.h
+        deps/jsoncpp/src/lib_json/json_value.cpp
+        deps/jsoncpp/src/lib_json/json_valueiterator.inl
+        deps/jsoncpp/src/lib_json/json_writer.cpp
+        deps/jsoncpp/src/test_lib_json/fuzz.cpp
+        deps/jsoncpp/src/test_lib_json/fuzz.h
+        deps/jsoncpp/src/test_lib_json/jsontest.cpp
+        deps/jsoncpp/src/test_lib_json/jsontest.h
+        deps/jsoncpp/src/test_lib_json/main.cpp
+        deps/libevent/cmake/CheckFileOffsetBits.c
+        deps/libevent/compat/sys/queue.h
+        deps/libevent/include/event2/buffer.h
+        deps/libevent/include/event2/buffer_compat.h
+        deps/libevent/include/event2/bufferevent.h
+        deps/libevent/include/event2/bufferevent_compat.h
+        deps/libevent/include/event2/bufferevent_ssl.h
+        deps/libevent/include/event2/bufferevent_struct.h
+        deps/libevent/include/event2/dns.h
+        deps/libevent/include/event2/dns_compat.h
+        deps/libevent/include/event2/dns_struct.h
+        deps/libevent/include/event2/event.h
+        deps/libevent/include/event2/event_compat.h
+        deps/libevent/include/event2/event_struct.h
+        deps/libevent/include/event2/http.h
+        deps/libevent/include/event2/http_compat.h
+        deps/libevent/include/event2/http_struct.h
+        deps/libevent/include/event2/keyvalq_struct.h
+        deps/libevent/include/event2/listener.h
+        deps/libevent/include/event2/rpc.h
+        deps/libevent/include/event2/rpc_compat.h
+        deps/libevent/include/event2/rpc_struct.h
+        deps/libevent/include/event2/tag.h
+        deps/libevent/include/event2/tag_compat.h
+        deps/libevent/include/event2/thread.h
+        deps/libevent/include/event2/util.h
+        deps/libevent/include/event2/visibility.h
+        deps/libevent/include/evdns.h
+        deps/libevent/include/event.h
+        deps/libevent/include/evhttp.h
+        deps/libevent/include/evrpc.h
+        deps/libevent/include/evutil.h
+        deps/libevent/sample/dns-example.c
+        deps/libevent/sample/event-read-fifo.c
+        deps/libevent/sample/hello-world.c
+        deps/libevent/sample/hostcheck.c
+        deps/libevent/sample/hostcheck.h
+        deps/libevent/sample/http-connect.c
+        deps/libevent/sample/http-server.c
+        deps/libevent/sample/https-client.c
+        deps/libevent/sample/le-proxy.c
+        deps/libevent/sample/openssl_hostname_validation.c
+        deps/libevent/sample/openssl_hostname_validation.h
+        deps/libevent/sample/signal-test.c
+        deps/libevent/sample/time-test.c
+        deps/libevent/test/bench.c
+        deps/libevent/test/bench_cascade.c
+        deps/libevent/test/bench_http.c
+        deps/libevent/test/bench_httpclient.c
+        deps/libevent/test/print-winsock-errors.c
+        deps/libevent/test/regress.c
+        deps/libevent/test/regress.h
+        deps/libevent/test/regress_buffer.c
+        deps/libevent/test/regress_bufferevent.c
+        deps/libevent/test/regress_dns.c
+        deps/libevent/test/regress_et.c
+        deps/libevent/test/regress_finalize.c
+        deps/libevent/test/regress_http.c
+        deps/libevent/test/regress_iocp.c
+        deps/libevent/test/regress_listener.c
+        deps/libevent/test/regress_main.c
+        deps/libevent/test/regress_minheap.c
+        deps/libevent/test/regress_rpc.c
+        deps/libevent/test/regress_ssl.c
+        deps/libevent/test/regress_testutils.c
+        deps/libevent/test/regress_testutils.h
+        deps/libevent/test/regress_thread.c
+        deps/libevent/test/regress_thread.h
+        deps/libevent/test/regress_util.c
+        deps/libevent/test/regress_zlib.c
+        deps/libevent/test/test-changelist.c
+        deps/libevent/test/test-closed.c
+        deps/libevent/test/test-dumpevents.c
+        deps/libevent/test/test-eof.c
+        deps/libevent/test/test-fdleak.c
+        deps/libevent/test/test-init.c
+        deps/libevent/test/test-ratelim.c
+        deps/libevent/test/test-time.c
+        deps/libevent/test/test-weof.c
+        deps/libevent/test/tinytest.c
+        deps/libevent/test/tinytest.h
+        deps/libevent/test/tinytest_demo.c
+        deps/libevent/test/tinytest_local.h
+        deps/libevent/test/tinytest_macros.h
+        deps/libevent/test-export/test-export.c
+        deps/libevent/WIN32-Code/nmake/event2/event-config.h
+        deps/libevent/WIN32-Code/nmake/evconfig-private.h
+        deps/libevent/WIN32-Code/getopt.c
+        deps/libevent/WIN32-Code/getopt.h
+        deps/libevent/WIN32-Code/getopt_long.c
+        deps/libevent/WIN32-Code/tree.h
+        deps/libevent/arc4random.c
+        deps/libevent/buffer.c
+        deps/libevent/buffer_iocp.c
+        deps/libevent/bufferevent-internal.h
+        deps/libevent/bufferevent.c
+        deps/libevent/bufferevent_async.c
+        deps/libevent/bufferevent_filter.c
+        deps/libevent/bufferevent_openssl.c
+        deps/libevent/bufferevent_pair.c
+        deps/libevent/bufferevent_ratelim.c
+        deps/libevent/bufferevent_sock.c
+        deps/libevent/changelist-internal.h
+        deps/libevent/defer-internal.h
+        deps/libevent/devpoll.c
+        deps/libevent/epoll.c
+        deps/libevent/epoll_sub.c
+        deps/libevent/epolltable-internal.h
+        deps/libevent/evbuffer-internal.h
+        deps/libevent/evdns.c
+        deps/libevent/event-internal.h
+        deps/libevent/event.c
+        deps/libevent/event_iocp.c
+        deps/libevent/event_tagging.c
+        deps/libevent/evmap-internal.h
+        deps/libevent/evmap.c
+        deps/libevent/evport.c
+        deps/libevent/evrpc-internal.h
+        deps/libevent/evrpc.c
+        deps/libevent/evsignal-internal.h
+        deps/libevent/evthread-internal.h
+        deps/libevent/evthread.c
+        deps/libevent/evthread_pthread.c
+        deps/libevent/evthread_win32.c
+        deps/libevent/evutil.c
+        deps/libevent/evutil_rand.c
+        deps/libevent/evutil_time.c
+        deps/libevent/ht-internal.h
+        deps/libevent/http-internal.h
+        deps/libevent/http.c
+        deps/libevent/iocp-internal.h
+        deps/libevent/ipv6-internal.h
+        deps/libevent/kqueue-internal.h
+        deps/libevent/kqueue.c
+        deps/libevent/listener.c
+        deps/libevent/log-internal.h
+        deps/libevent/log.c
+        deps/libevent/minheap-internal.h
+        deps/libevent/mm-internal.h
+        deps/libevent/openssl-compat.h
+        deps/libevent/poll.c
+        deps/libevent/ratelim-internal.h
+        deps/libevent/select.c
+        deps/libevent/signal.c
+        deps/libevent/strlcpy-internal.h
+        deps/libevent/strlcpy.c
+        deps/libevent/time-internal.h
+        deps/libevent/util-internal.h
+        deps/libevent/win32select.c
+        deps/cmake_install.cmake
+        deps/CMakeLists.txt
+        lib/Debug/libcommon.1.0.0.dylib
+        lib/Debug/libcommon.a
+        lib/Debug/libobserver.a
+        src/obclient/client.cpp
+        src/observer/event/execution_plan_event.cpp
+        src/observer/event/execution_plan_event.h
+        src/observer/event/session_event.cpp
+        src/observer/event/session_event.h
+        src/observer/event/sql_event.cpp
+        src/observer/event/sql_event.h
+        src/observer/event/storage_event.cpp
+        src/observer/event/storage_event.h
+        src/observer/handler/handler.h
+        src/observer/net/connection_context.h
+        src/observer/net/server.cpp
+        src/observer/net/server.h
+        src/observer/net/server_param.h
+        src/observer/session/session.cpp
+        src/observer/session/session.h
+        src/observer/session/session_stage.cpp
+        src/observer/session/session_stage.h
+        src/observer/sql/executor/execute_stage.cpp
+        src/observer/sql/executor/execute_stage.h
+        src/observer/sql/executor/execution_node.cpp
+        src/observer/sql/executor/execution_node.h
+        src/observer/sql/executor/tuple.cpp
+        src/observer/sql/executor/tuple.h
+        src/observer/sql/executor/value.cpp
+        src/observer/sql/executor/value.h
+        src/observer/sql/optimizer/optimize_stage.cpp
+        src/observer/sql/optimizer/optimize_stage.h
+        src/observer/sql/parser/lex.yy.c
+        src/observer/sql/parser/lex.yy.h
+        src/observer/sql/parser/parse.cpp
+        src/observer/sql/parser/parse.h
+        src/observer/sql/parser/parse_defs.h
+        src/observer/sql/parser/parse_stage.cpp
+        src/observer/sql/parser/parse_stage.h
+        src/observer/sql/parser/resolve_stage.cpp
+        src/observer/sql/parser/resolve_stage.h
+        src/observer/sql/parser/yacc_sql.tab.c
+        src/observer/sql/parser/yacc_sql.tab.h
+        src/observer/sql/plan_cache/plan_cache_stage.cpp
+        src/observer/sql/plan_cache/plan_cache_stage.h
+        src/observer/sql/query_cache/query_cache_stage.cpp
+        src/observer/sql/query_cache/query_cache_stage.h
+        src/observer/storage/common/bplus_tree.cpp
+        src/observer/storage/common/bplus_tree.h
+        src/observer/storage/common/bplus_tree_index.cpp
+        src/observer/storage/common/bplus_tree_index.h
+        src/observer/storage/common/condition_filter.cpp
+        src/observer/storage/common/condition_filter.h
+        src/observer/storage/common/db.cpp
+        src/observer/storage/common/db.h
+        src/observer/storage/common/field_meta.cpp
+        src/observer/storage/common/field_meta.h
+        src/observer/storage/common/index.cpp
+        src/observer/storage/common/index.h
+        src/observer/storage/common/index_manager.cpp
+        src/observer/storage/common/index_manager.h
+        "src/observer/storage/common/index_meta 2.h"
+        src/observer/storage/common/index_meta.cpp
+        src/observer/storage/common/index_meta.h
+        src/observer/storage/common/meta_util.cpp
+        src/observer/storage/common/meta_util.h
+        src/observer/storage/common/record_manager.cpp
+        src/observer/storage/common/record_manager.h
+        src/observer/storage/common/table.cpp
+        src/observer/storage/common/table.h
+        src/observer/storage/common/table_meta.cpp
+        src/observer/storage/common/table_meta.h
+        src/observer/storage/default/default_handler.cpp
+        src/observer/storage/default/default_handler.h
+        src/observer/storage/default/default_storage_stage.cpp
+        src/observer/storage/default/default_storage_stage.h
+        src/observer/storage/default/disk_buffer_pool.cpp
+        src/observer/storage/default/disk_buffer_pool.h
+        src/observer/storage/mem/mem_storage_stage.cpp
+        src/observer/storage/mem/mem_storage_stage.h
+        src/observer/storage/trx/trx.cpp
+        src/observer/storage/trx/trx.h
+        src/observer/ini_setting.h
+        src/observer/init.cpp
+        src/observer/init.h
+        src/observer/main.cpp
+        src/observer/rc.cpp
+        src/observer/rc.h
+        test/CMakeScripts/ReRunCMake.make
+        test/client_performance_test.cpp
+        test/cmake_install.cmake
+        test/CMakeLists.txt
+        unitest/CMakeScripts/ReRunCMake.make
+        unitest/minidb.build/Debug/bitmap_test.build/DerivedSources/Entitlements.plist
+        unitest/minidb.build/Debug/bitmap_test.build/Objects-normal/x86_64/bitmap_test.d
+        unitest/minidb.build/Debug/bitmap_test.build/Objects-normal/x86_64/bitmap_test.dia
+        unitest/minidb.build/Debug/bitmap_test.build/Objects-normal/x86_64/bitmap_test.LinkFileList
+        unitest/minidb.build/Debug/bitmap_test.build/Objects-normal/x86_64/bitmap_test.o
+        unitest/minidb.build/Debug/bitmap_test.build/Objects-normal/x86_64/bitmap_test_dependency_info.dat
+        unitest/minidb.build/Debug/bitmap_test.build/bitmap_test.xcent
+        unitest/minidb.build/Debug/bitmap_test.build/Script-63948779EB1F6E4BFCE12A91.sh
+        unitest/minidb.build/Debug/bp_manager_test.build/DerivedSources/Entitlements.plist
+        unitest/minidb.build/Debug/bp_manager_test.build/Objects-normal/x86_64/bp_manager_test.d
+        unitest/minidb.build/Debug/bp_manager_test.build/Objects-normal/x86_64/bp_manager_test.dia
+        unitest/minidb.build/Debug/bp_manager_test.build/Objects-normal/x86_64/bp_manager_test.LinkFileList
+        unitest/minidb.build/Debug/bp_manager_test.build/Objects-normal/x86_64/bp_manager_test.o
+        unitest/minidb.build/Debug/bp_manager_test.build/Objects-normal/x86_64/bp_manager_test_dependency_info.dat
+        unitest/minidb.build/Debug/bp_manager_test.build/bp_manager_test.xcent
+        unitest/minidb.build/Debug/bp_manager_test.build/Script-801E7F35712864111F0EA24A.sh
+        unitest/minidb.build/Debug/log_test.build/DerivedSources/Entitlements.plist
+        unitest/minidb.build/Debug/log_test.build/Objects-normal/x86_64/log_test.d
+        unitest/minidb.build/Debug/log_test.build/Objects-normal/x86_64/log_test.dia
+        unitest/minidb.build/Debug/log_test.build/Objects-normal/x86_64/log_test.LinkFileList
+        unitest/minidb.build/Debug/log_test.build/Objects-normal/x86_64/log_test.o
+        unitest/minidb.build/Debug/log_test.build/Objects-normal/x86_64/log_test_dependency_info.dat
+        unitest/minidb.build/Debug/log_test.build/log_test.xcent
+        unitest/minidb.build/Debug/log_test.build/Script-9FFD4D1BEE9723DA61A49BFB.sh
+        unitest/minidb.build/Debug/md5_test.build/DerivedSources/Entitlements.plist
+        unitest/minidb.build/Debug/md5_test.build/Objects-normal/x86_64/md5_test.d
+        unitest/minidb.build/Debug/md5_test.build/Objects-normal/x86_64/md5_test.dia
+        unitest/minidb.build/Debug/md5_test.build/Objects-normal/x86_64/md5_test.LinkFileList
+        unitest/minidb.build/Debug/md5_test.build/Objects-normal/x86_64/md5_test.o
+        unitest/minidb.build/Debug/md5_test.build/Objects-normal/x86_64/md5_test_dependency_info.dat
+        unitest/minidb.build/Debug/md5_test.build/md5_test.xcent
+        unitest/minidb.build/Debug/md5_test.build/Script-27F9F4364BB842463F805457.sh
+        unitest/minidb.build/Debug/path_test.build/DerivedSources/Entitlements.plist
+        unitest/minidb.build/Debug/path_test.build/Objects-normal/x86_64/path_test.d
+        unitest/minidb.build/Debug/path_test.build/Objects-normal/x86_64/path_test.dia
+        unitest/minidb.build/Debug/path_test.build/Objects-normal/x86_64/path_test.LinkFileList
+        unitest/minidb.build/Debug/path_test.build/Objects-normal/x86_64/path_test.o
+        unitest/minidb.build/Debug/path_test.build/Objects-normal/x86_64/path_test_dependency_info.dat
+        unitest/minidb.build/Debug/path_test.build/path_test.xcent
+        unitest/minidb.build/Debug/path_test.build/Script-98E5DCDB3B47379050242473.sh
+        unitest/minidb.build/Debug/pidfile_test.build/DerivedSources/Entitlements.plist
+        unitest/minidb.build/Debug/pidfile_test.build/Objects-normal/x86_64/pidfile_test.d
+        unitest/minidb.build/Debug/pidfile_test.build/Objects-normal/x86_64/pidfile_test.dia
+        unitest/minidb.build/Debug/pidfile_test.build/Objects-normal/x86_64/pidfile_test.LinkFileList
+        unitest/minidb.build/Debug/pidfile_test.build/Objects-normal/x86_64/pidfile_test.o
+        unitest/minidb.build/Debug/pidfile_test.build/Objects-normal/x86_64/pidfile_test_dependency_info.dat
+        unitest/minidb.build/Debug/pidfile_test.build/pidfile_test.xcent
+        unitest/minidb.build/Debug/pidfile_test.build/Script-4B51AD57BE9717DE5E115947.sh
+        unitest/minidb.build/Debug/rc_test.build/DerivedSources/Entitlements.plist
+        unitest/minidb.build/Debug/rc_test.build/Objects-normal/x86_64/rc_test.d
+        unitest/minidb.build/Debug/rc_test.build/Objects-normal/x86_64/rc_test.dia
+        unitest/minidb.build/Debug/rc_test.build/Objects-normal/x86_64/rc_test.LinkFileList
+        unitest/minidb.build/Debug/rc_test.build/Objects-normal/x86_64/rc_test.o
+        unitest/minidb.build/Debug/rc_test.build/Objects-normal/x86_64/rc_test_dependency_info.dat
+        unitest/minidb.build/Debug/rc_test.build/rc_test.xcent
+        unitest/minidb.build/Debug/rc_test.build/Script-EA6E388DB66D0196FC12B0DA.sh
+        unitest/unitest.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+        unitest/unitest.xcodeproj/project.pbxproj
+        unitest/bitmap_test.cpp
+        unitest/bp_manager_test.cpp
+        unitest/CMakeLists.txt
+        unitest/log_test.cpp
+        unitest/log_test.h
+        unitest/md5_test.cpp
+        unitest/md5_test.h
+        unitest/path_test.cpp
+        unitest/pidfile_test.cpp
+        unitest/rc_test.cpp
+        unitest/thread_test.h
+        CMakeCache.txt
+        CMakeLists.txt)

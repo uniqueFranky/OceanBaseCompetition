@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		45C75EAE0768494F842A21DA /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 073781FF36934AFEA7850586 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 0F49466A3C174BF390FB3E1D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				0854D87F7074B0183B959432 /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -20,25 +20,25 @@
 		};
 		744B6BC962CD43C694CE0682 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 24CCE59C376F46769A83F944 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = C1D40DD40C37413EB165A551 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				93DA3323EB737D892E5ED02B /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				DD2F3661CCAE40C493780A92 /* PBXTargetDependency */,
-				694CB5B8C7424053B33D601D /* PBXTargetDependency */,
+				93D01EF9DB1A4EB69EBE0BB8 /* PBXTargetDependency */,
+				A33DCEA84E3F4680AAFD411B /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		87CAD5BEA2094FA1AEC2F95F /* install */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = CFC37A3142ED4D81A4CB7F16 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildConfigurationList = BD2805079D034D0DBFA4F949 /* Build configuration list for PBXAggregateTarget "install" */;
 			buildPhases = (
 				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
 			);
 			dependencies = (
-				064ED3B78EA94430B083235A /* PBXTargetDependency */,
+				2FE8C002D97B49528136D6CD /* PBXTargetDependency */,
 			);
 			name = install;
 			productName = install;
@@ -46,81 +46,81 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		60741D08031842CCBFC5981F /* /Users/franky/documents/github/wyy/src/obclient/client.cpp */ = {isa = PBXBuildFile; fileRef = 273E1836D3BF4225AA7E8839 /* /Users/franky/documents/github/wyy/src/obclient/client.cpp */; };
-		625018C2AF874082BD76DBDF /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = EE1AC320FD55453EAB1BAF8B /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */; };
+		067619B6EF444B7D8DF951C4 /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 28267B44B1E7458F9627D7F7 /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */; };
+		55F1C56BDF654BA99B9CADBC /* /Users/franky/documents/github/wyy/src/obclient/client.cpp */ = {isa = PBXBuildFile; fileRef = A82CF66EB6AA424FB3CB323B /* /Users/franky/documents/github/wyy/src/obclient/client.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		1525204F0DA04917A02F9545 /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		43EFDD3D6E4E4A6BB5C639E9 /* Release */ = {
+		531C7CCEB4F94347B7487431 /* Release */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Release;
 		};
-		679E7B2B26254D74966E44F0 /* MinSizeRel */ = {
+		59624D0172994E78BEDCECAA /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
-		E18A23911E9A4F6DA45A2EC5 /* RelWithDebInfo */ = {
+		C2B662A6512746F8A7FD3156 /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = RelWithDebInfo;
 		};
+		FAD8AAD73F504D139D440CAE /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		045B0F2DA0DA4E37A6F43589 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB0157D92C642628AFC5823 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
-			remoteInfo = ZERO_CHECK;
-		};
-		688E3A1DEEDC4B0DB8237F8E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB0157D92C642628AFC5823 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
-			remoteInfo = ZERO_CHECK;
-		};
-		7CD779A855CB4CB4BB1EA59A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB0157D92C642628AFC5823 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B8BF4B347928417AA24F9A9D;
-			remoteInfo = obclient;
-		};
-		C0D0B21BB3BA4CA3BF808E1E /* PBXContainerItemProxy */ = {
+		625C3528B0D046769F4690BA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EFB0157D92C642628AFC5823 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 744B6BC962CD43C694CE0682;
 			remoteInfo = ALL_BUILD;
 		};
+		75EACF226A7044909E76B2E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFB0157D92C642628AFC5823 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		D61C531629804373BEF05FEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFB0157D92C642628AFC5823 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C75EAE0768494F842A21DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		F4BE39AD7AAB4C1192045C32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFB0157D92C642628AFC5823 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8BF4B347928417AA24F9A9D;
+			remoteInfo = obclient;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		273E1836D3BF4225AA7E8839 /* /Users/franky/documents/github/wyy/src/obclient/client.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = client.cpp; path = client.cpp; sourceTree = SOURCE_ROOT; };
-		64C47258DFE24B1EBDAAF52D /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		D2162889C2534243A578BF55 /* obclient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = obclient; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE1AC320FD55453EAB1BAF8B /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		28267B44B1E7458F9627D7F7 /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4F38F971AC40444897FD1A50 /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A82CF66EB6AA424FB3CB323B /* /Users/franky/documents/github/wyy/src/obclient/client.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = client.cpp; path = client.cpp; sourceTree = SOURCE_ROOT; };
+		BDD2FDEAE8C24F3483DCAB5B /* obclient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = obclient; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3EBC059E4ACA472D8BD79E84 /* Frameworks */ = {
+		BF2A42ECCB57429888513956 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,58 +130,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		029374B70F1D4F94A6EF0E60 /* Frameworks */ = {
+		06937686CDFC479A8CED66F5 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				F7EEE24A42234056847A0AE1 /* CMake Rules */,
+				4F38F971AC40444897FD1A50 /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		2101AC0D6D0A4DB49028A3FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		23C8434B792248ECBD48C02F /* Source Files */ = {
+		228D6A3654D34FCC9CFF325F /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				273E1836D3BF4225AA7E8839 /* /Users/franky/documents/github/wyy/src/obclient/client.cpp */,
+				A82CF66EB6AA424FB3CB323B /* /Users/franky/documents/github/wyy/src/obclient/client.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		4248059BFB694E629F4E9AB1 = {
+		2D06A954964249EA992873CD = {
 			isa = PBXGroup;
 			children = (
-				BAC5129BFAE9462EA688D819 /* obclient */,
-				EA4648D94D7640F7B904D827 /* ALL_BUILD */,
-				75FACA2DC20546A7870F6033 /* Products */,
-				029374B70F1D4F94A6EF0E60 /* Frameworks */,
+				74A883352FFD49A09CCC882F /* obclient */,
+				06937686CDFC479A8CED66F5 /* ALL_BUILD */,
+				37BA73E22810417AAEA0C74D /* Products */,
+				2101AC0D6D0A4DB49028A3FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		75FACA2DC20546A7870F6033 /* Products */ = {
+		37BA73E22810417AAEA0C74D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2162889C2534243A578BF55 /* obclient */,
+				BDD2FDEAE8C24F3483DCAB5B /* obclient */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BAC5129BFAE9462EA688D819 /* obclient */ = {
+		74A883352FFD49A09CCC882F /* obclient */ = {
 			isa = PBXGroup;
 			children = (
-				23C8434B792248ECBD48C02F /* Source Files */,
-				EE1AC320FD55453EAB1BAF8B /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */,
+				228D6A3654D34FCC9CFF325F /* Source Files */,
+				28267B44B1E7458F9627D7F7 /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */,
 			);
 			name = obclient;
 			sourceTree = "<group>";
 		};
-		EA4648D94D7640F7B904D827 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				F3298EE5823744F39260F6FD /* CMake Rules */,
-				64C47258DFE24B1EBDAAF52D /* /Users/franky/documents/github/wyy/src/obclient/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		F3298EE5823744F39260F6FD /* CMake Rules */ = {
+		F7EEE24A42234056847A0AE1 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -193,19 +193,19 @@
 /* Begin PBXNativeTarget section */
 		B8BF4B347928417AA24F9A9D /* obclient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D814A3464C243D7B5DE5ED7 /* Build configuration list for PBXNativeTarget "obclient" */;
+			buildConfigurationList = B41CDF6D586B403282D500A6 /* Build configuration list for PBXNativeTarget "obclient" */;
 			buildPhases = (
-				4433CF2F0BDF4B4FB268454F /* Sources */,
-				3EBC059E4ACA472D8BD79E84 /* Frameworks */,
+				C2E92D5F0FCB46B990D30193 /* Sources */,
+				BF2A42ECCB57429888513956 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DD838722225346E1AE85B04E /* PBXTargetDependency */,
+				AF71D548B72546878F419BF1 /* PBXTargetDependency */,
 			);
 			name = obclient;
 			productName = obclient;
-			productReference = D2162889C2534243A578BF55 /* obclient */;
+			productReference = BDD2FDEAE8C24F3483DCAB5B /* obclient */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -217,18 +217,18 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1310;
 			};
-			buildConfigurationList = 875351381FDB4F36B3B0FF53 /* Build configuration list for PBXProject "obclient" */;
+			buildConfigurationList = B53A36ED07B549A28FCD41E5 /* Build configuration list for PBXProject "obclient" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				1525204F0DA04917A02F9545 /* Debug */,
-				43EFDD3D6E4E4A6BB5C639E9 /* Release */,
-				679E7B2B26254D74966E44F0 /* MinSizeRel */,
-				E18A23911E9A4F6DA45A2EC5 /* RelWithDebInfo */,
+				FAD8AAD73F504D139D440CAE /* Debug */,
+				531C7CCEB4F94347B7487431 /* Release */,
+				59624D0172994E78BEDCECAA /* MinSizeRel */,
+				C2B662A6512746F8A7FD3156 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 4248059BFB694E629F4E9AB1;
+			mainGroup = 2D06A954964249EA992873CD;
 			projectDirPath = .;
 			projectRoot = "";
 			targets = (
@@ -386,175 +386,41 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4433CF2F0BDF4B4FB268454F /* Sources */ = {
+		C2E92D5F0FCB46B990D30193 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60741D08031842CCBFC5981F /* /Users/franky/documents/github/wyy/src/obclient/client.cpp */,
+				55F1C56BDF654BA99B9CADBC /* /Users/franky/documents/github/wyy/src/obclient/client.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		064ED3B78EA94430B083235A /* PBXTargetDependency */ = {
+		2FE8C002D97B49528136D6CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 744B6BC962CD43C694CE0682 /* ALL_BUILD */;
-			targetProxy = C0D0B21BB3BA4CA3BF808E1E /* PBXContainerItemProxy */;
+			targetProxy = 625C3528B0D046769F4690BA /* PBXContainerItemProxy */;
 		};
-		694CB5B8C7424053B33D601D /* PBXTargetDependency */ = {
+		93D01EF9DB1A4EB69EBE0BB8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
-			targetProxy = 688E3A1DEEDC4B0DB8237F8E /* PBXContainerItemProxy */;
+			targetProxy = 75EACF226A7044909E76B2E7 /* PBXContainerItemProxy */;
 		};
-		DD2F3661CCAE40C493780A92 /* PBXTargetDependency */ = {
+		A33DCEA84E3F4680AAFD411B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B8BF4B347928417AA24F9A9D /* obclient */;
-			targetProxy = 7CD779A855CB4CB4BB1EA59A /* PBXContainerItemProxy */;
+			targetProxy = F4BE39AD7AAB4C1192045C32 /* PBXContainerItemProxy */;
 		};
-		DD838722225346E1AE85B04E /* PBXTargetDependency */ = {
+		AF71D548B72546878F419BF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 45C75EAE0768494F842A21DA /* ZERO_CHECK */;
-			targetProxy = 045B0F2DA0DA4E37A6F43589 /* PBXContainerItemProxy */;
+			targetProxy = D61C531629804373BEF05FEA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1EF737AB99FF4FFB83383283 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Release;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/obclient/.,/Users/franky/documents/github/wyy/src/obclient/../../deps,/usr/local/include,"$(inherited)");
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/franky/documents/github/wyy/src/obclient/../../lib /Users/franky/documents/github/wyy/lib/Release","$(inherited)");
-				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/Users/franky/documents/github/wyy/src/obclient/../../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/src/obclient/../../lib,"$(inherited)");
-				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/franky/documents/github/wyy/lib/Release/libcommon.1.0.0.dylib,"-lpthread","-ldl","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = obclient;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		2E4F8DF367894642A656F57F /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		31EB52EFB8FC44258093FB34 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		3C799234D1984684A6D567E5 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		3F4505FA893D4FCEAA29661A /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		428C63C4FEC54A118CF005BB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Debug;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/obclient/.,/Users/franky/documents/github/wyy/src/obclient/../../deps,/usr/local/include,"$(inherited)");
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/franky/documents/github/wyy/src/obclient/../../lib /Users/franky/documents/github/wyy/lib/Debug","$(inherited)");
-				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/Users/franky/documents/github/wyy/src/obclient/../../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/src/obclient/../../lib,"$(inherited)");
-				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             '-std=gnu++14' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/franky/documents/github/wyy/lib/Debug/libcommon.1.0.0.dylib,"-lpthread","-ldl","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = obclient;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		4FDAC5E23EC749E9A92A2FDD /* Release */ = {
+		0781DCCFCA3A4C8BB4DCE748 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
@@ -565,58 +431,7 @@ exit 0";
 			};
 			name = Release;
 		};
-		62C12BF7878D438B82364BCB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		650662ADAF6B4E4A901031F2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		6AA776377B8045BE87AF6DA7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				MACOSX_DEPLOYMENT_TARGET = 11.6;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
-				SYMROOT = /Users/franky/documents/github/wyy/src/obclient/build;
-			};
-			name = Debug;
-		};
-		794CB4DC511F422D98BB3208 /* Release */ = {
+		0836A19C602E4FBBB48E4606 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -636,47 +451,7 @@ exit 0";
 			};
 			name = Release;
 		};
-		9978184FC3454643B2B81B2F /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		9A2A422C940A4B079F9B64D3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		9A8ED6C4DCD148F399A0C61D /* RelWithDebInfo */ = {
+		0BE931A4ED464709AAD644B8 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -703,7 +478,7 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		B93338D305C3428CBED5D786 /* Release */ = {
+		238003A3E8A444918597157B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -721,20 +496,9 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Release;
+			name = Debug;
 		};
-		C17E4639AD2946C4807AE360 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				MACOSX_DEPLOYMENT_TARGET = 11.6;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
-				SYMROOT = /Users/franky/documents/github/wyy/src/obclient/build;
-			};
-			name = RelWithDebInfo;
-		};
-		C70AA93802A74115A512C242 /* MinSizeRel */ = {
+		2F1FF07BB0E946E58FA0A1A3 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -754,7 +518,187 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		E670567BC54E427582917EF4 /* MinSizeRel */ = {
+		31A04A4865894F2E8F7760B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		45E34CAB72CE413A96EFA04B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/obclient/.,/Users/franky/documents/github/wyy/src/obclient/../../deps,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/franky/documents/github/wyy/src/obclient/../../lib /Users/franky/documents/github/wyy/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/Users/franky/documents/github/wyy/src/obclient/../../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/src/obclient/../../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1              -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/franky/documents/github/wyy/lib/Release/libcommon.1.0.0.dylib,"-lpthread","-ldl","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = obclient;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		5042A29B48FE429A8B892267 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient/build;
+			};
+			name = RelWithDebInfo;
+		};
+		5509DDBE8DD545879EAB2EB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		560DB8DD8E9C470091A9DEA2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5AF80E5B530F41C68CA7EA23 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient/build;
+			};
+			name = MinSizeRel;
+		};
+		6805578BBFDF4A379359F1BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient/build;
+			};
+			name = Debug;
+		};
+		6B4575B7301A45A699D8EB45 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		6E32F0E421464CA498BA4D3A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		755D807C91BE4B5B88ED0F0D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		989D06A0277041FDB9165AD9 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -781,18 +725,27 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		E7E43C01AF804F34813AC616 /* MinSizeRel */ = {
+		9A43774BF24D43988AECE169 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				MACOSX_DEPLOYMENT_TARGET = 11.6;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
-				SYMROOT = /Users/franky/documents/github/wyy/src/obclient/build;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = MinSizeRel;
 		};
-		E8A2884FCA6B449491E5B828 /* Release */ = {
+		CB48E0949808448E9482DF32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -812,60 +765,107 @@ exit 0";
 			};
 			name = Release;
 		};
+		E6B092004D494792BFD732DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/franky/documents/github/wyy/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__MACH__,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/franky/documents/github/wyy/src/obclient/.,/Users/franky/documents/github/wyy/src/obclient/../../deps,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/franky/documents/github/wyy/src/obclient/../../lib /Users/franky/documents/github/wyy/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"/Users/franky/documents/github/wyy/src/obclient/../../lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/Users/franky/documents/github/wyy/src/obclient/../../lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1             '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/franky/documents/github/wyy/lib/Debug/libcommon.1.0.0.dylib,"-lpthread","-ldl","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = obclient;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F39EA706EEC54B57A054957A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/franky/documents/github/wyy/src/obclient;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		073781FF36934AFEA7850586 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		0F49466A3C174BF390FB3E1D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				650662ADAF6B4E4A901031F2 /* Debug */,
-				794CB4DC511F422D98BB3208 /* Release */,
-				C70AA93802A74115A512C242 /* MinSizeRel */,
-				3F4505FA893D4FCEAA29661A /* RelWithDebInfo */,
+				5509DDBE8DD545879EAB2EB1 /* Debug */,
+				0836A19C602E4FBBB48E4606 /* Release */,
+				2F1FF07BB0E946E58FA0A1A3 /* MinSizeRel */,
+				755D807C91BE4B5B88ED0F0D /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		24CCE59C376F46769A83F944 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		B41CDF6D586B403282D500A6 /* Build configuration list for PBXNativeTarget "obclient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A2A422C940A4B079F9B64D3 /* Debug */,
-				B93338D305C3428CBED5D786 /* Release */,
-				3C799234D1984684A6D567E5 /* MinSizeRel */,
-				9978184FC3454643B2B81B2F /* RelWithDebInfo */,
+				E6B092004D494792BFD732DF /* Debug */,
+				45E34CAB72CE413A96EFA04B /* Release */,
+				989D06A0277041FDB9165AD9 /* MinSizeRel */,
+				0BE931A4ED464709AAD644B8 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		875351381FDB4F36B3B0FF53 /* Build configuration list for PBXProject "obclient" */ = {
+		B53A36ED07B549A28FCD41E5 /* Build configuration list for PBXProject "obclient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6AA776377B8045BE87AF6DA7 /* Debug */,
-				4FDAC5E23EC749E9A92A2FDD /* Release */,
-				E7E43C01AF804F34813AC616 /* MinSizeRel */,
-				C17E4639AD2946C4807AE360 /* RelWithDebInfo */,
+				6805578BBFDF4A379359F1BE /* Debug */,
+				0781DCCFCA3A4C8BB4DCE748 /* Release */,
+				5AF80E5B530F41C68CA7EA23 /* MinSizeRel */,
+				5042A29B48FE429A8B892267 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		9D814A3464C243D7B5DE5ED7 /* Build configuration list for PBXNativeTarget "obclient" */ = {
+		BD2805079D034D0DBFA4F949 /* Build configuration list for PBXAggregateTarget "install" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				428C63C4FEC54A118CF005BB /* Debug */,
-				1EF737AB99FF4FFB83383283 /* Release */,
-				E670567BC54E427582917EF4 /* MinSizeRel */,
-				9A8ED6C4DCD148F399A0C61D /* RelWithDebInfo */,
+				F39EA706EEC54B57A054957A /* Debug */,
+				CB48E0949808448E9482DF32 /* Release */,
+				560DB8DD8E9C470091A9DEA2 /* MinSizeRel */,
+				6B4575B7301A45A699D8EB45 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		CFC37A3142ED4D81A4CB7F16 /* Build configuration list for PBXAggregateTarget "install" */ = {
+		C1D40DD40C37413EB165A551 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				62C12BF7878D438B82364BCB /* Debug */,
-				E8A2884FCA6B449491E5B828 /* Release */,
-				31EB52EFB8FC44258093FB34 /* MinSizeRel */,
-				2E4F8DF367894642A656F57F /* RelWithDebInfo */,
+				238003A3E8A444918597157B /* Debug */,
+				31A04A4865894F2E8F7760B5 /* Release */,
+				9A43774BF24D43988AECE169 /* MinSizeRel */,
+				6E32F0E421464CA498BA4D3A /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

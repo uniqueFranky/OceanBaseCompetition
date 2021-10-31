@@ -1,0 +1,57 @@
+dependencies: \
+  /Users/franky/Documents/github/wyy/src/observer/storage/default/default_storage_stage.cpp \
+  /Users/franky/documents/github/wyy/src/observer/storage/default/default_storage_stage.h \
+  /Users/franky/documents/github/wyy/deps/common/seda/stage.h \
+  /Users/franky/documents/github/wyy/deps/common/defs.h \
+  /Users/franky/documents/github/wyy/deps/common/version.h \
+  /Users/franky/documents/github/wyy/deps/common/log/log.h \
+  /Users/franky/documents/github/wyy/deps/common/seda/stage_event.h \
+  /Users/franky/documents/github/wyy/deps/common/metrics/metrics.h \
+  /Users/franky/documents/github/wyy/deps/common/lang/string.h \
+  /Users/franky/documents/github/wyy/deps/common/metrics/metric.h \
+  /Users/franky/documents/github/wyy/deps/common/metrics/snapshot.h \
+  /Users/franky/documents/github/wyy/deps/common/metrics/timer_snapshot.h \
+  /Users/franky/documents/github/wyy/deps/common/metrics/histogram_snapshot.h \
+  /Users/franky/documents/github/wyy/deps/common/metrics/uniform_reservoir.h \
+  /Users/franky/documents/github/wyy/deps/common/metrics/reservoir.h \
+  /Users/franky/documents/github/wyy/deps/common/math/random_generator.h \
+  /Users/franky/documents/github/wyy/deps/common/conf/ini.h \
+  /Users/franky/documents/github/wyy/deps/common/io/io.h \
+  /Users/franky/documents/github/wyy/deps/common/seda/timer_stage.h \
+  /Users/franky/documents/github/wyy/deps/common/seda/callback.h \
+  /Users/franky/documents/github/wyy/deps/common/metrics/metrics_registry.h \
+  /Users/franky/documents/github/wyy/deps/common/metrics/reporter.h \
+  /Users/franky/documents/github/wyy/src/observer/rc.h \
+  /Users/franky/documents/github/wyy/src/observer/storage/default/default_handler.h \
+  /Users/franky/documents/github/wyy/src/observer/storage/common/db.h \
+  /Users/franky/documents/github/wyy/src/observer/sql/parser/parse_defs.h \
+  /Users/franky/documents/github/wyy/src/observer/storage/common/condition_filter.h \
+  /Users/franky/documents/github/wyy/src/observer/sql/parser/parse.h \
+  /Users/franky/documents/github/wyy/src/observer/storage/common/table.h \
+  /Users/franky/documents/github/wyy/src/observer/storage/common/table_meta.h \
+  /Users/franky/documents/github/wyy/src/observer/storage/common/field_meta.h \
+  /Users/franky/documents/github/wyy/src/observer/storage/common/index_meta.h \
+  /Users/franky/documents/github/wyy/deps/common/lang/serializable.h \
+  /Users/franky/documents/github/wyy/src/observer/storage/trx/trx.h \
+  /Users/franky/documents/github/wyy/src/observer/storage/common/record_manager.h \
+  /Users/franky/documents/github/wyy/src/observer/storage/default/disk_buffer_pool.h \
+  /Users/franky/documents/github/wyy/src/observer/event/execution_plan_event.h \
+  /Users/franky/documents/github/wyy/src/observer/event/session_event.h \
+  /Users/franky/documents/github/wyy/src/observer/net/connection_context.h \
+  /usr/local/include/event.h /usr/local/include/event2/event-config.h \
+  /usr/local/include/evutil.h /usr/local/include/event2/util.h \
+  /usr/local/include/event2/visibility.h \
+  /usr/local/include/event2/event_struct.h \
+  /usr/local/include/event2/keyvalq_struct.h \
+  /usr/local/include/event2/event.h \
+  /usr/local/include/event2/event_compat.h \
+  /usr/local/include/event2/buffer.h \
+  /usr/local/include/event2/buffer_compat.h \
+  /usr/local/include/event2/bufferevent.h \
+  /usr/local/include/event2/bufferevent_struct.h \
+  /usr/local/include/event2/bufferevent_compat.h \
+  /usr/local/include/event2/tag.h /usr/local/include/event2/tag_compat.h \
+  /Users/franky/documents/github/wyy/src/observer/ini_setting.h \
+  /Users/franky/documents/github/wyy/src/observer/event/sql_event.h \
+  /Users/franky/documents/github/wyy/src/observer/event/storage_event.h \
+  /Users/franky/documents/github/wyy/src/observer/session/session.h

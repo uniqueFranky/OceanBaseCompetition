@@ -716,3 +716,658 @@ int main(void)
   return 0;
 }
 
+The system is: Darwin - 20.6.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+
+User defaults from command line:
+    IDEPackageSupportUseBuiltinSCM = YES
+
+note: Using new build system
+note: Planning
+Analyze workspace
+
+Create build description
+Build description signature: 2c56f5b8cc9f43bbf0fbdcadcc611ee3
+Build description path: /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/./XCBuildData/2c56f5b8cc9f43bbf0fbdcadcc611ee3-desc.xcbuild
+
+note: Build preparation complete
+warning: Building targets in manual order is deprecated - check "Parallelize build for command-line builds" in the project editor, or set DISABLE_MANUAL_TARGET_ORDER_BUILD_WARNING in any of the targets in the current build to suppress this warning
+CreateBuildDirectory /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.xcodeproj
+    builtin-create-build-directory /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+
+warning: ONLY_ACTIVE_ARCH=YES requested with multiple ARCHS and no active architecture could be computed; building for all applicable architectures (in target 'CompilerIdC' from project 'CompilerIdC')
+warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'CompilerIdC' from project 'CompilerIdC')
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/all-product-headers.yaml (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/all-product-headers.yaml
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList
+
+CompileC /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    export LANG\=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target x86_64-apple-macos11.6 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -g -fvisibility\=hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/include -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources-normal/x86_64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/x86_64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -MMD -MT dependencies -MF /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.d --serialize-diagnostics /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.dia -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.o
+
+CompileC /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    export LANG\=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target arm64-apple-macos11.6 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -fstrict-aliasing -Wdeprecated-declarations -g -fvisibility\=hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/include -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources-normal/arm64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/arm64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -MMD -MT dependencies -MF /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.d --serialize-diagnostics /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.dia -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList
+
+Ld /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/Binary/CompilerIdC normal arm64 (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target arm64-apple-macos11.6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -L/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -filelist /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_lto.o -Xlinker -dependency_info -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_dependency_info.dat -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/Binary/CompilerIdC
+
+Ld /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/Binary/CompilerIdC normal x86_64 (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target x86_64-apple-macos11.6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -L/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -filelist /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC_lto.o -Xlinker -dependency_info -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC_dependency_info.dat -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/Binary/CompilerIdC
+
+CreateUniversalBinary /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC normal arm64\ x86_64 (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/Binary/CompilerIdC /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/Binary/CompilerIdC -output /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+
+PhaseScriptExecution Run\ Script /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    /bin/sh -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+ARCHS=arm64 x86_64
+
+RegisterExecutionPolicyException /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    builtin-RegisterExecutionPolicyException /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC"
+
+The C compiler identification is AppleClang, found in "/Users/franky/documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+
+User defaults from command line:
+    IDEPackageSupportUseBuiltinSCM = YES
+
+note: Using new build system
+note: Planning
+Analyze workspace
+
+Create build description
+Build description signature: 6fa187c7b0055d6ac6468013caa19f91
+Build description path: /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/./XCBuildData/6fa187c7b0055d6ac6468013caa19f91-desc.xcbuild
+
+note: Build preparation complete
+warning: Building targets in manual order is deprecated - check "Parallelize build for command-line builds" in the project editor, or set DISABLE_MANUAL_TARGET_ORDER_BUILD_WARNING in any of the targets in the current build to suppress this warning
+CreateBuildDirectory /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.xcodeproj
+    builtin-create-build-directory /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+
+warning: ONLY_ACTIVE_ARCH=YES requested with multiple ARCHS and no active architecture could be computed; building for all applicable architectures (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/all-product-headers.yaml (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/all-product-headers.yaml
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap
+
+CompileC /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    export LANG\=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target x86_64-apple-macos11.6 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility\=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/include -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources-normal/x86_64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/x86_64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -MMD -MT dependencies -MF /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.d --serialize-diagnostics /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.dia -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.o
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList
+
+CompileC /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    export LANG\=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target arm64-apple-macos11.6 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility\=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/include -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources-normal/arm64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/arm64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -MMD -MT dependencies -MF /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.d --serialize-diagnostics /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.dia -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.o
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList
+
+Ld /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/Binary/CompilerIdCXX normal x86_64 (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -target x86_64-apple-macos11.6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -L/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -filelist /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX_lto.o -Xlinker -dependency_info -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX_dependency_info.dat -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/Binary/CompilerIdCXX
+
+Ld /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/Binary/CompilerIdCXX normal arm64 (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -target arm64-apple-macos11.6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -L/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -filelist /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX_lto.o -Xlinker -dependency_info -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX_dependency_info.dat -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/Binary/CompilerIdCXX
+
+CreateUniversalBinary /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX normal arm64\ x86_64 (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/Binary/CompilerIdCXX /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/Binary/CompilerIdCXX -output /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+
+PhaseScriptExecution Run\ Script /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    /bin/sh -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+ARCHS=arm64 x86_64
+
+RegisterExecutionPolicyException /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    builtin-RegisterExecutionPolicyException /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX"
+
+The CXX compiler identification is AppleClang, found in "/Users/franky/documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+
+User defaults from command line:
+    IDEPackageSupportUseBuiltinSCM = YES
+
+note: Using new build system
+note: Planning
+Analyze workspace
+
+Create build description
+Build description signature: 0f9088c75a55e00ab5b9c18b7ff1bd47
+Build description path: /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/./XCBuildData/0f9088c75a55e00ab5b9c18b7ff1bd47-desc.xcbuild
+
+note: Build preparation complete
+warning: Building targets in manual order is deprecated - check "Parallelize build for command-line builds" in the project editor, or set DISABLE_MANUAL_TARGET_ORDER_BUILD_WARNING in any of the targets in the current build to suppress this warning
+CreateBuildDirectory /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.xcodeproj
+    builtin-create-build-directory /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+
+warning: ONLY_ACTIVE_ARCH=YES requested with multiple ARCHS and no active architecture could be computed; building for all applicable architectures (in target 'CompilerIdC' from project 'CompilerIdC')
+warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'CompilerIdC' from project 'CompilerIdC')
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/all-product-headers.yaml (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/all-product-headers.yaml
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap
+
+CompileC /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    export LANG\=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target x86_64-apple-macos11.6 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -g -fvisibility\=hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/include -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources-normal/x86_64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/x86_64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -MMD -MT dependencies -MF /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.d --serialize-diagnostics /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.dia -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.o
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList
+
+CompileC /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    export LANG\=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target arm64-apple-macos11.6 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -fstrict-aliasing -Wdeprecated-declarations -g -fvisibility\=hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/include -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources-normal/arm64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/arm64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -MMD -MT dependencies -MF /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.d --serialize-diagnostics /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.dia -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList
+
+Ld /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/Binary/CompilerIdC normal arm64 (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target arm64-apple-macos11.6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -L/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -filelist /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_lto.o -Xlinker -dependency_info -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_dependency_info.dat -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/Binary/CompilerIdC
+
+Ld /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/Binary/CompilerIdC normal x86_64 (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target x86_64-apple-macos11.6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -L/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -filelist /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC_lto.o -Xlinker -dependency_info -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC_dependency_info.dat -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/Binary/CompilerIdC
+
+CreateUniversalBinary /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC normal arm64\ x86_64 (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/Binary/CompilerIdC /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/Binary/CompilerIdC -output /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+
+PhaseScriptExecution Run\ Script /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    /bin/sh -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+ARCHS=arm64 x86_64
+
+RegisterExecutionPolicyException /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    builtin-RegisterExecutionPolicyException /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC"
+
+The C compiler identification is AppleClang, found in "/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+
+User defaults from command line:
+    IDEPackageSupportUseBuiltinSCM = YES
+
+note: Using new build system
+note: Planning
+Analyze workspace
+
+Create build description
+Build description signature: fa42747189abc91b7c38264bc6f5be57
+Build description path: /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/./XCBuildData/fa42747189abc91b7c38264bc6f5be57-desc.xcbuild
+
+note: Build preparation complete
+warning: Building targets in manual order is deprecated - check "Parallelize build for command-line builds" in the project editor, or set DISABLE_MANUAL_TARGET_ORDER_BUILD_WARNING in any of the targets in the current build to suppress this warning
+CreateBuildDirectory /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.xcodeproj
+    builtin-create-build-directory /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+
+warning: ONLY_ACTIVE_ARCH=YES requested with multiple ARCHS and no active architecture could be computed; building for all applicable architectures (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/all-product-headers.yaml (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/all-product-headers.yaml
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap
+
+CompileC /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    export LANG\=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target x86_64-apple-macos11.6 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility\=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/include -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources-normal/x86_64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/x86_64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -MMD -MT dependencies -MF /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.d --serialize-diagnostics /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.dia -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.o
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList
+
+CompileC /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    export LANG\=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target arm64-apple-macos11.6 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility\=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/include -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources-normal/arm64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/arm64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -MMD -MT dependencies -MF /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.d --serialize-diagnostics /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.dia -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.o
+
+Ld /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/Binary/CompilerIdCXX normal x86_64 (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -target x86_64-apple-macos11.6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -L/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -filelist /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX_lto.o -Xlinker -dependency_info -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX_dependency_info.dat -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/Binary/CompilerIdCXX
+
+Ld /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/Binary/CompilerIdCXX normal arm64 (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -target arm64-apple-macos11.6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -L/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -filelist /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX_lto.o -Xlinker -dependency_info -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX_dependency_info.dat -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/Binary/CompilerIdCXX
+
+CreateUniversalBinary /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX normal arm64\ x86_64 (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/Binary/CompilerIdCXX /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/Binary/CompilerIdCXX -output /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+
+PhaseScriptExecution Run\ Script /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    /bin/sh -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+ARCHS=arm64 x86_64
+
+RegisterExecutionPolicyException /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    builtin-RegisterExecutionPolicyException /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX"
+
+The CXX compiler identification is AppleClang, found in "/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+
+User defaults from command line:
+    IDEPackageSupportUseBuiltinSCM = YES
+
+note: Using new build system
+note: Planning
+Analyze workspace
+
+Create build description
+Build description signature: 9f4a45c4bfae7b31eeadcfdc9395ac09
+Build description path: /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/./XCBuildData/9f4a45c4bfae7b31eeadcfdc9395ac09-desc.xcbuild
+
+note: Build preparation complete
+warning: Building targets in manual order is deprecated - check "Parallelize build for command-line builds" in the project editor, or set DISABLE_MANUAL_TARGET_ORDER_BUILD_WARNING in any of the targets in the current build to suppress this warning
+CreateBuildDirectory /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.xcodeproj
+    builtin-create-build-directory /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+
+warning: ONLY_ACTIVE_ARCH=YES requested with multiple ARCHS and no active architecture could be computed; building for all applicable architectures (in target 'CompilerIdC' from project 'CompilerIdC')
+warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'CompilerIdC' from project 'CompilerIdC')
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/all-product-headers.yaml (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/all-product-headers.yaml
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap
+
+CompileC /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    export LANG\=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target arm64-apple-macos11.6 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -fstrict-aliasing -Wdeprecated-declarations -g -fvisibility\=hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/include -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources-normal/arm64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/arm64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -MMD -MT dependencies -MF /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.d --serialize-diagnostics /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.dia -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList
+
+CompileC /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    export LANG\=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target x86_64-apple-macos11.6 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -g -fvisibility\=hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/include -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources-normal/x86_64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/x86_64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -MMD -MT dependencies -MF /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.d --serialize-diagnostics /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.dia -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.o
+
+Ld /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/Binary/CompilerIdC normal arm64 (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target arm64-apple-macos11.6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -L/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -filelist /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_lto.o -Xlinker -dependency_info -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_dependency_info.dat -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/Binary/CompilerIdC
+
+Ld /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/Binary/CompilerIdC normal x86_64 (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target x86_64-apple-macos11.6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -L/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC -filelist /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC_lto.o -Xlinker -dependency_info -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC_dependency_info.dat -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/Binary/CompilerIdC
+
+CreateUniversalBinary /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC normal arm64\ x86_64 (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/Binary/CompilerIdC /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/Binary/CompilerIdC -output /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+
+PhaseScriptExecution Run\ Script /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    /bin/sh -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+ARCHS=arm64 x86_64
+
+RegisterExecutionPolicyException /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC
+    builtin-RegisterExecutionPolicyException /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC"
+
+The C compiler identification is AppleClang, found in "/Users/franky/documents/github/wyy/CMakeFiles/3.17.3/CompilerIdC/CompilerIdC"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+
+User defaults from command line:
+    IDEPackageSupportUseBuiltinSCM = YES
+
+note: Using new build system
+note: Planning
+Analyze workspace
+
+Create build description
+Build description signature: d655a757093eeab486acfd10b9ccde5c
+Build description path: /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/./XCBuildData/d655a757093eeab486acfd10b9ccde5c-desc.xcbuild
+
+note: Build preparation complete
+warning: Building targets in manual order is deprecated - check "Parallelize build for command-line builds" in the project editor, or set DISABLE_MANUAL_TARGET_ORDER_BUILD_WARNING in any of the targets in the current build to suppress this warning
+CreateBuildDirectory /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.xcodeproj
+    builtin-create-build-directory /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+
+warning: ONLY_ACTIVE_ARCH=YES requested with multiple ARCHS and no active architecture could be computed; building for all applicable architectures (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/all-product-headers.yaml (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/all-product-headers.yaml
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList
+
+CompileC /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    export LANG\=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target x86_64-apple-macos11.6 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility\=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/include -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources-normal/x86_64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/x86_64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -MMD -MT dependencies -MF /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.d --serialize-diagnostics /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.dia -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.o
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList
+
+CompileC /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    export LANG\=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target arm64-apple-macos11.6 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility\=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap -iquote /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/include -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources-normal/arm64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/arm64 -I/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -MMD -MT dependencies -MF /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.d --serialize-diagnostics /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.dia -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.o
+
+Ld /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/Binary/CompilerIdCXX normal x86_64 (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -target x86_64-apple-macos11.6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -L/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -filelist /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX_lto.o -Xlinker -dependency_info -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX_dependency_info.dat -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/Binary/CompilerIdCXX
+
+Ld /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/Binary/CompilerIdCXX normal arm64 (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -target arm64-apple-macos11.6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -L/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -F/Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX -filelist /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX_lto.o -Xlinker -dependency_info -Xlinker /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX_dependency_info.dat -o /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/Binary/CompilerIdCXX
+
+CreateUniversalBinary /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX normal arm64\ x86_64 (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/Binary/CompilerIdCXX /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/Binary/CompilerIdCXX -output /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX
+
+WriteAuxiliaryFile /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    write-file /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+
+PhaseScriptExecution Run\ Script /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    /bin/sh -c /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+ARCHS=arm64 x86_64
+
+RegisterExecutionPolicyException /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+    cd /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX
+    builtin-RegisterExecutionPolicyException /Users/franky/Documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX"
+
+The CXX compiler identification is AppleClang, found in "/Users/franky/documents/github/wyy/CMakeFiles/3.17.3/CompilerIdCXX/CompilerIdCXX"
+
