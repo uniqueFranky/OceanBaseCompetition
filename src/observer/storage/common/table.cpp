@@ -556,6 +556,8 @@ RC Table::create_index(Trx *trx, const char *index_name, const char *attribute_n
 
 RC Table::update_record(Trx *trx, const char *attribute_name, const Value *value, int condition_num, const Condition conditions[], int *updated_count)
 {
+    if(nullptr == table_meta_.field(attribute_name))
+        return RC::SCHEMA_FIELD_NOT_EXIST;
     if(value->type != table_meta_.field(attribute_name)->type())
         return RC::SCHEMA_FIELD_TYPE_MISMATCH;
     RecordFileScanner scanner;
