@@ -14,8 +14,8 @@
             filePath = "src/observer/sql/executor/execute_stage.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "298"
-            endingLineNumber = "298"
+            startingLineNumber = "300"
+            endingLineNumber = "300"
             landmarkName = "create_selection_executor(trx, selects, db, table_name, select_node)"
             landmarkType = "9">
          </BreakpointContent>
@@ -24,14 +24,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "755A629C-1493-47DA-A508-F5CAF19E61EE"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/observer/sql/executor/execute_stage.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "336"
-            endingLineNumber = "336"
+            startingLineNumber = "338"
+            endingLineNumber = "338"
             landmarkName = "create_selection_executor(trx, selects, db, table_name, select_node)"
             landmarkType = "9">
          </BreakpointContent>
