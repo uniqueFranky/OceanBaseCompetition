@@ -1,5 +1,0 @@
-if(EXISTS "/Users/franky/documents/wyy/unitest/log_test[1]_tests.cmake")
-  include("/Users/franky/documents/wyy/unitest/log_test[1]_tests.cmake")
-else()
-  add_test(log_test_NOT_BUILT log_test_NOT_BUILT)
-endif()
