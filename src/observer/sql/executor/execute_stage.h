@@ -18,14 +18,12 @@ See the Mulan PSL v2 for more details. */
 #include "common/seda/stage.h"
 #include "sql/parser/parse.h"
 #include "rc.h"
-
 class SessionEvent;
 
 class ExecuteStage : public common::Stage {
 public:
   ~ExecuteStage();
   static Stage *make_stage(const std::string &tag);
-
 protected:
   // common function
   ExecuteStage(const char *tag);

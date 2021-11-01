@@ -21,7 +21,7 @@ sudo make install
 3. build google test
 ```
 
-git submodule add https://github.com/google/googletest deps/googletest
+git submodule add https://github.com.cnpmjs.org/google/googletest deps/googletest
 cd deps
 cd googletest
 mkdir build
@@ -34,7 +34,7 @@ sudo make install
 4. build jsoncpp
 ```shell
 
-git submodule add https://github.com/open-source-parsers/jsoncpp.git deps/jsoncpp
+git submodule add https://github.com.cnpmjs.org/open-source-parsers/jsoncpp.git deps/jsoncpp
 cd deps
 cd jsoncpp
 mkdir build

@@ -1,4 +1,0 @@
-Target dependency graph (2 targets)
-common in minidb, no dependencies
-observer in minidb, depends on:
-common in minidb (explicit)

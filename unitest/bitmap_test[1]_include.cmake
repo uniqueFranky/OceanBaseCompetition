@@ -1,5 +1,5 @@
-if(EXISTS "/Users/franky/documents/github/wyy/unitest/bitmap_test[1]_tests.cmake")
-  include("/Users/franky/documents/github/wyy/unitest/bitmap_test[1]_tests.cmake")
+if(EXISTS "/Users/franky/documents/wyy/unitest/bitmap_test[1]_tests.cmake")
+  include("/Users/franky/documents/wyy/unitest/bitmap_test[1]_tests.cmake")
 else()
   add_test(bitmap_test_NOT_BUILT bitmap_test_NOT_BUILT)
 endif()

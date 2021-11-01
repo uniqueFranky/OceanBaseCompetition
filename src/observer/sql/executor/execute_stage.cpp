@@ -12,9 +12,7 @@ See the Mulan PSL v2 for more details. */
 // Created by Longda on 2021/4/13.
 //
 
-#include <string>
-#include <sstream>
-
+#include <cstring>
 #include "execute_stage.h"
 
 #include "common/io/io.h"
@@ -213,6 +211,17 @@ void end_trx_if_need(Session *session, Trx *trx, bool all_right) {
   }
 }
 
+void DescartesDfs(std::vector<TupleSet> *sets, int now, int id,std::ostream &os, std::string ans)
+{
+    if(now == sets->size() - 1)
+    {
+        os<<(*sets)[now].SinglePrint(ans, id, true)<<std::endl;
+        return;
+    }
+    for(int i = 0; i < (*sets)[now + 1].schema().fields().size(); i++)
+        DescartesDfs(sets, now + 1, i, os, (*sets)[now].SinglePrint(ans, id, false));
+}
+
 // 这里没有对输入的某些信息做合法性校验，比如查询的列名、where条件中的列名等，没有做必要的合法性校验
 // 需要补充上这一部分. 校验部分也可以放在resolve，不过跟execution放一起也没有关系
 RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_event) {
@@ -263,8 +272,25 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
   }
 
   std::stringstream ss;
-  if (tuple_sets.size() > 1) {
+  if (tuple_sets.size() > 1)
+  {
     // 本次查询了多张表，需要做join操作
+      for(std::vector<TupleSet>::iterator it = tuple_sets.end() - 1; it != tuple_sets.begin(); it++)
+          for(int i = 0; i < it->schema().fields().size(); i++)
+              ss<<it->schema().field(i).table_name()<<"."<<it->schema().field(i).field_name()<<" | ";
+      std::vector<TupleSet>::iterator it = tuple_sets.begin();
+      for(int i = 0; i < it->schema().fields().size(); i++)
+      {
+          ss<<it->schema().field(i).table_name()<<"."<<it->schema().field(i).field_name();
+          if(i != it->schema().fields().size() - 1)
+              ss<<" | ";
+          else
+              ss<<std::endl;
+      }
+
+      for(int i = 0; i < it->schema().fields().size(); i++)
+          DescartesDfs(&tuple_sets, 0, i, ss, "");
+      
   } else {
     // 当前只查询一张表，直接返回结果即可
     tuple_sets.front().print(ss);

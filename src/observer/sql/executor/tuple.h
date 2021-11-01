@@ -17,7 +17,7 @@ See the Mulan PSL v2 for more details. */
 
 #include <memory>
 #include <vector>
-
+#include <cstring>
 #include "sql/parser/parse.h"
 #include "sql/executor/value.h"
 
@@ -137,6 +137,7 @@ public:
   const Tuple &get(int index) const;
   const std::vector<Tuple> &tuples() const;
 
+  std::string SinglePrint(std::string ans, int id, bool last_item) const;
   void print(std::ostream &os) const;
 public:
   const TupleSchema &schema() const {

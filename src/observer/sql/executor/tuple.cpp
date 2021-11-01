@@ -15,7 +15,7 @@ See the Mulan PSL v2 for more details. */
 #include "sql/executor/tuple.h"
 #include "storage/common/table.h"
 #include "common/log/log.h"
-
+#include <sstream>
 Tuple::Tuple(const Tuple &other) {
   LOG_PANIC("Copy constructor of tuple is not supported");
   exit(1);
@@ -108,6 +108,7 @@ int TupleSchema::index_of_field(const char *table_name, const char *field_name) 
   return -1;
 }
 
+
 void TupleSchema::print(std::ostream &os) const {
   if (fields_.empty()) {
     os << "No schema";
@@ -162,8 +163,28 @@ void TupleSet::clear() {
   schema_.clear();
 }
 
-void TupleSet::print(std::ostream &os) const {
-  if (schema_.fields().empty()) {
+std::string TupleSet::SinglePrint(std::string ans, int id ,bool last_item) const
+{
+    std::stringstream os;
+    const Tuple &item = tuples_[id];
+      const std::vector<std::shared_ptr<TupleValue>> &values = item.values();
+      for (std::vector<std::shared_ptr<TupleValue>>::const_iterator iter = values.begin(), end = --values.end();
+            iter != end; ++iter)
+      {
+        (*iter)->to_string(os);
+        os << " | ";
+      }
+      values.back()->to_string(os);
+      if(!last_item)
+          os<<" | ";
+    ans += os.str();
+    return ans;
+}
+
+void TupleSet::print(std::ostream &os) const
+{
+  if (schema_.fields().empty())
+  {
     LOG_WARN("Got empty schema");
     return;
   }
