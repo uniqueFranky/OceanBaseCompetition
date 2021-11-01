@@ -586,13 +586,13 @@ RC Table::update_record(Trx *trx, const char *attribute_name, const Value *value
     {
         Record tmp = rcd;
         memcpy(tmp.data + offset, value->data, table_meta_.field(attribute_name)->len());
-//                rc = delete_entry_of_indexes(rcd.data, rcd.rid, false);
+                delete_entry_of_indexes(rcd.data, rcd.rid, false);
 //                if(RC::SUCCESS != rc)
 //                    return rc;
                 rc = record_handler_->update_record(&tmp);
                 if(RC::SUCCESS != rc)
                     return rc;
-//                rc = insert_entry_of_indexes(tmp.data, tmp.rid);
+                insert_entry_of_indexes(tmp.data, tmp.rid);
     }
     return rc;
 }
