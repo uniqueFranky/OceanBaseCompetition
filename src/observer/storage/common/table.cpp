@@ -586,12 +586,12 @@ RC Table::update_record(Trx *trx, const char *attribute_name, const Value *value
     {
         Record tmp = rcd;
         memcpy(tmp.data + offset, value->data, table_meta_.field(attribute_name)->len());
-        rc = delete_record(trx, &rcd);
-        if(RC::SUCCESS != rc)
-            return rc;
-        rc = insert_record(trx, &tmp);
-        if(RC::SUCCESS != rc)
-            return rc;
+        /*rc = */delete_record(trx, &rcd);
+//        if(RC::SUCCESS != rc)
+//            return rc;
+        /*rc = */insert_record(trx, &tmp);
+//        if(RC::SUCCESS != rc)
+//            return rc;
     }
     return rc;
 }
