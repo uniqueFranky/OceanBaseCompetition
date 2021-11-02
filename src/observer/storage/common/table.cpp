@@ -28,7 +28,7 @@ See the Mulan PSL v2 for more details. */
 #include "storage/common/bplus_tree_index.h"
 #include "storage/trx/trx.h"
 
-Table::Table() : 
+Table::Table() :
     data_buffer_pool_(nullptr),
     file_id_(-1),
     record_handler_(nullptr) {
@@ -107,7 +107,7 @@ RC Table::create(const char *path, const char *name, const char *base_dir, int a
                 path, strerror(errno));
       return RC::SCHEMA_TABLE_EXIST;
     }
-    LOG_ERROR("Create table file failed. filename=%s, errmsg=%d:%s", 
+    LOG_ERROR("Create table file failed. filename=%s, errmsg=%d:%s",
        path, errno, strerror(errno));
     return RC::IOERR;
   }
@@ -212,7 +212,7 @@ RC Table::rollback_insert(Trx *trx, const RID &rid) {
   rc = delete_entry_of_indexes(record.data, rid, false);
   if (rc != RC::SUCCESS) {
 //    LOG_ERROR("Failed to delete indexes of record(rid=%d.%d) while rollback insert, rc=%d:%s",
-//              rid.page_num, rid.slot_num, rc, strrc(rc)); 
+//              rid.page_num, rid.slot_num, rc, strrc(rc));
   } else {
     rc = record_handler_->delete_record(&rid);
   }
@@ -580,19 +580,17 @@ RC Table::update_record(Trx *trx, const char *attribute_name, const Value *value
         records.push_back(tmpRecord);
         record_count++;
     }
-    scanner.close_scan();
+    rc = scanner.close_scan();
     int offset = table_meta_.field(attribute_name)->offset();
     for(Record rcd : records)
     {
         Record tmp = rcd;
         memcpy(tmp.data + offset, value->data, table_meta_.field(attribute_name)->len());
-                delete_entry_of_indexes(rcd.data, rcd.rid, false);
-//                if(RC::SUCCESS != rc)
-//                    return rc;
-                rc = record_handler_->update_record(&tmp);
-                if(RC::SUCCESS != rc)
-                    return rc;
-                insert_entry_of_indexes(tmp.data, tmp.rid);
+        rc = record_handler_->update_record(&tmp);
+        if(rc == RC::RECORD_RECORD_NOT_EXIST)
+            rc = RC::SUCCESS;
+        if(RC::SUCCESS != rc)
+            return rc;
     }
     return rc;
 }
