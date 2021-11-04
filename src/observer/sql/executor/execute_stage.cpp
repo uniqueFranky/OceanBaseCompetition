@@ -13,6 +13,8 @@ See the Mulan PSL v2 for more details. */
 //
 
 #include <cstring>
+#include <map>
+#include <algorithm>
 #include "execute_stage.h"
 
 #include "common/io/io.h"
@@ -32,7 +34,7 @@ See the Mulan PSL v2 for more details. */
 #include "storage/trx/trx.h"
 
 using namespace common;
-
+void record_reader(const char *data, void *context);
 RC create_selection_executor(Trx *trx, const Selects &selects, const char *db, const char *table_name, SelectExeNode &select_node);
 
 //! Constructor
@@ -210,95 +212,330 @@ void end_trx_if_need(Session *session, Trx *trx, bool all_right) {
     }
   }
 }
+std::vector<TupleSet> tuple_sets;
+std::vector<TupleSet> out;
+int last_num;
+/*
+ EQUAL_TO,     //"="     0
+ LESS_EQUAL,   //"<="    1
+ NOT_EQUAL,    //"<>"    2
+ LESS_THAN,    //"<"     3
+ GREAT_EQUAL,  //">="    4
+ GREAT_THAN,   //">"     5
+ */
 
-void DescartesDfs(std::vector<TupleSet> *sets, int now, int id,std::ostream &os, std::string ans)
+
+bool check(void *lval, void *rval, AttrType type, CompOp op)
 {
-    if(now == sets->size() - 1)
+    if(type == INTS)
     {
-        os<<(*sets)[now].SinglePrint(ans, id, true)<<std::endl;
-        return;
+            int l = *(int *)lval;
+            int r = *(int *)rval;
+            switch (op)
+            {
+                case EQUAL_TO:
+                    return l == r;
+                    break;
+                case LESS_EQUAL:
+                    return l <= r;
+                    break;
+                case NOT_EQUAL:
+                    return l != r;
+                    break;
+                case LESS_THAN:
+                    return l < r;
+                    break;
+                case GREAT_EQUAL:
+                    return l >= r;
+                    break;
+                case GREAT_THAN:
+                    return l > r;
+                    break;
+                default:
+                    break;
+            }
     }
-    for(int i = 0; i < (*sets)[now + 1].schema().fields().size(); i++)
-        DescartesDfs(sets, now + 1, i, os, (*sets)[now].SinglePrint(ans, id, false));
+    if(type == FLOATS)
+    {
+            float l = *(float *)lval;
+            float r = *(float *)rval;
+            switch (op)
+            {
+                case EQUAL_TO:
+                    return l == r;
+                    break;
+                case LESS_EQUAL:
+                    return l <= r;
+                    break;
+                case NOT_EQUAL:
+                    return l != r;
+                    break;
+                case LESS_THAN:
+                    return l < r;
+                    break;
+                case GREAT_EQUAL:
+                    return l >= r;
+                    break;
+                case GREAT_THAN:
+                    return l > r;
+                    break;
+                default:
+                    break;
+            }
+    }
+    if(type == CHARS)
+    {
+            std::string l = *(std::string *)lval;
+            std::string r = *(std::string *)rval;
+            switch (op)
+            {
+                case EQUAL_TO:
+                    return l == r;
+                    break;
+                case LESS_EQUAL:
+                    return l <= r;
+                    break;
+                case NOT_EQUAL:
+                    return l != r;
+                    break;
+                case LESS_THAN:
+                    return l < r;
+                    break;
+                case GREAT_EQUAL:
+                    return l >= r;
+                    break;
+                case GREAT_THAN:
+                    return l > r;
+                    break;
+                default:
+                    break;
+            }
+    }
+    return false;
 }
+
+std::map<std::string, bool> printed;
+RC dfs(int now, Tuple *cur_tuple, Selects selects, std::map<std::string, int> mp, std::map<int, bool> need, TupleSchema tot_schema, TupleSchema out_schema, std::ostream &ss)
+{
+    if(now == tuple_sets.size())
+    {
+        
+        for(int i = 0; i < selects.condition_num; i++)
+        {
+            Condition &cond = selects.conditions[i];
+            Value lval, rval;
+            if(cond.left_is_attr)
+            {
+                char *tname = cond.left_attr.relation_name;
+                char *fname = cond.left_attr.attribute_name;
+                char tot_name[10000] = "";
+                strcat(tot_name, tname);
+                strcat(tot_name, fname);
+                std::string ttname (tot_name);
+                int id = mp[ttname];
+                AttrType type = tot_schema.field(id).type();
+                lval.type = type;
+                lval.data =(void *)((*(cur_tuple->values()[id])).get_value());
+            }
+            else
+                lval = cond.left_value;
+            
+            if(cond.right_is_attr)
+            {
+                char *tname = cond.right_attr.relation_name;
+                char *fname = cond.right_attr.attribute_name;
+                char tot_name[10000] = "";
+                strcat(tot_name, tname);
+                strcat(tot_name, fname);
+                std::string ttname (tot_name);
+                int id = mp[ttname];
+                AttrType type = tot_schema.field(id).type();
+                rval.type = type;
+                rval.data =(void *)((*(cur_tuple->values()[id])).get_value());
+            }
+            else
+                rval = cond.right_value;
+            if(lval.type != rval.type)
+                return RC::SCHEMA_FIELD_TYPE_MISMATCH;
+            if(false == check(lval.data, rval.data, lval.type, cond.comp))
+                return RC::SUCCESS;
+        }
+        std::string t = "";
+        std::stringstream ts;
+        //judge
+//        std::cout<<cur_tuple->size()<<std::endl;
+        for(int i = 0; i < cur_tuple->size(); i++)
+        {
+            const TupleField field = tot_schema.field(i);
+            char tot_name[10000] = "";
+            strcat(tot_name, field.table_name());
+            strcat(tot_name, field.field_name());
+//            std::cout<<tot_name<<std::endl;
+            std::string ttname (tot_name);
+            if(false == need[mp[tot_name]])
+                continue;
+            AttrType type = tot_schema.field(i).type();
+            switch (type)
+            {
+                case INTS:
+                    ts<<*(int *)((*(cur_tuple->values()[i])).get_value());
+                    break;
+                case FLOATS:
+                    ts<<*(float *)((*(cur_tuple->values()[i])).get_value());
+                    break;
+                case CHARS:
+                    ts<<*(std::string *)((*(cur_tuple->values()[i])).get_value());
+                    break;
+                default:
+                    break;
+            }
+            if(i == last_num)
+                ts<<std::endl;
+            else
+                ts<<" | ";
+        }
+        
+        t = ts.str();
+        if(!printed[t])
+        {
+            printed[t] = true;
+            ss<<ts.str();
+        }
+        return RC::SUCCESS;
+    }
+    for(int i = 0; i < tuple_sets[now].size(); i++)
+    {
+        Tuple tmp;
+        for(int j = 0; j < cur_tuple->size(); j++)
+            tmp.add(cur_tuple->values()[j]);
+        
+        const Tuple *tp = &(tuple_sets[now].tuples()[i]);
+        for(int j = 0; j < tp->size(); j++)
+            tmp.add(tp->values()[j]);
+        if(RC::SUCCESS != dfs(now + 1, &tmp, selects, mp, need, tot_schema, out_schema, ss))
+            return RC::SCHEMA_FIELD_TYPE_MISMATCH;
+    }
+    return RC::SUCCESS;
+}
+
+
 
 // 这里没有对输入的某些信息做合法性校验，比如查询的列名、where条件中的列名等，没有做必要的合法性校验
 // 需要补充上这一部分. 校验部分也可以放在resolve，不过跟execution放一起也没有关系
 RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_event) {
 
+    std::stringstream ss;
+    tuple_sets.clear();
+    out.clear();
   RC rc = RC::SUCCESS;
   Session *session = session_event->get_client()->session;
   Trx *trx = session->current_trx();
   const Selects &selects = sql->sstr.selection;
 //    std::cout<<"@@"<<selects.attr_num<<std::endl;
   // 把所有的表和只跟这张表关联的condition都拿出来，生成最底层的select 执行节点
-  std::vector<SelectExeNode *> select_nodes;
-  for (size_t i = 0; i < selects.relation_num; i++) {
-    const char *table_name = selects.relations[i];
-    SelectExeNode *select_node = new SelectExeNode;
-    rc = create_selection_executor(trx, selects, db, table_name, *select_node);
-    if (rc != RC::SUCCESS) {
-      delete select_node;
-      for (SelectExeNode *& tmp_node: select_nodes) {
-        delete tmp_node;
-      }
-//      if(RC::SCHEMA_TABLE_NOT_EXIST == rc || RC::SCHEMA_FIELD_NOT_EXIST == rc || RC::SCHEMA_FIELD_MISSING == rc || RC::SCHEMA_FIELD_TYPE_MISMATCH == rc)
-          session_event->set_response("FAILURE\n");
-      end_trx_if_need(session, trx, false);
-      return rc;
-    }
-    select_nodes.push_back(select_node);
-  }
+          std::vector<SelectExeNode *> select_nodes;
+          for (size_t i = 0; i < selects.relation_num; i++) {
+            const char *table_name = selects.relations[i];
+            SelectExeNode *select_node = new SelectExeNode;
+            rc = create_selection_executor(trx, selects, db, table_name, *select_node);
+            if (rc != RC::SUCCESS) {
+              delete select_node;
+              for (SelectExeNode *& tmp_node: select_nodes) {
+                delete tmp_node;
+              }
+        //      if(RC::SCHEMA_TABLE_NOT_EXIST == rc || RC::SCHEMA_FIELD_NOT_EXIST == rc || RC::SCHEMA_FIELD_MISSING == rc || RC::SCHEMA_FIELD_TYPE_MISMATCH == rc)
+                  session_event->set_response("FAILURE\n");
+              end_trx_if_need(session, trx, false);
+              return rc;
+            }
+            select_nodes.push_back(select_node);
+          }
 
-  if (select_nodes.empty()) {
-    LOG_ERROR("No table given");
-    end_trx_if_need(session, trx, false);
-    return RC::SQL_SYNTAX;
-  }
+          if (select_nodes.empty()) {
+            LOG_ERROR("No table given");
+            end_trx_if_need(session, trx, false);
+            return RC::SQL_SYNTAX;
+          }
 
-  std::vector<TupleSet> tuple_sets;
-  for (SelectExeNode *&node: select_nodes) {
-    TupleSet tuple_set;
-    rc = node->execute(tuple_set);
-    if (rc != RC::SUCCESS) {
-      for (SelectExeNode *& tmp_node: select_nodes) {
-        delete tmp_node;
-      }
-      end_trx_if_need(session, trx, false);
-      return rc;
-    } else {
-      tuple_sets.push_back(std::move(tuple_set));
-    }
-  }
+          for (SelectExeNode *&node: select_nodes) {
+            TupleSet tuple_set;
+            rc = node->execute(tuple_set);
+            if (rc != RC::SUCCESS) {
+              for (SelectExeNode *& tmp_node: select_nodes) {
+                delete tmp_node;
+              }
+              end_trx_if_need(session, trx, false);
+              return rc;
+            } else {
+              tuple_sets.push_back(std::move(tuple_set));
+            }
+          }
 
-  std::stringstream ss;
-  if (tuple_sets.size() > 1)
-  {
-    // 本次查询了多张表，需要做join操作
-      for(std::vector<TupleSet>::iterator it = tuple_sets.end() - 1; it != tuple_sets.begin(); it++)
-          for(int i = 0; i < it->schema().fields().size(); i++)
-              ss<<it->schema().field(i).table_name()<<"."<<it->schema().field(i).field_name()<<" | ";
-      std::vector<TupleSet>::iterator it = tuple_sets.begin();
-      for(int i = 0; i < it->schema().fields().size(); i++)
-      {
-          ss<<it->schema().field(i).table_name()<<"."<<it->schema().field(i).field_name();
-          if(i != it->schema().fields().size() - 1)
-              ss<<" | ";
+          if (tuple_sets.size() > 1)
+          {
+              printed.clear();
+              last_num = -1;
+              tuple_sets.clear();
+              std::map<std::string, int> mp;
+              std::map<int, bool> need;
+              int cnt = 0;
+              TupleSchema schema, out_schema;
+              
+              for(int i = selects.relation_num - 1; i >= 0; i--)
+              {
+                  Table *table = DefaultHandler::get_default().find_table(db, selects.relations[i]);
+                  if(nullptr == table)
+                      return RC::SCHEMA_TABLE_NOT_EXIST;
+                  for(size_t j = 1; j < table->table_meta().field_num(); j++)
+                  {
+                      const FieldMeta *field = table->table_meta().field(j);
+                      schema.add(field->type(), table->name(), field->name());
+                      const char *tname = table->name(), *fname = field->name();
+                      char totname[10000] = "";
+                      strcat(totname, tname);
+                      strcat(totname, fname);
+                      std::string ttname (totname);
+                      mp[ttname] = cnt++;
+                      for(int k = 0; k < selects.attr_num; k++)
+                          if(nullptr == selects.attributes[k].relation_name||
+                             0 == strcmp(selects.attributes[k].relation_name, tname))
+                              if(0 == strcmp("*", selects.attributes[k].attribute_name) ||
+                                 0 == strcmp(fname, selects.attributes[k].attribute_name))
+                              {
+                                  out_schema.add(field->type(), table->name(), field->name());
+                                  need[mp[totname]] = true;
+                                  last_num = std::max(mp[totname], last_num);
+                              }
+                  }
+                  TupleSet tuple_set;
+                  TupleSchema cur_schema;
+                  TupleSchema::from_table(table, cur_schema);
+                  tuple_set.set_schema(cur_schema);
+                  TupleRecordConverter converter(table, tuple_set);
+                  table->scan_record(trx, nullptr, -1, (void *)&converter, record_reader);
+                  
+                  tuple_sets.push_back(std::move(tuple_set));
+              }
+              out_schema.print(ss, true);
+              Tuple cur;
+              if(RC::SUCCESS != dfs(0, &cur, selects, mp, need, schema, out_schema, ss))
+              {
+                  session_event->set_response("FAILURE\n");
+                  end_trx_if_need(session, trx, true);
+                  return RC::SCHEMA_FIELD_TYPE_MISMATCH;
+              }              
+              
+          }
           else
-              ss<<std::endl;
-      }
+          {
+            // 当前只查询一张表，直接返回结果即可
+            tuple_sets.front().print(ss);
+          }
 
-      for(int i = 0; i < it->schema().fields().size(); i++)
-          DescartesDfs(&tuple_sets, 0, i, ss, "");
-      
-  } else {
-    // 当前只查询一张表，直接返回结果即可
-    tuple_sets.front().print(ss);
-  }
+          for (SelectExeNode *& tmp_node: select_nodes) {
+            delete tmp_node;
+          }
 
-  for (SelectExeNode *& tmp_node: select_nodes) {
-    delete tmp_node;
-  }
   session_event->set_response(ss.str());
   end_trx_if_need(session, trx, true);
   return rc;

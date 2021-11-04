@@ -107,7 +107,7 @@ public:
     fields_.clear();
   }
 
-  void print(std::ostream &os) const;
+  void print(std::ostream &os, bool with_table) const;
 public:
   static void from_table(const Table *table, TupleSchema &schema);
 private:
@@ -159,3 +159,4 @@ private:
 };
 
 #endif //__OBSERVER_SQL_EXECUTOR_TUPLE_H_
+ 

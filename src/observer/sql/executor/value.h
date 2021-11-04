@@ -27,6 +27,7 @@ public:
 
   virtual void to_string(std::ostream &os) const = 0;
   virtual int compare(const TupleValue &other) const = 0;
+    virtual void *get_value() const = 0;
 private:
 };
 
@@ -43,7 +44,10 @@ public:
     const IntValue & int_other = (const IntValue &)other;
     return value_ - int_other.value_;
   }
-
+  void *get_value() const override
+    {
+        return (void *)&value_;
+    }
 private:
   int value_;
 };
@@ -68,6 +72,10 @@ public:
     }
     return 0;
   }
+    void *get_value() const override
+      {
+          return (void *)&value_;
+      }
 private:
   float value_;
 };
@@ -87,6 +95,10 @@ public:
     const StringValue &string_other = (const StringValue &)other;
     return strcmp(value_.c_str(), string_other.value_.c_str());
   }
+    void *get_value() const override
+      {
+          return (void *)&value_;
+      }
 private:
   std::string value_;
 };
