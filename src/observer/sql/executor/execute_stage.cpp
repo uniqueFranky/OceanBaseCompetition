@@ -338,7 +338,16 @@ RC dfs(int now, Tuple *cur_tuple, Selects selects, std::map<std::string, int> mp
                 lval.data =(void *)((*(cur_tuple->values()[id])).get_value());
             }
             else
-                lval = cond.left_value;
+            {
+                if(CHARS != cond.left_value.type)
+                    lval = cond.left_value;
+                else
+                {
+                    std::string t ((char*)cond.left_value.data);
+                    lval.type = CHARS;
+                    lval.data = (void *)&t;
+                }
+            }
             
             if(cond.right_is_attr)
             {
@@ -354,7 +363,16 @@ RC dfs(int now, Tuple *cur_tuple, Selects selects, std::map<std::string, int> mp
                 rval.data =(void *)((*(cur_tuple->values()[id])).get_value());
             }
             else
-                rval = cond.right_value;
+            {
+                if(CHARS != cond.right_value.type)
+                    rval = cond.right_value;
+                else
+                {
+                    std::string t ((char*)cond.right_value.data);
+                    rval.type = CHARS;
+                    rval.data = (void *)&t;
+                }
+            }
             if(lval.type != rval.type)
                 return RC::SCHEMA_FIELD_TYPE_MISMATCH;
             if(false == check(lval.data, rval.data, lval.type, cond.comp))
@@ -523,7 +541,7 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
                   session_event->set_response("FAILURE\n");
                   end_trx_if_need(session, trx, true);
                   return RC::SCHEMA_FIELD_TYPE_MISMATCH;
-              }              
+              }
               
           }
           else
