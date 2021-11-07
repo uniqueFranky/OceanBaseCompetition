@@ -27,6 +27,110 @@ See the Mulan PSL v2 for more details. */
 #include "storage/common/index.h"
 #include "storage/common/bplus_tree_index.h"
 #include "storage/trx/trx.h"
+extern int usingDates[10000];
+extern int usingDatesCnt;
+int to_date(char *s)
+{
+    int len = strlen(s);
+    if(len < 8 || len > 10)
+        return 0;
+    for(int i = 0; i < 4; i++)
+        if(!isdigit(s[i]))
+            return 0;
+    if('-' != s[4])
+        return 0;
+    int yy, mm, dd;
+    yy = 0;
+    for(int i = 0; i < 4; i++)
+        yy = yy * 10 + s[i] - '0';
+    if(isdigit(s[5]) && isdigit(s[6])) // month has two digits
+    {
+        mm = (s[5] - '0') * 10 + s[6] - '0';
+        if('-' != s[7])
+            return 0;
+        if(len == 8)
+            return 0;
+        if(len == 9)
+        {
+            if(!isdigit(s[8]))
+                return 0;
+            dd = s[8] - '0';
+
+        }
+        else
+        {
+            if((!isdigit(s[8])) || (!isdigit(s[9])))
+                return 0;
+            dd = (s[8] - '0') * 10 + s[9] - '0';
+        }
+        return yy * 10000 + mm * 100 + dd;
+    }
+    
+    if(isdigit(s[5]) && (!isdigit(s[6]))) //month has one digit
+    {
+        if(len > 9)
+            return 0;
+        if('-' != s[6])
+            return 0;
+        mm = s[5] - '0';
+        if(len == 8)
+        {
+            if(!isdigit(s[7]))
+                return 0;
+            dd = s[7] - '0';
+        }
+        else
+        {
+            if((!isdigit(s[7])) || (!isdigit(s[8])))
+                return 0;
+            dd = (s[7] - '0') * 10 + s[8] - '0';
+        }
+        return yy * 10000 + mm * 100 + dd;
+    }
+    
+    return 0;
+}
+
+bool valid_date(int x)
+{
+    int y = x / 10000;
+    int m = (x % 10000) / 100;
+    int d = x % 100;
+    if(y < 1970)
+        return false;
+    if(y > 2038 || (y == 2038 && m > 2))
+        return false;
+    if(m < 1 || m > 12)
+        return false;
+    if(m == 1 || m == 3 || m == 5 || m == 7 || m == 8 ||m == 10 || m == 12)
+        if(d < 1 || d > 31)
+            return false;
+    if(m == 4 || m == 6 || m == 9 || m == 11)
+        if(d < 1 || d > 30)
+            return false;
+    if(m == 2)
+    {
+        if((y % 4 == 0 && y % 100 != 0) || y % 400 == 0)
+        {
+            if(d < 1 || d > 29)
+                return  false;
+        }
+        else
+            if(d < 1 || d > 28)
+                return false;
+    }
+    return true;
+}
+
+bool type_match(AttrType t1, const Value *v)
+{
+    AttrType t2 = v->type;
+    if(t1 == t2)
+        return true;
+    if(t1 == DATES && t2 == CHARS && valid_date(to_date((char *)(v->data))))
+        return true;
+    return false;
+}
 
 Table::Table() :
     data_buffer_pool_(nullptr),
@@ -292,29 +396,44 @@ const TableMeta &Table::table_meta() const {
 
 RC Table::make_record(int value_num, const Value *values, char * &record_out) {
   // 检查字段类型是否一致
-  if (value_num + table_meta_.sys_field_num() != table_meta_.field_num()) {
+  if (value_num + table_meta_.sys_field_num() != table_meta_.field_num())
+  {
     return RC::SCHEMA_FIELD_MISSING;
   }
-
   const int normal_field_start_index = table_meta_.sys_field_num();
-  for (int i = 0; i < value_num; i++) {
+  for (int i = 0; i < value_num; i++)
+  {
     const FieldMeta *field = table_meta_.field(i + normal_field_start_index);
-    const Value &value = values[i];
-    if (field->type() != value.type) {
+//      std::cout<<values->type<<std::endl;
+    const Value *value = &values[i];
+//      std::cout<<values->type<<std::endl;
+    if (!type_match(field->type(), value))
+    {
       LOG_ERROR("Invalid value type. field name=%s, type=%d, but given=%d",
-        field->name(), field->type(), value.type);
+        field->name(), field->type(), value->type);
       return RC::SCHEMA_FIELD_TYPE_MISMATCH;
     }
   }
-
+  
   // 复制所有字段的值
   int record_size = table_meta_.record_size();
   char *record = new char [record_size];
 
-  for (int i = 0; i < value_num; i++) {
+  for (int i = 0; i < value_num; i++)
+  {
     const FieldMeta *field = table_meta_.field(i + normal_field_start_index);
-    const Value &value = values[i];
-    memcpy(record + field->offset(), value.data, field->len());
+      Value value = values[i];
+//      std::cout<<field->type()<<std::endl;
+      if(field->type() == DATES)
+      {
+          usingDates[++usingDatesCnt] = to_date((char *)value.data);
+          value.data = (void *)&usingDates[usingDatesCnt];
+          memcpy(record + field->offset(), value.data, field->len());
+
+      }
+      else
+          memcpy(record + field->offset(), value.data, field->len());
+
   }
 
   record_out = record;
@@ -382,7 +501,7 @@ RC Table::scan_record(Trx *trx, ConditionFilter *filter, int limit, void *contex
     return RC::SUCCESS;
   }
 
-  if (limit < 0) {
+   if (limit < 0) {
     limit = INT_MAX;
   }
 
@@ -558,7 +677,7 @@ RC Table::update_record(Trx *trx, const char *attribute_name, const Value *value
 {
     if(nullptr == table_meta_.field(attribute_name))
         return RC::SCHEMA_FIELD_NOT_EXIST;
-    if(value->type != table_meta_.field(attribute_name)->type())
+    if(!type_match(table_meta_.field(attribute_name)->type(), value))
         return RC::SCHEMA_FIELD_TYPE_MISMATCH;
     RecordFileScanner scanner;
     CompositeConditionFilter filter;
@@ -585,7 +704,15 @@ RC Table::update_record(Trx *trx, const char *attribute_name, const Value *value
     for(Record rcd : records)
     {
         Record tmp = rcd;
-        memcpy(tmp.data + offset, value->data, table_meta_.field(attribute_name)->len());
+        if(table_meta_.field(attribute_name)->type() == DATES)
+        {
+            Value v = *value;
+            usingDates[++usingDatesCnt] = to_date((char *)v.data);
+            v.data = (void *)&usingDates[usingDatesCnt];
+            memcpy(tmp.data + offset, v.data, table_meta_.field(attribute_name)->len());
+        }
+        else
+            memcpy(tmp.data + offset, value->data, table_meta_.field(attribute_name)->len());
         rc = record_handler_->update_record(&tmp);
         if(rc == RC::RECORD_RECORD_NOT_EXIST)
             rc = RC::SUCCESS;
