@@ -227,7 +227,7 @@ int last_num;
 
 bool check(void *lval, void *rval, AttrType type, CompOp op)
 {
-    if(type == INTS || type == DATES)
+    if(type == INTS)
     {
             int l = *(int *)lval;
             int r = *(int *)rval;
@@ -404,21 +404,6 @@ RC dfs(int now, Tuple *cur_tuple, Selects selects, std::map<std::string, int> mp
                 case CHARS:
                     ts<<*(std::string *)((*(cur_tuple->values()[i])).get_value());
                     break;
-                case DATES:
-                {
-                    int x = *(int *)((*(cur_tuple->values()[i])).get_value());;
-                    int y = x / 10000;
-                    int m = x / 100 % 100;
-                    int d = x % 100;
-                    ts<<y<<"-";
-                    if(m < 10)
-                        ts<<"0";
-                    ts<<m<<"-";
-                    if(d < 10)
-                        ts<<"0";
-                    ts<<d;
-                    break;
-                }
                 default:
                     break;
             }

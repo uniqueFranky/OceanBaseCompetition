@@ -19,10 +19,6 @@ See the Mulan PSL v2 for more details. */
 #include "storage/common/table.h"
 
 using namespace common;
-extern int usingDates[10000];
-extern int usingDatesCnt;
-int to_date(char *);
-bool valid_date(int x);
 
 ConditionFilter::~ConditionFilter()
 {}
@@ -44,7 +40,7 @@ DefaultConditionFilter::~DefaultConditionFilter()
 
 RC DefaultConditionFilter::init(const ConDesc &left, const ConDesc &right, AttrType attr_type, CompOp comp_op)
 {
-  if (attr_type < CHARS || attr_type > DATES) {
+  if (attr_type < CHARS || attr_type > FLOATS) {
     LOG_ERROR("Invalid condition with unsupported attribute type: %d", attr_type);
     return RC::INVALID_ARGUMENT;
   }
@@ -120,31 +116,7 @@ RC DefaultConditionFilter::init(Table &table, const Condition &condition)
   //  }
   // NOTE：这里没有实现不同类型的数据比较，比如整数跟浮点数之间的对比
   // 但是选手们还是要实现。这个功能在预选赛中会出现
-  if(condition.left_is_attr == 1 && condition.right_is_attr == 0)
-  {
-      const FieldMeta *field_left = table_meta.field(condition.left_attr.attribute_name);
-      if(field_left->type() == DATES && condition.right_value.type == CHARS && valid_date(to_date((char *)condition.right_value.data)))
-      {
-          type_right = DATES;
-          usingDates[++usingDatesCnt] = to_date((char *)condition.right_value.data);
-          right.value = (void *)&usingDates[usingDatesCnt];
-          return init(left, right, type_left, condition.comp);
-
-      }
-  }
-    if(condition.right_is_attr == 1 && condition.left_is_attr == 0)
-    {
-        const FieldMeta *field_right = table_meta.field(condition.right_attr.attribute_name);
-        if(field_right->type() == DATES && condition.left_value.type == CHARS && valid_date(to_date((char *)condition.left_value.data)))
-        {
-            type_left = DATES;
-            usingDates[++usingDatesCnt] = to_date((char *)condition.left_value.data);
-            left.value = (void*)&usingDates[usingDatesCnt];
-            return init(left, right, type_left, condition.comp);
-        }
-    }
-  if (type_left != type_right)
-  {
+  if (type_left != type_right) {
     return RC::SCHEMA_FIELD_TYPE_MISMATCH;
   }
 
@@ -186,13 +158,6 @@ bool DefaultConditionFilter::filter(const Record &rec) const
       float right = *(float *)right_value;
       cmp_result = (int)(left - right);
     } break;
-      case DATES:
-      {
-          int left = *(int *)left_value;
-          int right = *(int *)right_value;
-          cmp_result = left - right;
-          break;
-      }
     default: {
     }
   }

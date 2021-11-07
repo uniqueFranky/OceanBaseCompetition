@@ -18,8 +18,7 @@ See the Mulan PSL v2 for more details. */
 #include "common/log/log.h"
 
 RC parse(char *st, Query *sqln);
-int usingDates[10000];
-int usingDatesCnt = 0;
+
 #ifdef __cplusplus
 extern "C" {
 #endif // __cplusplus
@@ -53,26 +52,6 @@ void value_init_string(Value *value, const char *v) {
   value->type = CHARS;
   value->data = strdup(v);
 }
-void value_init_date(Value *value, const char *v)
-{
-    value->type = DATES;
-    int val=0, year, month, day;
-    sscanf(v, "%d", &year);
-    sscanf(v+5, "%d", &month);
-    int len = strlen(v);
-    if(v[len-2] == '-')
-    {
-        day = v[len-1] - '0';
-    }
-    else
-    {
-        day = (v[len-2] - '0') * 10 + v[len-1] - '0';
-    }
-    val = year * 10000 + month * 100 + day;
-    value->data = malloc(sizeof(val));
-    memcpy(value->data, &val, sizeof(val));
-}
-
 void value_destroy(Value *value) {
   value->type = UNDEFINED;
   free(value->data);

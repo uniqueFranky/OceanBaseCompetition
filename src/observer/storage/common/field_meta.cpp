@@ -27,19 +27,18 @@ const char *ATTR_TYPE_NAME[] = {
   "undefined",
   "chars",
   "ints",
-  "floats",
-  "dates"
+  "floats"
 };
 
 const char *attr_type_to_string(AttrType type) {
-  if (type >= UNDEFINED && type <= DATES) {
+  if (type >= UNDEFINED && type <= FLOATS) {
     return ATTR_TYPE_NAME[type];
   }
   return "unknown";
 }
 
 AttrType attr_type_from_string(const char *s) {
-  for (unsigned int i = 0; i < 5; i++) {
+  for (unsigned int i = 0; i < sizeof(ATTR_TYPE_NAME)/sizeof(ATTR_TYPE_NAME[0]); i++) {
     if (0 == strcmp(ATTR_TYPE_NAME[i], s)) {
       return (AttrType)i;
     }
