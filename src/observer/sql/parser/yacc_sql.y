@@ -80,6 +80,7 @@ ParserContext *get_context(yyscan_t scanner)
         TRX_BEGIN
         TRX_COMMIT
         TRX_ROLLBACK
+        DATE_T
         INT_T
         STRING_T
         FLOAT_T
@@ -117,6 +118,7 @@ ParserContext *get_context(yyscan_t scanner)
 %token <floats> FLOAT 
 %token <string> ID
 %token <string> PATH
+%token <string> DATE
 %token <string> SSS
 %token <string> STAR
 %token <string> STRING_V
@@ -266,6 +268,7 @@ number:
 		;
 type:
 	INT_T { $$=INTS; }
+       | DATE_T {$$=DATES;}
        | STRING_T { $$=CHARS; }
        | FLOAT_T { $$=FLOATS; }
        ;
@@ -308,6 +311,10 @@ value:
     |FLOAT{
   		value_init_float(&CONTEXT->values[CONTEXT->value_length++], $1);
 		}
+    |DATE{
+    		$1 = substr($1,1,strlen($1)-2);
+    		value_init_date(&CONTEXT->values[CONTEXT->value_length++],$1);
+    }
     |SSS {
 			$1 = substr($1,1,strlen($1)-2);
   		value_init_string(&CONTEXT->values[CONTEXT->value_length++], $1);

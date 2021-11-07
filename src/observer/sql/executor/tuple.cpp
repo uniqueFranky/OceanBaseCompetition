@@ -190,11 +190,46 @@ void TupleSet::print(std::ostream &os) const
   for (const Tuple &item : tuples_) {
     const std::vector<std::shared_ptr<TupleValue>> &values = item.values();
     for (std::vector<std::shared_ptr<TupleValue>>::const_iterator iter = values.begin(), end = --values.end();
-          iter != end; ++iter) {
-      (*iter)->to_string(os);
+          iter != end; ++iter)
+    {
+//        std::cout<<*((int *)(*iter)->get_value())<<std::endl;
+        int id = iter - values.begin();
+//        std::cout<<schema_.field(id).type()<<std::endl;
+        if(schema_.field(id).type() == DATES)
+        {
+            int x = *((int *)(*iter)->get_value());
+            int y = x / 10000;
+            int m = x / 100 % 100;
+            int d = x % 100;
+            os<<y<<"-";
+            if(m < 10)
+                os<<"0";
+            os<<m<<"-";
+            if(d < 10)
+                os<<"0";
+            os<<d;
+        }
+        else
+            (*iter)->to_string(os);
       os << " | ";
     }
-    values.back()->to_string(os);
+      if(schema_.fields().back().type() == DATES)
+      {
+          int x = *((int *)(values.back()->get_value()));
+          int y = x / 10000;
+          int m = x / 100 % 100;
+          int d = x % 100;
+          os<<y<<"-";
+          if(m < 10)
+              os<<"0";
+          os<<m<<"-";
+          if(d < 10)
+              os<<"0";
+          os<<d;
+          
+      }
+      else
+          values.back()->to_string(os);
     os << std::endl;
   }
 }
@@ -236,7 +271,7 @@ void TupleRecordConverter::add_record(const char *record) {
     const FieldMeta *field_meta = table_meta.field(field.field_name());
     assert(field_meta != nullptr);
     switch (field_meta->type()) {
-      case INTS: {
+      case INTS:{
         int value = *(int*)(record + field_meta->offset());
         tuple.add(value);
       }
@@ -250,6 +285,11 @@ void TupleRecordConverter::add_record(const char *record) {
         const char *s = record + field_meta->offset();  // 现在当做Cstring来处理
         tuple.add(s, strlen(s));
       }
+        case DATES:
+        {
+            int value = *(int*)(record + field_meta->offset());
+            tuple.add(value);
+        }
       break;
       default: {
         LOG_PANIC("Unsupported field type. type=%d", field_meta->type());
