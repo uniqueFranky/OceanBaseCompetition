@@ -92,10 +92,6 @@ ParserContext *get_context(yyscan_t scanner)
         FROM
         WHERE
         AND
-        MAX
-        MIN
-        COUNT
-        AVG
         SET
         ON
         LOAD
@@ -350,25 +346,12 @@ select:				/*  select 语句的语法解析树*/
 		{
 			// CONTEXT->ssql->sstr.selection.relations[CONTEXT->from_length++]=$4;
 			selects_append_relation(&CONTEXT->ssql->sstr.selection, $4);
-			CONTEXT->ssql->sstr.selection.aggre_t[0]=noaggre_t;
-			selects_append_conditions(&CONTEXT->ssql->sstr.selection, CONTEXT->conditions, CONTEXT->condition_length);
-
-			CONTEXT->ssql->flag=SCF_SELECT;//"select";
-			// CONTEXT->ssql->sstr.selection.attr_num = CONTEXT->select_length;
-
-			//临时变量清零
-			CONTEXT->condition_length=0;
-			CONTEXT->from_length=0;
-			CONTEXT->select_length=0;
-			CONTEXT->value_length = 0;
-	}
-	| SELECT aggregation_func aggregation_list FROM ID rel_list where SEMICOLON{
-			selects_append_relation(&CONTEXT->ssql->sstr.selection, $5);
 
 			selects_append_conditions(&CONTEXT->ssql->sstr.selection, CONTEXT->conditions, CONTEXT->condition_length);
 
 			CONTEXT->ssql->flag=SCF_SELECT;//"select";
 			// CONTEXT->ssql->sstr.selection.attr_num = CONTEXT->select_length;
+
 			//临时变量清零
 			CONTEXT->condition_length=0;
 			CONTEXT->from_length=0;
@@ -376,28 +359,7 @@ select:				/*  select 语句的语法解析树*/
 			CONTEXT->value_length = 0;
 	}
 	;
-aggregation_list:
-	| COMMA aggregation_func aggregation_list{};
-aggregation_func:
-	MAX LBRACE select_attr RBRACE{
-	selects_append_aggregation(&CONTEXT->ssql->sstr.selection,max_t);
-	}
-	| MIN LBRACE select_attr RBRACE{
-	selects_append_aggregation(&CONTEXT->ssql->sstr.selection,min_t);
-	}
-	| COUNT LBRACE number RBRACE{
-	if($3==1){
-	selects_append_aggregation(&CONTEXT->ssql->sstr.selection,count_t);
-				RelAttr attr;
-        			relation_attr_init(&attr, NULL, "1");
-        			selects_append_attribute(&CONTEXT->ssql->sstr.selection, &attr);}
-	}
-	| COUNT LBRACE select_attr RBRACE{
-	selects_append_aggregation(&CONTEXT->ssql->sstr.selection,count_t);
-	}
-	| AVG LBRACE select_attr RBRACE{
-	selects_append_aggregation(&CONTEXT->ssql->sstr.selection,avg_t);
-	};
+
 select_attr:
     STAR {  
 			RelAttr attr;

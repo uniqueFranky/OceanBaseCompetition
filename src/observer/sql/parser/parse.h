@@ -19,5 +19,6 @@ See the Mulan PSL v2 for more details. */
 #include "sql/parser/parse_defs.h"
 
 RC parse(const char *st, Query *sqln);
+
 #endif //__OBSERVER_SQL_PARSER_PARSE_H__
 

@@ -464,7 +464,7 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
   Session *session = session_event->get_client()->session;
   Trx *trx = session->current_trx();
   const Selects &selects = sql->sstr.selection;
-//    std::cout<<"@@"<<selects.aggrega_num<<std::endl;
+//    std::cout<<"@@"<<selects.attr_num<<std::endl;
   // 把所有的表和只跟这张表关联的condition都拿出来，生成最底层的select 执行节点
           std::vector<SelectExeNode *> select_nodes;
           for (size_t i = 0; i < selects.relation_num; i++) {
@@ -562,211 +562,9 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
           else
           {
             // 当前只查询一张表，直接返回结果即可
-            if(0 == selects.aggrega_num)
-                tuple_sets.front().print(ss);
-            else
-            {
-                TupleSchema aggr_schema;
-                TupleSet tps = std::move(tuple_sets.front());
-                TupleSet out_set;
-                Tuple out_tuple;
-                void *cur_values[1000];
-                Table *table = DefaultHandler::get_default().find_table(db, selects.relations[0]);
-                for(int i = 0; i < selects.aggrega_num; i++)
-                {
-                    const FieldMeta *field = table->table_meta().field(selects.attributes[i].attribute_name);
-                    Aggregation aggr_type = selects.aggre_t[i];
-                    for(int j = 0; j < tps.tuples().size(); j++)
-                    {
-                        const Tuple &item = tps.tuples()[j];
-                        cur_values[j] = item.get(selects.aggrega_num - i - 1).get_value();
-                    }
-                    
-                    switch (aggr_type)
-                    {
-                    /*************  case MAX_T  begin **************** */
-                        case max_t:
-                        {
-                            char aggr_name[100] = "";
-                            strcat(aggr_name, "max(");
-                            strcat(aggr_name, field->name());
-                            strcat(aggr_name, ")");
-                            aggr_schema.add(field->type(), table->name(), aggr_name);
-                            if(0 == tps.tuples().size())
-                                break;
-                            
-                            switch(field->type())
-                            {
-                                case INTS:
-                                {
-                                    int ans = *(int *)cur_values[0];
-                                    for(int j = 1; j < tps.tuples().size(); j++)
-                                        ans = ans > (*(int *)cur_values[j]) ? ans : (*(int *)cur_values[j]);
-                                    out_tuple.add(ans);
-                                    break;
-                                }
-                                case FLOATS:
-                                {
-                                    float ans = *(float *)cur_values[0];
-                                    for(int j = 1; j < tps.tuples().size(); j++)
-                                        ans = ans > *(float *)cur_values[j] ? ans : *(float *)cur_values[j];
-                                    out_tuple.add(ans);
-                                    break;
-                                }
-                                case CHARS:
-                                {
-                                    char *ans = (char *)cur_values[0];
-                                    for(int j = 1; j < tps.tuples().size(); j++)
-                                        if(strcmp(ans, (char *)cur_values[j]) < 0)
-                                            memcpy(ans, (char *)cur_values[j], strlen((char *)cur_values[j]));
-                                    out_tuple.add(ans, strlen(ans));
-                                    break;
-                                }
-                                case DATES:
-                                {
-                                    int ans = *(int *)cur_values[0];
-                                    for(int j = 1; j < tps.tuples().size(); j++)
-                                        ans = ans > *(int *)cur_values[j] ? ans : *(int *)cur_values[j];
-                                    out_tuple.add(ans);
-                                    break;
-                                }
-                                default:
-                                    break;
-                                    
-                            }
-                            
-                            break;
-                        }
-                            /*************  case MAX_T  end **************** */
-
-                            
-                            /*************  case MIN_T  begin **************** */
-
-                        case min_t:
-                        {
-                            char aggr_name[100] = "";
-                            strcat(aggr_name, "min(");
-                            strcat(aggr_name, field->name());
-                            strcat(aggr_name, ")");
-                            aggr_schema.add(field->type(), table->name(), aggr_name);
-                            if(0 == tps.tuples().size())
-                                break;
-                            
-                            switch(field->type())
-                            {
-                                case INTS:
-                                {
-                                    int ans = *(int *)cur_values[0];
-                                    for(int j = 1; j < tps.tuples().size(); j++)
-                                        ans = ans < *(int *)cur_values[j] ? ans : *(int *)cur_values[j];
-                                    out_tuple.add(ans);
-                                    break;
-                                }
-                                case FLOATS:
-                                {
-                                    float ans = *(float *)cur_values[0];
-                                    for(int j = 1; j < tps.tuples().size(); j++)
-                                        ans = ans < *(float *)cur_values[j] ? ans : *(float *)cur_values[j];
-                                    out_tuple.add(ans);
-                                    break;
-                                }
-                                case CHARS:
-                                {
-                                    char *ans = (char *)cur_values[0];
-                                    for(int j = 1; j < tps.tuples().size(); j++)
-                                        if(strcmp(ans, (char *)cur_values[j]) > 0)
-                                            memcpy(ans, (char *)cur_values[j], 4);
-                                    out_tuple.add(ans, 4);
-                                    break;
-                                }
-                                case DATES:
-                                {
-                                    int ans = *(int *)cur_values[0];
-                                    for(int j = 1; j < tps.tuples().size(); j++)
-                                        ans = ans < *(int *)cur_values[j] ? ans : *(int *)cur_values[j];
-                                    out_tuple.add(ans);
-                                    break;
-                                }
-                                default:
-                                    break;
-                                    
-                            }
-                            
-                            break;
-                        }
-                            /*************  case MIN_T  end **************** */
-
-                            /*************  case COUNT_T  begin **************** */
-                        case count_t:
-                        {
-                            char aggr_name[100] = "";
-                            strcat(aggr_name, "count(");
-                            strcat(aggr_name, selects.attributes[i].attribute_name);
-                            strcat(aggr_name, ")");
-                            aggr_schema.add(INTS, table->name(), aggr_name);
-                            if(strcmp(selects.attributes[i].attribute_name, "*") == 0
-                               || strcmp(selects.attributes[i].attribute_name, "1") == 0)
-                                out_tuple.add((int)tps.tuples().size() * (table->table_meta().field_num() - 1));
-                            else
-                                out_tuple.add((int)tps.tuples().size());
-                            break;
-                        }
-                            /*************  case COUNT_T  end **************** */
-
-                            /*************  case AVG_T  begin **************** */
-
-                        case avg_t:
-                        {
-                            char aggr_name[100] = "";
-                            strcat(aggr_name, "avg(");
-                            strcat(aggr_name, field->name());
-                            strcat(aggr_name, ")");
-                            aggr_schema.add(FLOATS, table->name(), aggr_name);
-                            if(0 == tps.tuples().size())
-                                break;
-                            
-                            switch(field->type())
-                            {
-                                case INTS:
-                                {
-                                    float ans = *(int *)cur_values[0];
-                                    for(int j = 1; j < tps.tuples().size(); j++)
-                                        ans += *(int *)cur_values[j];
-                                    ans /= tps.tuples().size();
-                                    out_tuple.add(ans);
-                                    
-                                    break;
-                                }
-                                case FLOATS:
-                                {
-                                    float ans = *(float *)cur_values[0];
-                                    for(int j = 1; j < tps.tuples().size(); j++)
-                                        ans += *(float *)cur_values[j];
-                                    ans /= tps.tuples().size();
-                                    out_tuple.add(ans);
-                                    break;
-                                }
-
-                                default:
-                                    break;
-                                    
-                            }
-                            
-                            break;
-                        }
-                            /*************  case AVG_T  end **************** */
-
-                        default:
-                            std::cout<<"NO CASE ENTERED"<<std::endl;
-                            break;
-                    }
-
-                }
-                out_set.set_schema(aggr_schema);
-                out_set.add(std::move(out_tuple));
-                out_set.print(ss);
-            }
+            tuple_sets.front().print(ss);
           }
+
           for (SelectExeNode *& tmp_node: select_nodes) {
             delete tmp_node;
           }
@@ -786,14 +584,12 @@ bool match_table(const Selects &selects, const char *table_name_in_condition, co
 
 static RC schema_add_field(Table *table, const char *field_name, TupleSchema &schema) {
   const FieldMeta *field_meta = table->table_meta().field(field_name);
-  if (0 != strcmp("1", field_name) && nullptr == field_meta) {
+  if (nullptr == field_meta) {
     LOG_WARN("No such field. %s.%s", table->name(), field_name);
     return RC::SCHEMA_FIELD_MISSING;
   }
-  if(0 == strcmp("1", field_name))
-      schema.from_table(table, schema);
-  else
-      schema.add_if_not_exists(field_meta->type(), table->name(), field_meta->name());
+
+  schema.add_if_not_exists(field_meta->type(), table->name(), field_meta->name());
   return RC::SUCCESS;
 }
 // 把所有的表和只跟这张表关联的condition都拿出来，生成最底层的select 执行节点
@@ -813,8 +609,7 @@ RC create_selection_executor(Trx *trx, const Selects &selects, const char *db, c
         // 列出这张表所有字段
         TupleSchema::from_table(table, schema);
         break; // 没有校验，给出* 之后，再写字段的错误
-      }
-      else {
+      } else {
         // 列出这张表相关字段
         RC rc = schema_add_field(table, attr.attribute_name, schema);
         if (rc != RC::SUCCESS) {
