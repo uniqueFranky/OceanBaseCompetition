@@ -24,7 +24,6 @@ int usingDatesCnt = 0;
 extern "C" {
 #endif // __cplusplus
 void relation_attr_init(RelAttr *relation_attr, const char *relation_name, const char *attribute_name) {
-    printf("%s",attribute_name);
   if (relation_name != nullptr) {
     relation_attr->relation_name = strdup(relation_name);
   } else {
@@ -127,10 +126,6 @@ void selects_append_attribute(Selects *selects, RelAttr *rel_attr) {
 }
 void selects_append_relation(Selects *selects, const char *relation_name) {
   selects->relations[selects->relation_num++] = strdup(relation_name);
-}
-void selects_append_aggregation(Selects *selects,Aggregation _aggrega)
-{
-    selects->aggre_t[selects->aggrega_num++]=_aggrega;
 }
 
 void selects_append_conditions(Selects *selects, Condition conditions[], size_t condition_num) {

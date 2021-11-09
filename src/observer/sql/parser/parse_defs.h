@@ -38,7 +38,7 @@ typedef enum {
   GREAT_THAN,   //">"     5
   NO_OP
 } CompOp;
-typedef enum {noaggre_t, max_t = 289, min_t, count_t, avg_t} Aggregation;
+
 //属性值类型
 typedef enum { UNDEFINED, CHARS, INTS, FLOATS, DATES} AttrType;
 
@@ -68,8 +68,6 @@ typedef struct {
   char *    relations[MAX_NUM];     // relations in From clause
   size_t    condition_num;          // Length of conditions in Where clause
   Condition conditions[MAX_NUM];    // conditions in Where clause
-  Aggregation aggre_t[MAX_NUM];
-  size_t aggrega_num;
 } Selects;
 
 // struct of insert
@@ -200,7 +198,6 @@ void selects_append_attribute(Selects *selects, RelAttr *rel_attr);
 void selects_append_relation(Selects *selects, const char *relation_name);
 void selects_append_conditions(Selects *selects, Condition conditions[], size_t condition_num);
 void selects_destroy(Selects *selects);
-void selects_append_aggregation(Selects *selects,Aggregation _aggregation);
 
 void inserts_init(Inserts *inserts, const char *relation_name, Value values[], size_t value_num);
 void inserts_destroy(Inserts *inserts);
