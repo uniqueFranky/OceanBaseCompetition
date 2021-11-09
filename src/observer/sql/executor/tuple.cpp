@@ -208,7 +208,23 @@ void TupleSet::print(std::ostream &os) const
             os<<d;
         }
         else
-            (*iter)->to_string(os);
+            if(schema_.field(id).type() == FLOATS)
+            {
+                float x = *((float *)(*iter)->get_value());
+                int y = x * 10;
+                int z = x * 100;
+                if(0 == z % 10)
+                {
+                    if(0 == y % 10)
+                        os<<std::fixed<<std::setprecision(0)<<x;
+                    else
+                        os<<std::fixed<<std::setprecision(1)<<x;
+                }
+                else
+                    os<<std::fixed<<std::setprecision(2)<<x;
+            }
+            else
+                (*iter)->to_string(os);
       os << " | ";
     }
       if(schema_.fields().back().type() == DATES)
@@ -226,6 +242,23 @@ void TupleSet::print(std::ostream &os) const
           os<<d;
           
       }
+      else
+          if(schema_.fields().back().type() == FLOATS)
+          {
+              float x = *((float *)(values.back()->get_value()));
+              int y = x * 10;
+              int z = x * 100;
+              if(0 == z % 10)
+              {
+                  if(0 == y % 10)
+                      os<<std::fixed<<std::setprecision(0)<<x;
+                  else
+                      os<<std::fixed<<std::setprecision(1)<<x;
+              }
+              else
+                  os<<std::fixed<<std::setprecision(2)<<x;
+          }
+
       else
           values.back()->to_string(os);
     os << std::endl;
@@ -282,8 +315,7 @@ void TupleRecordConverter::add_record(const char *record) {
       case CHARS: {
         const char *s = record + field_meta->offset();  // 现在当做Cstring来处理
         tuple.add(s, strlen(s));
-          break;
-      }
+      }break;
         case DATES:
         {
             int value = *(int*)(record + field_meta->offset());
