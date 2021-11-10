@@ -704,11 +704,7 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
                             strcat(aggr_name, selects.attributes[i].attribute_name);
                             strcat(aggr_name, ")");
                             aggr_schema.add(INTS, table->name(), aggr_name);
-                            if(strcmp(selects.attributes[i].attribute_name, "*") == 0
-                               || strcmp(selects.attributes[i].attribute_name, "1") == 0)
-                                out_tuple.add((int)tps.tuples().size() * (table->table_meta().field_num() - 1));
-                            else
-                                out_tuple.add((int)tps.tuples().size());
+                            out_tuple.add((int)tps.tuples().size());
                             break;
                         }
                             /*************  case COUNT_T  end **************** */
