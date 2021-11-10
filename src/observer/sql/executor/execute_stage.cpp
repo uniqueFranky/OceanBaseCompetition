@@ -451,7 +451,7 @@ RC dfs(int now, Tuple *cur_tuple, Selects selects, std::map<std::string, int> mp
     return RC::SUCCESS;
 }
 
-
+std::map<int, void *> cur_values;
 
 // 这里没有对输入的某些信息做合法性校验，比如查询的列名、where条件中的列名等，没有做必要的合法性校验
 // 需要补充上这一部分. 校验部分也可以放在resolve，不过跟execution放一起也没有关系
@@ -570,7 +570,6 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
                 TupleSet tps = std::move(tuple_sets.front());
                 TupleSet out_set;
                 Tuple out_tuple;
-                void *cur_values[1000];
                 Table *table = DefaultHandler::get_default().find_table(db, selects.relations[0]);
                 for(int i = 0; i < selects.aggrega_num; i++)
                 {
