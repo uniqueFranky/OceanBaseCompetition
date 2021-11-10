@@ -759,7 +759,9 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
 
                 }
                 out_set.set_schema(aggr_schema);
-                out_set.add(std::move(out_tuple));
+                if(out_tuple.size())
+                    out_set.add(std::move(out_tuple));
+                
                 out_set.print(ss);
             }
           }
