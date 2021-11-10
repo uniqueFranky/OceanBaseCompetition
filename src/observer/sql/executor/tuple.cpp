@@ -15,6 +15,8 @@ See the Mulan PSL v2 for more details. */
 #include "sql/executor/tuple.h"
 #include "storage/common/table.h"
 #include "common/log/log.h"
+#include <iostream>
+#include <iomanip>
 #include <sstream>
 Tuple::Tuple(const Tuple &other) {
   LOG_PANIC("Copy constructor of tuple is not supported");
