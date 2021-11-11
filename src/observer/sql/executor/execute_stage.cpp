@@ -452,6 +452,7 @@ RC dfs(int now, Tuple *cur_tuple, Selects selects, std::map<std::string, int> mp
 }
 
 std::map<int, void *> cur_values;
+std::map<int, std::string> cur_string_values;
 
 // 这里没有对输入的某些信息做合法性校验，比如查询的列名、where条件中的列名等，没有做必要的合法性校验
 // 需要补充上这一部分. 校验部分也可以放在resolve，不过跟execution放一起也没有关系
@@ -578,7 +579,10 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
                     for(int j = 0; j < tps.tuples().size(); j++)
                     {
                         const Tuple &item = tps.tuples()[j];
-                        cur_values[j] = item.get(selects.aggrega_num - i - 1).get_value();
+                        if(field->type() == CHARS)
+                            cur_string_values[j] = (char *)item.get(selects.aggrega_num - i - 1).get_value();
+                        else
+                            cur_values[j] = item.get(selects.aggrega_num - i - 1).get_value();
                     }
                     
                     switch (aggr_type)
@@ -614,10 +618,10 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
                                 }
                                 case CHARS:
                                 {
-                                    std::string ans = (char *)cur_values[0];
+                                    std::string ans = cur_string_values[0];
                                     for(int j = 1; j < tps.tuples().size(); j++)
-                                        if(ans < (char *)cur_values[j])
-                                            ans = (char *)cur_values[j];
+                                        if(ans < cur_string_values[j])
+                                            ans = cur_string_values[j];
                                     out_tuple.add(ans.c_str(), ans.length());
                                     break;
                                 }
@@ -671,10 +675,10 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
                                 }
                                 case CHARS:
                                 {
-                                    std::string ans = (char *)cur_values[0];
+                                    std::string ans = cur_string_values[0];
                                     for(int j = 1; j < tps.tuples().size(); j++)
-                                        if(ans > (char *)cur_values[j])
-                                            ans = (char *)cur_values[j];
+                                        if(ans > cur_string_values[j])
+                                            ans = cur_string_values[j];
                                     out_tuple.add(ans.c_str(), ans.length());
                                     break;
                                 }
