@@ -614,11 +614,11 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
                                 }
                                 case CHARS:
                                 {
-                                    char *ans = (char *)cur_values[0];
+                                    std::string ans = (char *)cur_values[0];
                                     for(int j = 1; j < tps.tuples().size(); j++)
-                                        if(strcmp(ans, (char *)cur_values[j]) < 0)
-                                            memcpy(ans, (char *)cur_values[j], strlen((char *)cur_values[j]));
-                                    out_tuple.add(ans, strlen(ans));
+                                        if(ans < (char *)cur_values[j])
+                                            ans = (char *)cur_values[j];
+                                    out_tuple.add(ans.c_str(), ans.length());
                                     break;
                                 }
                                 case DATES:
@@ -671,11 +671,11 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
                                 }
                                 case CHARS:
                                 {
-                                    char *ans = (char *)cur_values[0];
+                                    std::string ans = (char *)cur_values[0];
                                     for(int j = 1; j < tps.tuples().size(); j++)
-                                        if(strcmp(ans, (char *)cur_values[j]) > 0)
-                                            memcpy(ans, (char *)cur_values[j], 4);
-                                    out_tuple.add(ans, 4);
+                                        if(ans > (char *)cur_values[j])
+                                            ans = (char *)cur_values[j];
+                                    out_tuple.add(ans.c_str(), ans.length());
                                     break;
                                 }
                                 case DATES:
