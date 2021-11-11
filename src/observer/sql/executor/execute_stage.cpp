@@ -579,7 +579,7 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
                     for(int j = 0; j < tps.tuples().size(); j++)
                     {
                         const Tuple &item = tps.tuples()[j];
-                        if(field->type() == CHARS)
+                        if(field != nullptr && field->type() == CHARS)
                             cur_string_values[j] = (char *)item.get(selects.aggrega_num - i - 1).get_value();
                         else
                             cur_values[j] = item.get(selects.aggrega_num - i - 1).get_value();
