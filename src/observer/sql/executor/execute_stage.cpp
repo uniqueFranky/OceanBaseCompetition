@@ -576,6 +576,8 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
                 {
                     const FieldMeta *field = table->table_meta().field(selects.attributes[i].attribute_name);
                     Aggregation aggr_type = selects.aggre_t[i];
+                    cur_values.clear();
+                    cur_string_values.clear();
                     for(int j = 0; j < tps.tuples().size(); j++)
                     {
                         const Tuple &item = tps.tuples()[j];
@@ -622,7 +624,7 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
                                     for(int j = 1; j < tps.tuples().size(); j++)
                                         if(ans < cur_string_values[j])
                                             ans = cur_string_values[j];
-                                    out_tuple.add(ans.c_str(), ans.length());
+                                    out_tuple.add(ans.c_str(), 4);
                                     break;
                                 }
                                 case DATES:
@@ -679,7 +681,7 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
                                     for(int j = 1; j < tps.tuples().size(); j++)
                                         if(ans > cur_string_values[j])
                                             ans = cur_string_values[j];
-                                    out_tuple.add(ans.c_str(), ans.length());
+                                    out_tuple.add(ans.c_str(), 4);
                                     break;
                                 }
                                 case DATES:
